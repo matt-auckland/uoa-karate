@@ -18,6 +18,14 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+.hello {
+  width: 100%;
+  max-width: 600px;
+  min-width: 300px;
+
+}
+
 h3 {
   margin: 40px 0 0;
 }
@@ -28,8 +36,5 @@ ul {
 li {
   display: inline-block;
   margin: 0 10px;
-}
-a {
-  color: #42b983;
 }
 </style>
