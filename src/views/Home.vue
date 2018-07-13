@@ -2,19 +2,21 @@
   <div class="home">
     
     <HelloWorld msg="Practise Daily"/>
+
+    <ToDo />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import HelloWorld from '@/components/HelloWorld.vue'
-import Header from '@/components/Header.vue'
+import ToDo from '@/components/ToDo.vue'
 
 export default {
   name: 'home',
   components: {
     HelloWorld,
-    Header
+    ToDo
   }
 }
 </script>
