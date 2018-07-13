@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h2>Schedule:</h2>
+    <h2>Training Schedule:</h2>
     <table>
       <thead>
         <tr>

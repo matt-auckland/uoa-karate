@@ -4,12 +4,13 @@
     <ul>
       <li class="done">Pick a colour scheme</li>
       <li class="done">implement colour scheme</li>
-      <li>Complete home page</li>
-      <li>Complete events page</li>
-      <li>Complete karate page</li>
-      <li>add page for instructors and exec</li>
-      <li>Add icons for FB and IG</li>
-      <li>Add a logo</li>
+      <li class="">Complete home page</li>
+      <li class="">Complete events page</li>
+      <li class="">Complete karate page</li>
+      <li class="">add page for instructors and exec</li>
+      <li class="">Add icons for FB and IG</li>
+      <li class="done">Add a logo</li>
+      <li class="">Add map</li>
     </ul>  
   </div>
 </template>

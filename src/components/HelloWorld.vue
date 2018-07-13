@@ -2,7 +2,7 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <p>
-      This is soon to be the official website of the University of Auckland Goju Ryu Karate Club. 👷‍♂️
+      This is soon to be the official website of the University of Auckland Goju Ryu Karate Club. We're currently under contruction 👷‍♂️
     </p>
   </div>
 </template>
@@ -16,7 +16,6 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
 .hello {
