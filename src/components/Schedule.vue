@@ -31,7 +31,7 @@ table {
   border-spacing: 0px;
   width: 100%;
   max-width: 880px;
-  min-width: 500px;
+  min-width: 300px;
 }
 table, td, th{
   border: var(--tuatara-light) solid 1px;
