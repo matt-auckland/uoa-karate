@@ -3,9 +3,9 @@
     <div id="nav">
       <router-link to="/"><img src="../assets/logo.png" alt="IOGKF Logo"></router-link> |
       <router-link to="/about">About the club</router-link> |
-      <router-link to="/goju-ryu">What is Goju Ryu Karate</router-link> |
-      <router-link to="/events">Upcoming Events</router-link> |
-      <a href="http://uoa-karate.club/wiki">Karate Wiki</a> |
+      <router-link to="/goju-ryu">About&nbsp;Goju&nbsp;Ryu&nbsp;Karate</router-link> |
+      <router-link to="/events">Club&nbsp;Events</router-link> |
+      <a href="http://uoa-karate.club/wiki">Karate&nbsp;Wiki</a> |
       <a href="https://www.facebook.com/UoAKarate/">[FB]</a> |
       <a href="https://www.instagram.com/uoa_karate/">[IG]</a>  
     </div>
