@@ -11,6 +11,7 @@
       <li class="">Add icons for FB and IG</li>
       <li class="done">Add a logo</li>
       <li class="done">Add map</li>
+      <li class="">Add contact form</li>
     </ul>  
   </div>
 </template>
