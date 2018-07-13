@@ -7,10 +7,10 @@
       <li class="">Complete home page</li>
       <li class="">Complete events page</li>
       <li class="">Complete karate page</li>
-      <li class="">add page for instructors and exec</li>
+      <li class="">Add page for instructors and exec</li>
       <li class="">Add icons for FB and IG</li>
       <li class="done">Add a logo</li>
-      <li class="">Add map</li>
+      <li class="done">Add map</li>
     </ul>  
   </div>
 </template>

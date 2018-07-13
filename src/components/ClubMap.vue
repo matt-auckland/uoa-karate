@@ -1,8 +1,9 @@
 <template>
   <div class="hello">
-    <h2>Where are we?</h2>
     <div class="map-container">
-      Insert Map Here
+      <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1EuZMidDtn9MdRiKIcS1jJIeze5r_QjdZ"></iframe>
+      <!-- Map can be found here:
+      https://www.google.com/maps/d/u/0/edit?mid=1EuZMidDtn9MdRiKIcS1jJIeze5r_QjdZ&ll=-36.85095245459175%2C174.76866753657373&z=17 -->
     </div>
   </div>
 </template>
@@ -21,8 +22,12 @@ export default {
 
   .map-container {
     width: 100%;
-    height: 300px;
-    background-color: beige;
+    height: 400px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 100%;
   }
 
 </style>
