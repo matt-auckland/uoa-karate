@@ -25,26 +25,32 @@ export default {
   justify-items: center;
   align-items: center;
   margin: 10px;
+  text-align: center;
 }
+
 img {
   width: 80px;
   height: 80px;
   border-radius: 60px;
   background-color: #fff;
+  margin-bottom: 10px;
 }
 
 .name {
   color: var(--tuatara-lighter);
   font-size: 20px;
+  margin-bottom: 5px;
 }
 
 .position {
   color: var(--tuatara-light);
   font-size: 18px;
+  margin-bottom: 5px;
 }
 
 .bio {
   color: var(--tuatara-light);
   font-size: 15px;
+  margin-bottom: 5px;
 }
 </style>
