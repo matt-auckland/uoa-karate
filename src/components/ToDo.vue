@@ -7,11 +7,11 @@
       <li class="">Complete home page 🏠</li>
       <li class="">Complete events page 👯‍♂️</li>
       <li class="">Complete karate page 🥋</li>
-      <li class="">Add page for instructors and exec 🧘</li>
+      <li class="done">Add page for instructors and exec 🧘</li>
       <li class="">Add icons for FB and IG 🤳</li>
       <li class="done">Add a logo 🎨</li>
       <li class="done">Add map 🗺️</li>
-      <li class="">Add contact form 💌</li>
+      <li class="done">Add contact form 💌</li>
       <li class="">Add gallery 🖼️</li>
     </ul>  
   </div>
@@ -26,7 +26,7 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+
 <style scoped>
 .done {
   text-decoration: line-through;

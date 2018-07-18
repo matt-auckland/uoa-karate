@@ -3,8 +3,11 @@
     
     <HelloWorld msg="Practise Daily" class="helloworld"/>
     <Schedule class="schedule" :scheduleData="scheduleData" />
-    <ToDo class="todo" />
     <ClubMap class="clubmap" />
+    <ContactForm class="contact-form" />
+    <Gallery class="gallery" />
+    <ToDo class="todo" />
+
 
   </div>
 </template>
@@ -15,6 +18,8 @@ import HelloWorld from '@/components/HelloWorld.vue'
 import ToDo from '@/components/ToDo.vue'
 import Schedule from '@/components/Schedule.vue'
 import ClubMap from '@/components/ClubMap.vue'
+import Gallery from '@/components/Gallery.vue'
+import ContactForm from '@/components/ContactForm.vue'
 
 export default {
   name: 'home',
@@ -22,8 +27,10 @@ export default {
     HelloWorld,
     ToDo,
     ClubMap,
-    Schedule
-  },
+    Schedule,
+    Gallery,
+    ContactForm,
+},
   data: function()  { 
     return {
       scheduleData: [
@@ -92,5 +99,7 @@ export default {
   .todo {
     /* grid-area: todo; */
   }
+
+
 </style>
 
