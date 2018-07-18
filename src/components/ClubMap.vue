@@ -29,6 +29,7 @@ export default {
   iframe {
     width: calc(100% - 4px);
     height: calc(100% - 4px);
+    border: none;
   }
 
 </style>
