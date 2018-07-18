@@ -17,17 +17,18 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+
 <style scoped>
 
   .map-container {
     width: 100%;
     height: 400px;
+    filter: brightness(85%);
   }
 
   iframe {
-    width: 100%;
-    height: 100%;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
   }
 
 </style>
