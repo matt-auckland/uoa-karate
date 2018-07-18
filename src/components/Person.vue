@@ -38,19 +38,20 @@ img {
 
 .name {
   color: var(--tuatara-lighter);
+  font-weight: bold;
   font-size: 20px;
   margin-bottom: 5px;
 }
 
 .position {
-  color: var(--tuatara-light);
+  color: var(--tuatara-lighter);
   font-size: 18px;
   margin-bottom: 5px;
 }
 
 .bio {
-  color: var(--tuatara-light);
-  font-size: 15px;
+  color: var(--tuatara-lighter);
+  font-size: 16px;
   margin-bottom: 5px;
 }
 </style>

@@ -18,15 +18,6 @@
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: left;
-  /* color: #2c3e50; */
-  margin-top: 60px;
-}
-
 :root {
   --tuatara: #39393A;
   --tuatara-dark: #2E2E2F;
@@ -36,6 +27,16 @@
   --persian-red-dark: #C41B1C;
   --persian-red-darker: #A90708;
   --persian-red-light: #F55354;
+}
+
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  text-align: left;
+  color: var(--tuatara-lighter);
+  margin-top: 60px;
 }
 
 body {
