@@ -5,7 +5,7 @@
       <li class="done">Pick a colour scheme 🌈</li>
       <li class="done">implement colour scheme 🖌</li>
       <li class="">Complete home page 🏠</li>
-      <li class="">Complete events page 👯‍♂️</li>
+      <li class="done">Complete events page 👯‍♂️</li>
       <li class="">Complete karate page 🥋</li>
       <li class="done">Add page for instructors and exec 🧘</li>
       <li class="">Add icons for FB and IG 🤳</li>
