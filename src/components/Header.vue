@@ -38,13 +38,22 @@ li {
   margin: 0 10px;
 }
 
+a {
+  transition: font-size 300ms ease-out;
+}
+
+a:hover {
+  font-size: 18px;
+}
+
 img {
   width: 45px;
   vertical-align: middle;
-  filter: brightness(85%)
+  filter: saturate(30%);
+  transition: all 200ms ease-out;
 }
 
 img:hover {
-  filter: brightness(100%);
+  filter: saturate(100%);
 }
 </style>

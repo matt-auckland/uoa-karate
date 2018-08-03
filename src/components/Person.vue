@@ -73,10 +73,15 @@ img {
   width: 80px;
   height: 80px;
   border-radius: 60px;
-  background-color: #fff;
+  background-color: #ccc;
   margin-bottom: 10px;
+  filter: saturate(0%);
+  transition: all 300ms ease-out;
 }
 
+img:hover {
+  filter: saturate(100%);
+}
 .name {
   color: var(--tuatara-lighter);
   font-weight: bold;
