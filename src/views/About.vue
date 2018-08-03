@@ -6,15 +6,15 @@
     
       <p>The club was founded in 2003 by Ewan Tempero Sensei and Tom Davies Sensei. The two met in 2002 when Ewan Sensei ran some beginners' classes in order to create a club. At the time Ewan Sensei had a Nidan in Goju Ryu and Tom Sensei had Shodan ranks in Zen Do Kai Karate Kickboxing, Shin Do Kempo Karate and a Nidan in Yoshukai Karate.</p>
 
-      <p>The club is affiliated with the International Okinawan Goju Ryu Federation (IOGKF), an international body dedicated to preserving the art of the Okinawan Goju-Ryu Karate, as well as the New Zealand IOGKF affiliate, the IOGKFNZ. This gives club members access to expert instructions both nationally and internationally. </p>
+      <p>The club is affiliated with the <a href="https://iogkf.com" target="_blank" rel="noopener noreferrer">International Okinawan Goju Ryu Federation (IOGKF)</a>, an international body dedicated to preserving the art of the Okinawan Goju-Ryu Karate, as well as the New Zealand IOGKF affiliate, the <a href="https://karate.org.nz" target="_blank" rel="noopener noreferrer">IOGKFNZ</a>. This gives club members access to expert instructions both nationally and internationally. </p>
 
       <h2>Instructors</h2>
       <div class="person-container">
-        <Person v-for="person in instructors" :key="person.name" :person="person"/>
+        <Person v-for="instructor in ClubMembers.filter(person => person.role === 'instructor')" :key="instructor.name" :person="instructor"/>
       </div>
       <h2>Exec Team</h2>
       <div class="person-container">
-        <Person v-for="person in execTeam" :key="person.name" :person="person"/>
+        <Person v-for="execMember in ClubMembers.filter(person => person.role === 'exec')" :key="execMember.name" :person="execMember"/>
       </div>
     </div>
   </div>
@@ -22,6 +22,7 @@
 
 <script>
 import Person from "@/components/Person.vue"
+import ClubMembers from './club-members.json'
 
 export default {
   components: {
@@ -29,96 +30,9 @@ export default {
   },
   data: function() {
     return {
-      instructors: [
-        {
-          name: 'Ewan Tempero',
-          pic: '/logo.png',
-          position: 'Head Instructor',
-          bio: 'Ewan Sensei holds a fourth degree black belt in Goju Ryu.',
-        },
-        {
-          name: 'Tom Davies',
-          pic: '',
-          position: 'Intructor',
-          bio: 'Tom Sensei holds a third degree black belt in Goju Ryu, second degree black belt in Yoshukai Karate and first degree black belts in Zen Do Kai Karate Kickboxing and Shin Do Kempo.',
-        },
-        {
-          name: 'Johannes Reynisson',
-          pic: '',
-          position: 'Instructor',
-          bio: 'Johannes Sensei holds a third degree black belt in Goju Ryu.',
-        },
-        {
-          name: 'Greg Shanahan',
-          pic: '',
-          position: 'Instructor',
-          bio: 'Greg Sensei holds a third degree black belt in Goju Ryu.',
-        },
-      ],
-      execTeam: [
-        {
-          name: 'Mathew Paul',
-          pic: '',
-          position: 'Social Director',
-          bio: 'Holds a 2nd Kyu in Goju Ryu',
-        },
-        {
-          name: 'Wendy Yao',
-          pic: '',
-          position: 'Vice President',
-          bio: 'Holds a _th Kyu in Goju Ryu',
-        },
-        {
-          name: 'Jane Yang',
-          pic: '',
-          position: 'Secretary',
-          bio: 'Holds a _th Kyu in Goju Ryu',
-        },
-        {
-          name: 'Marcus Hong',
-          pic: '',
-          position: 'Health & Safety Officer',
-          bio: 'Holds a 2nd Kyu in Goju Ryu',
-        },
-        {
-          name: 'Rimal Prasad',
-          pic: '',
-          position: 'Financial Officer',
-          bio: 'Holds a _th Kyu in Goju Ryu',
-        },
-        {
-          name: 'Abhishek Makker',
-          pic: '',
-          position: 'Social Director',
-          bio: 'Holds a _th Kyu in Goju Ryu',
-        },
-        {
-          name: 'Zehra Hamid',
-          pic: '',
-          position: 'Financial Officer',
-          bio: 'Holds a _th Kyu in Goju Ryu',
-        },
-        {
-          name: 'Vera Meng',
-          pic: '',
-          position: 'Vice President',
-          bio: 'Holds a _th Kyu in Goju Ryu',
-        },
-        {
-          name: 'Emma Huang O\'Keefe',
-          pic: '',
-          position: 'President',
-          bio: 'Holds a _th Kyu in Goju Ryu',
-        },
-        {
-          name: 'Jessica Cee',
-          pic: '',
-          position: 'Health & Safety Officer',
-          bio: 'Holds a _th Kyu in Goju Ryu',
-        },
-      ],
+      ClubMembers: ClubMembers
     }
-  }
+  },
 }
 </script>
 
