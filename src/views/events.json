@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Karate Kamp 2018",
+    "date": "Sem 2 Mid Semester Break",
+    "location": "Undecided",
+    "description": "The third annual UoA Karate Kamp. Fun, games and Daily Practice.",
+    "offSitelink": "",
+    "signUpURL": "",
+    "extendedDescription": ""
+  },
+  {
+    "name": "Courses & Careers Day 2018",
+    "img": "/logo.png",
+    "date": "August 25",
+    "location": "UoA Campus",
+    "description": "The club will be performing at Courses and Careers Day",
+    "offSitelink": "",
+    "signUpURL": "",
+    "extendedDescription": ""
+  },
+  {
+    "name": "2018 National Gasshuku",
+    "img": "/logo.png",
+    "date": "October 20th-21st",
+    "location": "Wellington",
+    "description": "Ernie Sensei, 8th dan from England, will be coming to Wellington to train.",
+    "offSitelink": "https://karate.org.nz/event/sensei-ernie-molyneux-gasshuku/",
+    "signUpURL": "",
+    "extendedDescription": ""
+  },
+  {
+    "name": "2018 Taira Sensei Seminar",
+    "date": "October 27th-28th",
+    "location": "Auckland",
+    "description": "Taira Masaji Sensei, 9th dan from Okinawa, will be coming to Auckland to host a seminar.",
+    "offSitelink": "",
+    "signUpURL": "",
+    "extendedDescription": ""
+  },
+  {
+    "name": "40th IOGKF Sekai Budosai",
+    "img": "/logo.png",
+    "date": "Late July - Early August 2019",
+    "location": "Naha, Okinawa, Japan",
+    "description": "The 40th IOGKF Sekai Budosai (World Budo Festival) is a week long training camp hosted in Okinawa, taught by some of IOGKF's most skilled and highest ranked members.",
+    "offSitelink": "",
+    "signUpURL": "",
+    "extendedDescription": ""
+  }
+]
