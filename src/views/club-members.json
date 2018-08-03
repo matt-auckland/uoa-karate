@@ -10,7 +10,7 @@
         "grade": -4
       }
     ],
-    "bio": "Ewan Sensei teaches Software Engineering at UoA."
+    "bio": "Ewan Sensei teaches Software Engineering at UoA. He founded the club in 2003."
   },
   {
     "name": "Tom Davies",
@@ -35,7 +35,7 @@
         "grade": -1
       }
     ],
-    "bio": ""
+    "bio": "Tom Sensei helped Ewan Sensei found the club in 2003."
   },
   {
     "name": "Johannes Reynisson",
@@ -149,7 +149,7 @@
     "styles": [
       {
         "name": "Goju Ryu",
-        "grade": 0
+        "grade": 9
       }
     ],
     "bio": ""
