@@ -27,6 +27,7 @@
   --persian-red-dark: #C41B1C;
   --persian-red-darker: #A90708;
   --persian-red-light: #F55354;
+  --base-font-color: #aaa;
 }
 
 #app {
@@ -35,18 +36,20 @@
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
   text-align: left;
-  color: var(--tuatara-lighter);
+  color: var(--base-font-color);
   margin-top: 60px;
 }
 
 body {
   background-color: var(--tuatara-dark);
-  color: var(--tuatara-lighter);
+  color: var(--base-font-color);
 }
+
 ::selection {
   background-color: var(--persian-red);
   color: var(--tuatara-dark);
 }
+
 a  {
   color:var(--persian-red-light);
 }

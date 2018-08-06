@@ -83,20 +83,23 @@ img:hover {
   filter: saturate(100%);
 }
 .name {
-  color: var(--tuatara-lighter);
+  /* color: var(--tuatara-lighter); */
+  /* filter: brightness(110%); */
   font-weight: bold;
   font-size: 20px;
   margin-bottom: 5px;
 }
 
 .position {
-  color: var(--tuatara-lighter);
+  /* color: var(--tuatara-lighter); */
+  /* filter: brightness(110%); */
+  font-weight: bold;
   font-size: 18px;
   margin-bottom: 5px;
 }
 
 .bio {
-  color: var(--tuatara-lighter);
+  /* color: var(--tuatara-lighter); */
   font-size: 16px;
   margin-bottom: 5px;
 }

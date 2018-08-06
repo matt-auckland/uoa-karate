@@ -1,6 +1,6 @@
 <template>
   <div class="about-container">
-      <div class="container">
+    <div class="container">
 
       <h1>About the Club</h1>
     
@@ -46,19 +46,20 @@ export default {
 <style scoped>
 .about-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas:  "container container"
-                        ". .";
+  /* grid-template-columns: 1fr 1fr; */
+  /* grid-template-areas:  "container container" */
+                        /* ". ."; */
   grid-template-columns: repeat(auto-fit, minmax(auto, 600px));
   grid-auto-rows: minmax(200px, auto);
   grid-gap: 30px;
-  grid-auto-flow: dense;
+  /* grid-auto-flow: dense; */
   justify-content: center;
 }
 
 .container {
-  grid-area: container;
-  width: 80vw;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  width: 100%;
 }
 
 .person-container {
