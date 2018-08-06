@@ -16,7 +16,7 @@
     "name": "Tom Davies",
     "role": "instructor",
     "pic": "",
-    "position": "Intructor",
+    "position": "Instructor",
     "styles": [
       {
         "name": "Goju Ryu",
@@ -97,7 +97,7 @@
     "styles": [
       {
         "name": "Goju Ryu",
-        "grade": 8
+        "grade": 7
       }
     ],
     "bio": ""
@@ -113,7 +113,7 @@
         "grade": 2
       }
     ],
-    "bio": "Holds a 2nd Kyu in Goju Ryu"
+    "bio": ""
   },
   {
     "name": "Rimal Prasad",
@@ -123,7 +123,7 @@
     "styles": [
       {
         "name": "Goju Ryu",
-        "grade": 3
+        "grade": 4
       }
     ],
     "bio": ""
@@ -162,7 +162,7 @@
     "styles": [
       {
         "name": "Goju Ryu",
-        "grade": 6
+        "grade": 7
       }
     ],
     "bio": ""
