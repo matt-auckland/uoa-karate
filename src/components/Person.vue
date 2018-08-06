@@ -1,6 +1,6 @@
 <template>
   <div class="person">
-    <img :src="person.pic" />
+    <img :src="person.pic || '/logo.png'" />
     <div class="name">{{person.name}}</div>
     <div class="position">{{person.position}}</div>
     <div class="bio">
