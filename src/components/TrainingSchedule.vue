@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="schedule-data-container">
     <h2>Training Schedule:</h2>
     <table>
       <thead>
@@ -15,10 +15,14 @@
 </template>
 
 <script>
+import scheduleData from './schedule-data.json'
+
 export default {
-  name: 'ToDo',
-  props: {
-    scheduleData: Array
+  name: 'TrainingSchedule',
+  data: function() {
+    return {
+      scheduleData: scheduleData
+  }
   }
 }
 </script>

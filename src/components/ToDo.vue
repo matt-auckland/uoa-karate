@@ -12,6 +12,7 @@
       <li class="done">Add a logo 🎨</li>
       <li class="done">Add map 🗺️</li>
       <li class="done">Add contact form 💌</li>
+      <li class="done">Add fees table 💰</li>
       <li class="">Add gallery 🖼️</li>
     </ul>  
   </div>

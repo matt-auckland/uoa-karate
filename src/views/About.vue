@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div class="about-container">
       <div class="container">
 
       <h1>About the Club</h1>
@@ -17,16 +17,22 @@
         <Person v-for="execMember in ClubMembers.filter(person => person.role === 'exec')" :key="execMember.name" :person="execMember"/>
       </div>
     </div>
+    <TrainingSchedule class="schedule" />
+    <FeesTable class="fees" />
   </div>
 </template>
 
 <script>
-import Person from "@/components/Person.vue"
+import Person from '@/components/Person.vue'
 import ClubMembers from './club-members.json'
+import TrainingSchedule from '@/components/TrainingSchedule.vue'
+import FeesTable from '@/components/FeesTable.vue'
 
 export default {
   components: {
-    Person
+    Person,
+    TrainingSchedule,
+    FeesTable,
   },
   data: function() {
     return {
@@ -38,10 +44,16 @@ export default {
 
 
 <style scoped>
-.about {
+.about-container {
   display: grid;
-  /* grid-template-columns: 1fr 2fr 1fr; */
-  /* grid-template-areas: ". container ." */
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:  "container container"
+                        ". .";
+  grid-template-columns: repeat(auto-fit, minmax(auto, 600px));
+  grid-auto-rows: minmax(200px, auto);
+  grid-gap: 30px;
+  grid-auto-flow: dense;
+  justify-content: center;
 }
 
 .container {
@@ -52,6 +64,5 @@ export default {
 .person-container {
   display: grid;
   grid-template-columns: repeat( auto-fit, minmax(220px, 1fr) );
-  /* grid-template-rows:  */
 }
 </style>
