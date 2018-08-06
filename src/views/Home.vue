@@ -1,19 +1,19 @@
 <template>
   <div class="container">
     
-    <HelloWorld msg="Practise Daily" class="helloworld"/>
+    <HomeIntro msg="Practise Daily" class="home-intro"/>
     <TrainingSchedule class="schedule" />
     <FeesTable class="fees" />
     <ClubMap class="clubmap" />
     <ContactForm class="contact-form" />
     <Gallery class="gallery" />
     <ToDo class="todo" />
-    
+
   </div>
 </template>
 
 <script>
-import HelloWorld from '@/components/HelloWorld.vue'
+import HomeIntro from '@/components/HomeIntro.vue'
 import ToDo from '@/components/ToDo.vue'
 import TrainingSchedule from '@/components/TrainingSchedule.vue'
 import FeesTable from '@/components/FeesTable.vue'
@@ -24,7 +24,7 @@ import ContactForm from '@/components/ContactForm.vue'
 export default {
   name: 'home',
   components: {
-    HelloWorld,
+    HomeIntro,
     ToDo,
     ClubMap,
     TrainingSchedule,
@@ -50,7 +50,7 @@ export default {
     justify-content: center;
   }
 
-  .helloworld {
+  .home-intro {
     /* grid-area: helloworld; */
     /* grid-area: 1/1/3/2; */
   }

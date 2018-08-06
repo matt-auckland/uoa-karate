@@ -47,12 +47,15 @@ a:hover {
 }
 
 img {
-  width: 45px;
+  width: 42px;
   vertical-align: middle;
   filter: saturate(30%);
   transition: all 200ms ease-out;
 }
-
+img:hover {
+  width: 46px;
+  filter: saturate(100%);
+}
 .social {
   width: 32px;
 }
@@ -61,7 +64,4 @@ img {
   width: 36px;
 }
 
-img:hover {
-  filter: saturate(100%);
-}
 </style>

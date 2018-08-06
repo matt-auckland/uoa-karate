@@ -6,9 +6,9 @@
       <li class="done">implement colour scheme 🖌</li>
       <li class="">Complete home page 🏠</li>
       <li class="done">Complete events page 👯‍♂️</li>
-      <li class="">Complete karate page 🥋</li>
+      <li class="done">Complete karate page 🥋</li>
       <li class="done">Add page for instructors and exec 🧘</li>
-      <li class="">Add icons for FB and IG 🤳</li>
+      <li class="done">Add icons for FB and IG 🤳</li>
       <li class="done">Add a logo 🎨</li>
       <li class="done">Add map 🗺️</li>
       <li class="done">Add contact form 💌</li>

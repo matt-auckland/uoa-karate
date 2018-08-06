@@ -45,7 +45,7 @@ input, textarea {
   outline: none;
   border: 2px solid var(--tuatara-light);
   background: none;
-  color: var(--tuatara-lighter);
+  color: var(--base-font-color);
   font-size: 16px;
   font-family: inherit;
 }
@@ -56,7 +56,7 @@ textarea {
 }
 
 ::placeholder {
-    color: var(--tuatara-lighter);
+    color: var(--base-font-color);
     opacity: initial;
 }
 
@@ -81,10 +81,12 @@ button {
   color: var(--persian-red);
   font-size: 14px;
   background: none;
+  transition: all 500ms ease-out;
 }
 
 button:hover {
-  border: 2px solid var(--persian-red);
+  border: 1px solid var(--persian-red);
   color: var(--persian-red-light);
+  font-size: 15px;
 }
 </style>
