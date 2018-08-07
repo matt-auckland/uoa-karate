@@ -6,8 +6,8 @@
     <FeesTable class="fees" />
     <ClubMap class="clubmap" />
     <ContactForm class="contact-form" />
-    <Gallery class="gallery" />
-    <ToDo class="todo" />
+    <!-- <Gallery class="gallery" /> -->
+    <!-- <ToDo class="todo" /> -->
 
   </div>
 </template>

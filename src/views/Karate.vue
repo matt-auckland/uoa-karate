@@ -15,18 +15,12 @@
           It also features kata (fixed movement patterns with self defence applications), which tend to vary depending on which style of karate you are learning. 
         </p>
     </div>
-    <!-- <div>
-        <h1>Benefits of Karate</h1>
+    <div>
+        <h1>More Info</h1>
         <p>
-    a
+          For more information about Goju-Ryu and Karate in general (including kata, vocabulary, grading requirements, and more), see the <a href="https://wiki.uoa-karate.club">Club's Karate Wiki</a>.
         </p>
     </div>
-    <div>
-      <h1>Karate as a sport</h1>
-      <p>
-      d
-      </p> -->
-    <!-- </div> -->
   </div>
 </template>
 
