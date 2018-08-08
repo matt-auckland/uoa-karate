@@ -44,9 +44,9 @@ export default {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(auto, 600px));
     grid-auto-rows: minmax(200px, auto);
-    grid-gap: 30px;
+    grid-column-gap: 30px;
+    grid-row-gap: 40px;
     grid-auto-flow: dense;
-    /* align-items: center; */
     justify-content: center;
   }
 
@@ -57,6 +57,7 @@ export default {
 
   .clubmap {
     /* grid-area: map; */
+    margin: 30px 0 10px 0;
   }
 
   .schedule {

@@ -22,7 +22,6 @@ export default {
   },
   data: function () { 
     return {
-      // event: {}
     }
   },
   computed: {
@@ -65,6 +64,18 @@ export default {
   grid-area: 2/2/6/3;
   max-height: 100%;
   max-width: 150px;
+}
+
+@media (max-width: 500px) {
+  .event-img {
+    max-width: calc(150px * 0.875);
+  }
+}
+
+@media (max-width: 350px) {
+  .event-img {
+    max-width: calc(150px * 0.75);
+  }
 }
 
 .event-text, .page-desc {

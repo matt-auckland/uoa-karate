@@ -40,6 +40,18 @@
   margin-top: 60px;
 }
 
+@media (max-width: 500px) {
+  #app, body {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 350px) {
+  #app, body {
+    font-size: 12px;
+  }
+}
+
 body {
   background-color: var(--tuatara-dark);
   color: var(--base-font-color);

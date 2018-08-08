@@ -6,7 +6,7 @@
         <tr>
           <th >Name</th>
           <th> Student Fee</th>
-          <th> Non&nbsp;Student Fee</th>
+          <th> Non Student Fee</th>
           <th> Notes</th>
         </tr>
       </thead>

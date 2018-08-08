@@ -65,6 +65,19 @@ export default {
   max-width: 150px;
 }
 
+@media (max-width: 500px) {
+  .event-img {
+    max-width: calc(150px * 0.875);
+  }
+}
+
+@media (max-width: 350px) {
+  .event-img {
+    max-width: calc(150px * 0.75);
+  }
+}
+
+
 .event-text, .page-desc {
   padding-left: 20px;
 }
