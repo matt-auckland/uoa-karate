@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import eventList from './events.json'
+import eventList from '../assets/events.json'
 
 export default {
   name: 'SingleEventView',

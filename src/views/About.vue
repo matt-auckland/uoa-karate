@@ -26,7 +26,7 @@
 
 <script>
 import Person from '@/components/Person.vue'
-import ClubMembers from './club-members.json'
+import ClubMembers from '../assets/club-members.json'
 import TrainingSchedule from '@/components/TrainingSchedule.vue'
 import FeesTable from '@/components/FeesTable.vue'
 

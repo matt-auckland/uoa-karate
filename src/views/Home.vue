@@ -6,6 +6,8 @@
     <FeesTable class="fees" />
     <ClubMap class="clubmap" />
     <ContactForm class="contact-form" />
+    <UpcomingEvents class="upcoming-events" />
+    
     <!-- <Gallery class="gallery" /> -->
     <!-- <ToDo class="todo" /> -->
 
@@ -20,6 +22,7 @@ import FeesTable from '@/components/FeesTable.vue'
 import ClubMap from '@/components/ClubMap.vue'
 import Gallery from '@/components/Gallery.vue'
 import ContactForm from '@/components/ContactForm.vue'
+import UpcomingEvents from '@/components/UpcomingEvents.vue'
 
 export default {
   name: 'home',
@@ -31,6 +34,7 @@ export default {
     FeesTable,
     Gallery,
     ContactForm,
+    UpcomingEvents
 },
   data: function()  { 
     return {

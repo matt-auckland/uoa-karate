@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import scheduleData from './schedule-data.json'
+import scheduleData from '../assets/schedule-data.json'
 
 export default {
   name: 'TrainingSchedule',
