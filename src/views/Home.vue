@@ -2,11 +2,11 @@
   <div class="container">
     
     <HomeIntro msg="Practise Daily" class="home-intro"/>
+    <UpcomingEvents class="upcoming-events" />
     <TrainingSchedule class="schedule" />
     <FeesTable class="fees" />
     <ClubMap class="clubmap" />
     <ContactForm class="contact-form" />
-    <UpcomingEvents class="upcoming-events" />
     
     <!-- <Gallery class="gallery" /> -->
     <!-- <ToDo class="todo" /> -->
@@ -46,7 +46,7 @@ export default {
 <style scoped>
   .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(auto, 600px));
+    grid-template-columns: repeat(auto-fit, minmax(auto, 700px));
     grid-auto-rows: minmax(200px, auto);
     grid-column-gap: 30px;
     grid-row-gap: 40px;
