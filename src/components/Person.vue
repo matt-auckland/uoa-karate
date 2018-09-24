@@ -73,7 +73,6 @@ img {
   width: 80px;
   height: 80px;
   border-radius: 60px;
-  background-color: #ccc;
   margin-bottom: 10px;
   filter: saturate(0%);
   transition: all 300ms ease-out;
