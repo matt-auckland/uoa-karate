@@ -1,21 +1,23 @@
 
 <template>
-  <div class="events-container">
+  <div class="">
     <h2 class="component-title">Upcoming Events:</h2>
-    <div v-for="event in upcomingEventList" :key="event.name" class="event">
-      <div class="event-text">
-        <b>{{event.name}}</b>.
-      </div>
-      <div class="event-text">
-          {{event.date}}
-      </div>
-      <div class="event-text">
-        Location: {{event.location}}.
-      </div> 
-      <div class="event-text">
-        For more information follow 
-        <router-link v-if="!event.offSitelink" :to="'/events/' + event.name.replace(/\ /gi, '-')">this link</router-link>
-        <a v-if="event.offSitelink" :href="event.offSitelink" target="_blank" rel="noopener noreferrer">this link</a>
+    <div class="events-container">
+      <div v-for="event in upcomingEventList" :key="event.name" class="event">
+        <div class="event-text">
+          <b>{{event.name}}</b>.
+        </div>
+        <div class="event-text">
+            {{event.date}}
+        </div>
+        <div class="event-text">
+          Location: {{event.location}}.
+        </div> 
+        <div class="event-text">
+          For more information follow 
+          <router-link v-if="!event.offSitelink" :to="'/events/' + event.name.replace(/\ /gi, '-')">this link</router-link>
+          <a v-if="event.offSitelink" :href="event.offSitelink" target="_blank" rel="noopener noreferrer">this link</a>
+        </div>
       </div>
     </div>
   </div>
@@ -39,6 +41,8 @@ export default {
         if (index < 4) {
           return true
         }
+      }).sort((a,b) => {
+        return new Date(a.startDate) - new Date(b.startDate)
       })
     }
   },

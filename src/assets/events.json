@@ -48,11 +48,23 @@
   {
     "name": "40th IOGKF Sekai Budosai",
     "img": "/logo.png",
-    "date": "Late July - Early August 2019",
-    "startDate": "2019-7",
-    "endDate": "2019-8",
+    "date": "July 29th – August 4th 2019",
+    "startDate": "2019-7-29",
+    "endDate": "2019-8-4",
     "location": "Naha, Okinawa, Japan",
     "description": "The 40th IOGKF Sekai Budosai (World Budo Festival) is a week long training camp hosted in Okinawa, taught by some of IOGKF's most skilled and highest ranked members.",
+    "offSitelink": "",
+    "signUpURL": "",
+    "extendedDescription": ""
+  },
+  {
+    "name": "Semester 2 Grading",
+    "img": "/logo.png",
+    "date": "October 14th",
+    "startDate": "2018-10-14",
+    "endDate": "",
+    "location": "University of Auckland Recreation Center",
+    "description": "Our second grading of the year is scheduled for the 14th of October.",
     "offSitelink": "",
     "signUpURL": "",
     "extendedDescription": ""

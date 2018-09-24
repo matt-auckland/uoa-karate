@@ -93,24 +93,11 @@
     "name": "Jane Yang",
     "role": "exec",
     "pic": "",
-    "position": "Secretary",
+    "position": "President",
     "styles": [
       {
         "name": "Goju Ryu",
         "grade": 7
-      }
-    ],
-    "bio": ""
-  },
-  {
-    "name": "Marcus Hong",
-    "role": "exec",
-    "pic": "",
-    "position": "Health & Safety Officer",
-    "styles": [
-      {
-        "name": "Goju Ryu",
-        "grade": 2
       }
     ],
     "bio": ""
@@ -129,36 +116,49 @@
     "bio": ""
   },
   {
-    "name": "Abhishek Makker",
+    "name": "Jessica Chen",
     "role": "exec",
     "pic": "",
-    "position": "Social Director",
+    "position": "Health & Safety Officer",
     "styles": [
       {
         "name": "Goju Ryu",
-        "grade": 9
+        "grade": 8
       }
     ],
     "bio": ""
   },
   {
-    "name": "Zehra Hamid",
+    "name": "Francois-Rene Du Toit",
     "role": "exec",
     "pic": "",
-    "position": "Financial Officer",
+    "position": "Health & Safety Officer",
     "styles": [
       {
         "name": "Goju Ryu",
-        "grade": 9
+        "grade": -2
       }
     ],
     "bio": ""
   },
   {
-    "name": "Vera Meng",
+    "name": "Daniel Morgan",
     "role": "exec",
     "pic": "",
-    "position": "Vice President",
+    "position": "",
+    "styles": [
+      {
+        "name": "Goju Ryu",
+        "grade": 8
+      }
+    ],
+    "bio": ""
+  },
+  {
+    "name": "Ann Thong Nee",
+    "role": "exec",
+    "pic": "Finiancial Officer",
+    "position": "",
     "styles": [
       {
         "name": "Goju Ryu",
@@ -168,27 +168,27 @@
     "bio": ""
   },
   {
-    "name": "Emma Huang O\"Keefe",
+    "name": "Cecillia Wang",
     "role": "exec",
     "pic": "",
-    "position": "President",
+    "position": "Vice President",
     "styles": [
       {
         "name": "Goju Ryu",
-        "grade": 6
+        "grade": 9
       }
     ],
     "bio": ""
   },
   {
-    "name": "Jessica Chen",
+    "name": "Jane Waterhouse",
     "role": "exec",
     "pic": "",
-    "position": "Health & Safety Officer",
+    "position": "Social Director",
     "styles": [
       {
         "name": "Goju Ryu",
-        "grade": 8
+        "grade": 9
       }
     ],
     "bio": ""
