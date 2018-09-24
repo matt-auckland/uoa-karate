@@ -7,7 +7,7 @@
     <FeesTable class="fees" />
     <ClubMap class="clubmap" />
     <ContactForm class="contact-form" />
-    
+    <QuoteDisplay class="quote-display"/>
     <!-- <Gallery class="gallery" /> -->
     <!-- <ToDo class="todo" /> -->
 
@@ -23,6 +23,7 @@ import ClubMap from '@/components/ClubMap.vue'
 import Gallery from '@/components/Gallery.vue'
 import ContactForm from '@/components/ContactForm.vue'
 import UpcomingEvents from '@/components/UpcomingEvents.vue'
+import QuoteDisplay from '@/components/QuoteDisplay.vue'
 
 export default {
   name: 'home',
@@ -34,7 +35,9 @@ export default {
     FeesTable,
     Gallery,
     ContactForm,
-    UpcomingEvents
+    UpcomingEvents,
+    QuoteDisplay,
+
 },
   data: function()  { 
     return {
@@ -70,6 +73,10 @@ export default {
 
   .todo {
     /* grid-area: todo; */
+  }
+
+  .quote-display {
+    grid-area: auto / 1/ auto/ -1;
   }
 
 
