@@ -1,7 +1,8 @@
 <template>
   <div class="header">                                                
+    <router-link to="/"><img src="/logo.png" alt="IOGKF Logo"></router-link> 
     <div id="nav">
-      <router-link to="/"><img src="/logo.png" alt="IOGKF Logo"></router-link> |
+      <router-link to="/">Home</router-link> |
       <router-link to="/about">About the club</router-link> |
       <router-link to="/goju-ryu">About&nbsp;Goju&nbsp;Ryu&nbsp;Karate</router-link> |
       <router-link to="/events">Club&nbsp;Events</router-link> |
@@ -47,13 +48,15 @@ a:hover {
 }
 
 img {
-  width: 42px;
+  width: 150px;
+  margin: 20px 0;
   vertical-align: middle;
-  filter: saturate(30%);
+  filter: saturate(70%);
   transition: all 200ms ease-out;
 }
 img:hover {
-  width: 46px;
+  width: 160px;
+  margin: 15px 0;
   filter: saturate(100%);
 }
 
