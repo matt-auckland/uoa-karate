@@ -39,6 +39,12 @@
   color: var(--base-font-color);
 }
 
+@media (max-width: 699px) {
+  h1,h2,h3,h4, p {
+    text-align: center;
+  }
+}
+
 @media (max-width: 500px) {
   #app, body {
     font-size: 14px;

@@ -56,8 +56,8 @@ p {
 }
 
 hr {
+  border: none;
   margin: 8px 30%;
-  color: none;
   border-bottom: 2px solid var(--persian-red-light);
 }
 
@@ -77,7 +77,7 @@ hr {
   margin: 20px;
   border: 2px solid var(--persian-red-darker);
   flex: 122px 1 1;  
-  height: 130px;
+  /* height: 130px; */
   max-width: 180px;
   padding: 10px 5px;
   text-align: center;
@@ -94,9 +94,10 @@ hr {
   transform: rotate(0deg);
 } 
 
-@media (max-width: 709px) {
+@media (max-width: 699px) {
   .day, .day:nth-child(odd) {
     transform: rotate(0deg);
+    transition: none;
     max-width: unset;
   }
 }
