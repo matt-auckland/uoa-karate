@@ -37,7 +37,6 @@
   font-size: 16px;
   text-align: left;
   color: var(--base-font-color);
-  margin-top: 60px;
 }
 
 @media (max-width: 500px) {
