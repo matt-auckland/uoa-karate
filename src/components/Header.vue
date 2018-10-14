@@ -65,18 +65,12 @@ img:hover {
 }
 
 @media (max-width: 500px) {
-  img {
-    width: calc(42px * 0.875)
-  }
   .social {
     width: calc(32px * 0.875)
   }
 }
 
 @media (max-width: 350px) {
-  img {
-    width: calc(42px * 0.75)
-  }
   .social {
     width: calc(32px * 0.75)
   }

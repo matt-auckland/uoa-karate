@@ -68,5 +68,64 @@
     "offSitelink": "",
     "signUpURL": "",
     "extendedDescription": ""
+  },
+  {
+    "name": "End of Year Beach Training",
+    "img": "/logo.png",
+    "date": "December",
+    "startDate": "2018-12",
+    "endDate": "",
+    "location": "Mission Bay",
+    "description": "Training at the beach to wrap things up for the year. Lunch afterwards.",
+    "offSitelink": "",
+    "signUpURL": "",
+    "extendedDescription": "We'll be having a beach training at Mission Bay after our final Rec Center training. We'll be having a enf of year lunch afterwards. Remember to bring sunblock and a towel! Sunglasses/sunhats are optional."
+  },
+  {
+    "name": "Taira Seminar Pre-Training",
+    "img": "",
+    "date": "October 16th",
+    "startDate": "2018-10-16",
+    "endDate": "",
+    "location": "Pakuranga Goju Ryu, Sunnyhill Primary School",
+    "description": "Free pre-training before the seminar. Runs from 7pm - 8pm, however feel free to show up from 6pm to do your own thing before the adults training starts.",
+    "offSitelink": "",
+    "signUpURL": "",
+    "extendedDescription": ""
+  },
+  {
+    "name": "Taira Seminar Pre-Training",
+    "img": "",
+    "date": "October 25th",
+    "startDate": "2018-10-25",
+    "endDate": "",
+    "location": "Pakuranga Goju Ryu, Sunnyhill Primary School",
+    "description": "Free pre-training before the seminar. Runs from 7pm - 8pm, however feel free to show up from 6pm to do your own thing before the adults training starts.",
+    "offSitelink": "",
+    "signUpURL": "",
+    "extendedDescription": ""
+  },{
+    "name": "Taira Seminar Pre-Training",
+    "img": "",
+    "date": "October 18th",
+    "startDate": "2018-10-18",
+    "endDate": "",
+    "location": "Pakuranga Goju Ryu, Sunnyhill Primary School",
+    "description": "Free pre-training before the seminar. Runs from 7pm - 8pm, however feel free to show up from 6pm to do your own thing before the adults training starts.",
+    "offSitelink": "",
+    "signUpURL": "",
+    "extendedDescription": ""
+  },
+  {
+    "name": "Taira Seminar Pre-Training",
+    "img": "",
+    "date": "October 23th",
+    "startDate": "2018-10-23",
+    "endDate": "",
+    "location": "Pakuranga Goju Ryu, Sunnyhill Primary School",
+    "description": "Free pre-training before the seminar. Runs from 7pm - 8pm, however feel free to show up from 6pm to do your own thing before the adults training starts.",
+    "offSitelink": "",
+    "signUpURL": "",
+    "extendedDescription": ""
   }
 ]
