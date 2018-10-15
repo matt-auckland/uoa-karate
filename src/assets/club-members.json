@@ -71,7 +71,7 @@
     "styles": [
       {
         "name": "Goju Ryu",
-        "grade": 2
+        "grade": 1
       }
     ],
     "bio": ""
@@ -84,7 +84,7 @@
     "styles": [
       {
         "name": "Goju Ryu",
-        "grade": 7
+        "grade": 6
       }
     ],
     "bio": ""
@@ -97,7 +97,7 @@
     "styles": [
       {
         "name": "Goju Ryu",
-        "grade": 7
+        "grade": 6
       }
     ],
     "bio": ""
@@ -123,7 +123,7 @@
     "styles": [
       {
         "name": "Goju Ryu",
-        "grade": 8
+        "grade": 7
       }
     ],
     "bio": ""
@@ -145,11 +145,11 @@
     "name": "Daniel Morgan",
     "role": "exec",
     "pic": "",
-    "position": "",
+    "position": "Secretary",
     "styles": [
       {
         "name": "Goju Ryu",
-        "grade": 8
+        "grade": 7
       }
     ],
     "bio": ""
@@ -175,7 +175,7 @@
     "styles": [
       {
         "name": "Goju Ryu",
-        "grade": 9
+        "grade": 8
       }
     ],
     "bio": ""
@@ -188,7 +188,7 @@
     "styles": [
       {
         "name": "Goju Ryu",
-        "grade": 9
+        "grade": 8
       }
     ],
     "bio": ""
