@@ -4,37 +4,36 @@
     <table>
       <thead>
         <tr>
-          <th >Name</th>
-          <th> Student Fee</th>
-          <th> Non Student Fee</th>
-          <th> Notes</th>
+          <th class="text">Fee Type</th>
+          <th class="number">Student&nbsp;Cost</th>
+          <th class="number">Non&nbsp;Student&nbsp;Cost</th>
+          <th class="text">Notes</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td> Yearly Membership fee</td>
-          <td> $5</td>
-          <td> $5</td>
-          <td> This is paid once per year in addition to the training fees</td>
+          <td class="text">Yearly Membership</td>
+          <td class="number">$5</td>
+          <td class="number">$5</td>
+          <td class="text">Paid once per year in addition to the training fees</td>
         </tr>
         <tr>
-          <td> First Semester's Training Fee</td>
-          <td> $35</td>
-          <td> N/A</td>
-          <td> This only applies for students when they join the club for the first time.</td>
+          <td class="text">First Semester's Training</td>
+          <td class="number">$35</td>
+          <td class="number">N/A</td>
+          <td class="text">Only applies to students joining the club for the first time.</td>
         </tr>
         <tr>
-          <td> Standard Semester's Training Fee</td>
-          <td> $70 Per Semester</td>
-          <td> $36 Per Month</td>
-          <td>
-          </td>
+          <td class="text">Standard Semester's Training</td>
+          <td class="number">$70</td>
+          <td class="number">$36 Per Month</td>
+          <td class="text">Students pay per semester, non&nbsp;students pay per month.</td>
         </tr>
         <tr>
-          <td> Grading Fee</td>
-          <td> $35</td>
-          <td> $35</td>
-          <td> Gradings generally occur once a semester</td>
+          <td class="text">Grading</td>
+          <td class="number">$35</td>
+          <td class="number">$35</td>
+          <td class="text">Gradings occur near the end of each semester</td>
         </tr>
       </tbody>
     </table>  
@@ -63,6 +62,14 @@ table, td, th{
 
 td, th {
   padding: 3px 5px;
+}
+
+.text {
+  text-align: left;
+}
+
+.number {
+  text-align: right;
 }
 
 </style>

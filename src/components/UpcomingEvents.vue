@@ -4,20 +4,25 @@
     <h2 class="component-title">Upcoming Events:</h2>
     <div class="events-container">
       <div v-for="event in upcomingEventList" :key="event.name" class="event">
-        <div class="event-text title">
-          <b>{{event.name}}</b>.
+        <div class="event-inner">
+          <div class="event-text title">
+            <b>{{event.name}}</b>.
+          </div>
+          <div class="event-text date">
+              {{event.date}}
+          </div>
+          <div class="event-text location">
+            Location: {{event.location}}.
+          </div> 
+          <div class="event-text link">
+            For more information follow 
+            <router-link v-if="!event.offSitelink" :to="'/events/' + event.name.replace(/\ /gi, '-')">this link</router-link>
+            <a v-if="event.offSitelink" :href="event.offSitelink" target="_blank" rel="noopener noreferrer">this link</a>
+          </div>
         </div>
-        <div class="event-text date">
-            {{event.date}}
-        </div>
-        <div class="event-text location">
-          Location: {{event.location}}.
-        </div> 
-        <div class="event-text link">
-          For more information follow 
-          <router-link v-if="!event.offSitelink" :to="'/events/' + event.name.replace(/\ /gi, '-')">this link</router-link>
-          <a v-if="event.offSitelink" :href="event.offSitelink" target="_blank" rel="noopener noreferrer">this link</a>
-        </div>
+      </div>
+      <div class="see-more">
+        <router-link to="/events">Click here to see more events</router-link>
       </div>
     </div>
   </div>
@@ -40,7 +45,7 @@ export default {
       }).sort((a,b) => {
         return new Date(a.startDate) - new Date(b.startDate)
       }).filter((event, index) => {
-        if (index < 4) {
+        if (index < 6) {
           return true
         }
       })
@@ -68,6 +73,20 @@ export default {
   grid-area: 1/1/1/-1;
 }
 
+.see-more {
+  grid-column: 2/2;
+}
+.event {
+  width: 100%;
+  border-radius: 15px;
+  border: 2px solid var(--persian-red-darker);
+  background-color: var(--tuatara);
+}
+
+.event-inner {
+  padding: 15px 10px;
+}
+
 .event-text {
 
 }
@@ -92,11 +111,6 @@ export default {
 
 }
 
-.event {
-  padding: 15px 10px;
-  border-radius: 15px;
-  border: 2px solid var(--persian-red-darker);
-}
 .page-desc {
 
 }
