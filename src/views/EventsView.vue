@@ -25,7 +25,13 @@ export default {
   },
   data: function() {
     return {
-      eventList
+      eventList:  eventList.filter(event => {
+        if (new Date(event.startDate) > new Date()){
+          return true
+        }
+      }).sort((a,b) => {
+        return new Date(a.startDate) - new Date(b.startDate)
+      })
     }
   }
 }
