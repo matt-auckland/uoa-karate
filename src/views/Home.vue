@@ -50,7 +50,11 @@ export default {
   .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(auto, 700px));
-    grid-auto-rows: minmax(200px, auto);
+    grid-auto-rows: minmax(100px, auto);
+  
+    /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+    /* grid-auto-rows: minmax(100px, 200px); */
+
     grid-column-gap: 30px;
     grid-row-gap: 40px;
     grid-auto-flow: dense;
@@ -58,23 +62,34 @@ export default {
   }
 
   .home-intro {
-    /* grid-area: helloworld; */
-    /* grid-area: 1/1/3/2; */
+    /* grid-column-end: span 6; */
+    /* grid-row-end: span 1; */
   }
 
-  .clubmap {
-    /* grid-area: map; */
-    margin: 30px 0 10px 0;
+  .upcoming-events {
+    /* grid-column-end: span 6; */
+    grid-row-end: span 3;
   }
 
   .schedule {
-    /* grid-area: schedule; */
+    /* grid-column-end: span 6; */
+    /* grid-row-end: span 1; */
   }
 
-  .todo {
-    /* grid-area: todo; */
+  .fees {
+    /* grid-column-end: span 6; */
+    grid-row-end: span 2;
+  }
+  .clubmap {
+    /* grid-column-end: span 6; */
+    /* grid-row-end: span 3; */
+    /* margin: 30px 0 10px 0; */
   }
 
+  .contact-form {
+    /* grid-column-end: span 6; */
+    /* grid-row-end: span 3; */
+  }
   .quote-display {
     grid-area: auto / 1/ auto/ -1;
   }
