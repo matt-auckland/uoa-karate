@@ -45,7 +45,7 @@ export default {
       }).sort((a,b) => {
         return new Date(a.startDate) - new Date(b.startDate)
       }).filter((event, index) => {
-        if (index < 6) {
+        if (index < 4) {
           return true
         }
       })
