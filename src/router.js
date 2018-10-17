@@ -4,6 +4,7 @@ import Home from './views/Home.vue'
 import About from './views/About.vue'
 import Karate from './views/Karate.vue'
 import EventsView from './views/EventsView.vue'
+import TestView from './views/TestView.vue'
 import SingleEventView from './views/SingleEventView.vue'
 
 
@@ -35,6 +36,11 @@ export default new Router({
       path: '/events/:name',
       name: 'singleEvent',
       component: SingleEventView
+    },
+    {
+      path: '/tester',
+      name: 'tester',
+      component: TestView
     },
   ]
 })
