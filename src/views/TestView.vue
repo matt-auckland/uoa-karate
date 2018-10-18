@@ -35,6 +35,19 @@
         <div v-if="showAnswer" class="question-answer">Answer: {{ currentQuestion.answer }}</div>
       </div>
     </div>
+    <div>
+      <h3>To do:</h3>
+      <ul>
+        <li>Make the page pretty</li>
+        <li>Add actual questions</li>
+        <li>Randomise question order</li>
+        <li>Allow user to mark their answer as correct or incorrect</li>
+        <li>Keep track of the user's score</li>
+        <li>Link to relevent Karate Wiki pages?</li>
+        <li>Add a way to report incorrect questions/answers</li>
+        <li>Add a way to suggest questions</li>
+      </ul>
+    </div>
   </div>
 </template>
 
