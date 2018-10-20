@@ -2,21 +2,31 @@
   {
     "nine": [
       {
-        "question": "test question 9th kyu",
-        "answer": "test answer",
-        "image": "/logo.png"
+        "question": "Who is this man?",
+        "answer": "Chogun Miyagi, the founder of Goju-Ryu Karate",
+        "image": "/chogun-miyagi.png"
       },
       {
-        "question": "test question 9th kyu NUMBAH TWO",
-        "answer": "test answer",
+        "question": "What is the name of our first kata?",
+        "answer": "Gekisai Dai Ichi",
+        "image": ""
+      },
+      {
+        "question": "In Gekisai Dai Ichi, after kicking hidari gedan maegeri, what are the next four techniques?",
+        "answer": "Chudan Hiji Ate, Jodan Uraken, Gedan Barai, Gedan Gyakuzuki",
+        "image": ""
+      },
+      {
+        "question": "In Gekisai Dai Ichi, after the first gedan barai, where should you be looking?",
+        "answer": "Over your left shoulder, straight ahead.",
         "image": ""
       }
     ],
     "eight": [
       {
-        "question": "test question 8th kyu",
-        "answer": "test answer",
-        "image": "test image source"
+        "question": "In Gekisai Dai Ni, after performing the second haito uchi, what stance do you move into?",
+        "answer": "Neko ashi dachi",
+        "image": ""
       }
     ],
     "seven": [],
