@@ -6,51 +6,51 @@
       <fieldset class="category-container">
           <legend>Categories</legend>
             <div class="checkbox-div">
-              <input type="checkbox" id="nine" value="nine" v-model="questionCategories" v-on:click="filterQuestions(questionCategories)" checked>
+              <input type="checkbox" id="nine" value="nine" v-model="questionCategories" v-on:click="filterQuestions()" checked>
               <label for="nine">9th  Kyu</label>
             </div>
             <div class="checkbox-div">
-              <input type="checkbox" id="eight" value="eight" v-model="questionCategories" v-on:click="filterQuestions(questionCategories)">
+              <input type="checkbox" id="eight" value="eight" v-model="questionCategories" v-on:click="filterQuestions()">
               <label for="eight">8th Kyu</label>
             </div>
             <div class="checkbox-div">
-              <input type="checkbox" id="seven" value="seven" v-model="questionCategories" v-on:click="filterQuestions(questionCategories)">
+              <input type="checkbox" id="seven" value="seven" v-model="questionCategories" v-on:click="filterQuestions()">
               <label for="seven">7th Kyu</label>
             </div>
             <div class="checkbox-div">
-              <input type="checkbox" id="six" value="six" v-model="questionCategories" v-on:click="filterQuestions(questionCategories)">
+              <input type="checkbox" id="six" value="six" v-model="questionCategories" v-on:click="filterQuestions()">
               <label for="six">6th Kyu</label>
             </div>
             <div class="checkbox-div">
-              <input type="checkbox" id="five" value="five" v-model="questionCategories" v-on:click="filterQuestions(questionCategories)">
+              <input type="checkbox" id="five" value="five" v-model="questionCategories" v-on:click="filterQuestions()">
               <label for="five">5th Kyu</label>
             </div>
             <div class="checkbox-div">
-              <input type="checkbox" id="four" value="four" v-model="questionCategories" v-on:click="filterQuestions(questionCategories)">
+              <input type="checkbox" id="four" value="four" v-model="questionCategories" v-on:click="filterQuestions()">
               <label for="four">4th Kyu</label>
             </div>
             <div class="checkbox-div">
-              <input type="checkbox" id="three" value="three" v-model="questionCategories" v-on:click="filterQuestions(questionCategories)">
+              <input type="checkbox" id="three" value="three" v-model="questionCategories" v-on:click="filterQuestions()">
               <label for="three">3rd Kyu</label>
             </div>
             <div class="checkbox-div">
-              <input type="checkbox" id="two" value="two" v-model="questionCategories" v-on:click="filterQuestions(questionCategories)">
+              <input type="checkbox" id="two" value="two" v-model="questionCategories" v-on:click="filterQuestions()">
               <label for="two">2nd Kyu</label>
             </div>
             <div class="checkbox-div">
-              <input type="checkbox" id="one" value="one" v-model="questionCategories" v-on:click="filterQuestions(questionCategories)">
+              <input type="checkbox" id="one" value="one" v-model="questionCategories" v-on:click="filterQuestions()">
               <label for="one">1st Kyu</label>
             </div>
             <div class="checkbox-div">
-              <input type="checkbox" id="shodan" value="shodan" v-model="questionCategories" v-on:click="filterQuestions(questionCategories)">
+              <input type="checkbox" id="shodan" value="shodan" v-model="questionCategories" v-on:click="filterQuestions()">
               <label for="shodan">Shodan</label>
             </div>
             <div class="checkbox-div">
-              <input type="checkbox" id="nidan" value="nidan" v-model="questionCategories" v-on:click="filterQuestions(questionCategories)">
+              <input type="checkbox" id="nidan" value="nidan" v-model="questionCategories" v-on:click="filterQuestions()">
               <label for="nidan">Nidan and above</label>
             </div>
             <div class="checkbox-div">
-              <input type="checkbox" id="other" value="other" v-model="questionCategories" v-on:click="filterQuestions(questionCategories)">
+              <input type="checkbox" id="other" value="other" v-model="questionCategories" v-on:click="filterQuestions()">
               <label for="other">Non-Goju Ryu related questions</label>
             </div>
       </fieldset>
@@ -129,10 +129,10 @@ export default {
     }
   },
   methods: {
-    filterQuestions: function (questionCategories) {
-      this.$nextTick(function(questionCategories) {
+    filterQuestions: function () {
+      this.$nextTick(function() {
         const questions = this.questions
-        this.filteredQuestions = questionCategories.map(function (category) {
+        this.filteredQuestions = this.questionCategories.map(function (category) {
           return questions[category]
         })
         
