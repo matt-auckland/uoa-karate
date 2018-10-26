@@ -6,6 +6,7 @@
       <router-link to="/about">About the club</router-link> |
       <router-link to="/goju-ryu">About&nbsp;Goju&nbsp;Ryu&nbsp;Karate</router-link> |
       <router-link to="/events">Club&nbsp;Events</router-link> |
+      <router-link to="/tester">Knowledge&nbsp;Tester</router-link> |
       <a href="https://wiki.uoa-karate.club/" target="_blank" rel="noopener noreferrer">Karate&nbsp;Wiki</a> |
       <a href="https://www.facebook.com/UoAKarate/" target="_blank" rel="noopener noreferrer"><img src="/facebook.svg" alt="[FB]" class="social"></a> |
       <a href="https://www.instagram.com/uoa_karate/" target="_blank" rel="noopener noreferrer"><img src="/instagram.svg" alt="[IG]" class="social"></a>  

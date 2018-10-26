@@ -3,6 +3,7 @@
     <div class="header">
 
       <h1>Karate Knowledge Tester</h1>
+      <h3 class="warn">This page is still under development</h3>
       <fieldset class="category-container">
           <legend>Categories</legend>
             <div class="checkbox-div" v-for="category in questionCategories" v-bind:key="category">
@@ -63,22 +64,19 @@ export default {
   components: {
     QuestionComponent
   },
-  beforeMount() {
-      // this.randomQuestion()
-    },
-    computed: {
-      questionCategories: function () {
-        let categories = this.questions.map((question) => {
-          return question.tags.join() // flatten array of tags into a string
-        })
-        .join() //flatten our array of flattened arrays into a string
-        .split(',') // split our super string back into an array
-        .filter(function(elem, index, self) { // filter out any duplicates
-          return index == self.indexOf(elem); 
-        })
-        return categories
-      }
-    },
+  computed: {
+    questionCategories: function () {
+      let categories = this.questions.map((question) => {
+        return question.tags.join() // flatten array of tags into a string
+      })
+      .join() //flatten our array of flattened arrays into a string
+      .split(',') // split our super string back into an array
+      .filter(function(elem, index, self) { // filter out any duplicates
+        return index == self.indexOf(elem); 
+      })
+      return categories
+    }
+  },
   data: function() {
     return {
       scoreObj: {
@@ -144,6 +142,11 @@ export default {
 
 
 <style scoped>
+.warn {
+  color: crimson;
+  text-transform: capitalize;
+}
+
 .tester-container {
 	display: flex;
 	flex-direction: column;
