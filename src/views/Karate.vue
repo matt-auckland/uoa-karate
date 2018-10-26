@@ -5,7 +5,7 @@
       <p>
         Goju Ryu is a form of Karate that originated in Okinawa, a small island south of Japan. 
         It was formalised as a system in the early 1930s (?) by a man called Chojun Miyagi.
-        Goju Ryu has 12 kata (fixed forms) in total. For more information see <a href="http://uoa-karate.club/wiki/Kata">this page</a>.
+        Goju Ryu has 12 kata (fixed forms) in total. For more information see <a href="https://wiki.uoa-karate.club/wiki/Kata">this page</a>.
       </p>
     </div>
     <div>

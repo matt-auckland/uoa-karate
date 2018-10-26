@@ -64,6 +64,32 @@
     "bio": ""
   },
   {
+    "name": "Richard Ly",
+    "role": "instructor",
+    "pic": "",
+    "position": "Instructor",
+    "styles": [
+      {
+        "name": "Goju Ryu",
+        "grade": -3
+      }
+    ],
+    "bio": "Ewan Sensei teaches Software Engineering at UoA. He founded the club in 2003."
+  },
+  {
+    "name": "Yin Tung Ho",
+    "role": "instructor",
+    "pic": "",
+    "position": "Instructor",
+    "styles": [
+      {
+        "name": "Goju Ryu",
+        "grade": -3
+      }
+    ],
+    "bio": "Ewan Sensei teaches Software Engineering at UoA. He founded the club in 2003."
+  },
+    {
     "name": "Mathew Paul",
     "role": "exec",
     "pic": "",
