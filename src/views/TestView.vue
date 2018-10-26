@@ -84,6 +84,7 @@
         <li>Link to relevent Karate Wiki pages? ❌</li>
         <li>Add a way to report incorrect questions/answers ❌</li>
         <li>Add a way to suggest questions ❌</li>
+        <li>Update question data format and filter logic so questions can have multiple tags (example categories: rank, kata, etc) ❌</li>
         <li>Refactor the question display out into it's own component ✅</li>
         <li>Allow the selection of more than one category ✅</li>
         <li>Randomise question order ✅</li>
