@@ -1,43 +1,32 @@
 [
   {
-    "nine": [
-      {
-        "question": "Who is this man?",
-        "answer": "Chogun Miyagi, the founder of Goju-Ryu Karate",
-        "image": "/chogun-miyagi.png",
-      },
-      {
-        "question": "What is the name of our first kata?",
-        "answer": "Gekisai Dai Ichi",
-        "image": ""
-      },
-      {
-        "question": "In Gekisai Dai Ichi, after kicking hidari gedan maegeri, what are the next four techniques?",
-        "answer": "Chudan Hiji Ate, Jodan Uraken, Gedan Barai, Gedan Gyakuzuki",
-        "image": ""
-      },
-      {
-        "question": "In Gekisai Dai Ichi, after the first gedan barai, where should you be looking?",
-        "answer": "Over your left shoulder, straight ahead.",
-        "image": ""
-      }
-    ],
-    "eight": [
-      {
-        "question": "In Gekisai Dai Ni, after performing the second haito uchi, what stance do you move into?",
-        "answer": "Neko ashi dachi",
-        "image": ""
-      }
-    ],
-    "seven": [],
-    "six": [],
-    "five": [],
-    "four": [],
-    "three": [],
-    "two": [],
-    "one": [],
-    "shodan": [],
-    "nidan": [],
-    "other": []
+    "question": "Who is this man?",
+    "answer": "Chogun Miyagi, the founder of Goju-Ryu Karate",
+    "image": "/chogun-miyagi.png",
+    "tags": ["History"]
+  },
+  {
+    "question": "What is the name of our first kata?",
+    "answer": "Gekisai Dai Ichi",
+    "image": "",
+    "tags": ["Kata", "9th Kyu", "Gekisai Dai Ichi"]
+  },
+  {
+    "question": "In Gekisai Dai Ichi, after kicking hidari gedan maegeri, what are the next four techniques?",
+    "answer": "Chudan Hiji Ate, Jodan Uraken, Gedan Barai, Gedan Gyakuzuki",
+    "image": "",
+    "tags": ["Kata", "9th Kyu", "Gekisai Dai Ichi"]
+  },
+  {
+    "question": "In Gekisai Dai Ichi, after the first gedan barai, where should you be looking?",
+    "answer": "Over your left shoulder, straight ahead.",
+    "image": "",
+    "tags": ["Kata", "9th Kyu", "Gekisai Dai Ichi"]
+  },
+  {
+    "question": "In Gekisai Dai Ni, after performing the second haito uchi, what stance do you move into?",
+    "answer": "Neko ashi dachi",
+    "image": "",
+    "tags": ["Kata", "8th Kyu", "Gekisai Dai Ni"]
   }
 ]

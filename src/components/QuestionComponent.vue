@@ -1,16 +1,21 @@
 <template>
-  <div class="question-container">
-    <img :src="questionProp.image" alt="" v-if="questionProp.image" class="question-image">
-    <h3 class="question-text">Question: {{ questionProp.question }}</h3>
-    <button v-on:click="answerVisibleProp ? revealAnswer(false) : revealAnswer(true)" class="question-button show-answer-button">Show answer</button>
-    <div v-if="answerVisibleProp" class="question-answer">
-      <div class="answer-text">Answer: {{ questionProp.answer }}</div>
-      <div class="answer-buttons-container">
-        <button v-on:click="markAnswer(true)">Correct 👊</button>  
-        <button v-on:click="markAnswer(false)">Incorrect 🙅‍</button>  
+  <section>
+    <div v-if="!questionProp" class="question-container">
+      <h3 class="question-text">Please select a category above</h3>
+    </div>
+    <div v-if="questionProp" class="question-container">
+      <img :src="questionProp.image" alt="" v-if="questionProp.image" class="question-image">
+      <h3 class="question-text">Question: {{ questionProp.question }}</h3>
+      <button v-on:click="answerVisibleProp ? revealAnswer(false) : revealAnswer(true)" class="question-button show-answer-button">Show answer</button>
+      <div v-if="answerVisibleProp" class="question-answer">
+        <div class="answer-text">Answer: {{ questionProp.answer }}</div>
+        <div class="answer-buttons-container">
+          <button v-on:click="markAnswer(true)">Correct 👊</button>  
+          <button v-on:click="markAnswer(false)">Incorrect ☠️</button>  
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 

@@ -5,53 +5,9 @@
       <h1>Karate Knowledge Tester</h1>
       <fieldset class="category-container">
           <legend>Categories</legend>
-            <div class="checkbox-div">
-              <input type="checkbox" id="nine" value="nine" v-model="questionCategories" v-on:click="filterQuestions()" checked>
-              <label for="nine">9th  Kyu</label>
-            </div>
-            <div class="checkbox-div">
-              <input type="checkbox" id="eight" value="eight" v-model="questionCategories" v-on:click="filterQuestions()">
-              <label for="eight">8th Kyu</label>
-            </div>
-            <div class="checkbox-div">
-              <input type="checkbox" id="seven" value="seven" v-model="questionCategories" v-on:click="filterQuestions()">
-              <label for="seven">7th Kyu</label>
-            </div>
-            <div class="checkbox-div">
-              <input type="checkbox" id="six" value="six" v-model="questionCategories" v-on:click="filterQuestions()">
-              <label for="six">6th Kyu</label>
-            </div>
-            <div class="checkbox-div">
-              <input type="checkbox" id="five" value="five" v-model="questionCategories" v-on:click="filterQuestions()">
-              <label for="five">5th Kyu</label>
-            </div>
-            <div class="checkbox-div">
-              <input type="checkbox" id="four" value="four" v-model="questionCategories" v-on:click="filterQuestions()">
-              <label for="four">4th Kyu</label>
-            </div>
-            <div class="checkbox-div">
-              <input type="checkbox" id="three" value="three" v-model="questionCategories" v-on:click="filterQuestions()">
-              <label for="three">3rd Kyu</label>
-            </div>
-            <div class="checkbox-div">
-              <input type="checkbox" id="two" value="two" v-model="questionCategories" v-on:click="filterQuestions()">
-              <label for="two">2nd Kyu</label>
-            </div>
-            <div class="checkbox-div">
-              <input type="checkbox" id="one" value="one" v-model="questionCategories" v-on:click="filterQuestions()">
-              <label for="one">1st Kyu</label>
-            </div>
-            <div class="checkbox-div">
-              <input type="checkbox" id="shodan" value="shodan" v-model="questionCategories" v-on:click="filterQuestions()">
-              <label for="shodan">Shodan</label>
-            </div>
-            <div class="checkbox-div">
-              <input type="checkbox" id="nidan" value="nidan" v-model="questionCategories" v-on:click="filterQuestions()">
-              <label for="nidan">Nidan and above</label>
-            </div>
-            <div class="checkbox-div">
-              <input type="checkbox" id="other" value="other" v-model="questionCategories" v-on:click="filterQuestions()">
-              <label for="other">Non-Goju Ryu related questions</label>
+            <div class="checkbox-div" v-for="category in questionCategories" v-bind:key="category">
+              <input type="checkbox" :id="category" :value="category" v-model="selectedQuestionCategories" v-on:click="filterQuestions()">
+              <label :for="category">{{ category }}</label>
             </div>
       </fieldset>
 
@@ -84,7 +40,7 @@
         <li>Link to relevent Karate Wiki pages? ❌</li>
         <li>Add a way to report incorrect questions/answers ❌</li>
         <li>Add a way to suggest questions ❌</li>
-        <li>Update question data format and filter logic so questions can have multiple tags (example categories: rank, kata, etc) ❌</li>
+        <li>Update question data format and filter logic so questions can have multiple tags (example categories: rank, kata, etc) ✅</li>
         <li>Refactor the question display out into it's own component ✅</li>
         <li>Allow the selection of more than one category ✅</li>
         <li>Randomise question order ✅</li>
@@ -108,7 +64,20 @@ export default {
     QuestionComponent
   },
   beforeMount() {
-      this.randomQuestion()
+      // this.randomQuestion()
+    },
+    computed: {
+      questionCategories: function () {
+        let categories = this.questions.map((question) => {
+          return question.tags.join() // flatten array of tags into a string
+        })
+        .join() //flatten our array of flattened arrays into a string
+        .split(',') // split our super string back into an array
+        .filter(function(elem, index, self) { // filter out any duplicates
+          return index == self.indexOf(elem); 
+        })
+        return categories
+      }
     },
   data: function() {
     return {
@@ -117,24 +86,23 @@ export default {
         incorrectAnswers: 0,
         total: () => this.scoreObj.correctAnswers + this.scoreObj.incorrectAnswers
       },
-      questionCategories: ['nine'],
-      questions: questions[0],
-      filteredQuestions: questions[0].nine,
+      selectedQuestionCategories: [],
+      questions: questions,
+      filteredQuestions: [],
       answeredQuestions: [],
       answerVisible: false,
-      currentQuestion: false,
-      placeholderQuestion: {
-        question: "No questions found for this difficulty",
-        answer: "Practise daily! 👊"
-      }
+      currentQuestion: undefined,
     }
   },
   methods: {
     filterQuestions: function () {
       this.$nextTick(function() {
         const questions = this.questions
-        this.filteredQuestions = this.questionCategories.map(function (category) {
-          return questions[category]
+        this.filteredQuestions = this.selectedQuestionCategories.map(function (category) {
+          return questions.filter((question) => {
+            if (question.tags.includes(category))
+              return question
+          })
         })
         
         this.filteredQuestions = [].concat.apply([], this.filteredQuestions)
@@ -144,21 +112,18 @@ export default {
     randomQuestion: function () {
       
       if (this.filteredQuestions.length === 0) {
-        this.currentQuestion = this.placeholderQuestion
-        this.answerVisible = false
-        return
+        this.currentQuestion = undefined
       } else if (this.filteredQuestions.length === 1) {
         this.currentQuestion = this.filteredQuestions[0]
-        this.answerVisible = false
-        return
-      }
-      const randomNum = Math.floor(Math.random() * this.filteredQuestions.length)
-      if ( !this.currentQuestion || this.currentQuestion !== this.filteredQuestions[randomNum]) {
-        this.currentQuestion = this.filteredQuestions[randomNum]
-        this.answerVisible = false
       } else {
-        this.randomQuestion()
+        const randomNum = Math.floor(Math.random() * this.filteredQuestions.length)
+        if ( !this.currentQuestion || this.currentQuestion !== this.filteredQuestions[randomNum]) {
+          this.currentQuestion = this.filteredQuestions[randomNum]
+        } else {
+          this.randomQuestion()
+        }
       }
+      this.answerVisible = false
     },
     revealAnswer: function (showAnswer) {
       this.answerVisible = showAnswer
