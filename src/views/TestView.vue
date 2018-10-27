@@ -41,20 +41,11 @@
       <h3>To do:</h3>
       <ul>
         <li>Make the page pretty ❌</li>
-        <li>Add actual questions ❌</li>
-        <li>Link to relevent Karate Wiki pages? ❌</li>
+        <li>Add more questions ❌</li>
+        <li>Force users to input an answer? ❌</li>
+        <li>Link to relevent Karate Wiki pages/other resources? ❌</li>
         <li>Add a way to report incorrect questions/answers ❌</li>
         <li>Add a way to suggest questions ❌</li>
-        <li>Don't show questions that have already been answered correctly ✅</li>
-        <li>Update question data format and filter logic so questions can have multiple tags (example categories: rank, kata, etc) ✅</li>
-        <li>Refactor the question display out into it's own component ✅</li>
-        <li>Allow the selection of more than one category ✅</li>
-        <li>Randomise question order ✅</li>
-        <li>Allow user to mark their answer as correct or incorrect ✅</li>
-        <li>Keep track of the user's score ✅</li>
-        <li>Fetch new question after answering ✅</li>
-        <li>Hide or show answers with a boolean arugment instead of toggling ✅</li>
-        <li>Handle the error case in which there are no questions for a level ✅</li>
       </ul>
     </div>
   </div>
