@@ -4,12 +4,14 @@
 
       <h1>Karate Knowledge Tester</h1>
       <h3 class="warn">This page is still under development</h3>
-      <fieldset class="category-container">
+      <fieldset class="category-fieldset">
           <legend>Categories</legend>
+          <div class="category-container">
             <div class="checkbox-div" v-for="category in questionCategories" v-bind:key="category">
               <input type="checkbox" :id="category" :value="category" v-model="selectedQuestionCategories" v-on:click="filterQuestions()">
               <label :for="category">{{ category }}</label>
             </div>
+          </div>
       </fieldset>
 
       <div>Available questions for this current selction: {{ filteredQuestions.length }}</div>
@@ -162,6 +164,8 @@ export default {
   border: 1px solid;
 	border-radius: 5px;
 	padding: 2px;
+  display: flex;
+  align-items: center;
 }
 
 .checkbox-div:hover, .checkbox-div:active, .checkbox-div:checked {
@@ -170,7 +174,10 @@ export default {
 
 .checkbox-div label, .checkbox-div input {
 	cursor: pointer;
+}
 
+.checkbox-div label {
+  padding: 2px;
 }
 
 .category-container {
@@ -184,6 +191,8 @@ export default {
   justify-content: center;
   align-items: center;
 }
+
+
 
 .answer-tracker {
   display: flex;
