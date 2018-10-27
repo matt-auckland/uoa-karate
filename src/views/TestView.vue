@@ -130,10 +130,8 @@ export default {
         this.answeredQuestions.push(this.currentQuestion)
       } else
         this.scoreObj.incorrectAnswers++
-      console.log(`before ${this.filteredQuestions.length}`);
       
       this.filterQuestions()
-      console.log(`after ${this.filteredQuestions.length}`);
       this.randomQuestion()
     },
     randomise:  (arr) => arr.map(a => [Math.random(), a])
