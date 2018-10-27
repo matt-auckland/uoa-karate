@@ -1,7 +1,10 @@
 <template>
   <section>
     <div v-if="!questionProp" class="question-container">
-      <h3 class="question-text">Please select a category above</h3>
+      <h3>
+        <span v-if="!allQuestionsAnswered">Please select a category above</span>
+        <span v-if="allQuestionsAnswered">You have answered all questions correctly, please select another category</span>
+      </h3>
     </div>
     <div v-if="questionProp" class="question-container">
       <img :src="questionProp.image" alt="" v-if="questionProp.image" class="question-image">
@@ -26,7 +29,8 @@ export default {
   },
   props: {
     questionProp: Object,
-    answerVisibleProp: Boolean
+    answerVisibleProp: Boolean,
+    allQuestionsAnswered: Boolean
   },
   data: function() {
     return {
@@ -53,6 +57,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 
   border: 1px solid var(--persian-red-darker);
   border-radius: 5px;

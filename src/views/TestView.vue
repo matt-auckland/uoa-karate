@@ -14,14 +14,17 @@
           </div>
       </fieldset>
 
-      <div>Available questions for this current selction: {{ filteredQuestions.length }}</div>
-      <br>
+      <div class="new-question-container">
+        <span>
+          Available questions for this current selection: {{ filteredQuestions.length }}
+        </span>
+        <button v-on:click="randomQuestion()" v-if="filteredQuestions.length > 1" class="new-question-button">New question</button>
+      </div>
 
-      <button v-on:click="randomQuestion()" v-if="filteredQuestions.length > 1" class="new-question-button">New question</button>
-      
       <QuestionComponent 
         :questionProp="currentQuestion" 
         :answerVisibleProp="answerVisible"
+        :allQuestionsAnswered="filteredQuestions.length === 0 && answeredQuestions.length !== 0"
         v-on:revealAnswer="revealAnswer($event)"
         v-on:answered="markAnswer($event)">
       </QuestionComponent>
@@ -39,10 +42,10 @@
       <ul>
         <li>Make the page pretty ❌</li>
         <li>Add actual questions ❌</li>
-        <li>Don't show questions that have be answered correct again (when correct through q in and array and filter these out everytime we recreate the `filteredQuestions`) ❌</li>
         <li>Link to relevent Karate Wiki pages? ❌</li>
         <li>Add a way to report incorrect questions/answers ❌</li>
         <li>Add a way to suggest questions ❌</li>
+        <li>Don't show questions that have already been answered correctly ✅</li>
         <li>Update question data format and filter logic so questions can have multiple tags (example categories: rank, kata, etc) ✅</li>
         <li>Refactor the question display out into it's own component ✅</li>
         <li>Allow the selection of more than one category ✅</li>
@@ -96,6 +99,7 @@ export default {
   },
   methods: {
     filterQuestions: function () {
+      const answeredQuestions = this.answeredQuestions
       this.$nextTick(function() {
         const questions = this.questions
         this.filteredQuestions = this.selectedQuestionCategories.map(function (category) {
@@ -106,6 +110,7 @@ export default {
         })
         
         this.filteredQuestions = [].concat.apply([], this.filteredQuestions)
+                                          .filter((question) => !this.answeredQuestions.includes(question))
         this.randomQuestion()
       })
     },
@@ -129,11 +134,15 @@ export default {
       this.answerVisible = showAnswer
     },
     markAnswer: function (answerCorrect) {
-      if (answerCorrect) 
+      if (answerCorrect) {
         this.scoreObj.correctAnswers++
-      else
+        this.answeredQuestions.push(this.currentQuestion)
+      } else
         this.scoreObj.incorrectAnswers++
-
+      console.log(`before ${this.filteredQuestions.length}`);
+      
+      this.filterQuestions()
+      console.log(`after ${this.filteredQuestions.length}`);
       this.randomQuestion()
     },
     randomise:  (arr) => arr.map(a => [Math.random(), a])
@@ -147,6 +156,19 @@ export default {
 .warn {
   color: crimson;
   text-transform: capitalize;
+}
+
+.new-question-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	min-height: 50px;
+	margin: 15px 0;
+}
+
+.new-question-container span {
+  margin-right: 10px;
 }
 
 .tester-container {
