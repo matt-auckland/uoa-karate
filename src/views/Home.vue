@@ -1,32 +1,43 @@
 <template>
-  <div class="container">
-    
-    <HomeIntro msg="Practise Daily" class="home-intro"/>
-    <UpcomingEvents class="upcoming-events" />
-    <TrainingSchedule class="schedule" />
-    <FeesTable class="fees" />
+  <content>
+
+    <div class="container">
+      <img
+        src="https://via.placeholder.com/350x200.png"
+        alt=""
+        class="first-image"
+      >
+      <HomeIntro
+        msg="Practise Daily"
+        class="home-intro"
+      />
+      <TrainingSchedule class="schedule" />
+      <FeesTable class="fees" />
+      <UpcomingEvents class="events" />
+    </div>
     <ClubMap class="clubmap" />
     <ContactForm class="contact-form" />
-    <QuoteDisplay class="quote-display"/>
+
     <!-- <Gallery class="gallery" /> -->
     <!-- <ToDo class="todo" /> -->
 
-  </div>
+    <QuoteDisplay class="quote-display" />
+  </content>
 </template>
 
 <script>
-import HomeIntro from '@/components/HomeIntro.vue'
-import ToDo from '@/components/ToDo.vue'
-import TrainingSchedule from '@/components/TrainingSchedule.vue'
-import FeesTable from '@/components/FeesTable.vue'
-import ClubMap from '@/components/ClubMap.vue'
-import Gallery from '@/components/Gallery.vue'
-import ContactForm from '@/components/ContactForm.vue'
-import UpcomingEvents from '@/components/UpcomingEvents.vue'
-import QuoteDisplay from '@/components/QuoteDisplay.vue'
+import HomeIntro from "@/components/HomeIntro.vue";
+import ToDo from "@/components/ToDo.vue";
+import TrainingSchedule from "@/components/TrainingSchedule.vue";
+import FeesTable from "@/components/FeesTable.vue";
+import ClubMap from "@/components/ClubMap.vue";
+import Gallery from "@/components/Gallery.vue";
+import ContactForm from "@/components/ContactForm.vue";
+import UpcomingEvents from "@/components/UpcomingEvents.vue";
+import QuoteDisplay from "@/components/QuoteDisplay.vue";
 
 export default {
-  name: 'home',
+  name: "home",
   components: {
     HomeIntro,
     ToDo,
@@ -36,49 +47,107 @@ export default {
     Gallery,
     ContactForm,
     UpcomingEvents,
-    QuoteDisplay,
-
-},
-  data: function()  { 
-    return {
-    }
+    QuoteDisplay
+  },
+  data: function() {
+    return {};
   }
-}
+};
 </script>
 
 <style scoped>
+content {
+  display: grid;
+  grid-template-areas:
+    "content content"
+    "map contact"
+    "quote quote";
+  padding: 0 5vw;
+  grid-column-gap: 30px;
+  grid-row-gap: 40px;
+}
+
+.container {
+  display: grid;
+  grid-area: content;
+  grid-column-gap: 30px;
+  grid-row-gap: 40px;
+  grid-template-areas:
+    "first-image intro events events"
+    "schedule schedule events events"
+    "fees fees events events";
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 300px 300px;
+  grid-auto-rows: minmax(200px, auto);
+  justify-content: center;
+  grid-column-gap: 30px;
+  grid-row-gap: 40px;
+}
+
+@media (max-width: 981px) {
+  content {
+    grid-template-areas:
+      "content content"
+      "map map"
+      "contact contact"
+      "quote quote";
+  }
   .container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(auto, 700px));
-    grid-auto-rows: minmax(200px, auto);
-    grid-column-gap: 30px;
-    grid-row-gap: 40px;
-    grid-auto-flow: dense;
-    justify-content: center;
+    grid-template-areas:
+      "intro intro"
+      "first-image first-image"
+      "schedule schedule"
+      "fees fees";
   }
-
-  .home-intro {
-    /* grid-area: helloworld; */
-    /* grid-area: 1/1/3/2; */
+  .events {
+    display: none;
   }
+}
 
-  .clubmap {
-    /* grid-area: map; */
-    margin: 30px 0 10px 0;
-  }
+.home-intro {
+  grid-area: intro;
+}
 
-  .schedule {
-    /* grid-area: schedule; */
-  }
+.first-image {
+  grid-area: first-image;
+}
 
-  .todo {
-    /* grid-area: todo; */
-  }
+.double-col {
+  grid-area: double;
+}
 
-  .quote-display {
-    grid-area: auto / 1/ auto/ -1;
-  }
+.schedule {
+  grid-area: schedule;
+}
 
+.fees {
+  grid-area: fees;
+}
 
+.second-image {
+  grid-area: second-image;
+}
+.contact-form {
+  grid-area: contact;
+}
+
+.clubmap {
+  grid-area: map;
+  margin: 30px 0 10px 0;
+}
+
+.todo {
+}
+
+.events {
+  grid-area: events;
+}
+
+.quote-display {
+  grid-area: quote;
+}
 </style>
 

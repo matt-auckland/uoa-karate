@@ -14,10 +14,6 @@
             target="_blank"
           >Club Sign Up Sheet</a></li>
         <li><a
-            href="http://qualitas.cs.auckland.ac.nz/iogkfnz/"
-            target="_blank"
-          >Club Roll Call</a></li>
-        <li><a
             href="http://karate.org.nz/"
             target="_blank"
           >IOGKFNZ's Website</a></li>

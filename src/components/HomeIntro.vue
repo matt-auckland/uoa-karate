@@ -12,20 +12,18 @@
 
 <script>
 export default {
-  name: 'HomeIntro',
+  name: "HomeIntro",
   props: {
     msg: String
   }
-}
+};
 </script>
 
 <style scoped>
-
 .home-intro-container {
   width: 100%;
   max-width: 600px;
-  min-width: 300px;
-
+  min-width: 200px;
 }
 
 h3 {
