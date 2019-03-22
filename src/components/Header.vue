@@ -8,7 +8,7 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About the club</router-link> |
       <a
-        href="https://wiki.uoa-karate.club/wiki/Goju_Ryu"
+        href="https://en.wikipedia.org/wiki/G%C5%8Dj%C5%AB-ry%C5%AB"
         target="_blank"
       >About&nbsp;Goju&nbsp;Ryu&nbsp;Karate</a> |
       <router-link to="/events">Club&nbsp;Events</router-link> |
@@ -71,7 +71,8 @@ a {
 }
 
 a:hover {
-  font-size: 18px;
+  /* font-size: 18px; */
+  color: var(--persian-red);
 }
 
 img {

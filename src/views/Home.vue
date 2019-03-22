@@ -113,6 +113,7 @@ content {
 
 .first-image {
   grid-area: first-image;
+  margin: auto;
 }
 
 .double-col {
@@ -136,7 +137,7 @@ content {
 
 .clubmap {
   grid-area: map;
-  margin: 30px 0 10px 0;
+  margin: 5px 0 10px 0;
 }
 
 .todo {

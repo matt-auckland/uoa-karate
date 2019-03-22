@@ -2,29 +2,57 @@
 <template>
   <div class="event-container">
     <h2 class="event-title">{{event.name}}</h2>
-    <img :src="event.img" alt="Event image" v-if="event.img" class="event-img">
+    <img
+      :src="event.img"
+      alt="Event image"
+      v-if="event.img"
+      class="event-img"
+    >
+    <img
+      src="/logo.png"
+      alt="Event image"
+      v-if="!event.img"
+      class="event-img"
+    >
     <div class="event-text"><b>Date:</b> {{event.date}}</div>
     <div class="event-text"><b>Location:</b> {{event.location}}</div>
     <div class="event-text">{{event.description}}</div>
-    <div class="event-text" v-if="!event.offSitelink">For more information follow <router-link :to="'/events/' + event.name.replace(/\ /gi, '-')">this link</router-link></div>
-    <div class="event-text" v-if="event.offSitelink">For more information follow <a :href="event.offSitelink" target="_blank" rel="noopener noreferrer">this link</a></div>
+    <div
+      class="event-text"
+      v-if="event.signUpURL"
+    >To sign up, follow <a
+        :href="event.signUpURL"
+        target="_blank"
+        rel="noopener noreferrer"
+      >this link</a></div>
+
+    <div
+      class="event-text"
+      v-if="!event.offSitelink && event.extendedDescription"
+    >For more information follow <router-link :to="'/events/' + event.name.replace(/\ /gi, '-')">this link</router-link>
+    </div>
+    <div
+      class="event-text"
+      v-if="event.offSitelink"
+    >For more information follow <a
+        :href="event.offSitelink"
+        target="_blank"
+        rel="noopener noreferrer"
+      >this link</a></div>
   </div>
 </template>
 
 <script>
-
 export default {
-  name: 'EventComponent',
-  components: {
-  },
+  name: "EventComponent",
+  components: {},
   props: {
     event: Object
   }
-}
+};
 </script>
 
 <style scoped>
-
 .event-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -57,12 +85,11 @@ export default {
   }
 }
 
-
-.event-text, .page-desc {
+.event-text,
+.page-desc {
   padding-left: 20px;
 }
 
 .page-desc {
-
 }
 </style>

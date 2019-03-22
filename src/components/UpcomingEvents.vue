@@ -18,15 +18,25 @@
           <div class="event-text location">
             Location: {{event.location}}.
           </div>
+
           <div class="event-text link">
             For more information follow
-            <router-link
-              v-if="!event.offSitelink"
-              :to="'/events/' + event.name.replace(/\ /gi, '-')"
-            >this link</router-link>
             <a
               v-if="event.offSitelink"
               :href="event.offSitelink"
+              target="_blank"
+              rel="noopener noreferrer"
+            >this link</a>
+            <router-link
+              v-if="!event.offSitelink && event.extendedDescription"
+              :to="'/events/' + event.name.replace(/\ /gi, '-')"
+            >this link</router-link>
+          </div>
+          <div
+            class="event-text"
+            v-if="event.signUpURL"
+          >To sign up, follow <a
+              :href="event.signUpURL"
               target="_blank"
               rel="noopener noreferrer"
             >this link</a>
@@ -75,7 +85,8 @@ export default {
 <style scoped>
 .events-container {
   display: grid;
-  grid-template-columns: 1fr;
+  /* grid-template-columns: 1fr; */
+  grid-template-columns: repeat(auto-fit, minmax(auto, 335px));
   grid-auto-rows: minmax(80px, auto);
   grid-gap: 30px;
   justify-items: center;
