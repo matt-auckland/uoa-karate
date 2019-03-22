@@ -1,18 +1,28 @@
 [
   {
-    "name": "2018 UoA Karate Gasshuku",
-    "date": "September 8th - 9th",
-    "startDate": "2018-9-8",
-    "endDate": "2018-9-9",
-    "location": "University of Auckland Recreation Center",
-    "description": "Two days jammed full of training. 4th Dan Dave Sensei from Wellington will be attending as a guest instructor.",
+    "name": "Vaib's Farewell lunch + Captain Marvel Viewing",
+    "date": "March 31st",
+    "startDate": "2019-03-31",
+    "endDate": "2019-03-31",
+    "location": "Aroy Thai, Commerce Street + Event Cinemas, Queen Street",
+    "description": "Vaib is sadly leaving the club, after his last training we will have a farewell lunch, followed by a group viewing of Captain Marvel.",
+    "offSitelink": "",
+    "signUpURL": "https://forms.gle/wnhxJ32b19aDyzNy7",
+    "extendedDescription": "Vaib is sadly leaving the club, his last training session is on the 31st of March and we will be having a farewell lunch after training, followed by a group viewing of Captain Marvel. The movie will be done as a group booking so if you don’t RVSP you may find yourself unable to attend."
+  },
+  {
+    "name": "2019 Karate Camp",
+    "date": "Semester Two",
+    "startDate": "2019-09",
+    "endDate": "2019-09",
+    "location": "TBD",
+    "description": "The club will be running it's annual Karate camp again this year. More info to come.",
     "offSitelink": "",
     "signUpURL": "",
-    "extendedDescription": "Two days jammed full of training. 4th Dan Dave Sensei from Wellington will be attending as a guest instructor. Our usual instructors will also be teaching but expect to see a range of different topics covered. Saturday: 11.30 - 6pm. Sunday 10am - 5pm. Lunch will be catered both days and there will be group dinners both nights."
+    "extendedDescription": ""
   },
   {
     "name": "Courses & Careers Day 2018",
-    "img": "/logo.png",
     "date": "August 25",
     "startDate": "2018-8-25",
     "endDate": "",
@@ -23,14 +33,25 @@
     "extendedDescription": ""
   },
   {
-    "name": "2018 National Gasshuku",
-    "img": "/logo.png",
+    "name": "The Goju Guys Seminar",
+    "img": "https://karate.org.nz/wp-content/uploads/2019/02/image.png",
     "date": "October 20th-21st",
-    "startDate": "2018-10-20",
-    "endDate": "2018-10-21",
+    "startDate": "2019-05-04",
+    "endDate": "2019-05-05",
     "location": "Wellington",
-    "description": "Ernie Sensei, 8th dan from England, will be coming to Wellington to train.",
-    "offSitelink": "https://karate.org.nz/event/sensei-ernie-molyneux-gasshuku/",
+    "description": "A training seminar focusing on ‘Goju‘ karate as presented by practitioners from different Goju schools.",
+    "offSitelink": "https://www.facebook.com/thegojuguys/",
+    "signUpURL": "",
+    "extendedDescription": ""
+  },
+  {
+    "name": "2019 National Gasshuku",
+    "date": "October 20th-21st",
+    "startDate": "2019-05-18",
+    "endDate": "2019-05-19",
+    "location": "Wellington",
+    "description": "One of New Zealands top MMA fighters and Goju Ryu practitioners Gareth Lewis will be teaching",
+    "offSitelink": "https://karate.org.nz/event/iogkfnz-national-camp-may-18-19/",
     "signUpURL": "",
     "extendedDescription": ""
   },
@@ -47,7 +68,6 @@
   },
   {
     "name": "40th IOGKF Sekai Budosai",
-    "img": "/logo.png",
     "date": "July 29th – August 4th 2019",
     "startDate": "2019-7-29",
     "endDate": "2019-8-4",
@@ -58,20 +78,29 @@
     "extendedDescription": ""
   },
   {
-    "name": "Semester 2 Grading",
-    "img": "/logo.png",
-    "date": "October 14th",
-    "startDate": "2018-10-14",
+    "name": "Semester 1 Grading",
+    "date": "June",
+    "startDate": "2019-6",
     "endDate": "",
     "location": "University of Auckland Recreation Center",
-    "description": "Our second grading of the year is scheduled for the 14th of October.",
+    "description": "Our first grading of the year will occur near the end of semester one.",
+    "offSitelink": "",
+    "signUpURL": "",
+    "extendedDescription": ""
+  },
+  {
+    "name": "Semester 2 Grading",
+    "date": "October",
+    "startDate": "2019-10",
+    "endDate": "",
+    "location": "University of Auckland Recreation Center",
+    "description": "Our second grading of the year will occur near the end of semester two.",
     "offSitelink": "",
     "signUpURL": "",
     "extendedDescription": ""
   },
   {
     "name": "End of Year Beach Training",
-    "img": "/logo.png",
     "date": "December",
     "startDate": "2018-12",
     "endDate": "",
@@ -80,41 +109,6 @@
     "offSitelink": "",
     "signUpURL": "",
     "extendedDescription": "We'll be having a beach training at Mission Bay after our final Rec Center training. We'll be having a enf of year lunch afterwards. Remember to bring sunblock and a towel! Sunglasses/sunhats are optional."
-  },
-  {
-    "name": "Taira Seminar Pre-Training",
-    "img": "",
-    "date": "October 16th",
-    "startDate": "2018-10-16",
-    "endDate": "",
-    "location": "Pakuranga Goju Ryu, Sunnyhills Primary School",
-    "description": "Free pre-training before the seminar. Runs from 7pm - 8pm, however feel free to show up from 6pm to do your own thing before the adults training starts.",
-    "offSitelink": "",
-    "signUpURL": "",
-    "extendedDescription": "Runs form 7pm till 8pm. Covers the core drills that are used in Taira Sensei's teaching method. Hosted by Sennen Sensei at Pakuranga Goju Ryu, Sunnyhills Primary School, Pakuranag. Contact Matt for more details."
-  },
-  {
-    "name": "Taira Seminar Pre-Training",
-    "img": "",
-    "date": "October 25th",
-    "startDate": "2018-10-25",
-    "endDate": "",
-    "location": "Pakuranga Goju Ryu, Sunnyhills Primary School",
-    "description": "Free pre-training before the seminar. Runs from 7pm - 8pm, however feel free to show up from 6pm to do your own thing before the adults training starts.",
-    "offSitelink": "",
-    "signUpURL": "",
-    "extendedDescription": "Runs form 7pm till 8pm. Covers the core drills that are used in Taira Sensei's teaching method. Hosted by Sennen Sensei at Pakuranga Goju Ryu, Sunnyhills Primary School, Pakuranag. Contact Matt for more details."
-  },{
-    "name": "Taira Seminar Pre-Training",
-    "img": "",
-    "date": "October 18th",
-    "startDate": "2018-10-18",
-    "endDate": "",
-    "location": "Pakuranga Goju Ryu, Sunnyhills Primary School",
-    "description": "Free pre-training before the seminar. Runs from 7pm - 8pm, however feel free to show up from 6pm to do your own thing before the adults training starts.",
-    "offSitelink": "",
-    "signUpURL": "",
-    "extendedDescription": "Runs form 7pm till 8pm. Covers the core drills that are used in Taira Sensei's teaching method. Hosted by Sennen Sensei at Pakuranga Goju Ryu, Sunnyhills Primary School, Pakuranag. Contact Matt for more details."
   },
   {
     "name": "Taira Seminar Pre-Training",
