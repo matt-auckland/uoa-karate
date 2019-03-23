@@ -22,9 +22,9 @@
             target="_blank"
           >Health and Safety Guidelines</a></li>
         <li><a
-            href=""
+            href="https://drive.google.com/open?id=0B-VdjkUccnFtQUIxM0tJUnNvSzg"
             target="_blank"
-          ></a></li>
+          >Beginner's guide to Goju Ryu</a></li>
       </ul>
     </div>
   </div>

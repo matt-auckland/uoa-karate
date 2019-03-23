@@ -14,7 +14,7 @@
       v-if="!event.img"
       class="event-img"
     >
-    <div class="event-text"><b>Date:</b> {{event.date}}</div>
+    <div class="event-date"><b>Date:</b> {{event.date}}</div>
     <div class="event-text"><b>Location:</b> {{event.location}}</div>
     <div class="event-text">{{event.description}}</div>
     <div
@@ -88,10 +88,11 @@ export default {
 }
 
 .event-text,
-.page-desc {
+.event-date {
   padding-left: 20px;
 }
 
-.page-desc {
+.event-date {
+  grid-column: span 2;
 }
 </style>
