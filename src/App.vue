@@ -43,7 +43,7 @@ body {
   color: var(--base-font-color);
 }
 
-@media (max-width: 699px) {
+@media (max-width: 981px) {
   h1,
   h2,
   h3,
@@ -56,19 +56,19 @@ body {
 @media (max-width: 500px) {
   #app,
   body {
-    font-size: 14px;
+    /* font-size: 14px; */
   }
 }
 
 @media (max-width: 350px) {
   #app,
   body {
-    font-size: 12px;
+    /* font-size: 12px; */
   }
 }
 
 body {
-  background-color: var(--tuatara-dark);
+  background-color: black; /* var(--tuatara-dark); */
   color: var(--base-font-color);
 }
 

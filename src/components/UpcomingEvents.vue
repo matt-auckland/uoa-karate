@@ -104,7 +104,7 @@ export default {
   width: 100%;
   border-radius: 15px;
   border: 2px solid var(--persian-red-darker);
-  background-color: var(--tuatara);
+  background-color: black;
 }
 
 .event-inner {

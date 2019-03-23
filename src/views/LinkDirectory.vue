@@ -18,9 +18,9 @@
             target="_blank"
           >IOGKFNZ's Website</a></li>
         <li><a
-            href=""
+            href="https://drive.google.com/file/d/1ej27e0nkSEZgCooaJor7WsK9nIFzJx7Y/view?usp=sharing"
             target="_blank"
-          ></a></li>
+          >Health and Safety Guidelines</a></li>
         <li><a
             href=""
             target="_blank"

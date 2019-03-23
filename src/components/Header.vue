@@ -1,6 +1,7 @@
 <template>
   <div class="header">
     <router-link to="/"><img
+        id="logo"
         src="/logo.png"
         alt="IOGKF Logo"
       ></router-link>
@@ -52,6 +53,7 @@ export default {
 <style scoped>
 .header {
   text-align: center;
+  padding: 0 5vw;
 }
 
 h3 {
@@ -75,21 +77,28 @@ a:hover {
   color: var(--persian-red);
 }
 
-img {
+#logo {
   width: 150px;
   margin: 20px 0;
   vertical-align: middle;
   filter: saturate(70%);
   transition: all 200ms ease-out;
 }
-img:hover {
+#logo:hover {
   width: 160px;
   margin: 15px 0;
   filter: saturate(100%);
 }
 
+.social:hover {
+  filter: saturate(100%);
+}
+
 .social {
   width: 32px;
+  transition: all 200ms ease-out;
+  vertical-align: middle;
+  filter: saturate(70%);
 }
 
 @media (max-width: 500px) {
@@ -102,9 +111,5 @@ img:hover {
   .social {
     width: calc(32px * 0.75);
   }
-}
-
-.social:hover {
-  width: 36px;
 }
 </style>

@@ -1,46 +1,69 @@
 <template>
   <div class="hello">
-      <form method="POST" action="https://formspree.io/au.gojuryu.karate@gmail.com">
-        <h1>Contact Us</h1>
-        <input name="email" placeholder="Your email" type="email" required="true" class="email">
-        <input name="name" placeholder="Your name" type="name" required="true" class="name">
-        <textarea name="message" placeholder="Your message" spellcheck="true" maxlength="1500" required="true" class="message"></textarea>
-        <button type="submit">Send Email</button>
-      </form>
+    <form
+      method="POST"
+      action="https://formspree.io/au.gojuryu.karate@gmail.com"
+    >
+      <h1>Contact Us</h1>
+      <input
+        name="email"
+        placeholder="Your email"
+        type="email"
+        required="true"
+        class="email"
+      >
+      <input
+        name="name"
+        placeholder="Your name"
+        type="name"
+        required="true"
+        class="name"
+      >
+      <textarea
+        name="message"
+        placeholder="Your message"
+        spellcheck="true"
+        maxlength="1500"
+        required="true"
+        class="message"
+      ></textarea>
+      <button type="submit">Send Email</button>
+    </form>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'ContactForm',
+  name: "ContactForm",
   props: {
     msg: String
   }
-}
+};
 </script>
 
 <style scoped>
-
 form {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto repeat(2, 40px) 1fr 40px;
   grid-row-gap: 20px;
-  grid-template-areas:  "header header header"
-                        "email email email"
-                        "name name name"
-                        "message message message"
-                        ". button .";
+  grid-template-areas:
+    "header header header"
+    "email email email"
+    "name name name"
+    "message message message"
+    ". button .";
   width: 100%;
   height: 400px;
 }
 
-input, textarea {
+input,
+textarea {
   display: block;
   max-width: calc(100% - 12px);
   width: 100%;
   border-radius: 7px;
-  padding: 0  0 0 10px;
+  padding: 0 0 0 10px;
   border: 0px;
   outline: none;
   border: 2px solid var(--tuatara-light);
@@ -56,8 +79,8 @@ textarea {
 }
 
 ::placeholder {
-    color: var(--base-font-color);
-    opacity: initial;
+  color: var(--base-font-color);
+  opacity: initial;
 }
 
 h1 {
@@ -81,7 +104,9 @@ button {
   color: var(--persian-red);
   font-size: 14px;
   background: none;
-  transition: all 500ms ease-out;
+  transition: all 200ms ease-out;
+  width: 240px;
+  margin: 0 auto;
 }
 
 button:hover {

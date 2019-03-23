@@ -3,14 +3,11 @@
 
     <div class="container">
       <img
-        src="https://via.placeholder.com/350x200.png"
+        src="/group-photo.jpg"
         alt=""
         class="first-image"
       >
-      <HomeIntro
-        msg="Practise Daily"
-        class="home-intro"
-      />
+      <HomeIntro class="home-intro" />
       <TrainingSchedule class="schedule" />
       <FeesTable class="fees" />
       <UpcomingEvents class="events" />
@@ -57,12 +54,14 @@ export default {
 
 <style scoped>
 content {
+  max-width: 13 00px;
+  margin: 0 auto;
   display: grid;
   grid-template-areas:
     "content content"
     "map contact"
     "quote quote";
-  padding: 0 5vw;
+  padding: 50px 5vw 0 5vw;
   grid-column-gap: 30px;
   grid-row-gap: 40px;
 }
@@ -70,10 +69,10 @@ content {
 .container {
   display: grid;
   grid-area: content;
-  grid-column-gap: 30px;
+  grid-column-gap: 50px;
   grid-row-gap: 40px;
   grid-template-areas:
-    "first-image intro events events"
+    " intro  first-image events events"
     "schedule schedule events events"
     "fees fees events events";
 }
@@ -109,9 +108,13 @@ content {
 
 .home-intro {
   grid-area: intro;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .first-image {
+  max-width: 400px;
+  width: 100%;
   grid-area: first-image;
   margin: auto;
 }

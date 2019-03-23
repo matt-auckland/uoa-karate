@@ -83,6 +83,7 @@ hr {
   transform: rotate(-5deg);
   transition: all ease 500ms;
   background-color: var(--tuatara);
+  background-color: black;
 }
 .day:nth-child(odd) {
   transform: rotate(5deg);

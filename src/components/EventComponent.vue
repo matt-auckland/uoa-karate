@@ -58,6 +58,7 @@ export default {
   grid-template-columns: 1fr 1fr;
   grid-gap: 5px;
   grid-auto-flow: dense;
+  /* align-items: center; */
 }
 
 .event-title {
@@ -68,20 +69,21 @@ export default {
 
 .event-img {
   justify-self: center;
+  align-self: center;
   grid-area: 2/2/6/3;
-  max-height: 100%;
-  max-width: 150px;
+  max-height: 150px;
+  /* max-width: 150px; */
 }
 
 @media (max-width: 500px) {
   .event-img {
-    max-width: calc(150px * 0.875);
+    max-width: 45vw;
   }
 }
 
 @media (max-width: 350px) {
   .event-img {
-    max-width: calc(150px * 0.75);
+    display: none;
   }
 }
 
