@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
 import About from './views/About.vue'
-import Karate from './views/Karate.vue'
+import LinkDirectory from './views/LinkDirectory.vue'
 import EventsView from './views/EventsView.vue'
 import TestView from './views/TestView.vue'
 import SingleEventView from './views/SingleEventView.vue'
@@ -23,9 +23,9 @@ export default new Router({
       component: About
     },
     {
-      path: '/goju-ryu',
-      name: 'goju-ryu',
-      component: Karate
+      path: '/useful-links',
+      name: 'useful-links',
+      component: LinkDirectory
     },
     {
       path: '/events',

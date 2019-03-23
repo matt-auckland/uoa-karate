@@ -18,23 +18,25 @@
           <div class="event-text location">
             Location: {{event.location}}.
           </div>
+
+          <div class="event-text link">
+            For more information follow
+            <a
+              v-if="event.offSitelink"
+              :href="event.offSitelink"
+              target="_blank"
+              rel="noopener noreferrer"
+            >this link</a>
+            <router-link
+              v-if="!event.offSitelink && event.extendedDescription"
+              :to="'/events/' + event.name.replace(/\ /gi, '-')"
+            >this link</router-link>
+          </div>
           <div
             class="event-text"
             v-if="event.signUpURL"
           >To sign up, follow <a
               :href="event.signUpURL"
-              target="_blank"
-              rel="noopener noreferrer"
-            >this link</a></div>
-          <div class="event-text link">
-            For more information follow
-            <router-link
-              v-if="!event.offSitelink && event.extendedDescription"
-              :to="'/events/' + event.name.replace(/\ /gi, '-')"
-            >this link</router-link>
-            <a
-              v-if="event.offSitelink"
-              :href="event.offSitelink"
               target="_blank"
               rel="noopener noreferrer"
             >this link</a>
@@ -74,7 +76,7 @@ export default {
   },
   methods: {
     computeDate: function(event) {
-      return date;
+      return event.date;
     }
   }
 };
@@ -83,6 +85,7 @@ export default {
 <style scoped>
 .events-container {
   display: grid;
+  /* grid-template-columns: 1fr; */
   grid-template-columns: repeat(auto-fit, minmax(auto, 335px));
   grid-auto-rows: minmax(80px, auto);
   grid-gap: 30px;
@@ -94,13 +97,14 @@ export default {
 }
 
 .see-more {
-  grid-column: 2/2;
+  text-align: center;
+  /* grid-column: 2/2; */
 }
 .event {
   width: 100%;
   border-radius: 15px;
   border: 2px solid var(--persian-red-darker);
-  background-color: var(--tuatara);
+  background-color: black;
 }
 
 .event-inner {

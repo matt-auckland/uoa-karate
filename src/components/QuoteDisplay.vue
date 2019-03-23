@@ -4,41 +4,41 @@
     <div class="quote-text">
       "{{quote.text}}" - {{quote.authour}}
     </div>
-    <div v-if="quote.textUntranslated" class="quote-text">
-        {{quote.textUntranslated}} - {{quote.authourUntranslated}}
+    <div
+      v-if="quote.textUntranslated"
+      class="quote-text"
+    >
+      {{quote.textUntranslated}} - {{quote.authourUntranslated}}
     </div>
   </div>
 </template>
 
 <script>
-import quoteList from '../assets/quotes.json'
-
+import quoteList from "../assets/quotes.json";
 
 export default {
-  name: 'QuoteDisplay',
-  components: {
-  },
+  name: "QuoteDisplay",
+  components: {},
   data: function() {
     return {
-      quote:  quoteList[Math.round(quoteList.length * Math.random())]
-    }
+      quote: quoteList[Math.floor(quoteList.length * Math.random())]
+    };
   },
-  methods: {
-  }
-}
+  methods: {}
+};
 </script>
 
 <style scoped>
 .quote-container {
-  display: flex; 
+  display: flex;
   justify-content: flex-start;
   flex-direction: column;
   text-align: center;
   align-items: center;
+  margin-bottom: 30px;
 }
 
 .quote-text {
   font-size: 14px;
 }
-
 </style>
