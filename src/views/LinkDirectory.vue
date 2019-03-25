@@ -5,6 +5,12 @@
       <ul>
         <li>
           <a
+            href="https://www.youtube.com/playlist?list=PLjmMUBeoZL9eM-TUV8YFDd0w0IIfQ2lLc"
+            target="_blank"
+          >Club Video Playlist</a>
+        </li>
+        <li>
+          <a
             href="https://goo.gl/forms/YMUAxBg9q3fgG0VB3"
             target="_blank"
           >Club Reimbursement Form</a>
