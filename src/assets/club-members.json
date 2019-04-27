@@ -38,19 +38,6 @@
     "bio": "Tom Sensei helped Ewan Sensei found the club in 2003."
   },
   {
-    "name": "Johannes Reynisson",
-    "role": "instructor",
-    "pic": "",
-    "position": "Instructor",
-    "styles": [
-      {
-        "name": "Goju Ryu",
-        "grade": -3
-      }
-    ],
-    "bio": "Johannes Sensei teaches Chemistry at UoA."
-  },
-  {
     "name": "Greg Shanahan",
     "role": "instructor",
     "pic": "",
@@ -74,7 +61,7 @@
         "grade": -3
       }
     ],
-    "bio": "Ewan Sensei teaches Software Engineering at UoA. He founded the club in 2003."
+    "bio": ""
   },
   {
     "name": "Yin Tung Ho",
@@ -87,9 +74,9 @@
         "grade": -3
       }
     ],
-    "bio": "Ewan Sensei teaches Software Engineering at UoA. He founded the club in 2003."
+    "bio": ""
   },
-    {
+  {
     "name": "Mathew Paul",
     "role": "exec",
     "pic": "",
