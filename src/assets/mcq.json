@@ -1,0 +1,314 @@
+[
+  {
+    "question": "Who is this man?",
+    "answers": [
+      {
+        "text": "Chogun Miyagi",
+        "correct": true
+      },
+      {
+        "text": "Tetsuji Nakamura",
+        "correct": false
+      },
+      {
+        "text": "Morio Higaonna",
+        "correct": false
+      },
+      {
+        "text": "Kanryo Higaonna",
+        "correct": false
+      }
+    ],
+    "image": "/chogun-miyagi.png",
+    "tags": ["History"],
+    "referenceLink": "https://en.wikipedia.org/wiki/Ch%C5%8Djun_Miyagi"
+  },
+  {
+    "question": "What is the name of our first kata?",
+    "answers": [
+      {
+        "text": "Gekisai Dai Ichi",
+        "correct": true
+      },
+      {
+        "text": "Gakisai Dai Ichigo",
+        "correct": false
+      },
+      {
+        "text": "Gekisai Dai Ni",
+        "correct": false
+      },
+      {
+        "text": "Gekisai Ichi",
+        "correct": false
+      }
+    ],
+    "image": "",
+    "tags": ["Kata", "9th Kyu", "Gekisai Dai Ichi"],
+    "referenceLink": "https://wiki.uoa-karate.club/wiki/Gekisai_Dai_Ichi"
+  },
+  {
+    "question": "In Gekisai Dai Ichi, after kicking Hidari Gedan Maegeri, what are the next four techniques?",
+    "answers": [
+      {
+        "text": "Chudan Hiji Ate, Jodan Uraken, Gedan Barai, Chudan Gyakuzuki",
+        "correct": true
+      },
+      {
+        "text": "Chudan Hiji Ate, Jodan Uraken, Chudan Gyakuzuki, Gedan Barai",
+        "correct": false
+      },
+      {
+        "text": "Jodan Uraken, Gedan Barai, Chudan Gyakuzuki, Jodan Haitou",
+        "correct": false
+      },
+      {
+        "text": "Chudan Hiji Ate, Gedan Maegeri, Chudan Hiji Ate, Jodan Uraken, Gedan Barai",
+        "correct": false
+      }
+    ],
+    "image": "",
+    "tags": ["Kata", "9th Kyu", "Gekisai Dai Ichi"],
+    "referenceLink": "https://wiki.uoa-karate.club/wiki/Gekisai_Dai_Ichi#How_To"
+  },
+  {
+    "question": "In Gekisai Dai Ichi, after the first gedan barai, where should you be looking?",
+    "answers": [
+      {
+        "text": "Over your shoulder, to the left",
+        "correct": true
+      },
+      {
+        "text": "To the front",
+        "correct": false
+      },
+      {
+        "text": "Over your shoulder to the right",
+        "correct": false
+      },
+      {
+        "text": "Head forward but, looking left with your eyes",
+        "correct": false
+      }
+    ],
+    "image": "",
+    "tags": ["Kata", "9th Kyu", "Gekisai Dai Ichi"],
+    "referenceLink": "https://wiki.uoa-karate.club/wiki/Gekisai_Dai_Ichi#How_To"
+  },
+  {
+    "question": "How many stomps are there in Gekisai Dai Ichi?",
+    "answers": [
+      {
+        "text": "Four",
+        "correct": true
+      },
+      {
+        "text": "Two",
+        "correct": false
+      },
+      {
+        "text": "Six",
+        "correct": false
+      },
+      {
+        "text": "None",
+        "correct": false
+      }
+    ],
+    "image": "",
+    "tags": ["Kata", "9th Kyu", "Gekisai Dai Ichi"],
+    "referenceLink": "https://wiki.uoa-karate.club/wiki/Gekisai_Dai_Ichi#How_To"
+  },
+  {
+    "question": "How many Kiai are there in Gekisai Dai Ichi?",
+    "answers": [
+      {
+        "text": "One",
+        "correct": true
+      },
+      {
+        "text": "Two",
+        "correct": false
+      },
+      {
+        "text": "Three",
+        "correct": false
+      },
+      {
+        "text": "None",
+        "correct": false
+      }
+    ],
+    "image": "",
+    "tags": ["Kata", "9th Kyu", "Gekisai Dai Ichi"],
+    "referenceLink": "https://wiki.uoa-karate.club/wiki/Gekisai_Dai_Ichi#How_To"
+  },
+  {
+    "question": "After the second Morote Tsuki in Gekisai Dai Ichi what stance should you be in?",
+    "answers": [
+      {
+        "text": "Hidari Zenkutsu Dachi",
+        "correct": true
+      },
+      {
+        "text": "Migi Zenkutsu Dachi",
+        "correct": false
+      },
+      {
+        "text": "Migi Hanzenkutsu Dachi",
+        "correct": false
+      },
+      {
+        "text": "Hidari Sanchin Dachi",
+        "correct": false
+      }
+    ],
+    "image": "",
+    "tags": ["Kata", "9th Kyu", "Gekisai Dai Ichi"],
+    "referenceLink": "https://wiki.uoa-karate.club/wiki/Gekisai_Dai_Ichi#How_To"
+  },
+  {
+    "question": "When performing either of the Shutou Uchi in Gekisai Dai Ichi, what stance should you be in?",
+    "answers": [
+      {
+        "text": "Hachi Dachi",
+        "correct": true
+      },
+      {
+        "text": "Musubi Dachi",
+        "correct": false
+      },
+      {
+        "text": "Shiko Dachi",
+        "correct": false
+      },
+      {
+        "text": "Heiko Dachi",
+        "correct": false
+      }
+    ],
+    "image": "",
+    "tags": ["Kata", "9th Kyu", "Gekisai Dai Ichi"],
+    "referenceLink": "https://wiki.uoa-karate.club/wiki/Gekisai_Dai_Ichi#How_To"
+  },
+  {
+    "question": "In Gekisai Dai Ni, after performing the second Shutou Uchi, what stance do you move into?",
+    "tags": ["Kata", "8th Kyu", "Gekisai Dai Ni"],
+    "answers": [
+      {
+        "text": "Migi Neko Ashi Dachi",
+        "correct": true
+      },
+      {
+        "text": "Migi Sanchin",
+        "correct": false
+      },
+      {
+        "text": "Migi Zenkutsu Dachi",
+        "correct": false
+      },
+      {
+        "text": "Musubi Dachi",
+        "correct": false
+      }
+    ],
+    "image": "",
+    "referenceLink": "https://wiki.uoa-karate.club/wiki/Gekisai_Dai_Ni#How_To"
+  },
+  {
+    "question": "In Gekisai Dai Ni, after performing the second Hiki Uke, which direction do you move?",
+    "tags": ["Kata", "8th Kyu", "Gekisai Dai Ni"],
+    "answers": [
+      {
+        "text": "Backwards",
+        "correct": true
+      },
+      {
+        "text": "To the left",
+        "correct": false
+      },
+      {
+        "text": "To the right",
+        "correct": false
+      },
+      {
+        "text": "Forward",
+        "correct": false
+      }
+    ],
+    "image": "",
+    "referenceLink": "https://wiki.uoa-karate.club/wiki/Gekisai_Dai_Ni#How_To"
+  },
+  {
+    "question": "What does Gekisai Dai Ichi mean?",
+    "tags": ["Kata", "9th Kyu", "Gekisai Dai Ichi"],
+    "answers": [
+      {
+        "text": "Attack & destory number one",
+        "correct": true
+      },
+      {
+        "text": "Attack & defend number one",
+        "correct": false
+      },
+      {
+        "text": "Destroy & collapse number one",
+        "correct": false
+      },
+      {
+        "text": "Attack & destory number two",
+        "correct": false
+      }
+    ],
+    "image": "",
+    "referenceLink": "https://wiki.uoa-karate.club/wiki/Gekisai_Dai_Ichi#Name_Meaning"
+  },
+  {
+    "question": "What is the name of our first kata?",
+    "tags": ["Kata", "9th Kyu", "Gekisai Dai Ichi"],
+    "answers": [
+      {
+        "text": "Gekisai Dai Ichi",
+        "correct": true
+      },
+      {
+        "text": "Gekisai Dai Ichigo",
+        "correct": false
+      },
+      {
+        "text": "Gekisai Dai Ni",
+        "correct": false
+      },
+      {
+        "text": "Gekisai Ichi",
+        "correct": false
+      }
+    ],
+    "image": "",
+    "referenceLink": "https://wiki.uoa-karate.club/wiki/Gekisai_Dai_Ichi"
+  },
+  {
+    "question": "In Saifa what stance are you in when you perform the first hizageri?",
+    "tags": ["Kata", "7th Kyu", "Saifa"],
+    "answers": [
+      {
+        "text": "Hidari Sage Ashi Dachi",
+        "correct": true
+      },
+      {
+        "text": "Migi Sage Ashi Dachi",
+        "correct": false
+      },
+      {
+        "text": "Heiko Dachi",
+        "correct": false
+      },
+      {
+        "text": "Hidari Sanchin Dachi",
+        "correct": false
+      }
+    ],
+    "image": "",
+    "referenceLink": "https://wiki.uoa-karate.club/wiki/Saifa#How_To"
+  }
+]
