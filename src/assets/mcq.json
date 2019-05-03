@@ -240,6 +240,30 @@
     "referenceLink": "https://wiki.uoa-karate.club/wiki/Gekisai_Dai_Ni#How_To"
   },
   {
+    "question": "In Gekisai Dai Ni, how many kiai do you perform?",
+    "tags": ["Kata", "8th Kyu", "Gekisai Dai Ni"],
+    "answers": [
+      {
+        "text": "Two",
+        "correct": true
+      },
+      {
+        "text": "None",
+        "correct": false
+      },
+      {
+        "text": "One",
+        "correct": false
+      },
+      {
+        "text": "Three",
+        "correct": false
+      }
+    ],
+    "image": "",
+    "referenceLink": "https://wiki.uoa-karate.club/wiki/Gekisai_Dai_Ni#How_To"
+  },
+  {
     "question": "What does Gekisai Dai Ichi mean?",
     "tags": ["Kata", "9th Kyu", "Gekisai Dai Ichi"],
     "answers": [

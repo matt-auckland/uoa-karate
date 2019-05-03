@@ -3,16 +3,16 @@
     "index": 1,
     "day": "Tuesday",
     "startTime": "6pm",
-    "finishTime": "8pm",
-    "location": "Cap and Gown Lounge, UoA",
+    "finishTime": "7.30pm",
+    "location": "Hawks Nest, Floor 3, 492 Queen Street",
     "notes": "Regular Training"
   },
   {
     "index": 2,
-    "day": "Wednesday",
+    "day": "Thursday",
     "startTime": "6pm",
     "finishTime": "7.30pm",
-    "location": "Dance Studio, UoA Recreation Center",
+    "location": "Hawks Nest, Floor 3, 492 Queen Street",
     "notes": "Regular training"
   },
   {
@@ -20,15 +20,15 @@
     "day": "Friday",
     "startTime": "6pm",
     "finishTime": "7.30pm",
-    "location": "Dance Studio, UoA Recreation Center",
-    "notes": "Advanced class"
+    "location": "Building 119, University of Auckland",
+    "notes": "Graded member's class"
   },
   {
     "index": 4,
     "day": "Sunday",
     "startTime": "10am",
     "finishTime": "12pm",
-    "location": "Dance Studio, UoA Recreation Center",
+    "location": "Hawks Nest, Floor 3, 492 Queen Street",
     "notes": "Regular training"
   }
 ]
