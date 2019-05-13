@@ -17,7 +17,7 @@
               :id="category"
               :value="category"
               v-model="selectedCategories"
-              v-on:click="filterQuestions()"
+              v-on:change="filterQuestions()"
             >
             <label :for="category">{{ category }}</label>
           </div>
@@ -121,41 +121,39 @@ export default {
         this.selectedCategories
       );
 
-      this.$nextTick(function() {
-        console.log(
-          "this.selectedCategories after tick",
-          this.selectedCategories
+      console.log(
+        "this.selectedCategories after tick",
+        this.selectedCategories
+      );
+      const questions = this.questions;
+      console.log("all questions before filtering", questions);
+      const filteredQuestions = [];
+      this.selectedCategories.forEach(function(category) {
+        filteredQuestions.push(
+          ...questions
+            .filter(q => (q.tags.includes(category) ? true : false))
+            .filter(q => !answeredQuestions.includes(q))
+            .filter(q => !filteredQuestions.includes(q))
         );
-        const questions = this.questions;
-        console.log("all questions before filtering", questions);
-        const filteredQuestions = [];
-        this.selectedCategories.forEach(function(category) {
-          filteredQuestions.push(
-            ...questions
-              .filter(q => (q.tags.includes(category) ? true : false))
-              .filter(q => !answeredQuestions.includes(q))
-              .filter(q => !filteredQuestions.includes(q))
-          );
-        });
-        console.log("filteredQuestions after filtering", filteredQuestions);
-        this.unansweredQuestions = filteredQuestions.filter(
-          q => !answeredQuestions.includes(q)
-        );
-        console.log(
-          "unansweredQuestions after filtered q filter",
-          this.unansweredQuestions
-        );
-
-        console.log(`current question ${this.currentQuestion}`);
-
-        if (
-          !this.currentQuestion ||
-          (!this.unansweredQuestions.includes(this.currentQuestion) &&
-            !this.answeredQuestions.includes(this.currentQuestion))
-        ) {
-          this.randomQuestion();
-        }
       });
+      console.log("filteredQuestions after filtering", filteredQuestions);
+      this.unansweredQuestions = filteredQuestions.filter(
+        q => !answeredQuestions.includes(q)
+      );
+      console.log(
+        "unansweredQuestions after filtered q filter",
+        this.unansweredQuestions
+      );
+
+      console.log(`current question ${this.currentQuestion}`);
+
+      if (
+        !this.currentQuestion ||
+        (!this.unansweredQuestions.includes(this.currentQuestion) &&
+          !this.answeredQuestions.includes(this.currentQuestion))
+      ) {
+        this.randomQuestion();
+      }
     },
     randomQuestion: function() {
       console.log("random q");
