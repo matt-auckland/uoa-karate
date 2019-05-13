@@ -147,24 +147,35 @@ export default {
       console.log("random q");
 
       const previousQuestion = this.currentQuestion;
-      if (this.unansweredQuestions.length === 0)
+
+      if (this.unansweredQuestions.length === 0) {
+        console.log("no unanswered questions");
+
         this.currentQuestion = undefined;
+      }
+
       const newQuestionPool = this.unansweredQuestions.filter(
         q => q !== this.currentQuestion
       );
 
       if (newQuestionPool.length === 1) {
+        console.log("question pool === 1");
+
         this.currentQuestion = newQuestionPool[0];
       } else if (newQuestionPool.length > 1) {
+        console.log("question pool > 1");
         const randomNum = Math.floor(Math.random() * newQuestionPool.length);
         this.currentQuestion = this.unansweredQuestions[randomNum];
       }
 
       if (this.currentQuestion) {
+        console.log("we have a q so randomise answers");
+
         this.currentQuestion.answers = Utils.randomiseArr(
           this.currentQuestion.answers
         );
       }
+      console.log("current q", this.currentQuestion.question);
     },
     revealAnswer: function(showAnswer) {},
     recordAnswer: function(isAnswerCorrect) {
