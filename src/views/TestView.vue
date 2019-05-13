@@ -122,7 +122,11 @@ export default {
         this.unansweredQuestions = filteredQuestions.filter(
           q => !answeredQuestions.includes(q)
         );
-        if (!this.currentQuestion) {
+        if (
+          !this.currentQuestion ||
+          (!this.unansweredQuestions.includes(this.currentQuestion) &&
+            !this.answeredQuestions.includes(this.currentQuestion))
+        ) {
           this.randomQuestion();
         }
       });
