@@ -121,7 +121,7 @@ export default {
         const questions = this.questions;
         console.log("all questions before filtering", questions);
         const filteredQuestions = [];
-
+        console.log("this.selectedCategories", this.selectedCategories);
         this.selectedCategories.forEach(function(category) {
           filteredQuestions.push(
             ...questions
