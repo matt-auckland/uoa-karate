@@ -56,11 +56,22 @@
       <ul>
         <li>Make the page pretty ❌</li>
         <li>Add more questions ❌</li>
-        <li>Link to relevent Karate Wiki pages/other resources? ❌</li>
         <li>Add a way to report incorrect questions/answers ❌</li>
         <li>Add a way to suggest questions ❌</li>
       </ul>
     </div>
+    <footer>
+      <a
+        class="footer-link"
+        href=""
+        target="_blank"
+      > Click here to suggest a new question</a>
+      <a
+        class="footer-link"
+        href=""
+        target="_blank"
+      >Click here to report an issue with a question</a>
+    </footer>
   </div>
 </template>
 
@@ -265,5 +276,14 @@ button {
   padding: 8px 12px;
   font-size: 16px;
   text-transform: uppercase;
+}
+
+.footer-link {
+  display: block;
+  margin: 5px 0;
+  text-align: center;
+}
+footer {
+  padding: 15px 0 30px 0;
 }
 </style>

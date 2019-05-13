@@ -52,6 +52,19 @@
           :class="{ 'correct': this.selectedAnswer.correct, 'incorrect': !this.selectedAnswer.correct }"
         >Your Answer: {{ this.selectedAnswer.text }}</div>
         <div class="answer-text correct">Correct Answer: {{ this.correctAnswer.text }}</div>
+
+        <div
+          v-if="questionProp.referenceLink"
+          class="reference-link"
+        >
+          Reference: <a
+            :href="questionProp.referenceLink"
+            target="_blank"
+          >
+            {{questionProp.referenceLink}}
+          </a>
+        </div>
+
         <div class="answer-buttons-container">
           <button v-on:click="nextQuestion()">Next Question</button>
         </div>
@@ -79,18 +92,9 @@ export default {
   },
   watch: {
     questionProp: function(val, oldVal) {
-      console.log("updated question");
-      if (oldVal) {
-        console.log(oldVal);
-        console.log(val);
-      }
       if (!val || (oldVal && val.question !== oldVal.question)) {
         this.answerVisible = false;
         this.selectedAnswer = undefined;
-      }
-    },
-    answerVisible: function(val, oldVal) {
-      if (!val && oldVal) {
       }
     }
   },
