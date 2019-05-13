@@ -32,8 +32,7 @@
       <h2>Exec Team</h2>
       <div class="person-container">
         <Person
-          v-for="execMember in randomise(ClubMembers.filter(person => person.role === 'exec'))
-.map(a => a[1])"
+          v-for="execMember in Utils.randomiseArr(ClubMembers.filter(person => person.role === 'exec'))"
           :key="execMember.name"
           :person="execMember"
         />
@@ -48,20 +47,18 @@ import ClubMembers from "../assets/club-members.json";
 import TrainingSchedule from "@/components/TrainingSchedule.vue";
 import FeesTable from "@/components/FeesTable.vue";
 
+import Utils from "@/libs/utils";
+
 export default {
   components: {
     Person,
     TrainingSchedule,
     FeesTable
   },
-  data: function() {
+  data() {
     return {
       ClubMembers: ClubMembers
     };
-  },
-  methods: {
-    randomise: arr =>
-      arr.map(a => [Math.random(), a]).sort((a, b) => a[0] - b[0])
   }
 };
 </script>

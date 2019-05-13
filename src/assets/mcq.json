@@ -3,7 +3,7 @@
     "question": "Who is this man?",
     "answers": [
       {
-        "text": "Chogun Miyagi",
+        "text": "Chojun Miyagi",
         "correct": true
       },
       {
@@ -123,11 +123,11 @@
     "question": "How many Kiai are there in Gekisai Dai Ichi?",
     "answers": [
       {
-        "text": "One",
+        "text": "Two",
         "correct": true
       },
       {
-        "text": "Two",
+        "text": "One",
         "correct": false
       },
       {
