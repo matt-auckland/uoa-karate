@@ -90,9 +90,9 @@ export default {
         })
         .join() //flatten our array of flattened arrays into a string
         .split(",") // split our super string back into an array
-        .filter(function(elem, index, self) {
+        .filter(function(tag, index, tagArr) {
           // filter out any duplicates
-          return index == self.indexOf(elem);
+          return index === tagArr.indexOf(tag);
         });
       return categories;
     }
@@ -131,6 +131,9 @@ export default {
         this.unansweredQuestions = filteredQuestions.filter(
           q => !answeredQuestions.includes(q)
         );
+
+        console.log(`current question ${this.currentQuestion}`);
+
         if (
           !this.currentQuestion ||
           (!this.unansweredQuestions.includes(this.currentQuestion) &&
@@ -141,6 +144,8 @@ export default {
       });
     },
     randomQuestion: function() {
+      console.log("random q");
+
       const previousQuestion = this.currentQuestion;
       if (this.unansweredQuestions.length === 0)
         this.currentQuestion = undefined;
