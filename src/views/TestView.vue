@@ -56,19 +56,17 @@
       <ul>
         <li>Make the page pretty ❌</li>
         <li>Add more questions ❌</li>
-        <li>Add a way to report incorrect questions/answers ❌</li>
-        <li>Add a way to suggest questions ❌</li>
       </ul>
     </div>
     <footer>
       <a
         class="footer-link"
-        href=""
+        href="https://forms.gle/GQsceE4whb8X58866"
         target="_blank"
       > Click here to suggest a new question</a>
       <a
         class="footer-link"
-        href=""
+        href="https://forms.gle/GzmqkTZHEtGhGYu96"
         target="_blank"
       >Click here to report an issue with a question</a>
     </footer>
