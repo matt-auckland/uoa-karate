@@ -116,12 +116,19 @@ export default {
     filterQuestions: function() {
       const answeredQuestions = this.answeredQuestions;
       console.log("answeredQuestions before filtering", answeredQuestions);
+      console.log(
+        "this.selectedCategories before tick",
+        this.selectedCategories
+      );
 
       this.$nextTick(function() {
+        console.log(
+          "this.selectedCategories after tick",
+          this.selectedCategories
+        );
         const questions = this.questions;
         console.log("all questions before filtering", questions);
         const filteredQuestions = [];
-        console.log("this.selectedCategories", this.selectedCategories);
         this.selectedCategories.forEach(function(category) {
           filteredQuestions.push(
             ...questions
