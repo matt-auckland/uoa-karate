@@ -131,6 +131,7 @@ export default {
         this.unansweredQuestions = filteredQuestions.filter(
           q => !answeredQuestions.includes(q)
         );
+        console.log(this.unansweredQuestions);
 
         console.log(`current question ${this.currentQuestion}`);
 
