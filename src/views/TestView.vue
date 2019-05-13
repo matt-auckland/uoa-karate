@@ -115,18 +115,8 @@ export default {
   methods: {
     filterQuestions: function() {
       const answeredQuestions = this.answeredQuestions;
-      console.log("answeredQuestions before filtering", answeredQuestions);
-      console.log(
-        "this.selectedCategories before tick",
-        this.selectedCategories
-      );
 
-      console.log(
-        "this.selectedCategories after tick",
-        this.selectedCategories
-      );
       const questions = this.questions;
-      console.log("all questions before filtering", questions);
       const filteredQuestions = [];
       this.selectedCategories.forEach(function(category) {
         filteredQuestions.push(
@@ -136,16 +126,9 @@ export default {
             .filter(q => !filteredQuestions.includes(q))
         );
       });
-      console.log("filteredQuestions after filtering", filteredQuestions);
       this.unansweredQuestions = filteredQuestions.filter(
         q => !answeredQuestions.includes(q)
       );
-      console.log(
-        "unansweredQuestions after filtered q filter",
-        this.unansweredQuestions
-      );
-
-      console.log(`current question ${this.currentQuestion}`);
 
       if (
         !this.currentQuestion ||
@@ -156,13 +139,7 @@ export default {
       }
     },
     randomQuestion: function() {
-      console.log("random q");
-
-      const previousQuestion = this.currentQuestion;
-
       if (this.unansweredQuestions.length === 0) {
-        console.log("no unanswered questions");
-
         this.currentQuestion = undefined;
       }
 
@@ -171,25 +148,18 @@ export default {
       );
 
       if (newQuestionPool.length === 1) {
-        console.log("question pool === 1");
-
         this.currentQuestion = newQuestionPool[0];
       } else if (newQuestionPool.length > 1) {
-        console.log("question pool > 1");
         const randomNum = Math.floor(Math.random() * newQuestionPool.length);
         this.currentQuestion = this.unansweredQuestions[randomNum];
       }
 
       if (this.currentQuestion) {
-        console.log("we have a q so randomise answers");
-
         this.currentQuestion.answers = Utils.randomiseArr(
           this.currentQuestion.answers
         );
       }
-      console.log("current q", this.currentQuestion.question);
     },
-    revealAnswer: function(showAnswer) {},
     recordAnswer: function(isAnswerCorrect) {
       if (isAnswerCorrect) {
         this.scoreObj.correctAnswers++;
