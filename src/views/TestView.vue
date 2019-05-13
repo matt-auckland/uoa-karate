@@ -115,23 +115,29 @@ export default {
   methods: {
     filterQuestions: function() {
       const answeredQuestions = this.answeredQuestions;
+      console.log("answeredQuestions before filtering", answeredQuestions);
+
       this.$nextTick(function() {
         const questions = this.questions;
+        console.log("all questions before filtering", questions);
         const filteredQuestions = [];
-        this.selectedCategories.map(function(category) {
+
+        this.selectedCategories.forEach(function(category) {
           filteredQuestions.push(
             ...questions
-              .filter(q => {
-                if (q.tags.includes(category)) return q;
-              })
+              .filter(q => (q.tags.includes(category) ? true : false))
               .filter(q => !answeredQuestions.includes(q))
               .filter(q => !filteredQuestions.includes(q))
           );
         });
+        console.log("filteredQuestions after filtering", filteredQuestions);
         this.unansweredQuestions = filteredQuestions.filter(
           q => !answeredQuestions.includes(q)
         );
-        console.log(this.unansweredQuestions);
+        console.log(
+          "unansweredQuestions after filtered q filter",
+          this.unansweredQuestions
+        );
 
         console.log(`current question ${this.currentQuestion}`);
 
