@@ -240,6 +240,102 @@
     "referenceLink": "https://wiki.uoa-karate.club/wiki/Gekisai_Dai_Ni#How_To"
   },
   {
+    "question": "In Gekisai Dai Ni, how many Hiki Uke are there?",
+    "tags": ["Kata", "8th Kyu", "Gekisai Dai Ni"],
+    "answers": [
+      {
+        "text": "Three",
+        "correct": true
+      },
+      {
+        "text": "Four",
+        "correct": false
+      },
+      {
+        "text": "Two",
+        "correct": false
+      },
+      {
+        "text": "None",
+        "correct": false
+      }
+    ],
+    "image": "",
+    "referenceLink": "https://wiki.uoa-karate.club/wiki/Gekisai_Dai_Ni#How_To"
+  },
+  {
+    "question": "In Gekisai Dai Ni, when moving back into Neko Ashi Dachi, how far should you move?",
+    "tags": ["Kata", "8th Kyu", "Gekisai Dai Ni"],
+    "answers": [
+      {
+        "text": "As far as you can",
+        "correct": true
+      },
+      {
+        "text": "Two steps",
+        "correct": false
+      },
+      {
+        "text": "The length of a regular Zenkutsu Dachi",
+        "correct": false
+      },
+      {
+        "text": "One step",
+        "correct": false
+      }
+    ],
+    "image": "",
+    "referenceLink": "https://wiki.uoa-karate.club/wiki/Gekisai_Dai_Ni#How_To"
+  },
+  {
+    "question": "In Gekisai Dai Ni, after performing the first Toraguchi, how do you move?",
+    "tags": ["Kata", "8th Kyu", "Gekisai Dai Ni"],
+    "answers": [
+      {
+        "text": "Suriashi directly to the right",
+        "correct": true
+      },
+      {
+        "text": "Suriashi directly to the left",
+        "correct": false
+      },
+      {
+        "text": "Suriashi forward on a 45 degree angle to the right",
+        "correct": false
+      },
+      {
+        "text": "Suriashi backward on a 45 degree angle to the right",
+        "correct": false
+      }
+    ],
+    "image": "",
+    "referenceLink": "https://wiki.uoa-karate.club/wiki/Gekisai_Dai_Ni#How_To"
+  },
+  {
+    "question": "In Gekisai Dai Ni, in Neko Ashi Dachi, what should weight distribution be?",
+    "tags": ["Kata", "8th Kyu", "Gekisai Dai Ni"],
+    "answers": [
+      {
+        "text": "90% on the back leg, 10% on the front leg.",
+        "correct": true
+      },
+      {
+        "text": "90% on the front leg, 10% on the bag leg.",
+        "correct": false
+      },
+      {
+        "text": "Weight should split evenly on each leg.",
+        "correct": false
+      },
+      {
+        "text": "60% on the front leg, 40% on the back leg",
+        "correct": false
+      }
+    ],
+    "image": "",
+    "referenceLink": "https://wiki.uoa-karate.club/wiki/Gekisai_Dai_Ni#How_To"
+  },
+  {
     "question": "In Gekisai Dai Ni, how many kiai do you perform?",
     "tags": ["Kata", "8th Kyu", "Gekisai Dai Ni"],
     "answers": [
