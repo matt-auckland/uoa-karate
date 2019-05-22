@@ -412,11 +412,11 @@
     "tags": ["Kata", "7th Kyu", "Saifa"],
     "answers": [
       {
-        "text": "Hidari Sage Ashi Dachi",
+        "text": "Migi Sagi Ashi Dachi",
         "correct": true
       },
       {
-        "text": "Migi Sage Ashi Dachi",
+        "text": "Hidari Sagi Ashi Dachi",
         "correct": false
       },
       {
@@ -425,6 +425,78 @@
       },
       {
         "text": "Hidari Sanchin Dachi",
+        "correct": false
+      }
+    ],
+    "image": "",
+    "referenceLink": "https://wiki.uoa-karate.club/wiki/Saifa#How_To"
+  },
+  {
+    "question": "Which sentence best describes the stance Hachi Dachi?",
+    "tags": ["Kata", "7th Kyu", "Saifa"],
+    "answers": [
+      {
+        "text": "Feet shoulder width apart, pointed out 45 degrees",
+        "correct": true
+      },
+      {
+        "text": "Feet shoulder width apart, pointed in 45 degrees",
+        "correct": false
+      },
+      {
+        "text": "Feet shoulder width apart, pointed forward and parallel",
+        "correct": false
+      },
+      {
+        "text": "Feet together with heels touching, pointed out 45 degrees",
+        "correct": false
+      }
+    ],
+    "image": "",
+    "referenceLink": "https://wiki.uoa-karate.club/wiki/Saifa#How_To"
+  },
+  {
+    "question": "In the kata Saifa, what stance are you in when you perform uraken?",
+    "tags": ["Kata", "7th Kyu", "Saifa"],
+    "answers": [
+      {
+        "text": "Shikodachi",
+        "correct": true
+      },
+      {
+        "text": "Hachi Dachi",
+        "correct": false
+      },
+      {
+        "text": "Neko Ashi Dachi",
+        "correct": false
+      },
+      {
+        "text": "Heiko Dachi",
+        "correct": false
+      }
+    ],
+    "image": "",
+    "referenceLink": "https://wiki.uoa-karate.club/wiki/Saifa#How_To"
+  },
+  {
+    "question": "In the kata Saifa, what stance are you in when you perform Tetsui?",
+    "tags": ["Kata", "7th Kyu", "Saifa"],
+    "answers": [
+      {
+        "text": "Hachi Dachi",
+        "correct": true
+      },
+      {
+        "text": "Heiko Dachi",
+        "correct": false
+      },
+      {
+        "text": "Shikodachi",
+        "correct": false
+      },
+      {
+        "text": "Sagi Ashi Dachi",
         "correct": false
       }
     ],
