@@ -32,7 +32,7 @@
       <h2>Exec Team</h2>
       <div class="person-container">
         <Person
-          v-for="execMember in Utils.randomiseArr(ClubMembers.filter(person => person.role === 'exec'))"
+          v-for="execMember in ClubMembers.filter(person => person.role === 'exec')"
           :key="execMember.name"
           :person="execMember"
         />
@@ -46,8 +46,6 @@ import Person from "@/components/Person.vue";
 import ClubMembers from "../assets/club-members.json";
 import TrainingSchedule from "@/components/TrainingSchedule.vue";
 import FeesTable from "@/components/FeesTable.vue";
-
-import Utils from "@/libs/utils";
 
 export default {
   components: {

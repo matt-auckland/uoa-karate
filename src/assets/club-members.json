@@ -77,14 +77,14 @@
     "bio": ""
   },
   {
-    "name": "Mathew Paul",
+    "name": "Jane Yang",
     "role": "exec",
     "pic": "",
-    "position": "Social Director",
+    "position": "President",
     "styles": [
       {
         "name": "Goju Ryu",
-        "grade": 1
+        "grade": 6
       }
     ],
     "bio": ""
@@ -103,18 +103,19 @@
     "bio": ""
   },
   {
-    "name": "Jane Yang",
+    "name": "Mathew Paul",
     "role": "exec",
     "pic": "",
-    "position": "President",
+    "position": "Social Director",
     "styles": [
       {
         "name": "Goju Ryu",
-        "grade": 6
+        "grade": 1
       }
     ],
     "bio": ""
   },
+
   {
     "name": "Rimal Prasad",
     "role": "exec",
@@ -155,19 +156,6 @@
     "bio": ""
   },
   {
-    "name": "Daniel Morgan",
-    "role": "exec",
-    "pic": "",
-    "position": "Secretary",
-    "styles": [
-      {
-        "name": "Goju Ryu",
-        "grade": 7
-      }
-    ],
-    "bio": ""
-  },
-  {
     "name": "Ann Thong Nee",
     "role": "exec",
     "pic": "",
@@ -176,19 +164,6 @@
       {
         "name": "Goju Ryu",
         "grade": 7
-      }
-    ],
-    "bio": ""
-  },
-  {
-    "name": "Cecillia Wang",
-    "role": "exec",
-    "pic": "",
-    "position": "Vice President",
-    "styles": [
-      {
-        "name": "Goju Ryu",
-        "grade": 8
       }
     ],
     "bio": ""
