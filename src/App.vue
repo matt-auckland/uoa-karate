@@ -13,6 +13,16 @@ export default {
   name: "App",
   components: {
     Header
+  },
+  metaInfo: {
+    title: "UoA Karate Club",
+    meta: [
+      {
+        name: "description",
+        content:
+          "University of Auckland Karate Club. Find info on training times, locations and more."
+      }
+    ]
   }
 };
 </script>

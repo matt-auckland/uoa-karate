@@ -1,21 +1,10 @@
 [
   {
-    "name": "Easter Sunday Rangitoto Trip",
-    "date": "April 21st",
-    "startDate": "2019-04-21",
-    "endDate": "2019-04-21",
-    "location": "Rangitoto Island",
-    "description": "This Easter Sunday we’re organising a a club trip to Rangitoto! There will be group lunch. There will be fun in the sun. There will be walking. And of course there will be training!",
-    "offSitelink": "",
-    "signUpURL": "https://forms.gle/4gfwKbnNqAmzM4As8",
-    "extendedDescription": "This Easter Sunday we’re organising a a club trip to Rangitoto! The dance studio will still be booked for regular training for those who can’t make it. There will be group lunch. There will be fun in the sun. There will be walking. And of course there will be training! Make sure you pack your own lunch, sunblock, appropriate shoes for light hiking and a fighting spirit. Training will be done in mufti so don’t worry you don’t need to wear your uniform in public (unless of course you want to). It’s gonna be a good time and there will be plenty of opportunities to snap photos for the ‘gram so get a move on and sign up! Cost: $36 for the return ferry ticket Schedule: We will be meeting at the Britomart Ferry Terminal at 8.50am. The ferry leaves at 9.15am so don’t be late! We will returning from Rangitoto as a group at 4pm.  There is an earlier ferry at 2.30pm for those who need to get home early. (Note: If we get less than 5 people signed up, then the trip won’t go ahead)"
-  },
-  {
-    "name": "2019 Karate Camp",
-    "date": "Semester Two Mid Sem Break",
-    "startDate": "2019-09",
-    "endDate": "2019-09",
-    "location": "TBD",
+    "name": "Karate Camp 2019",
+    "date": "Friday August 30th - Sunday September 1st",
+    "startDate": "2019-08-30",
+    "endDate": "2019-09-1",
+    "location": "Waitawheta Camp, Waihi",
     "description": "The club will be running it's annual Karate camp again this year. More info to come.",
     "offSitelink": "",
     "signUpURL": "",
@@ -121,17 +110,5 @@
     "offSitelink": "",
     "signUpURL": "",
     "extendedDescription": "Runs form 7pm till 8pm. Covers the core drills that are used in Taira Sensei's teaching method. Hosted by Sennen Sensei at Pakuranga Goju Ryu, Sunnyhills Primary School, Pakuranag. Contact Matt for more details."
-  },
-  {
-    "name": "Avengers: Endgame Screening",
-    "img": "",
-    "date": "Sunday 5th May, after training",
-    "startDate": "2019-05-05",
-    "endDate": "",
-    "location": "Event Cinemas, Queen Street",
-    "description": "This is a club viewing of Avengers: Endgame. After training we will head for lunch and then the cinemas. Session times aren’t out yet but the movie will likely start at 1.45pm or 2.45pm.",
-    "offSitelink": "",
-    "signUpURL": "https://forms.gle/Kx8pZrXXe4eV4JvC6",
-    "extendedDescription": ""
   }
 ]

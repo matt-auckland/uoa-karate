@@ -4,6 +4,11 @@
     <div class="container">
       <ul>
         <li>
+          <router-link :to="'/grading-info/'">
+            What do I need to know to grade?
+          </router-link>
+        </li>
+        <li>
           <a
             href="https://www.youtube.com/playlist?list=PLjmMUBeoZL9eM-TUV8YFDd0w0IIfQ2lLc"
             target="_blank"
