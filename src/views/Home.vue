@@ -18,7 +18,6 @@
     <!-- <Gallery class="gallery" /> -->
     <!-- <ToDo class="todo" /> -->
 
-    <QuoteDisplay class="quote-display" />
   </content>
 </template>
 
@@ -31,7 +30,6 @@ import ClubMap from "@/components/ClubMap.vue";
 import Gallery from "@/components/Gallery.vue";
 import ContactForm from "@/components/ContactForm.vue";
 import UpcomingEvents from "@/components/UpcomingEvents.vue";
-import QuoteDisplay from "@/components/QuoteDisplay.vue";
 
 export default {
   name: "home",
@@ -43,8 +41,7 @@ export default {
     FeesTable,
     Gallery,
     ContactForm,
-    UpcomingEvents,
-    QuoteDisplay
+    UpcomingEvents
   },
   data: function() {
     return {};
@@ -59,8 +56,7 @@ content {
   display: grid;
   grid-template-areas:
     "content content"
-    "map contact"
-    "quote quote";
+    "map contact";
   padding: 50px 5vw 0 5vw;
   grid-column-gap: 30px;
   grid-row-gap: 40px;
@@ -91,8 +87,7 @@ content {
     grid-template-areas:
       "content content"
       "map map"
-      "contact contact"
-      "quote quote";
+      "contact contact";
   }
   .container {
     grid-template-areas:
@@ -148,10 +143,6 @@ content {
 
 .events {
   grid-area: events;
-}
-
-.quote-display {
-  grid-area: quote;
 }
 </style>
 

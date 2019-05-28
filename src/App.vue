@@ -2,17 +2,21 @@
   <div id="app">
     <Header />
     <router-view />
+    <QuoteDisplay class="quote-display" />
   </div>
+
 </template>
 
 
 <script>
-import Header from "./components/Header";
+import Header from "@/components/Header.vue";
+import QuoteDisplay from "@/components/QuoteDisplay.vue";
 
 export default {
   name: "App",
   components: {
-    Header
+    Header,
+    QuoteDisplay
   },
   metaInfo: {
     title: "UoA Karate Club",
@@ -32,6 +36,11 @@ body {
   padding: 0;
   margin: 0;
 }
+
+a:hover {
+  color: var(--persian-red);
+}
+
 :root {
   --tuatara: #39393a;
   --tuatara-dark: #2e2e2f;
@@ -51,6 +60,10 @@ body {
   font-size: 16px;
   text-align: left;
   color: var(--base-font-color);
+}
+
+.quote-display {
+  margin-top: 50px;
 }
 
 @media (max-width: 981px) {

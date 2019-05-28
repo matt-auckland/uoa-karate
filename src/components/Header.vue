@@ -72,11 +72,6 @@ a {
   transition: font-size 300ms ease-out;
 }
 
-a:hover {
-  /* font-size: 18px; */
-  color: var(--persian-red);
-}
-
 #logo {
   width: 150px;
   margin: 20px 0;
