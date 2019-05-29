@@ -32,15 +32,6 @@ export default {
 </script>
 
 <style>
-body {
-  padding: 0;
-  margin: 0;
-}
-
-a:hover {
-  color: var(--persian-red);
-}
-
 :root {
   --tuatara: #39393a;
   --tuatara-dark: #2e2e2f;
@@ -53,17 +44,9 @@ a:hover {
   --base-font-color: #aaa;
 }
 
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 16px;
-  text-align: left;
-  color: var(--base-font-color);
-}
-
-.quote-display {
-  margin-top: 50px;
+::selection {
+  background-color: var(--persian-red);
+  color: var(--tuatara-dark);
 }
 
 @media (max-width: 981px) {
@@ -76,31 +59,28 @@ a:hover {
   }
 }
 
-@media (max-width: 500px) {
-  #app,
-  body {
-    /* font-size: 14px; */
-  }
-}
-
-@media (max-width: 350px) {
-  #app,
-  body {
-    /* font-size: 12px; */
-  }
-}
-
 body {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  text-align: left;
+  color: var(--base-font-color);
   background-color: black; /* var(--tuatara-dark); */
   color: var(--base-font-color);
-}
-
-::selection {
-  background-color: var(--persian-red);
-  color: var(--tuatara-dark);
+  padding: 0;
+  margin: 0;
 }
 
 a {
   color: var(--persian-red-light);
+}
+
+a:hover {
+  color: var(--persian-red);
+}
+
+.quote-display {
+  margin-top: 50px;
 }
 </style>
