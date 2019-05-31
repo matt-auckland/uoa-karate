@@ -93,7 +93,8 @@ export default {
         .filter(function(tag, index, tagArr) {
           // filter out any duplicates
           return index === tagArr.indexOf(tag);
-        });
+        })
+        .sort();
       return categories;
     }
   },
