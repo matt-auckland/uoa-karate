@@ -25,6 +25,7 @@
       >{{ skill.name }}</li>
     </ul>
 
+    <h4>Remember to check with Sensei to see if you can grade 🥋</h4>
     <h4>Now go train 👊</h4>
 
     <footer>
