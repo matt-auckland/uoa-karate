@@ -1682,7 +1682,7 @@
     "tags": ["Kata", "Shisochin", "3rd Kyu"],
     "answers": [
       { "text": "Morote Hiji Ate", "correct": true },
-      { "text": "Morote Chudan Nukite no Kamae", "correct": true },
+      { "text": "Morote Chudan Nukite no Kamae", "correct": false },
       { "text": "Ude Osae", "correct": false },
       { "text": "Shotei Osae", "correct": false }
     ],
