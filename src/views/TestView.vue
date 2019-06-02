@@ -72,6 +72,16 @@ import QuestionComponent from "@/components/QuestionComponent.vue";
 import Utils from "../libs/utils.js";
 
 export default {
+  name: "TestView",
+  metaInfo: {
+    title: "Karate Knowledge Tester",
+    meta: [
+      {
+        name: "description",
+        content: "Test your Karate Knowledge."
+      }
+    ]
+  },
   components: {
     QuestionComponent
   },
