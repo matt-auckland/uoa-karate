@@ -1666,7 +1666,7 @@
     "referenceLink": ""
   },
   {
-    "question": "After Chudan Ura Kake Uke / Gedan Barai, you then perform:",
+    "question": "In the kata Shisochin, after Chudan Ura Kake Uke / Gedan Barai, you then perform:",
     "tags": ["Kata", "Shisochin", "3rd Kyu"],
     "answers": [
       { "text": "Chudan Uchi Kake Uke with Yoko Hiki Uke", "correct": true },
@@ -1678,7 +1678,7 @@
     "referenceLink": ""
   },
   {
-    "question": "After Morote Chudan Ura Kake Uke, you then perform:",
+    "question": "In the kata Shisochin, after Morote Chudan Ura Kake Uke, you then perform:",
     "tags": ["Kata", "Shisochin", "3rd Kyu"],
     "answers": [
       { "text": "Morote Hiji Ate", "correct": true },
@@ -1895,12 +1895,24 @@
   },
   {
     "question": "In the kata Seiyunchin, after moving from Shiko Dachi in Suri Ashi to Heiko Dachi, you perform:",
-    "tags": ["Seiyunchin", "Kata"],
+    "tags": ["Seiyunchin", "Kata", "5th Kyu"],
     "answers": [
       { "text": "Hojo Oshi", "correct": true },
       { "text": "Hira Nukite Zuki", "correct": false },
       { "text": "Morote Gedan Barai", "correct": false },
       { "text": "Hojo Uke", "correct": false }
+    ],
+    "image": "",
+    "referenceLink": ""
+  },
+  {
+    "question": "In the kata Saifa, after the second Tetsui Uchi, you step into Migi Hanzen Kutsu Dachi and punch:",
+    "tags": ["Saifa", "Kata", "7th Kyu"],
+    "answers": [
+      { "text": "Hidari Gyaku Zuki at throat height", "correct": true },
+      { "text": "Migi Gyaku Zuki at Jodan height", "correct": false },
+      { "text": "Hidari Gyaku Zuki at Gedan height", "correct": false },
+      { "text": "Hidari Gyaku Zuki at solar plexis height", "correct": false }
     ],
     "image": "",
     "referenceLink": ""
