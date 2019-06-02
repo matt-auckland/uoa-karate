@@ -3,7 +3,7 @@
     <div class="header">
 
       <h1>Karate Knowledge Tester</h1>
-      <h3 class="warn">This page is still under development</h3>
+      <h3>Click the categories below to select topics to answer</h3>
       <fieldset class="category-fieldset">
         <legend>Categories</legend>
         <div class="category-container">
@@ -51,13 +51,6 @@
       <span>Incorrect: {{ scoreObj.incorrectAnswers }}/{{ scoreObj.total()}}</span>
     </div>
 
-    <div>
-      <h3>To do:</h3>
-      <ul>
-        <li>Make the page pretty ❌</li>
-        <li>Add more questions ❌</li>
-      </ul>
-    </div>
     <footer>
       <a
         class="footer-link"
@@ -155,7 +148,7 @@ export default {
         this.currentQuestion = this.unansweredQuestions[randomNum];
       }
 
-      if (this.currentQuestion) {
+      if (this.currentQuestion && !this.currentQuestion.keepAnswerOrder) {
         this.currentQuestion.answers = Utils.randomiseArr(
           this.currentQuestion.answers
         );
