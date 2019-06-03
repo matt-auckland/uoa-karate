@@ -1856,7 +1856,18 @@
     "image": "",
     "referenceLink": ""
   },
-
+  {
+    "question": "Sensei Miyagi Chojun included the forward step from Gekisai Dai Ichi at the end of the Kata to represent:",
+    "tags": ["Miyagi Chojun", "Gekisai Dai Ichi", "History"],
+    "answers": [
+      { "text": "The country moving forward", "correct": true },
+      { "text": "Japan at war", "correct": false },
+      { "text": "Goju Ryu getting bigger", "correct": false },
+      { "text": "His birthday", "correct": false }
+    ],
+    "image": "",
+    "referenceLink": ""
+  },
   {
     "question": "Which of the following is the meaning of \"Chiru no Chan Chan\"? ",
     "tags": ["Vocabulary"],
