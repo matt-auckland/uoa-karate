@@ -1,43 +1,51 @@
 <template>
   <div class="about-container">
     <div class="header">
-
       <h1>About the Club</h1>
-      <div class="history">
-
-        <p>The club was founded in 2003 by Ewan Tempero Sensei and Tom Davies Sensei. The two met in 2002 when Ewan Sensei ran some beginners' classes in order to create a club. At the time Ewan Sensei had a Nidan in Goju Ryu and Tom Sensei had Shodan ranks in Zen Do Kai Karate Kickboxing, Shin Do Kempo Karate and a Nidan in Yoshukai Karate.</p>
-
-        <p>The club is affiliated with the <a
-            href="https://iogkf.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >International Okinawan Goju Ryu Federation (IOGKF)</a>, an international body dedicated to preserving the art of the Okinawan Goju-Ryu Karate, as well as the New Zealand IOGKF affiliate, the <a
-            href="https://karate.org.nz"
-            target="_blank"
-            rel="noopener noreferrer"
-          >IOGKFNZ</a>. This gives club members access to expert instructions both nationally and internationally. </p>
-      </div>
     </div>
-    <TrainingSchedule class="schedule" />
-    <FeesTable class="fees" />
-    <div class="people-container">
-      <h2>Instructors</h2>
-      <div class="person-container">
-        <Person
-          v-for="instructor in ClubMembers.filter(person => person.role === 'instructor')"
-          :key="instructor.name"
-          :person="instructor"
-        />
-      </div>
-      <h2>Exec Team</h2>
-      <div class="person-container">
-        <Person
-          v-for="execMember in ClubMembers.filter(person => person.role === 'exec')"
-          :key="execMember.name"
-          :person="execMember"
-        />
-      </div>
-    </div>
+    <p>
+      <span>
+        Since being founded in 2002 by Ewan Tempero and Tom Davies, The University of Auckland Goju Ryu Karate Club has been running for over {{new Date().getFullYear() - 2002}} years.
+        The club welcomes adults (both students and non-students) of any experince level, and from any style of martial arts.
+      </span>
+
+      <span>The club is affiliated with the <a
+          href="https://iogkf.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >International Okinawan Goju Ryu Federation (IOGKF)</a>, an international body dedicated to preserving the art of the Okinawan Goju-Ryu Karate, as well as the New Zealand branch organization, <a
+          href="https://karate.org.nz"
+          target="_blank"
+          rel="noopener noreferrer"
+        >IOGKFNZ</a>. This gives club members access to expert intructors and the ability to attend training camps/seminars around the country and the world. </span>
+    </p>
+    <vue-image
+      source="img/group_saifa.JPG"
+      caption="Club members performing Saifa kata at the beach"
+    >
+    </vue-image>
+
+    <vue-image
+      source="img/camp_group.jpg"
+      caption="Club members at Karate Camp"
+    >
+    </vue-image>
+
+    <p>
+      We try to create a warm and welcoming atmosphere at the club and as part of this we regularly hold all kinds of social events, including: Our own 'Karate Camp', weekend training camps, dinner/lunches after training, group movie viewings, trainings at the beach, and other group outings around Auckland.
+    </p>
+
+    <p>
+
+      We also participate in tournaments multiple times a year and attend training camps in Wellington (and occassionally overseas!).
+
+    </p>
+
+    <vue-image
+      source="img/camp_group.jpg"
+      caption="Club members at Karate Camp"
+    >
+    </vue-image>
   </div>
 </template>
 
@@ -65,20 +73,15 @@ export default {
 <style scoped>
 .about-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(auto, 600px));
-  grid-auto-rows: minmax(200px, auto);
-  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 600px));
+  grid-gap: 15px;
   justify-content: center;
+  padding: 0 15px;
 }
 
-.history {
-  display: flex;
-  flex-direction: row;
-  flex-flow: wrap;
-  justify-content: space-between;
-}
+p {
+  padding: 0 10px;
 
-.history p {
   max-width: 600px;
   min-width: 300px;
   text-align: justify;
@@ -93,7 +96,9 @@ export default {
 
 .header h1 {
   text-align: center;
+  margin: 20px 0 0 0;
 }
+
 .person-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
