@@ -4,7 +4,7 @@
     "day": "Tuesday",
     "startTime": "6pm",
     "finishTime": "7.30pm",
-    "location": "The Hawks Nest, Floor 3, 492 Queen Street",
+    "location": "The Hawks' Nest, Floor 3, 492 Queen Street",
     "notes": "Regular Training"
   },
   {
@@ -12,23 +12,23 @@
     "day": "Thursday",
     "startTime": "6pm",
     "finishTime": "7.30pm",
-    "location": "The Hawks Nest, Floor 3, 492 Queen Street",
+    "location": "The Hawks' Nest, Floor 3, 492 Queen Street",
     "notes": "Regular training"
   },
   {
     "index": 3,
     "day": "Friday",
     "startTime": "6pm",
-    "finishTime": "7.30pm",
-    "location": "Building 119, University of Auckland",
-    "notes": "Graded member's class"
+    "finishTime": "8pm",
+    "location": "303-G14, (Room G14, Building 303), University of Auckland",
+    "notes": "Graded member's training"
   },
   {
     "index": 4,
     "day": "Sunday",
     "startTime": "10am",
     "finishTime": "12pm",
-    "location": "The Hawks Nest, Floor 3, 492 Queen Street",
+    "location": "The Hawks' Nest, Floor 3, 492 Queen Street",
     "notes": "Regular training"
   }
 ]

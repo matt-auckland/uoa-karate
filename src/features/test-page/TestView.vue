@@ -67,9 +67,9 @@
 </template>
 
 <script>
-import questions from "../assets/mcq.json";
+import questions from "@/assets/mcq.json";
 import QuestionComponent from "@/components/QuestionComponent.vue";
-import Utils from "../libs/utils.js";
+import Utils from "@/libs/utils.js";
 
 export default {
   name: "TestView",

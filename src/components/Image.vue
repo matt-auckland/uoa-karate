@@ -12,8 +12,8 @@
 export default {
   name: "vue-image",
   props: {
-    source: String,
-    caption: String
+    source: { type: String, required: true },
+    caption: { type: String, required: true }
   }
 };
 </script>

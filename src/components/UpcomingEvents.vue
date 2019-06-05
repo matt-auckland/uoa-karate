@@ -19,10 +19,12 @@
             Location: {{event.location}}.
           </div>
 
-          <div class="event-text link">
-            For more information follow
+          <div
+            class="event-text link"
+            v-if="event.offSitelink"
+          >
+            For more information, follow
             <a
-              v-if="event.offSitelink"
               :href="event.offSitelink"
               target="_blank"
               rel="noopener noreferrer"
