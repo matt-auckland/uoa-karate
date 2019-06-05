@@ -270,14 +270,6 @@ export default {
   margin: 10px 30px;
 }
 
-button {
-  border: 3px solid var(--tuatara-dark);
-  border-radius: 30px;
-  padding: 8px 12px;
-  font-size: 16px;
-  text-transform: uppercase;
-}
-
 .footer-link {
   display: block;
   margin: 5px 0;

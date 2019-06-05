@@ -68,40 +68,18 @@ hr {
   margin-top: 22px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   margin: 0 -20px;
 }
 
 .day {
-  margin: 20px;
+  flex: 150px 1 1;
+  margin: 15px;
   border: 2px solid var(--persian-red-darker);
-  flex: 122px 1 1;
-  max-width: 180px;
-  padding: 10px 5px;
+  padding: 10px 12px;
   text-align: center;
   border-radius: 15px;
-  transform: rotate(-5deg);
-  transition: all ease 500ms;
   background-color: var(--tuatara);
   background-color: black;
-}
-.day:nth-child(odd) {
-  transform: rotate(5deg);
-}
-
-.day:hover,
-.day:active,
-.day:nth-child(odd):hover,
-.day:nth-child(odd):active {
-  transform: rotate(0deg);
-}
-
-@media (max-width: 759px) {
-  .day,
-  .day:nth-child(odd) {
-    transform: rotate(0deg);
-    transition: none;
-    max-width: unset;
-  }
 }
 </style>

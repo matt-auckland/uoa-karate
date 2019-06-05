@@ -2,7 +2,16 @@
   <div id="app">
     <Header />
     <router-view />
-    <QuoteDisplay class="quote-display" />
+    <Footer>
+      <QuoteDisplay class="quote-display" />
+      <div class="github">
+
+        This site's sourcecode is hosted on <a
+          href="https://github.com/matt-auckland/uoa-karate"
+          target="_blank"
+        >Github</a>
+      </div>
+    </Footer>
   </div>
 
 </template>
@@ -82,5 +91,26 @@ a:hover {
 
 .quote-display {
   margin-top: 50px;
+}
+
+button {
+  border: 3px solid var(--tuatara-dark);
+  border-radius: 30px;
+  padding: 8px 12px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background: #ccc;
+}
+
+button.active {
+  text-decoration: underline;
+}
+
+.github {
+  margin: 0 auto 20px auto;
+  text-align: center;
 }
 </style>
