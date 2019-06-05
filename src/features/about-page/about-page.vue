@@ -20,17 +20,17 @@
           rel="noopener noreferrer"
         >IOGKFNZ</a>. This gives club members access to expert intructors and the ability to attend training camps/seminars around the country and the world. </span>
     </p>
-    <vue-image
+    <app-image
       source="img/group_saifa.JPG"
       caption="Club members performing Saifa kata at the beach"
     >
-    </vue-image>
+    </app-image>
 
-    <vue-image
+    <app-image
       source="img/camp_group.jpg"
       caption="Club members at Karate Camp"
     >
-    </vue-image>
+    </app-image>
 
     <p>
       We try to create a warm and welcoming atmosphere at the club and as part of this we regularly hold all kinds of social events, including: Our own 'Karate Camp', weekend training camps, dinner/lunches after training, group movie viewings, trainings at the beach, and other group outings around Auckland.
@@ -42,11 +42,11 @@
 
     </p>
 
-    <vue-image
+    <app-image
       source="img/camp_group.jpg"
       caption="Club members at Karate Camp"
     >
-    </vue-image>
+    </app-image>
   </div>
 </template>
 
