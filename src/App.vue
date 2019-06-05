@@ -100,6 +100,7 @@ button {
   font-size: 16px;
   text-transform: uppercase;
 }
+
 button:hover {
   background: #ccc;
 }
