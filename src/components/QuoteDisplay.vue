@@ -35,10 +35,10 @@ export default {
   flex-direction: column;
   text-align: center;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .quote-text {
-  font-size: 14px;
+  font-size: 15px;
 }
 </style>
