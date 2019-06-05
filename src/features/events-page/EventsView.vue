@@ -19,8 +19,8 @@
 </template>
 
 <script>
-import eventList from "../assets/events.json";
-import EventComponent from "../components/EventComponent";
+import eventList from "@/assets/events.json";
+import EventComponent from "@/components/EventComponent";
 
 export default {
   name: "EventsView",

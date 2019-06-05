@@ -7,7 +7,7 @@
       ></router-link>
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About the club</router-link> |
+      <router-link to="/about">About the Club</router-link> |
       <a
         href="https://en.wikipedia.org/wiki/G%C5%8Dj%C5%AB-ry%C5%AB"
         target="_blank"
