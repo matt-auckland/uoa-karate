@@ -3,9 +3,7 @@ import Router from 'vue-router';
 import Meta from 'vue-meta';
 
 import Home from './features/home-page/Home.vue';
-// new page
-// import NewAboutPage from './features/about-page/about-page.vue';
-import AboutPage from './views/About.vue';
+import AboutPage from './features/about-page/about-page.vue';
 import LinkDirectory from './features/link-page/LinkDirectory.vue';
 import EventsView from './features/events-page/EventsView.vue';
 import TestView from './features/test-page/TestView.vue';

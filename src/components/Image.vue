@@ -10,7 +10,7 @@
 
 <script>
 export default {
-  name: "vue-image",
+  name: "appImage",
   props: {
     source: { type: String, required: true },
     caption: { type: String, required: true }

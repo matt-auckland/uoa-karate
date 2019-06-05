@@ -2,10 +2,12 @@ import Vue from 'vue';
 import App from './App.vue';
 import router from './router';
 
-import Image from './components/Image.vue';
+
+import AppImage from './components/Image.vue';
 
 Vue.config.productionTip = false;
-Vue.component('vue-image', Image);
+Vue.component('app-image', AppImage);
+
 
 new Vue({
   router,

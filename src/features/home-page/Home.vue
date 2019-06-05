@@ -2,12 +2,22 @@
   <content>
 
     <div class="container">
-      <img
-        src="/group-photo.jpg"
-        alt=""
-        class="first-image"
-      >
-      <HomeIntro class="home-intro" />
+      <div class="home-intro">
+        <div class="text-container">
+          <h1>Welcome to the University of Auckland Goju Ryu Karate Club</h1>
+          <p>
+            We are open to members with any level of experience and from any style, both students and non-students alike.
+            We take new members all year round so feel free to drop in for a trial at any time.
+            Training typically runs all year round, from mid-January till mid-December.
+          </p>
+
+        </div>
+        <app-image
+          :source="'/group-photo.jpg'"
+          :caption="'The club performing at Courses and Careers Day'"
+          class="hero-image"
+        ></app-image>
+      </div>
       <TrainingSchedule class="schedule" />
       <FeesTable class="fees" />
       <UpcomingEvents class="events" />
@@ -22,7 +32,6 @@
 </template>
 
 <script>
-import HomeIntro from "@/components/HomeIntro.vue";
 import ToDo from "@/components/ToDo.vue";
 import TrainingSchedule from "@/components/TrainingSchedule.vue";
 import FeesTable from "@/components/FeesTable.vue";
@@ -34,7 +43,6 @@ import UpcomingEvents from "@/components/UpcomingEvents.vue";
 export default {
   name: "home",
   components: {
-    HomeIntro,
     ToDo,
     ClubMap,
     TrainingSchedule,
@@ -68,9 +76,9 @@ content {
   grid-column-gap: 50px;
   grid-row-gap: 40px;
   grid-template-areas:
-    " intro  first-image events events"
-    "schedule schedule events events"
-    "fees fees events events";
+    "intro   events events"
+    "schedule events events"
+    "fees events events";
 }
 
 .content {
@@ -92,7 +100,6 @@ content {
   .container {
     grid-template-areas:
       "intro intro"
-      "first-image first-image"
       "schedule schedule"
       "fees fees";
   }
@@ -105,13 +112,29 @@ content {
   grid-area: intro;
   width: 100%;
   margin: 0 auto;
+  min-width: 200px;
+
+  display: grid;
+  grid-gap: 20px;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.first-image {
+.hero-image {
   max-width: 400px;
   width: 100%;
-  grid-area: first-image;
   margin: auto;
+}
+
+.home-intro h1,
+.home-intro p {
+  max-width: 800px;
+  margin: 10px 0;
+}
+
+.home-intro p {
+  text-align: justify;
 }
 
 .double-col {
