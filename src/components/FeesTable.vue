@@ -3,11 +3,13 @@
     <h2>Training Fees:</h2>
     <div class="tab-container">
       <a
-        :class="{active: showStudents, tab:true}"
+        class="tab"
+        :class="{ active: showStudents }"
         @click="showStudents = true"
       >Student Fees</a>
       <a
-        :class="{active: !showStudents, tab:true}"
+        class="tab"
+        :class="{ active: !showStudents }"
         @click="showStudents = false"
       >Non&nbsp;Student Fees</a>
     </div>
@@ -29,7 +31,7 @@
         <tr v-if="showStudents">
           <td class="text">New Member's Training Fee</td>
           <td class="number">$35 Per Semester</td>
-          <td class="text">Only applies to students joining the club for the first time.</td>
+          <td class="text">Students get a discounted fee for their first semester of training</td>
         </tr>
         <tr>
           <td class="text">Standard Training Fee</td>
@@ -39,9 +41,16 @@
           >$70 Per Semester</td>
           <td
             class="number"
-            v-if="!showStudents"
-          >$35 Per Month</td>
-          <td class="text">Students pay per semester, non-students pay per month.</td>
+            v-else
+          >$36 Per Month</td>
+          <td
+            v-if="showStudents"
+            class="text"
+          >Students pay per semsester</td>
+          <td
+            v-else
+            class="text"
+          >Non-students pay per month</td>
         </tr>
         <tr>
           <td class="text">Grading Fee</td>
@@ -67,23 +76,38 @@ export default {
 <style scoped>
 .tab-container {
   display: flex;
-  justify-content: space-around;
-  margin-bottom: 20px;
-  width: 300px;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto 20px auto;
 }
 
 .tab {
   cursor: pointer;
+  position: relative;
+}
+
+.tab::after {
+  --animation-length: 800ms;
+  content: " ";
+  background: var(--persian-red);
+  height: 2px;
+  opacity: 1;
+  width: 0px;
+  transition: width var(--animation-length), left var(--animation-length);
+  position: absolute;
+  bottom: -3px;
+  left: 50%;
+}
+
+.tab.active::after {
+  width: 100%;
+  left: 0%;
 }
 
 .tab.active {
-  border-bottom: 1px solid var(--persian-red);
-  cursor: not-allowed;
+  cursor: default;
   color: var(--persian-red);
-}
-
-.tab:hover {
-  border-bottom: 1px solid var(--persian-red);
 }
 
 table {

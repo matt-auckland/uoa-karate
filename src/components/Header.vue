@@ -11,7 +11,7 @@
       <a
         href="https://en.wikipedia.org/wiki/G%C5%8Dj%C5%AB-ry%C5%AB"
         target="_blank"
-      >About&nbsp;Goju&nbsp;Ryu&nbsp;Karate</a> |
+      >About&nbsp;Goju&nbsp;Ryu</a> |
       <router-link to="/events">Club&nbsp;Events</router-link> |
       <router-link to="/tester">Knowledge&nbsp;Tester</router-link> |
       <a
@@ -53,7 +53,7 @@ export default {
 <style scoped>
 .header {
   text-align: center;
-  padding: 0 5vw;
+  margin-bottom: 20px;
 }
 
 h3 {
