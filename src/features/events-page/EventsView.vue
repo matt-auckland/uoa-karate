@@ -1,7 +1,7 @@
 
 <template>
   <div class="events-container">
-    <div class="">
+    <div class="description">
       <h2 class="event-title">Upcoming Events:</h2>
       <p class="page-desc">
         This page lists upcoming club events. Events range from casual social gatherings to training camps in other cities or even other countries. There is no guarantee it is up to date.
@@ -45,19 +45,16 @@ export default {
 
 <style scoped>
 .events-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(auto, 600px));
-  grid-auto-rows: minmax(200px, auto);
-  grid-gap: 30px;
-  grid-auto-flow: dense;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
   margin-bottom: 100px;
   min-height: 100vh;
+  max-width: 820px;
+  margin: 0 auto;
+  text-align: justify;
 }
 
-.event {
-}
-
-.page-desc {
+.events-container > * {
+  margin-bottom: 32px;
 }
 </style>
