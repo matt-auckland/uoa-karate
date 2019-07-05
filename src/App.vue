@@ -58,16 +58,6 @@ export default {
   color: var(--tuatara-dark);
 }
 
-@media (max-width: 981px) {
-  h1,
-  h2,
-  h3,
-  h4,
-  p {
-    text-align: center;
-  }
-}
-
 body {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -77,7 +67,7 @@ body {
   color: var(--base-font-color);
   background-color: black; /* var(--tuatara-dark); */
   color: var(--base-font-color);
-  padding: 0;
+  padding: 0 5vw;
   margin: 0;
 }
 
@@ -99,10 +89,15 @@ button {
   padding: 8px 12px;
   font-size: 16px;
   text-transform: uppercase;
+  background: #f0f0f0;
 }
 
 button:hover {
   background: #ccc;
+}
+
+button:disabled:hover {
+  background: #f0f0f0;
 }
 
 button.active {

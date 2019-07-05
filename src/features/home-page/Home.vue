@@ -1,6 +1,5 @@
 <template>
   <content>
-
     <div class="container">
       <img
         src="/group-photo.jpg"
@@ -51,13 +50,12 @@ export default {
 
 <style scoped>
 content {
-  max-width: 13 00px;
+  max-width: 1300px;
   margin: 0 auto;
   display: grid;
   grid-template-areas:
     "content content"
     "map contact";
-  padding: 50px 5vw 0 5vw;
   grid-column-gap: 30px;
   grid-row-gap: 40px;
 }
@@ -73,17 +71,9 @@ content {
     "fees fees events events";
 }
 
-.content {
-  display: grid;
-  grid-template-columns: 300px 300px;
-  grid-auto-rows: minmax(200px, auto);
-  justify-content: center;
-  grid-column-gap: 30px;
-  grid-row-gap: 40px;
-}
-
 @media (max-width: 981px) {
   content {
+    text-align: center;
     grid-template-areas:
       "content content"
       "map map"
@@ -105,13 +95,20 @@ content {
   grid-area: intro;
   width: 100%;
   margin: 0 auto;
+  min-width: 200px;
+
+  display: grid;
+  grid-gap: 20px;
+  align-items: flex-start;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .first-image {
   max-width: 400px;
   width: 100%;
   grid-area: first-image;
-  margin: auto;
+  margin: 18px auto 0 auto;
 }
 
 .double-col {
@@ -136,9 +133,6 @@ content {
 .clubmap {
   grid-area: map;
   margin: 5px 0 10px 0;
-}
-
-.todo {
 }
 
 .events {
