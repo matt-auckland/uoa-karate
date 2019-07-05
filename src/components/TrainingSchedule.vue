@@ -10,7 +10,7 @@
       >
         <h3>{{session.day}}</h3>
         <p class="date">{{session.startTime}} - {{session.finishTime}} </p>
-        <p>{{session.location}} </p>
+        <p class="location">{{session.location}} </p>
         <hr v-if="session.notes" />
         <p
           class="notes"
@@ -73,6 +73,9 @@ hr {
 }
 
 .day {
+  display: flex;
+  flex-direction: column;
+
   flex: 150px 1 1;
   margin: 15px;
   border: 2px solid var(--persian-red-darker);
@@ -81,5 +84,9 @@ hr {
   border-radius: 15px;
   background-color: var(--tuatara);
   background-color: black;
+}
+
+.day .location {
+  flex: 1;
 }
 </style>
