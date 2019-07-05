@@ -11,6 +11,7 @@
             class="checkbox-div"
             v-for="category in questionCategories"
             v-bind:key="category"
+            :class="{active: selectedCategories.includes(category)}"
           >
             <input
               type="checkbox"
@@ -218,7 +219,7 @@ export default {
 
 .checkbox-div:hover,
 .checkbox-div:active,
-.checkbox-div:checked {
+.checkbox-div.active {
   border: 1px solid var(--persian-red-darker);
 }
 
