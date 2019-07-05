@@ -18,15 +18,21 @@
       </select>
     </label>
     <h3>What you need to know:</h3>
-    <ul>
-      <li
-        v-for="skill in needToKnow"
-        :key="skill.name"
-      >{{ skill.name }}</li>
-    </ul>
 
-    <h4>Remember to check with Sensei to see if you can grade 🥋</h4>
-    <h4>Now go train 👊</h4>
+    <div class="flex">
+      <ul class="list">
+        <transition-group name="fade">
+          <li
+            v-for="skill in needToKnow"
+            :key="skill.name"
+          >{{ skill.name }}</li>
+        </transition-group>
+      </ul>
+      <div>
+        <h4>Remember to check with Sensei to see if you can grade 🥋</h4>
+        <h4>Now go train 👊</h4>
+      </div>
+    </div>
 
     <footer>
       <nav>
@@ -99,9 +105,28 @@ h4 {
 footer nav {
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 footer nav a {
   margin: 10px;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.list {
+  height: 220px;
 }
 </style>
 
