@@ -84,6 +84,12 @@ hr {
   border-radius: 15px;
   background-color: var(--tuatara);
   background-color: black;
+
+  transition: transform 500ms;
+}
+
+.day:hover {
+  transform: translateY(-5px);
 }
 
 .day .location {

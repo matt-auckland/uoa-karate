@@ -18,8 +18,7 @@
       <thead>
         <tr>
           <th class="text">Fee Type</th>
-          <th class="number">Students</th>
-          <th class="number">Non Students</th>
+          <th class="number">Cost</th>
           <th class="text">Notes</th>
         </tr>
       </thead>
@@ -27,13 +26,12 @@
         <tr>
           <td class="text">Membership Fee</td>
           <td class="number">$5 Annually</td>
-          <td class="number">$5 Annually</td>
           <td class="text">Paid once per year in addition to the training fees</td>
         </tr>
-        <tr>
+        <tr v-if="showStudents">
           <td class="text">New Member's Training Fee</td>
           <td class="number">$35 Per Semester</td>
-          <td class="text">Students get a discounted fee for their first semester of training</td>
+          <td class="text">Students pay half-price for the first semester</td>
         </tr>
         <tr>
           <td class="text">Standard Training Fee</td>
@@ -43,20 +41,19 @@
           >$70 Per Semester</td>
           <td
             class="number"
-            v-else
+            v-if="!showStudents"
           >$36 Per Month</td>
           <td
             v-if="showStudents"
             class="text"
           >Students pay per semsester</td>
           <td
-            v-else
+            v-if="!showStudents"
             class="text"
           >Non-students pay per month</td>
         </tr>
         <tr>
           <td class="text">Grading Fee</td>
-          <td class="number">$35</td>
           <td class="number">$35</td>
           <td class="text">Gradings occur near the end of each semester</td>
         </tr>
@@ -67,7 +64,12 @@
 
 <script>
 export default {
-  name: "FeesTable"
+  name: "FeesTable",
+  data() {
+    return {
+      showStudents: true
+    };
+  }
 };
 </script>
 
