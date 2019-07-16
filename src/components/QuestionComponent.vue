@@ -27,14 +27,18 @@
           :key="answer.text"
           :class="{ correct: answerVisible && answer.correct, bold: selectedAnswer && answer.text == selectedAnswer.text }"
         >
-          <input
-            type="radio"
-            name="answer"
-            v-model="selectedAnswer"
-            :disabled="answerVisible"
-            :value="answer"
-          >
-          <span>{{answer.text}}</span>
+          <label>
+            <input
+              type="radio"
+              name="answer"
+              v-model="selectedAnswer"
+              :disabled="answerVisible"
+              :value="answer"
+            >
+            <span>
+              {{answer.text}}
+            </span>
+          </label>
         </div>
         <button
           v-on:click="markAnswer(selectedAnswer)"
@@ -160,11 +164,14 @@ export default {
 
 .form-option {
   width: inherit;
+  text-align: left;
+  margin: 10px 0;
+}
+
+.form-option label {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  text-align: left;
-  margin: 10px 0;
 }
 
 .form-option span {
