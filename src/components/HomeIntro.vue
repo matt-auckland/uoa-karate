@@ -2,9 +2,9 @@
   <div class="home-intro-container">
     <h1>Welcome to the University of Auckland Goju Ryu Karate Club</h1>
     <p>
-      We are open to members with any level of experience and from any style, both students and non-students alike.
-      We take new members all year round so feel free to drop in for a trial at any time.
-      Training typically runs all year round, from mid-January till mid-Decemeber.
+      We welcome people with any level of experience and from any martial arts background, both students and non-students alike.
+      We have beginner specific training at the beginning of every UoA semseter, but welcome new members all year round.
+      Our regular training typically runs from mid-January till mid-December.
     </p>
   </div>
 </template>
