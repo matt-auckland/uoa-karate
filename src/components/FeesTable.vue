@@ -46,7 +46,7 @@
           <td
             v-if="showStudents"
             class="text"
-          >Students pay per semsester</td>
+          >Students pay per semester</td>
           <td
             v-if="!showStudents"
             class="text"
