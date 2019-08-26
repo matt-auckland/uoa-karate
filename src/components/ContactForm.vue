@@ -52,9 +52,20 @@ form {
     "email email email"
     "name name name"
     "message message message"
-    ". button .";
+    "button . .";
   width: 100%;
   height: 400px;
+}
+
+@media (max-width: 981px) {
+  form {
+      grid-template-areas:
+      "header header header"
+      "email email email"
+      "name name name"
+      "message message message"
+      ". button .";
+  }
 }
 
 input,
@@ -112,6 +123,5 @@ button {
 button:hover {
   border: 1px solid var(--persian-red);
   color: var(--persian-red-light);
-  font-size: 15px;
 }
 </style>

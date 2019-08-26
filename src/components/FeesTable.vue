@@ -125,14 +125,11 @@ th {
 
 td,
 th {
-  padding: 3px 5px;
+  padding: 16px 10px;
 }
 
 .text {
   text-align: left;
 }
 
-.number {
-  text-align: right;
-}
 </style>
