@@ -87,6 +87,7 @@ export default {
 <style scoped>
 .events-container {
   display: grid;
+  padding-top: 15px;
   /* grid-template-columns: 1fr; */
   grid-template-columns: repeat(auto-fit, minmax(auto, 335px));
   grid-auto-rows: minmax(80px, auto);

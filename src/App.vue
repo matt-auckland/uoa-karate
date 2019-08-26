@@ -65,7 +65,7 @@ body {
   font-size: 16px;
   text-align: left;
   color: var(--base-font-color);
-  background-color: black; /* var(--tuatara-dark); */
+  background-color: #070707;
   color: var(--base-font-color);
   padding: 0 5vw;
   margin: 0;
@@ -73,10 +73,14 @@ body {
 
 a {
   color: var(--persian-red-light);
+    text-decoration: none;
+
 }
 
 a:hover {
   color: var(--persian-red);
+    text-decoration: underline;
+
 }
 
 .quote-display {

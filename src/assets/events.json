@@ -30,7 +30,8 @@
     "description": "The bi-annual Pukekohe tournament is set to have its second event of the year on Saturday 21st September. As usual, kata (solo and teams of at least three) and shiai sparring (point sparring) are on the schedule. There are no pre-requisites for entering the tournament, the club covers entry fees and people with any level of experience are welcome. Starts at 9am. If you want more details regarding the tournament, feel free to ask. If you’re interested in participating then please fill out the sign up form.",
     "offSitelink": "",
     "signUpURL": "https://forms.gle/sj5XZqLZdPwowpseA",
-    "extendedDescription": ""
+    "extendedDescription": "",
+    "type": "tournament"
   },
   {
     "name": "The Goju Guys Seminar",

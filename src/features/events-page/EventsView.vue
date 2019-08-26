@@ -2,11 +2,12 @@
 <template>
   <div class="events-container">
     <div class="description">
-      <h2 class="event-title">Upcoming Events:</h2>
-      <p class="page-desc">
-        This page lists upcoming club events. Events range from casual social gatherings to training camps in other cities or even other countries. There is no guarantee it is up to date.
-        This page was last updated on 23/03/2019. If you have any questions about upcoming events you can find a <router-link to="/">contact form here</router-link>.
-      </p>
+      <hero-image
+        heading="Upcoming Events"
+        :paragraph="heroPara"
+        source="img/rangitoto.jpg"
+      >
+        </hero-image>
     </div>
     <div
       v-for="event in eventList"
@@ -37,7 +38,8 @@ export default {
         })
         .sort((a, b) => {
           return new Date(a.startDate) - new Date(b.startDate);
-        })
+        }),
+        heroPara: `This page lists upcoming club events. Events range from casual social gatherings to training camps in other cities or even other countries. <p>This page was last updated on 26/08/2019.</p>`
     };
   }
 };

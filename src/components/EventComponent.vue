@@ -10,7 +10,9 @@
       <h2 class="event-title">{{event.name}}</h2>
       <p><span>🗺️</span> {{event.location}}</p>
       <p><span>📆</span> {{event.date}}</p>
-      <p class="event-text">{{event.description}}</p>
+      <p class="event-text">{{description}}
+      </p>
+      <a v-if="showExpand" href="javascript:;" @click="showingMore = !showingMore" class="show-more">{{showingMore ? 'Show Less' : 'Show More'}}</a>
 
       <p class="event-text">
         <span v-if="!event.offSitelink && event.extendedDescription">
@@ -40,18 +42,30 @@ export default {
     return {
       defaultImages: {
         default: "img/group_saifa.JPG",
-        gasshuku: "", // TODO: Add default images
+        gasshuku: "img/gishiki_group.jpg", // TODO: Add default images
+        tournament: "img/tournament.jpg",
         training: "",
         grading: "",
         dinner: "",
-        movie: ""
-      }
+        movie: "",
+      },
+      showingMore: false,
+      maxDesc: 170
     };
   },
   props: {
     event: Object
   },
   computed: {
+    showExpand(){
+      return this.event.description.length > this.maxDesc;
+    },
+    description(){
+      if (!this.showingMore && this.showExpand) {
+        return this.event.description.slice(0, this.maxDesc) + '... '
+      }
+      return this.event.description
+    },
     imageUrl() {
       if (!this.event.customImage)
         return this.defaultImages[this.event.type || "default"];
@@ -68,7 +82,7 @@ export default {
 <style scoped>
 .event-container {
   padding: 20px 25px;
-  background-color: rgba(225, 97, 97, 0.658);
+  border: solid 1px;
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -83,6 +97,10 @@ export default {
 
 p {
   margin: 5px 0;
+}
+
+.show-more {
+  color: --var(--persian-red);
 }
 
 .event-img {

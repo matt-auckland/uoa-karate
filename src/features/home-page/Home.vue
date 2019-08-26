@@ -1,22 +1,18 @@
 <template>
   <content>
     <div class="container">
-      <div class="home-intro">
-        <div class="text-container">
-          <h1>Welcome to the University of Auckland Goju Ryu Karate Club</h1>
-          <p>
-            We are open to members with any level of experience and from any style, both students and non-students alike.
-            We take new members all year round so feel free to drop in for a trial at any time.
-            Training typically runs all year round, from mid-January till mid-December.
-          </p>
-
-        </div>
-        <app-image
+      <hero-image
+        class="hero-image"
+        source="/group-photo.jpg"
+        heading="Welcome to our Dojo"
+        paragraph="People with any level of experience and from any martial arts background are welcome to train, both students and non-students alike. We have beginner specific training at the start of every semester but accept new members year round."
+      ></hero-image>
+      <!-- <app-image
           :source="'/group-photo.jpg'"
           :caption="'The club performing at Courses and Careers Day'"
           class="hero-image"
-        ></app-image>
-      </div>
+        ></app-image> -->
+      <!-- </div> -->
       <TrainingSchedule class="schedule" />
       <FeesTable class="fees" />
       <UpcomingEvents class="events" />
@@ -48,7 +44,7 @@ export default {
     FeesTable,
     Gallery,
     ContactForm,
-    UpcomingEvents
+    UpcomingEvents,
   },
   data: function() {
     return {};
@@ -74,7 +70,7 @@ content {
   grid-column-gap: 50px;
   grid-row-gap: 40px;
   grid-template-areas:
-    "intro   events events"
+    "hero hero hero"
     "schedule events events"
     "fees events events";
 }
@@ -89,7 +85,7 @@ content {
   }
   .container {
     grid-template-areas:
-      "intro intro"
+      "hero hero"
       "schedule schedule"
       "fees fees";
   }
@@ -98,34 +94,29 @@ content {
   }
 }
 
-.home-intro {
-  grid-area: intro;
+.hero-image {
+  grid-area: hero;
   width: 100%;
   margin: 0 auto;
-  min-width: 200px;
 
-  display: grid;
-  grid-gap: 20px;
-  align-items: flex-start;
-  justify-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* background-image: url("/group-photo.jpg"); */
+  background-position-x: 0px;
+  background-size: cover;
+  height: 435px;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
 }
 
-.hero-image {
-  max-width: 400px;
-  width: 100%;
-  grid-area: first-image;
-  margin: 18px auto 0 auto;
-}
-
-.home-intro h1,
-.home-intro p {
-  max-width: 800px;
-  margin: 10px 0;
-}
-
-.home-intro p {
-  text-align: justify;
+.home-intro .text-container {
+  max-width: 450px;
+  width: 80%;
+  margin-left: 30px;
+  padding: 30px 20px;
+  background: rgba(79, 79, 79, 0.577);
+  border-radius: 5px;
+  color: white;
 }
 
 .double-col {
