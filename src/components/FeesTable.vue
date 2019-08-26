@@ -24,14 +24,14 @@
       </thead>
       <tbody>
         <tr>
-          <td class="text">Annual Club Fee</td>
+          <td class="text">Membership Fee</td>
           <td class="number">$5 Annually</td>
           <td class="text">Paid once per year in addition to the training fees</td>
         </tr>
         <tr v-if="showStudents">
           <td class="text">New Member's Training Fee</td>
           <td class="number">$35 Per Semester</td>
-          <td class="text">Students get a discounted fee for their first semester of training</td>
+          <td class="text">Students pay half-price for the first semester</td>
         </tr>
         <tr>
           <td class="text">Standard Training Fee</td>
@@ -41,14 +41,14 @@
           >$70 Per Semester</td>
           <td
             class="number"
-            v-else
+            v-if="!showStudents"
           >$36 Per Month</td>
           <td
             v-if="showStudents"
             class="text"
-          >Students pay per semsester</td>
+          >Students pay per semester</td>
           <td
-            v-else
+            v-if="!showStudents"
             class="text"
           >Non-students pay per month</td>
         </tr>
@@ -65,7 +65,7 @@
 <script>
 export default {
   name: "FeesTable",
-  data: function() {
+  data() {
     return {
       showStudents: true
     };

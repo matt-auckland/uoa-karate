@@ -15,25 +15,30 @@
     >
       <img
         :src="questionProp.image"
-        alt=""
         v-if="questionProp.image"
         class="question-image"
+        alt=""
       >
-      <h3 class="question-text">Question: {{ questionProp.question }}</h3>
+      <h3 class="question-text">{{ questionProp.question }}</h3>
       <form class="question-form">
         <div
           class="form-option"
           v-for="answer in questionProp.answers"
           :key="answer.text"
+          :class="{ correct: answerVisible && answer.correct, bold: selectedAnswer && answer.text == selectedAnswer.text }"
         >
-          <input
-            type="radio"
-            name="answer"
-            v-model="selectedAnswer"
-            :disabled="answerVisible"
-            :value="answer"
-          >
-          {{answer.text}}
+          <label>
+            <input
+              type="radio"
+              name="answer"
+              v-model="selectedAnswer"
+              :disabled="answerVisible"
+              :value="answer"
+            >
+            <span>
+              {{answer.text}}
+            </span>
+          </label>
         </div>
         <button
           v-on:click="markAnswer(selectedAnswer)"
@@ -47,12 +52,20 @@
         v-if="answerVisible"
         class="question-answer"
       >
-        <div
-          class="answer-text"
-          :class="{ 'correct': this.selectedAnswer.correct, 'incorrect': !this.selectedAnswer.correct }"
-        >Your Answer: {{ this.selectedAnswer.text }}</div>
-        <div class="answer-text correct">Correct Answer: {{ this.correctAnswer.text }}</div>
-
+        <div class="answer-text">
+          <span
+            v-if="this.selectedAnswer.correct"
+            class="correct"
+          >
+            Correct!
+          </span>
+          <span
+            v-else
+            class="incorrect"
+          >
+            Incorrect
+          </span>
+        </div>
         <div
           v-if="questionProp.referenceLink"
           class="reference-link"
@@ -146,10 +159,23 @@ export default {
 .question-form {
   margin: 0 0 30px 0;
   text-align: center;
+  width: 100%;
 }
 
 .form-option {
+  width: inherit;
   text-align: left;
+  margin: 10px 0;
+}
+
+.form-option label {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.form-option span {
+  margin-left: 10px;
 }
 
 .show-answer-button {
@@ -163,21 +189,36 @@ export default {
   flex-flow: column;
   align-items: center;
 }
+
 .answer-text {
+  margin: 0 0 20px 0;
+  font-size: 20px;
+}
+
+.reference-link {
   margin: 0 0 15px 0;
-  font-size: 18px;
-}
-
-.correct {
-  color: green;
-}
-
-.incorrect {
-  color: var(--persian-red);
 }
 
 .hidden {
   display: none;
+}
+
+.form-option.correct {
+  color: #5bd547;
+  filter: grayscale(0.3);
+}
+
+.form-option.incorrect {
+  color: var(--persian-red);
+  filter: grayscale(0.3);
+}
+
+.correct {
+  color: #5bd547;
+}
+
+.incorrect {
+  color: var(--persian-red);
 }
 
 .answer-buttons-container {
