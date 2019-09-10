@@ -84,7 +84,7 @@
     "styles": [
       {
         "name": "Goju Ryu",
-        "grade": 6
+        "grade": 5
       }
     ],
     "bio": ""
@@ -97,7 +97,7 @@
     "styles": [
       {
         "name": "Goju Ryu",
-        "grade": 6
+        "grade": 5
       }
     ],
     "bio": ""
@@ -110,7 +110,7 @@
     "styles": [
       {
         "name": "Goju Ryu",
-        "grade": 1
+        "grade": -1
       }
     ],
     "bio": ""
@@ -156,7 +156,7 @@
     "bio": ""
   },
   {
-    "name": "Thong Nee Ann",
+    "name": "Thong Nee Ang",
     "role": "exec",
     "pic": "",
     "position": "Financial Officer",
