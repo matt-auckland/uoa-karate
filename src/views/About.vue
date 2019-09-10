@@ -29,7 +29,7 @@
           :person="instructor"
         />
       </div>
-      <h2>Exec Team</h2>
+      <h2>Executive Team</h2>
       <div class="person-container">
         <Person
           v-for="execMember in ClubMembers.filter(person => person.role === 'exec')"
