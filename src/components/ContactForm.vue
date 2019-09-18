@@ -59,7 +59,7 @@ form {
 
 @media (max-width: 981px) {
   form {
-      grid-template-areas:
+    grid-template-areas:
       "header header header"
       "email email email"
       "name name name"

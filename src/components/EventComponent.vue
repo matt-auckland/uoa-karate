@@ -7,28 +7,34 @@
     >
     </div>
     <div class="text-container">
-      <h2 class="event-title">{{event.name}}</h2>
+      <h2 class="event-title">{{event.title}}</h2>
       <p><span>🗺️</span> {{event.location}}</p>
       <p><span>📆</span> {{event.date}}</p>
       <p class="event-text">{{description}}
       </p>
-      <a v-if="showExpand" href="javascript:;" @click="showingMore = !showingMore" class="show-more">{{showingMore ? 'Show Less' : 'Show More'}}</a>
+      <a
+        v-if="showExpand"
+        href="javascript:;"
+        @click="showingMore = !showingMore"
+        class="show-more"
+      >{{showingMore ? 'Show Less' : 'Show More'}}</a>
 
       <p class="event-text">
-        <span v-if="!event.offSitelink && event.extendedDescription">
-          For more information follow <router-link :to="'/events/' + event.name.replace(/\ /gi, '-')">this link</router-link>
-        </span>
-
-        <span v-if="event.signUpURL">To sign up, follow <a
+        <div v-if="event.signUpURL">To sign up, follow <a
             :href="event.signUpURL"
             target="_blank"
             rel="noopener noreferrer"
-          >this link</a></span>
-        <span v-if="event.offSitelink">For more information follow <a
+          >this link</a></div>
+
+        <div v-if="!event.offSitelink && event.extendedDescription">
+          For more information follow <router-link :to="'/events/' + event.id">this link</router-link>
+        </div>
+
+        <div v-if="event.offSitelink">For more information follow <a
             :href="event.offSitelink"
             target="_blank"
             rel="noopener noreferrer"
-          >this link</a></span>
+          >this link</a></div>
       </p>
     </div>
   </div>
@@ -47,7 +53,7 @@ export default {
         training: "",
         grading: "",
         dinner: "",
-        movie: "",
+        movie: ""
       },
       showingMore: false,
       maxDesc: 170
@@ -57,14 +63,14 @@ export default {
     event: Object
   },
   computed: {
-    showExpand(){
+    showExpand() {
       return this.event.description.length > this.maxDesc;
     },
-    description(){
+    description() {
       if (!this.showingMore && this.showExpand) {
-        return this.event.description.slice(0, this.maxDesc) + '... '
+        return this.event.description.slice(0, this.maxDesc) + "... ";
       }
-      return this.event.description
+      return this.event.description;
     },
     imageUrl() {
       if (!this.event.customImage)

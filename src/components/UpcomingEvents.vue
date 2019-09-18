@@ -5,12 +5,12 @@
     <div class="events-container">
       <div
         v-for="event in upcomingEventList"
-        :key="event.name"
+        :key="event.title"
         class="event"
       >
         <div class="event-inner">
           <div class="event-text title">
-            <b>{{event.name}}</b>.
+            <b>{{event.title}}</b>
           </div>
           <div class="event-text date">
             {{event.date}}
@@ -31,7 +31,7 @@
             >this link</a>
             <router-link
               v-if="!event.offSitelink && event.extendedDescription"
-              :to="'/events/' + event.name.replace(/\ /gi, '-')"
+              :to="'/events/' + event.title.replace(/\ /gi, '-')"
             >this link</router-link>
           </div>
           <div

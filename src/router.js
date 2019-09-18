@@ -36,7 +36,7 @@ export default new Router({
       component: EventsView,
     },
     {
-      path: '/events/:name',
+      path: '/events/:id',
       name: 'singleEvent',
       component: SingleEventView,
     },

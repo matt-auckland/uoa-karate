@@ -6,12 +6,16 @@
         class="tab"
         :class="{ active: showStudents }"
         @click="showStudents = true"
-      >Student Fees</a>
+      >Student Fees
+        <div class="underline"></div>
+      </a>
       <a
         class="tab"
         :class="{ active: !showStudents }"
         @click="showStudents = false"
-      >Non&nbsp;Student Fees</a>
+      >Non&nbsp;Student Fees
+        <div class="underline"></div>
+      </a>
     </div>
 
     <table>
@@ -85,24 +89,24 @@ export default {
 .tab {
   cursor: pointer;
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
-.tab::after {
-  --animation-length: 800ms;
+.underline {
+  --animation-length: 350ms;
   content: " ";
   background: var(--persian-red);
   height: 2px;
   opacity: 1;
   width: 0px;
-  transition: width var(--animation-length), left var(--animation-length);
+  transition: width var(--animation-length);
   position: absolute;
   bottom: -3px;
-  left: 50%;
 }
 
-.tab.active::after {
+.tab.active .underline {
   width: 100%;
-  left: 0%;
 }
 
 .tab.active {
@@ -131,5 +135,4 @@ th {
 .text {
   text-align: left;
 }
-
 </style>
