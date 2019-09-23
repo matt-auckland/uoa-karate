@@ -25,6 +25,10 @@
             target="_blank"
           >Club Sign Up Sheet</a></li>
         <li><a
+            href="https://forms.gle/w2XPZWTuuhKuYysz8"
+            target="_blank"
+          >Injury Record Submission Form</a></li>
+        <li><a
             href="http://karate.org.nz/"
             target="_blank"
           >IOGKFNZ's Website</a></li>
