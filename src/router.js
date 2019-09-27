@@ -7,6 +7,7 @@ import AboutPage from './features/about-page/about-page.vue';
 import LinkDirectory from './features/link-page/LinkDirectory.vue';
 import EventsView from './features/events-page/EventsView.vue';
 import TestView from './features/test-page/TestView.vue';
+import SampleView from './features/sample-page/SamplePage.vue';
 import SingleEventView from './features/event-details/SingleEventView.vue';
 import GradingInfo from './features/grading-info-page/GradingInfo.vue';
 
@@ -49,6 +50,11 @@ export default new Router({
       path: '/grading-info',
       name: 'gradingInfo',
       component: GradingInfo,
+    },
+    {
+      path: '/sample',
+      name: 'sampleView',
+      component: SampleView,
     },
   ],
 });

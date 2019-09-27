@@ -5,7 +5,7 @@
       class="hero"
       source="img/group_saifa.JPG"
       heading="About the Club"
-      :paragraph="`Founded in 2002 by Sensei Ewan Tempero (4th degree Black Belt) and Sensei Tom Davies (Third Degree Black Belt), The University of Auckland Goju Ryu Karate Club has been running for over ${new Date().getFullYear() - 2002} years. We welcome both university students and non-students of any experince level, and from any style of martial arts.`"
+      :paragraph="`Founded in 2003 by Sensei Ewan Tempero (4th degree Black Belt) and Sensei Tom Davies (4th degree Black Belt), The University of Auckland Goju Ryu Karate Club has been running for over ${new Date().getFullYear() - 2003} years. We welcome both university students and non-students of any experince level, and from any style of martial arts.`"
     ></hero-image>
 
     <app-image
@@ -54,26 +54,85 @@
       class="imageThree"
       source="img/camp_group.jpg"
       caption="Club members at Karate Camp"
-    >
-    </app-image>
+    />
+
+    <div class="instructors-sect">
+      <h2>Meet the Instructors</h2>
+      <swiper :options="swiperOpt">
+        <swiper-slide
+          v-for="i in instructors"
+          :key="i.name"
+        >
+          <InstructorCard
+            :name="i.name"
+            :rank="i.rank"
+            :imgSrc="i.imgSrc"
+            :desc="i.desc"
+          />
+        </swiper-slide>
+      </swiper>
+    </div>
+
   </div>
 </template>
+
 
 <script>
 import Person from "@/components/Person.vue";
 import ClubMembers from "@/assets/club-members.json";
 import TrainingSchedule from "@/components/TrainingSchedule.vue";
 import FeesTable from "@/components/FeesTable.vue";
+import InstructorCard from "@/components/instructor-card.vue";
+import "swiper/dist/css/swiper.css";
+
+import { swiper, swiperSlide } from "vue-awesome-swiper";
 
 export default {
   components: {
     Person,
-    TrainingSchedule,
-    FeesTable
+    swiper,
+    swiperSlide,
+    InstructorCard
   },
   data() {
     return {
-      ClubMembers: ClubMembers
+      ClubMembers: ClubMembers,
+      swiperOpt: {
+        speed: 400,
+        slidesPerView: "auto",
+        spaceBetween: 30,
+        loop: true
+      },
+      instructors: [
+        {
+          name: "Sensei Ewan Tempero",
+          rank: 4,
+          desc:
+            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor deserunt architecto quo adipisci laudantium, laborum beatae porro culpa maxime veritatis cum minima consectetur consequatur qui illum sapiente reiciendis expedita nisi.",
+          imgSrc: "/img/sensei_ewan.jpg"
+        },
+        {
+          name: "Sensei Tom Davies",
+          rank: 4,
+          desc:
+            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor deserunt architecto quo adipisci laudantium, laborum beatae porro culpa maxime veritatis cum minima consectetur consequatur qui illum sapiente reiciendis expedita nisi.",
+          imgSrc: "/img/sensei_tom.jpg"
+        },
+        {
+          name: "Sensei Yin Tung Ho",
+          rank: 3,
+          desc:
+            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor deserunt architecto quo adipisci laudantium, laborum beatae porro culpa maxime veritatis cum minima consectetur consequatur qui illum sapiente reiciendis expedita nisi.",
+          imgSrc: "/img/sensei_yin_2.png"
+        },
+        {
+          name: "Sensei Richard Ly",
+          rank: 3,
+          desc:
+            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor deserunt architecto quo adipisci laudantium, laborum beatae porro culpa maxime veritatis cum minima consectetur consequatur qui illum sapiente reiciendis expedita nisi.",
+          imgSrc: "/img/sensei_richard.png"
+        }
+      ]
     };
   }
 };
@@ -103,6 +162,23 @@ export default {
   grid-area: imageThree;
 }
 
+.instructors-sect {
+  max-width: 1300px;
+  grid-area: instructors;
+}
+
+.swiper-container {
+  height: 100%;
+}
+
+.swiper-wrapper {
+  width: 100%;
+}
+
+.swiper-slide {
+  width: auto;
+}
+
 .about-container {
   max-width: 1300px;
   margin: 0 auto;
@@ -111,7 +187,8 @@ export default {
     "hero hero"
     "imageOne paraOne"
     "paraTwo imageTwo"
-    "imageThree paraThree";
+    "imageThree paraThree"
+    "instructors instructors";
   grid-column-gap: 30px;
   grid-row-gap: 40px;
 
