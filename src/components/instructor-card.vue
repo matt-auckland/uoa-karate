@@ -55,10 +55,12 @@ export default {
 <style>
 .instructor {
   border: 1px var(--tuatara-dark) solid;
-  max-width: 400px;
+  max-width: 350px;
   border-radius: 10px;
   overflow: hidden;
   margin: 0 20px;
+  height: 100%;
+  max-height: 340px;
 }
 
 .instructor .name {
@@ -77,7 +79,7 @@ export default {
 }
 
 .instructor .picture {
-  min-height: 250px;
+  min-height: 200px;
   max-width: 100%;
   background-size: cover;
   background-position-x: center;

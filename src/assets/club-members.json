@@ -1,82 +1,5 @@
 [
   {
-    "name": "Ewan Tempero",
-    "role": "instructor",
-    "pic": "",
-    "position": "Head Instructor",
-    "styles": [
-      {
-        "name": "Goju Ryu",
-        "grade": -4
-      }
-    ],
-    "bio": "Ewan Sensei teaches Software Engineering at UoA. He founded the club in 2003."
-  },
-  {
-    "name": "Tom Davies",
-    "role": "instructor",
-    "pic": "",
-    "position": "Instructor",
-    "styles": [
-      {
-        "name": "Goju Ryu",
-        "grade": -3
-      },
-      {
-        "name": "Yoshukai Karate",
-        "grade": -2
-      },
-      {
-        "name": "Zen Do Kai Karate Kickboxing",
-        "grade": -1
-      },
-      {
-        "name": "Shin Do Kempo",
-        "grade": -1
-      }
-    ],
-    "bio": "Tom Sensei helped Ewan Sensei found the club in 2003."
-  },
-  {
-    "name": "Greg Shanahan",
-    "role": "instructor",
-    "pic": "",
-    "position": "Instructor",
-    "styles": [
-      {
-        "name": "Goju Ryu",
-        "grade": -3
-      }
-    ],
-    "bio": ""
-  },
-  {
-    "name": "Richard Ly",
-    "role": "instructor",
-    "pic": "",
-    "position": "Instructor",
-    "styles": [
-      {
-        "name": "Goju Ryu",
-        "grade": -3
-      }
-    ],
-    "bio": ""
-  },
-  {
-    "name": "Yin Tung Ho",
-    "role": "instructor",
-    "pic": "",
-    "position": "Instructor",
-    "styles": [
-      {
-        "name": "Goju Ryu",
-        "grade": -3
-      }
-    ],
-    "bio": ""
-  },
-  {
     "name": "Jane Yang",
     "role": "exec",
     "pic": "",
@@ -110,7 +33,7 @@
     "styles": [
       {
         "name": "Goju Ryu",
-        "grade": 1
+        "grade": -1
       }
     ],
     "bio": ""

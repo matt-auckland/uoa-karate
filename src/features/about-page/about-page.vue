@@ -5,7 +5,7 @@
       class="hero"
       source="img/group_saifa.JPG"
       heading="About the Club"
-      :paragraph="`Founded in 2003 by Sensei Ewan Tempero (4th degree Black Belt) and Sensei Tom Davies (4th degree Black Belt), The University of Auckland Goju Ryu Karate Club has been running for over ${new Date().getFullYear() - 2003} years. We welcome both university students and non-students of any experince level, and from any style of martial arts.`"
+      :paragraph="`The Auckland University Goju Ryu Karate Club welcomes both university students and non-students, with any level of experience, and with any martial arts background.`"
     ></hero-image>
 
     <app-image
@@ -15,17 +15,12 @@
     >
     </app-image>
 
-    <app-image
-      class="imageTwo"
-      source="img/group_saifa.JPG"
-      caption="Club members performing Saifa kata at the beach"
-    >
     </app-image>
-    <p class="paraOne">
-      <span>
-        Run by Sensei Ewan Tempero and Tom Davies
-      </span>
-      <span>
+    <div class="paraOne">
+      <p>
+        {{`Founded in 2003 by Sensei Ewan Tempero (4th degree Black Belt) and Sensei Tom Davies (4th degree Black Belt), The University of Auckland Goju Ryu Karate Club has been running for over ${new Date().getFullYear() - 2003} years.` }}
+      </p>
+      <p>
         The club is affiliated with the
         <a
           href="https://iogkf.com"
@@ -39,22 +34,43 @@
           rel="noopener noreferrer"
         >IOGKFNZ</a>.
         This gives club members access to expert intructors and the ability to attend training camps/seminars around the country and the world.
-      </span>
-    </p>
+      </p>
+    </div>
+    <div class="paraTwo">
+      <h2>Club Events</h2>
 
-    <p class="paraTwo">
-      We try to create a warm and welcoming atmosphere at the club and as part of this we regularly hold all kinds of social events, including: Our own 'Karate Camp', weekend training camps, dinner/lunches after training, group movie viewings, trainings at the beach, and other group outings around Auckland.
-    </p>
+      <p>
+        We try to create a warm and welcoming atmosphere at the club and as part of this we regularly hold all kinds of social events.
+        Some examples: Our own 'Karate Camp', weekend training seminars, dinner/lunches after training, group movie viewings, trainings at the beach, and other group outings around Auckland.
+        We also participate in tournaments multiple times a year and attend training camps around New Zealand (and occassionally overseas!).
+      </p>
+    </div>
+    <div class="club-event-sect">
+      <swiper :options="galleryOpt">
+        <swiper-slide
+          v-for="i in eventImages"
+          :key="i.source"
+        >
+          <div class="flex-center">
 
-    <p class="paraThree">
-      We also participate in tournaments multiple times a year and attend training camps in Wellington (and occassionally overseas!).
-    </p>
+            <app-image
+              class="event-image"
+              :source="i.source"
+              :caption="i.caption"
+            />
+          </div>
+        </swiper-slide>
+        <div
+          class="swiper-button-prev"
+          slot="button-prev"
+        ></div>
+        <div
+          class="swiper-button-next"
+          slot="button-next"
+        ></div>
 
-    <app-image
-      class="imageThree"
-      source="img/camp_group.jpg"
-      caption="Club members at Karate Camp"
-    />
+      </swiper>
+    </div>
 
     <div class="instructors-sect">
       <h2>Meet the Instructors</h2>
@@ -101,36 +117,72 @@ export default {
         speed: 400,
         slidesPerView: "auto",
         spaceBetween: 30,
+        grabCursor: true,
         loop: true
+      },
+      galleryOpt: {
+        speed: 400,
+        grabCursor: true,
+        // spaceBetween: 30,
+        slidesPerView: 1,
+        centeredSlides: true,
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        }
       },
       instructors: [
         {
           name: "Sensei Ewan Tempero",
           rank: 4,
           desc:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor deserunt architecto quo adipisci laudantium, laborum beatae porro culpa maxime veritatis cum minima consectetur consequatur qui illum sapiente reiciendis expedita nisi.",
+            "Sensei Ewan has over 30 years of Goju Ryu experience. He is the chief instructor of the club, which he co-founded with Sensei Tom in 2003.",
           imgSrc: "/img/sensei_ewan.jpg"
         },
         {
           name: "Sensei Tom Davies",
           rank: 4,
           desc:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor deserunt architecto quo adipisci laudantium, laborum beatae porro culpa maxime veritatis cum minima consectetur consequatur qui illum sapiente reiciendis expedita nisi.",
+            "Sensei Tom has over 20 years experience in the martial arts, with black belts in Goju Ryu and several other Karate styles. He co-founded the club with Sensei Ewan.",
           imgSrc: "/img/sensei_tom.jpg"
+        },
+        {
+          name: "Sensei Greg Shanahan",
+          rank: 3,
+          desc: "Sensei Greg has over 25 years experience in Goju Ryu.",
+          imgSrc: "/img/sensei_greg.jpg"
         },
         {
           name: "Sensei Yin Tung Ho",
           rank: 3,
-          desc:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor deserunt architecto quo adipisci laudantium, laborum beatae porro culpa maxime veritatis cum minima consectetur consequatur qui illum sapiente reiciendis expedita nisi.",
+          desc: "Sensei Yin has over 15 years experience in Goju Ryu.",
           imgSrc: "/img/sensei_yin_2.png"
         },
         {
           name: "Sensei Richard Ly",
           rank: 3,
-          desc:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor deserunt architecto quo adipisci laudantium, laborum beatae porro culpa maxime veritatis cum minima consectetur consequatur qui illum sapiente reiciendis expedita nisi.",
+          desc: "Sensei Richard has over 10 years of Goju Ryu experience.",
           imgSrc: "/img/sensei_richard.png"
+        }
+      ],
+      eventImages: [
+        {
+          source: "img/camp_group.jpg",
+          caption: "Club members at Karate Camp"
+        },
+        {
+          source: "img/gishiki_group.jpg",
+          caption:
+            "Club members with their fellow New ZEalanders at a international training camp."
+        },
+        {
+          source: "img/camp_2019.png",
+          caption: "Fun at the 2019 Club Karate Camp"
+        },
+        {
+          source: "img/tournament.jpg",
+          caption: "Smiles after placing at the Bi-Annual Pukekohe Tournament"
         }
       ]
     };
@@ -167,6 +219,11 @@ export default {
   grid-area: instructors;
 }
 
+.club-event-sect {
+  width: 600px;
+  grid-area: events;
+}
+
 .swiper-container {
   height: 100%;
 }
@@ -179,6 +236,9 @@ export default {
   width: auto;
 }
 
+.event-image {
+  width: 450px;
+}
 .about-container {
   max-width: 1300px;
   margin: 0 auto;
@@ -186,8 +246,7 @@ export default {
   grid-template-areas:
     "hero hero"
     "imageOne paraOne"
-    "paraTwo imageTwo"
-    "imageThree paraThree"
+    "paraTwo events"
     "instructors instructors";
   grid-column-gap: 30px;
   grid-row-gap: 40px;
@@ -219,5 +278,10 @@ p {
 .person-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
 }
 </style>
