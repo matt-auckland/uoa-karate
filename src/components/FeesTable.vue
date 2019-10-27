@@ -33,16 +33,16 @@
           <td class="text">Paid once per year in addition to the training fees</td>
         </tr>
         <tr v-if="showStudents">
-          <td class="text">New Member's Training Fee</td>
-          <td class="number">$35 Per Semester</td>
-          <td class="text">Students pay half-price for the first semester</td>
+          <!-- <td class="text">New Member's Training Fee</td> -->
+          <!-- <td class="number">$35 Per Semester</td> -->
+          <!-- <td class="text">Students pay half-price for the first semester</td> -->
         </tr>
         <tr>
-          <td class="text">Standard Training Fee</td>
+          <td class="text">Training Fee</td>
           <td
             class="number"
             v-if="showStudents"
-          >$70 Per Semester</td>
+          >$70 Per Semester, $35 for your first sem</td>
           <td
             class="number"
             v-if="!showStudents"
@@ -50,7 +50,7 @@
           <td
             v-if="showStudents"
             class="text"
-          >Students pay per semester</td>
+          >Students pay per semester, first sem is half-price</td>
           <td
             v-if="!showStudents"
             class="text"
