@@ -1,23 +1,27 @@
 
 <template>
   <div class="event-container">
-    <div
-      class="event-img"
-      :style="{ backgroundImage: 'url(' + imageUrl + ')'}"
-    >
+    <div class="event-img">
+      <img
+        :src="imageUrl"
+        alt=""
+      >
     </div>
     <div class="text-container">
       <h2 class="event-title">{{event.title}}</h2>
       <p><span>🗺️</span> {{event.location}}</p>
       <p><span>📆</span> {{event.date}}</p>
-      <p class="event-text">{{description}}
+      <p
+        class="event-text"
+        :class="{desc: !showingMore}"
+      >{{description}}
       </p>
       <a
         v-if="showExpand"
         href="javascript:;"
         @click="showingMore = !showingMore"
         class="show-more"
-      >{{showingMore ? 'Show Less' : 'Show More'}}</a>
+      >{{showingMore ? 'Read Less' : 'Read More'}}</a>
 
       <p class="event-text">
         <div v-if="event.signUpURL">To sign up, follow <a
@@ -92,11 +96,14 @@ export default {
   border-radius: 20px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
+
 .event-title {
   font-size: 24px;
   margin: 0 0 5px 0;
 }
+
 .text-container {
   flex: 1 1 200px;
 }
@@ -111,13 +118,23 @@ p {
 
 .event-img {
   background-color: #333;
-  flex: 0 1 300px;
-  margin-right: 15px;
-  height: 150px;
-  width: 400px;
-  background-position: top left;
-  background-size: cover;
-  background-repeat: no-repeat;
+  flex: 1 1 300px;
+  margin-right: 5%;
+  height: 200px;
+  max-width: 500px;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+}
+
+.event-img > img {
+  width: 100%;
+}
+
+.event-text.desc {
+  max-height: 40px;
+  overflow: hidden;
 }
 
 @media (max-width: 650px) {

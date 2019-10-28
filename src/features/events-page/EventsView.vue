@@ -1,4 +1,3 @@
-
 <template>
   <div class="events-container">
     <div class="description">
@@ -7,7 +6,7 @@
         :paragraph="heroPara"
         source="img/rangitoto.jpg"
       >
-        </hero-image>
+      </hero-image>
     </div>
     <div
       v-for="event in eventList"
@@ -39,7 +38,7 @@ export default {
         .sort((a, b) => {
           return new Date(a.startDate) - new Date(b.startDate);
         }),
-        heroPara: `This page lists upcoming club events. Events range from casual social gatherings to training camps in other cities or even other countries. <p>This page was last updated on 26/08/2019.</p>`
+      heroPara: `This page lists upcoming club events. Events range from casual social gatherings to training camps in other cities or even other countries. <p>This page was last updated on 26/08/2019.</p>`
     };
   }
 };
@@ -51,9 +50,8 @@ export default {
   flex-direction: column;
   margin-bottom: 100px;
   min-height: 100vh;
-  max-width: 820px;
+  max-width: 1300px;
   margin: 0 auto;
-  text-align: justify;
 }
 
 .events-container > * {
