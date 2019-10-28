@@ -36,7 +36,6 @@ export default {
 
 <style scoped>
 .schedule-data-container {
-  padding: 0 10px;
 }
 
 h3 {
