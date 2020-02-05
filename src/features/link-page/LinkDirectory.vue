@@ -25,6 +25,10 @@
             target="_blank"
           >Club Sign Up Sheet</a></li>
         <li><a
+            href="https://forms.gle/w2XPZWTuuhKuYysz8"
+            target="_blank"
+          >Injury Record Submission Form</a></li>
+        <li><a
             href="http://karate.org.nz/"
             target="_blank"
           >IOGKFNZ's Website</a></li>
@@ -35,7 +39,7 @@
         <li><a
             href="https://drive.google.com/open?id=0B-VdjkUccnFtQUIxM0tJUnNvSzg"
             target="_blank"
-          >Beginner's guide to Goju Ryu</a></li>
+          >Beginner's Guide to Goju Ryu</a></li>
       </ul>
     </div>
   </div>
