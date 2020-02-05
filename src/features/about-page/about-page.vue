@@ -50,7 +50,12 @@
         times a year and attend training camps around New Zealand (and
         occassionally overseas!).
       </p>
+      <p>
+        See the <router-link :to="'/events'">events page</router-link> for
+        information on upcoming events.
+      </p>
     </div>
+
     <div class="club-event-sect">
       <div class="swipe-container">
         <app-image
@@ -61,6 +66,33 @@
           :caption="i.caption"
         />
       </div>
+    </div>
+    <div class="imageThree">
+      <app-image
+        :source="'img/hawks_nest_sensei.jpg'"
+        :caption="'Sensei Ewan explaining an exercise at the Hawks Nest'"
+      />
+    </div>
+    <div class="paraThree">
+      <h2>Training Location & Facilities</h2>
+      <p>
+        Most club trainings are run out of the awesome
+        <a href="https://hawksnestgym.co.nz/" target="_blank">Hawks Nest Gym</a>
+        which is a fully furbished Mauy Thai Gym located at Level 3/492 Queen
+        Street, Auckland; near the intersection of Queen Street and City Road.
+      </p>
+      <p>
+        The gym facilities include padded floors, a shower, bathroom, mirrors,
+        punching bags, skipping ropes, Muay Thai style focus mitts and more.
+        We've also stocked the with some equipment of our own, including kick
+        shields and
+        <a
+          href="https://zoehinis.com/2014/09/04/hojo-undo-101-chishi/"
+          target="_blank"
+          >chishi</a
+        >, a traditional Karate training implement from Okinawa (the birthplace
+        of Karate).
+      </p>
     </div>
 
     <div class="instructors-sect">
@@ -132,15 +164,16 @@ export default {
         {
           source: "img/gishiki_group.jpg",
           caption:
-            "Club members with their fellow New ZEalanders at a international training camp."
+            "Club members with their fellow New Zealanders at an international training camp."
         },
         {
           source: "img/camp_2019.png",
-          caption: "Fun at the 2019 Club Karate Camp"
+          caption: "Fun at the Club's 2019 Karate Camp"
         },
         {
           source: "img/tournament.jpg",
-          caption: "Smiles after placing at the Bi-Annual Pukekohe Tournament"
+          caption:
+            "Smiles after placing at the Bi-Annual Pukekohe Karate Tournament"
         }
       ]
     };
@@ -167,6 +200,10 @@ export default {
 .paraTwo {
   grid-area: paraTwo;
 }
+.paraThree {
+  grid-area: paraThree;
+}
+
 .imageThree {
   grid-area: imageThree;
 }
@@ -177,7 +214,6 @@ export default {
 }
 
 .club-event-sect {
-  max-width: 600px;
   grid-area: events;
   overflow: hidden;
 }
@@ -214,6 +250,7 @@ export default {
     "hero hero"
     "imageOne paraOne"
     "paraTwo events"
+    "imageThree paraThree"
     "instructors instructors";
   grid-column-gap: 30px;
   grid-row-gap: 40px;
@@ -231,6 +268,8 @@ export default {
       "paraOne paraOne"
       "paraTwo paraTwo"
       "events events"
+      "imageThree imageThree"
+      "paraThree paraThree"
       "instructors instructors";
   }
 }
