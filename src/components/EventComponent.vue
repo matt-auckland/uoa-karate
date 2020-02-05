@@ -1,12 +1,12 @@
 
 <template>
   <div class="event-container">
-    <div class="event-img">
+    <!-- <div class="event-img">
       <img
         :src="imageUrl"
         alt=""
       >
-    </div>
+    </div> -->
     <div class="text-container">
       <h2 class="event-title">{{event.title}}</h2>
       <p><span>🗺️</span> {{event.location}}</p>
@@ -60,7 +60,7 @@ export default {
         movie: ""
       },
       showingMore: false,
-      maxDesc: 170
+      maxDesc: 320 //170
     };
   },
   props: {
