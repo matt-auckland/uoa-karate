@@ -1,12 +1,18 @@
 <template>
   <content>
     <div class="container">
-      <img
-        src="/group-photo.jpg"
-        alt=""
-        class="first-image"
-      >
-      <HomeIntro class="home-intro" />
+      <hero-image
+        class="hero-image"
+        source="/group-photo.jpg"
+        heading="Welcome to our Dojo"
+        paragraph="People with any level of experience and from any martial arts background are welcome to train, both students and non-students alike. We have beginner specific training at the start of every semester but accept new members year round."
+      ></hero-image>
+      <!-- <app-image
+          :source="'/group-photo.jpg'"
+          :caption="'The club performing at Courses and Careers Day'"
+          class="hero-image"
+        ></app-image> -->
+      <!-- </div> -->
       <TrainingSchedule class="schedule" />
       <FeesTable class="fees" />
       <UpcomingEvents class="events" />
@@ -21,7 +27,6 @@
 </template>
 
 <script>
-import HomeIntro from "@/components/HomeIntro.vue";
 import ToDo from "@/components/ToDo.vue";
 import TrainingSchedule from "@/components/TrainingSchedule.vue";
 import FeesTable from "@/components/FeesTable.vue";
@@ -33,14 +38,13 @@ import UpcomingEvents from "@/components/UpcomingEvents.vue";
 export default {
   name: "home",
   components: {
-    HomeIntro,
     ToDo,
     ClubMap,
     TrainingSchedule,
     FeesTable,
     Gallery,
     ContactForm,
-    UpcomingEvents
+    UpcomingEvents,
   },
   data: function() {
     return {};
@@ -66,9 +70,9 @@ content {
   grid-column-gap: 50px;
   grid-row-gap: 40px;
   grid-template-areas:
-    " intro  first-image events events"
-    "schedule schedule events events"
-    "fees fees events events";
+    "hero hero hero"
+    "schedule events events"
+    "fees events events";
 }
 
 @media (max-width: 981px) {
@@ -81,8 +85,7 @@ content {
   }
   .container {
     grid-template-areas:
-      "intro intro"
-      "first-image first-image"
+      "hero hero"
       "schedule schedule"
       "fees fees";
   }
@@ -91,24 +94,29 @@ content {
   }
 }
 
-.home-intro {
-  grid-area: intro;
+.hero-image {
+  grid-area: hero;
   width: 100%;
   margin: 0 auto;
-  min-width: 200px;
 
-  display: grid;
-  grid-gap: 20px;
-  align-items: flex-start;
-  justify-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* background-image: url("/group-photo.jpg"); */
+  background-position-x: 0px;
+  background-size: cover;
+  height: 435px;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
 }
 
-.first-image {
-  max-width: 400px;
-  width: 100%;
-  grid-area: first-image;
-  margin: 18px auto 0 auto;
+.home-intro .text-container {
+  max-width: 450px;
+  width: 80%;
+  margin-left: 30px;
+  padding: 30px 20px;
+  background: rgba(79, 79, 79, 0.577);
+  border-radius: 5px;
+  color: white;
 }
 
 .double-col {

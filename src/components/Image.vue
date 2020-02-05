@@ -10,7 +10,7 @@
 
 <script>
 export default {
-  name: "vue-image",
+  name: "appImage",
   props: {
     source: { type: String, required: true },
     caption: { type: String, required: true }
@@ -21,12 +21,19 @@ export default {
 
 <style scoped>
 img {
-  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
 }
 
 figure {
-  width: 100%;
-  margin: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  max-height: 100%;
+  max-width: 100%;
+  margin: 0;
 }
 
 figcaption {

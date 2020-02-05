@@ -35,11 +35,11 @@ export default {
     return {};
   },
   computed: {
-    eventName: function() {
-      return this.$route.params.name.replace(/-/gi, " ");
+    eventId: function() {
+      return this.$route.params.id;
     },
     event: function() {
-      return eventList.find(object => object.name === this.eventName);
+      return eventList.find(ev => ev.id === this.eventId);
     }
   }
 };

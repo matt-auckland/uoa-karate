@@ -3,12 +3,11 @@ import Router from 'vue-router';
 import Meta from 'vue-meta';
 
 import Home from './features/home-page/Home.vue';
-// new page
-// import NewAboutPage from './features/about-page/about-page.vue';
-import AboutPage from './views/About.vue';
+import AboutPage from './features/about-page/about-page.vue';
 import LinkDirectory from './features/link-page/LinkDirectory.vue';
 import EventsView from './features/events-page/EventsView.vue';
 import TestView from './features/test-page/TestView.vue';
+import SampleView from './features/sample-page/SamplePage.vue';
 import SingleEventView from './features/event-details/SingleEventView.vue';
 import GradingInfo from './features/grading-info-page/GradingInfo.vue';
 
@@ -38,7 +37,7 @@ export default new Router({
       component: EventsView,
     },
     {
-      path: '/events/:name',
+      path: '/events/:id',
       name: 'singleEvent',
       component: SingleEventView,
     },
@@ -51,6 +50,11 @@ export default new Router({
       path: '/grading-info',
       name: 'gradingInfo',
       component: GradingInfo,
+    },
+    {
+      path: '/sample',
+      name: 'sampleView',
+      component: SampleView,
     },
   ],
 });

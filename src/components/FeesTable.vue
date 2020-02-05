@@ -6,12 +6,16 @@
         class="tab"
         :class="{ active: showStudents }"
         @click="showStudents = true"
-      >Student Fees</a>
+      >Student Fees
+        <div class="underline"></div>
+      </a>
       <a
         class="tab"
         :class="{ active: !showStudents }"
         @click="showStudents = false"
-      >Non&nbsp;Student Fees</a>
+      >Non&nbsp;Student Fees
+        <div class="underline"></div>
+      </a>
     </div>
 
     <table>
@@ -29,16 +33,13 @@
           <td class="text">Paid once per year in addition to the training fees</td>
         </tr>
         <tr v-if="showStudents">
-          <td class="text">New Member's Training Fee</td>
-          <td class="number">$35 Per Semester</td>
-          <td class="text">Students pay half-price for the first semester</td>
         </tr>
         <tr>
-          <td class="text">Standard Training Fee</td>
+          <td class="text">Training Fee</td>
           <td
             class="number"
             v-if="showStudents"
-          >$70 Per Semester</td>
+          >$70 Per Semester, $35 for your first sem</td>
           <td
             class="number"
             v-if="!showStudents"
@@ -46,7 +47,7 @@
           <td
             v-if="showStudents"
             class="text"
-          >Students pay per semester</td>
+          >Students pay per semester, your first sem is half-price</td>
           <td
             v-if="!showStudents"
             class="text"
@@ -85,24 +86,24 @@ export default {
 .tab {
   cursor: pointer;
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
-.tab::after {
-  --animation-length: 800ms;
+.underline {
+  --animation-length: 350ms;
   content: " ";
   background: var(--persian-red);
   height: 2px;
   opacity: 1;
   width: 0px;
-  transition: width var(--animation-length), left var(--animation-length);
+  transition: width var(--animation-length);
   position: absolute;
   bottom: -3px;
-  left: 50%;
 }
 
-.tab.active::after {
+.tab.active .underline {
   width: 100%;
-  left: 0%;
 }
 
 .tab.active {
@@ -115,8 +116,8 @@ table {
   border-spacing: 0px;
   width: 100%;
   max-width: 880px;
-  /* min-width: 300px; */
 }
+
 table,
 td,
 th {
@@ -125,14 +126,10 @@ th {
 
 td,
 th {
-  padding: 3px 5px;
+  padding: 16px 10px;
 }
 
 .text {
   text-align: left;
-}
-
-.number {
-  text-align: right;
 }
 </style>
