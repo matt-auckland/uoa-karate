@@ -21,13 +21,19 @@ export default {
 
 <style scoped>
 img {
-  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
 }
 
 figure {
-  height: 100%;
-  width: 100%;
-  margin: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  max-height: 100%;
+  max-width: 100%;
+  margin: 0;
 }
 
 figcaption {

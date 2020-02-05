@@ -1,20 +1,15 @@
 <template>
   <div class="instructor">
-    <div
-      class="picture top"
-      :style="style"
-      alt=""
-    ></div>
+    <div class="picture top" :style="style" alt=""></div>
     <div class="details">
-      <h2 class="name">{{name}}</h2>
-      <h3 class="title">{{danGrade}} Degree Blackbelt</h3>
+      <h2 class="name">{{ name }}</h2>
+      <h3 class="title">{{ danGrade }} Degree Blackbelt</h3>
       <p class="desc">
-        {{desc}}
+        {{ desc }}
       </p>
     </div>
   </div>
 </template>
-
 
 <script>
 export default {
@@ -55,12 +50,12 @@ export default {
 <style>
 .instructor {
   border: 1px var(--tuatara-dark) solid;
-  max-width: 350px;
   border-radius: 10px;
   overflow: hidden;
   margin: 0 20px;
-  height: 100%;
-  max-height: 340px;
+  width: 350px;
+  height: 386px;
+  white-space: normal;
 }
 
 .instructor .name {

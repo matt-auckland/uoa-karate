@@ -68,7 +68,6 @@ hr {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0 -20px;
 }
 
 .day {
@@ -85,6 +84,14 @@ hr {
   background-color: black;
 
   transition: transform 500ms;
+}
+
+.day:last-child {
+  margin-right: 0;
+}
+
+.day:first-child {
+  margin-left: 0;
 }
 
 .day:hover {

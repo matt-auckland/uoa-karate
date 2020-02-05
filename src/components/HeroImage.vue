@@ -40,7 +40,7 @@ export default {
 .hero-image .text-container {
   max-width: 450px;
   width: 80%;
-  margin-left: 30px;
+  margin: 0 30px;
   padding: 30px 20px;
   background: rgba(79, 79, 79, 0.85);
   border-radius: 5px;

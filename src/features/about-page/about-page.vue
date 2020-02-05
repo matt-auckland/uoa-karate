@@ -1,137 +1,99 @@
-
 <template>
   <div class="about-container">
     <hero-image
       class="hero"
       source="img/group_saifa.JPG"
       heading="About the Club"
-      :paragraph="`The Auckland University Goju Ryu Karate Club welcomes both university students and non-students, with any level of experience, and with any martial arts background.`"
+      :paragraph="
+        `The Auckland University Goju Ryu Karate Club welcomes both university students and non-students, with any level of experience, and with any martial arts background.`
+      "
     ></hero-image>
+    <div class="imageOne">
+      <app-image
+        source="img/two_sensei.jpg"
+        caption="Sensei Ewan Tempero and Sensei Tom Davies"
+      >
+      </app-image>
+    </div>
 
-    <app-image
-      class="imageOne"
-      source="img/two_sensei.jpg"
-      caption="Sensei Ewan Tempero and Sensei Tom Davies"
-    >
-    </app-image>
-
-    </app-image>
     <div class="paraOne">
+      <h2>About the Club</h2>
       <p>
-        {{`Founded in 2003 by Sensei Ewan Tempero (4th degree Black Belt) and Sensei Tom Davies (4th degree Black Belt), The University of Auckland Goju Ryu Karate Club has been running for over ${new Date().getFullYear() - 2003} years.` }}
+        {{
+          `Founded in 2003 by Sensei Ewan Tempero (4th degree Black Belt) and Sensei Tom Davies (4th degree Black Belt), The University of Auckland Goju Ryu Karate Club has been running for over ${new Date().getFullYear() -
+            2003} years.`
+        }}
       </p>
       <p>
         The club is affiliated with the
-        <a
-          href="https://iogkf.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          International Okinawan Goju Ryu Federation (IOGKF)</a>, an international body dedicated to preserving the art of the Okinawan Goju-Ryu Karate, as well as the New Zealand branch organization,
+        <a href="https://iogkf.com" target="_blank" rel="noopener noreferrer">
+          International Okinawan Goju Ryu Federation (IOGKF)</a
+        >, an international body dedicated to preserving the art of the Okinawan
+        Goju-Ryu Karate, as well as the New Zealand branch organization,
         <a
           href="https://karate.org.nz"
           target="_blank"
           rel="noopener noreferrer"
-        >IOGKFNZ</a>.
-        This gives club members access to expert intructors and the ability to attend training camps/seminars around the country and the world.
+          >IOGKFNZ</a
+        >. This gives club members access to expert intructors and the ability
+        to attend training camps/seminars around the country and the world.
       </p>
     </div>
     <div class="paraTwo">
       <h2>Club Events</h2>
-
       <p>
-        We try to create a warm and welcoming atmosphere at the club and as part of this we regularly hold all kinds of social events.
-        Some examples: Our own 'Karate Camp', weekend training seminars, dinner/lunches after training, group movie viewings, trainings at the beach, and other group outings around Auckland.
-        We also participate in tournaments multiple times a year and attend training camps around New Zealand (and occassionally overseas!).
+        We try to create a warm and welcoming atmosphere at the club and as part
+        of this we regularly hold all kinds of social events. Some examples: Our
+        own 'Karate Camp', weekend training seminars, dinner/lunches after
+        training, group movie viewings, trainings at the beach, and other group
+        outings around Auckland. We also participate in tournaments multiple
+        times a year and attend training camps around New Zealand (and
+        occassionally overseas!).
       </p>
     </div>
     <div class="club-event-sect">
-      <swiper :options="galleryOpt">
-        <swiper-slide
+      <div class="swipe-container">
+        <app-image
           v-for="i in eventImages"
           :key="i.source"
-        >
-          <div class="flex-center">
-
-            <app-image
-              class="event-image"
-              :source="i.source"
-              :caption="i.caption"
-            />
-          </div>
-        </swiper-slide>
-        <div
-          class="swiper-button-prev"
-          slot="button-prev"
-        ></div>
-        <div
-          class="swiper-button-next"
-          slot="button-next"
-        ></div>
-
-      </swiper>
+          class="event-image"
+          :source="i.source"
+          :caption="i.caption"
+        />
+      </div>
     </div>
 
     <div class="instructors-sect">
       <h2>Meet the Instructors</h2>
-      <swiper :options="swiperOpt">
-        <swiper-slide
-          v-for="i in instructors"
-          :key="i.name"
-        >
-          <InstructorCard
-            :name="i.name"
-            :rank="i.rank"
-            :imgSrc="i.imgSrc"
-            :desc="i.desc"
-          />
-        </swiper-slide>
-      </swiper>
+      <div>
+        <div class="swipe-container">
+          <div v-for="i in instructors" :key="i.name">
+            <InstructorCard
+              :name="i.name"
+              :rank="i.rank"
+              :imgSrc="i.imgSrc"
+              :desc="i.desc"
+            />
+          </div>
+        </div>
+      </div>
     </div>
-
   </div>
 </template>
-
 
 <script>
 import Person from "@/components/Person.vue";
 import ClubMembers from "@/assets/club-members.json";
-import TrainingSchedule from "@/components/TrainingSchedule.vue";
-import FeesTable from "@/components/FeesTable.vue";
 import InstructorCard from "@/components/instructor-card.vue";
-import "swiper/dist/css/swiper.css";
-
-import { swiper, swiperSlide } from "vue-awesome-swiper";
 
 export default {
   components: {
     Person,
-    swiper,
-    swiperSlide,
     InstructorCard
   },
   data() {
     return {
       ClubMembers: ClubMembers,
-      swiperOpt: {
-        speed: 400,
-        slidesPerView: "auto",
-        spaceBetween: 30,
-        grabCursor: true,
-        loop: true
-      },
-      galleryOpt: {
-        speed: 400,
-        grabCursor: true,
-        // spaceBetween: 30,
-        slidesPerView: 1,
-        centeredSlides: true,
-        loop: true,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev"
-        }
-      },
       instructors: [
         {
           name: "Sensei Ewan Tempero",
@@ -168,10 +130,6 @@ export default {
       ],
       eventImages: [
         {
-          source: "img/camp_group.jpg",
-          caption: "Club members at Karate Camp"
-        },
-        {
           source: "img/gishiki_group.jpg",
           caption:
             "Club members with their fellow New ZEalanders at a international training camp."
@@ -190,7 +148,6 @@ export default {
 };
 </script>
 
-
 <style scoped>
 .hero {
   grid-area: hero;
@@ -204,41 +161,51 @@ export default {
 .imageThree {
   grid-area: imageThree;
 }
-.imageOne {
-  grid-area: imageOne;
+.paraOne {
+  grid-area: paraOne;
 }
-.imageTwo {
-  grid-area: imageTwo;
+.paraTwo {
+  grid-area: paraTwo;
 }
 .imageThree {
   grid-area: imageThree;
 }
 
 .instructors-sect {
-  max-width: 1300px;
+  width: 100%;
   grid-area: instructors;
 }
 
 .club-event-sect {
-  width: 600px;
+  max-width: 600px;
   grid-area: events;
+  overflow: hidden;
 }
 
-.swiper-container {
-  height: 100%;
-}
-
-.swiper-wrapper {
+.swipe-container {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
   width: 100%;
 }
 
-.swiper-slide {
-  width: auto;
+.swipe-container > * {
+  display: inline-block;
 }
 
 .event-image {
-  width: 450px;
+  margin: 0 10px;
+  white-space: normal;
 }
+
+.event-image:first-of-type {
+  margin-left: 0;
+}
+
+.event-image:last-of-type {
+  margin-right: 0;
+}
+
 .about-container {
   max-width: 1300px;
   margin: 0 auto;
@@ -250,10 +217,22 @@ export default {
     "instructors instructors";
   grid-column-gap: 30px;
   grid-row-gap: 40px;
-
   grid-gap: 15px;
   justify-content: center;
   padding: 0 15px;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 800px) {
+  .about-container {
+    grid-template-areas:
+      "hero hero"
+      "imageOne imageOne"
+      "paraOne paraOne"
+      "paraTwo paraTwo"
+      "events events"
+      "instructors instructors";
+  }
 }
 
 p {
