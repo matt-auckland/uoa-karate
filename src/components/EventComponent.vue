@@ -9,8 +9,8 @@
     </div> -->
     <div class="text-container">
       <h2 class="event-title">{{event.title}}</h2>
-      <p><span>🗺️</span> {{event.location}}</p>
-      <p><span>📆</span> {{event.date}}</p>
+      <p><span>🗺️</span>&nbsp;<a :href="`https://www.google.com/maps/search/${event.location}`" target="_blank">{{event.location}}</a></p>
+      <p><span>📆</span> {{calculateDateString(event) || TBA}}</p>
       <p
         class="event-text"
         :class="{desc: !showingMore}"
@@ -85,6 +85,35 @@ export default {
 
       return `img/${this.event.customImage}`;
     }
+  },
+  methods: {
+    calculateDateString(event) {
+      if (!event.startDate) return '';
+      let startDate = new Intl.DateTimeFormat('default', this.calculateFormatterOptions(event.startDate)).format(new Date(event.startDate));
+      
+      if (!event.endDate) return startDate;
+
+      let endDate = new Intl.DateTimeFormat('default', this.calculateFormatterOptions(event.endDate)).format(new Date(event.endDate));
+            
+      return `${startDate} - ${endDate}`;
+    },
+    calculateFormatterOptions(dateStr) {
+      const  fullStrOptions = {
+        weekday: 'long', month: 'long', day: 'numeric' , year: 'numeric'
+      };
+
+      const  monthYearOptions = {
+        month: 'long', year: 'numeric'
+      };
+
+      switch (dateStr.split('-').length) {
+        case (1): return {year: 'numeric'};
+        case (2): return monthYearOptions;
+        case (3): 
+        default: 
+          return fullStrOptions;
+      }
+    }
   }
 };
 </script>
@@ -105,7 +134,7 @@ export default {
 }
 
 .text-container {
-  flex: 1 1 200px;
+  flex: 1 1 100px;
 }
 
 p {
@@ -133,8 +162,9 @@ p {
 }
 
 .event-text.desc {
-  max-height: 40px;
-  overflow: hidden;
+  /* max-height: 40px;
+  overflow: hidden; */
+  max-width: 750px;
 }
 
 @media (max-width: 650px) {
@@ -152,7 +182,7 @@ p {
     border-radius: 20px 20px 0 0;
   }
   .text-container {
-    padding: 0 30px 25px 30px;
+    padding:  25px 30px;
   }
 }
 </style>

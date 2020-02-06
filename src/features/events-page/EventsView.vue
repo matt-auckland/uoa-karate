@@ -8,11 +8,7 @@
       >
       </hero-image>
     </div>
-    <div
-      v-for="event in eventList"
-      :key="event.name"
-      class="event"
-    >
+    <div v-for="event in eventList" :key="event.name" class="event">
       <EventComponent :event="event" />
     </div>
   </div>
@@ -38,7 +34,7 @@ export default {
         .sort((a, b) => {
           return new Date(a.startDate) - new Date(b.startDate);
         }),
-      heroPara: `This page lists upcoming club events. Events range from casual social gatherings to training camps in other cities or even other countries. <p>This page was last updated on 26/08/2019.</p>`
+      heroPara: `This page lists upcoming club events. Events range from casual social gatherings to training camps in other cities or even other countries. <p>This page was last updated on 06/02/2020.</p>`
     };
   }
 };
