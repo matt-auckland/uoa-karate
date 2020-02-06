@@ -1,10 +1,7 @@
 <template>
   <figure>
-    <img
-      :src="source"
-      :alt="caption"
-    >
-    <figcaption>{{caption}}</figcaption>
+    <img loading="lazy" :src="source" :alt="caption" />
+    <figcaption>{{ caption }}</figcaption>
   </figure>
 </template>
 
@@ -18,12 +15,12 @@ export default {
 };
 </script>
 
-
 <style scoped>
 img {
   max-width: 100%;
   max-height: 100%;
   margin: 0 auto;
+  background-color: #ccc;
 }
 
 figure {

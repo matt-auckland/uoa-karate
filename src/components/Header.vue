@@ -82,6 +82,8 @@ a {
 
 #logo {
   width: 80px;
+  height: 78.8px;
+
   vertical-align: middle;
   filter: saturate(70%);
   transition: all 200ms ease-out;

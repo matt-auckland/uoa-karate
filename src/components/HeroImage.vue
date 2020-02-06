@@ -1,12 +1,8 @@
 <template>
-  <div
-    class="hero-image"
-    :style="`background-image: url('${source}')`"
-  >
+  <div class="hero-image" :style="`background-image: url('${source}')`">
     <div class="text-container">
-      <h1>{{heading}}</h1>
-      <p v-html="paragraph">
-      </p>
+      <h1>{{ heading }}</h1>
+      <p v-html="paragraph"></p>
     </div>
   </div>
 </template>
@@ -22,12 +18,11 @@ export default {
 };
 </script>
 
-
 <style scoped>
 .hero-image {
   width: 100%;
   margin: 0 auto;
-
+  background-color: #ccc;
   background-position-y: 50%;
   background-size: cover;
   height: 435px;
