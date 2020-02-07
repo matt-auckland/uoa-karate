@@ -11,6 +11,28 @@
     "extendedDescription": ""
   },
   {
+    "title": "Karate Camp 2020",
+    "id": "0",
+    "startDate": "2020-08",
+    "endDate": "",
+    "location": "",
+    "description": "Karate Camp will once be hosted in Semester 2's mid-semester break",
+    "offsiteLink": "",
+    "signUpURL": "",
+    "extendedDescription": ""
+  },
+  {
+    "title": "Weekend Warriors 2020",
+    "id": "0",
+    "startDate": "2020-04",
+    "endDate": "",
+    "location": "Auckland",
+    "description": "Weekend Warriors is a club run weekend training camp. This year it will be hosted in Semester 1's mid-semester break",
+    "offsiteLink": "",
+    "signUpURL": "",
+    "extendedDescription": ""
+  },
+  {
     "title": "Annual General Meeting",
     "id": "1",
     "startDate": "2019-09-8",
@@ -22,12 +44,24 @@
     "extendedDescription": ""
   },
   {
-    "title": "Pukekohe Tournament",
+    "title": "Pukekohe Karate Tournament",
     "id": "2",
-    "startDate": "2019-4-21",
+    "startDate": "2020-4",
     "endDate": "",
-    "location": "Pukekohe Indian Community Hall, 55 Ward Street",
-    "description": "The bi-annual Pukekohe tournament is set to have its first event of the year on Saturday 21st March. As usual, kata (solo and teams of at least three) and shiai sparring (point sparring) are on the schedule. There are no pre-requisites for entering the tournament, the club covers entry fees and people with any level of experience are welcome. Starts at 9am. If you want more details regarding the tournament, feel free to ask us. If you’re interested in participating then please fill out the sign up form (coming soon).",
+    "location": "Pukekohe",
+    "description": "The bi-annual Pukekohe Karate tournament is set to have its first event of the year on this April. As usual, kata (solo and teams of at least three) and shiai sparring (point sparring) are on the schedule. There are no pre-requisites for entering the tournament, the club covers entry fees and people with any level of experience are welcome. If you want more details regarding the tournament, feel free to ask us. If you’re interested in participating then please fill out the sign up form (coming soon).",
+    "offsiteLink": "",
+    "signUpURL": "",
+    "extendedDescription": "",
+    "type": "tournament"
+  },
+  {
+    "title": "Pukekohe Karate Tournament",
+    "id": "2",
+    "startDate": "2020-9",
+    "endDate": "",
+    "location": "Pukekohe",
+    "description": "The bi-annual Pukekohe Karate tournament will likely have it's second event this September.",
     "offsiteLink": "",
     "signUpURL": "",
     "extendedDescription": "",

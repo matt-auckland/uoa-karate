@@ -9,8 +9,8 @@
     </div> -->
     <div class="text-container">
       <h2 class="event-title">{{event.title}}</h2>
-      <p><span>🗺️</span>&nbsp;<a :href="`https://www.google.com/maps/search/${event.location}`" target="_blank">{{event.location}}</a></p>
-      <p><span>📆</span> {{calculateDateString(event) || TBA}}</p>
+      <p><span title="Location">🗺️</span>&nbsp;<a v-if="event.location" :href="`https://www.google.com/maps/search/${event.location}`" target="_blank">{{event.location}}</a> <span v-else>To Be Decided</span>  </p>
+      <p><span title="Date">📆</span> {{calculateDateString(event) || TBA}}</p>
       <p
         class="event-text"
         :class="{desc: !showingMore}"
@@ -60,7 +60,7 @@ export default {
         movie: ""
       },
       showingMore: false,
-      maxDesc: 320 //170
+      maxDesc: 300 //170
     };
   },
   props: {
@@ -161,7 +161,7 @@ p {
   width: 100%;
 }
 
-.event-text.desc {
+.event-text {
   /* max-height: 40px;
   overflow: hidden; */
   max-width: 750px;

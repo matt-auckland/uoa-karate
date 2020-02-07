@@ -34,7 +34,9 @@ export default {
         .sort((a, b) => {
           return new Date(a.startDate) - new Date(b.startDate);
         }),
-      heroPara: `This page lists upcoming club events. Events range from casual social gatherings to training camps in other cities or even other countries. <p>This page was last updated on 06/02/2020.</p>`
+      heroPara: `This page lists upcoming club events. 
+        Events range from casual social gatherings to training camps in other cities or even other countries. 
+        <p>This page was last updated on 08/02/2020.</p>`
     };
   }
 };
