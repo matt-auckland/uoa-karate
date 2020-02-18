@@ -1,9 +1,13 @@
 <template>
-  <div class="instructor">
-    <div class="picture top" :style="style" alt=""></div>
+  <div class="member">
+    <div
+      class="picture top"
+      :style="style"
+      alt=""
+    ></div>
     <div class="details">
       <h2 class="name">{{ name }}</h2>
-      <h3 class="title">{{ danGrade }} Degree Blackbelt</h3>
+      <h3 class="title">{{ grade }}</h3>
       <p class="desc">
         {{ desc }}
       </p>
@@ -14,6 +18,9 @@
 <script>
 export default {
   props: {
+    danGrade: {
+      default: false
+    },
     rank: {
       default: 1
     },
@@ -26,8 +33,18 @@ export default {
     }
   },
   computed: {
-    danGrade() {
-      switch (this.rank) {
+    grade() {
+      return this.danGrade
+        ? `${this.numToStr(this.rank)} Degree Blackbelt`
+        : `${this.numToStr(this.rank)} Kyu`;
+    },
+    style() {
+      return `background-image: url(${this.imgSrc});`;
+    }
+  },
+  methods: {
+    numToStr(num) {
+      switch (num) {
         case 1:
           return "First";
         case 2:
@@ -38,17 +55,24 @@ export default {
           return "Fourth";
         case 5:
           return "Fifth";
+        case 6:
+          return "Sixth";
+        case 7:
+          return "Seventh";
+        case 8:
+          return "Eighth";
+        case 9:
+          return "Ninth";
+        case 10:
+          return "Tenth";
       }
-    },
-    style() {
-      return `background-image: url(${this.imgSrc});`;
     }
   }
 };
 </script>
 
 <style>
-.instructor {
+.member {
   border: 1px var(--tuatara-dark) solid;
   border-radius: 10px;
   overflow: hidden;
@@ -58,22 +82,22 @@ export default {
   white-space: normal;
 }
 
-.instructor .name {
+.member .name {
   margin-top: 8px;
   margin-bottom: 0px;
 }
 
-.instructor .title {
+.member .title {
   margin-top: 3px;
   margin-bottom: 5px;
 }
 
-.instructor .desc {
+.member .desc {
   margin-top: 8px;
   margin-bottom: 0px;
 }
 
-.instructor .picture {
+.member .picture {
   min-height: 200px;
   max-width: 100%;
   background-size: cover;
@@ -81,11 +105,11 @@ export default {
   background-position-y: top;
   background-repeat: no-repeat;
 }
-.instructor .picture.top {
+.member .picture.top {
   background-position-y: top;
 }
 
-.instructor .details {
+.member .details {
   padding: 0 20px 20px 20px;
 }
 </style>

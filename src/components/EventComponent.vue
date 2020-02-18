@@ -1,4 +1,3 @@
-
 <template>
   <div class="event-container">
     <!-- <div class="event-img">
@@ -8,38 +7,49 @@
       >
     </div> -->
     <div class="text-container">
-      <h2 class="event-title">{{event.title}}</h2>
-      <p><span title="Location">🗺️</span>&nbsp;<a v-if="event.location" :href="`https://www.google.com/maps/search/${event.location}`" target="_blank">{{event.location}}</a> <span v-else>To Be Decided</span>  </p>
-      <p><span title="Date">📆</span> {{calculateDateString(event) || TBA}}</p>
-      <p
-        class="event-text"
-        :class="{desc: !showingMore}"
-      >{{description}}
+      <h2 class="event-title">{{ event.title }}</h2>
+      <p>
+        <span title="Location">🗺️</span>&nbsp;<a
+          v-if="event.location"
+          :href="`https://www.google.com/maps/search/${event.location}`"
+          target="_blank"
+          >{{ event.location }}</a
+        >
+        <span v-else>To Be Decided</span>
+      </p>
+      <p>
+        <span title="Date">📆</span> {{ calculateDateString(event) || TBA }}
+      </p>
+      <p class="event-text" :class="{ desc: !showingMore }">
+        {{ description }}
       </p>
       <a
         v-if="showExpand"
         href="javascript:;"
         @click="showingMore = !showingMore"
         class="show-more"
-      >{{showingMore ? 'Read Less' : 'Read More'}}</a>
+        >{{ showingMore ? "Read Less" : "Read More" }}</a
+      >
 
-      <p class="event-text">
-        <div v-if="event.signUpURL">To sign up, follow <a
-            :href="event.signUpURL"
-            target="_blank"
-            rel="noopener noreferrer"
-          >this link</a></div>
+      <p class="event-text"></p>
+      <div v-if="event.signUpURL">
+        To sign up, follow
+        <a :href="event.signUpURL" target="_blank" rel="noopener noreferrer"
+          >this link</a
+        >
+      </div>
 
-        <div v-if="!event.offSitelink && event.extendedDescription">
-          For more information follow <router-link :to="'/events/' + event.id">this link</router-link>
-        </div>
+      <div v-if="!event.offSitelink && event.extendedDescription">
+        For more information follow
+        <router-link :to="'/events/' + event.id">this link</router-link>
+      </div>
 
-        <div v-if="event.offSitelink">For more information follow <a
-            :href="event.offSitelink"
-            target="_blank"
-            rel="noopener noreferrer"
-          >this link</a></div>
-      </p>
+      <div v-if="event.offSitelink">
+        For more information follow
+        <a :href="event.offSitelink" target="_blank" rel="noopener noreferrer"
+          >this link</a
+        >
+      </div>
     </div>
   </div>
 </template>
@@ -88,29 +98,41 @@ export default {
   },
   methods: {
     calculateDateString(event) {
-      if (!event.startDate) return '';
-      let startDate = new Intl.DateTimeFormat('default', this.calculateFormatterOptions(event.startDate)).format(new Date(event.startDate));
-      
+      if (!event.startDate) return "";
+      let startDate = new Intl.DateTimeFormat(
+        "default",
+        this.calculateFormatterOptions(event.startDate)
+      ).format(new Date(event.startDate));
+
       if (!event.endDate) return startDate;
 
-      let endDate = new Intl.DateTimeFormat('default', this.calculateFormatterOptions(event.endDate)).format(new Date(event.endDate));
-            
+      let endDate = new Intl.DateTimeFormat(
+        "default",
+        this.calculateFormatterOptions(event.endDate)
+      ).format(new Date(event.endDate));
+
       return `${startDate} - ${endDate}`;
     },
     calculateFormatterOptions(dateStr) {
-      const  fullStrOptions = {
-        weekday: 'long', month: 'long', day: 'numeric' , year: 'numeric'
+      const fullStrOptions = {
+        weekday: "long",
+        month: "long",
+        day: "numeric",
+        year: "numeric"
       };
 
-      const  monthYearOptions = {
-        month: 'long', year: 'numeric'
+      const monthYearOptions = {
+        month: "long",
+        year: "numeric"
       };
 
-      switch (dateStr.split('-').length) {
-        case (1): return {year: 'numeric'};
-        case (2): return monthYearOptions;
-        case (3): 
-        default: 
+      switch (dateStr.split("-").length) {
+        case 1:
+          return { year: "numeric" };
+        case 2:
+          return monthYearOptions;
+        case 3:
+        default:
           return fullStrOptions;
       }
     }
@@ -182,7 +204,7 @@ p {
     border-radius: 20px 20px 0 0;
   }
   .text-container {
-    padding:  25px 30px;
+    padding: 25px 30px;
   }
 }
 </style>

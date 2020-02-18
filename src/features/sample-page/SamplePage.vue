@@ -65,8 +65,6 @@
 </template>
 
 <script>
-import eventList from "@/assets/events.json";
-
 export default {
   name: "SampleView"
 };

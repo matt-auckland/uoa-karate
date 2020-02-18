@@ -8,7 +8,7 @@
         `The Auckland University Goju Ryu Karate Club welcomes both university students and non-students, with any level of experience, and with any martial arts background.`
       "
     ></hero-image>
-    <div class="imageOne">
+    <div class="image-one">
       <app-image
         source="img/two_sensei.jpg"
         caption="Sensei Ewan Tempero and Sensei Tom Davies"
@@ -26,16 +26,18 @@
       </p>
       <p>
         The club is affiliated with the
-        <a href="https://iogkf.com" target="_blank" rel="noopener noreferrer">
-          International Okinawan Goju Ryu Federation (IOGKF)</a
-        >, an international body dedicated to preserving the art of the Okinawan
+        <a
+          href="https://iogkf.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          International Okinawan Goju Ryu Federation (IOGKF)</a>, an international body dedicated to preserving the art of the Okinawan
         Goju-Ryu Karate, as well as the New Zealand branch organization,
         <a
           href="https://karate.org.nz"
           target="_blank"
           rel="noopener noreferrer"
-          >IOGKFNZ</a
-        >. This gives club members access to expert intructors and the ability
+        >IOGKFNZ</a>. This gives club members access to expert intructors and the ability
         to attend training camps/seminars around the country and the world.
       </p>
     </div>
@@ -58,16 +60,25 @@
 
     <div class="club-event-sect">
       <div class="swipe-container">
-        <app-image
-          v-for="i in eventImages"
-          :key="i.source"
-          class="event-image"
-          :source="i.source"
-          :caption="i.caption"
-        />
+        <swiper :options="imgSwiperOpt">
+          <swiper-slide
+            v-for="i in eventImages"
+            :key="i.source"
+          >
+            <app-image
+              class="event-image"
+              :source="i.source"
+              :caption="i.caption"
+            />
+          </swiper-slide>
+          <div
+            class="swiper-pagination"
+            slot="pagination"
+          ></div>
+        </swiper>
       </div>
     </div>
-    <div class="imageThree">
+    <div class="image-two">
       <app-image
         :source="'img/hawks_nest_sensei.jpg'"
         :caption="'Sensei Ewan explaining an exercise at the Hawks Nest'"
@@ -77,7 +88,10 @@
       <h2>Training Location & Facilities</h2>
       <p>
         Most club trainings are run out of the awesome
-        <a href="https://hawksnestgym.co.nz/" target="_blank">Hawks Nest Gym</a>
+        <a
+          href="https://hawksnestgym.co.nz/"
+          target="_blank"
+        >Hawks Nest Gym</a>
         which is a fully furbished Mauy Thai Gym located at Level 3/492 Queen
         Street, Auckland; near the intersection of Queen Street and City Road.
       </p>
@@ -89,43 +103,143 @@
         <a
           href="https://zoehinis.com/2014/09/04/hojo-undo-101-chishi/"
           target="_blank"
-          >chishi</a
-        >, a traditional Karate training implement from Okinawa (the birthplace
+        >chiishi</a>, a traditional Karate training implement from Okinawa (the birthplace
         of Karate).
       </p>
     </div>
 
     <div class="instructors-sect">
       <h2>Meet the Instructors</h2>
-      <div>
-        <div class="swipe-container">
-          <div v-for="i in instructors" :key="i.name">
-            <InstructorCard
+      <div class="swipe-containersss">
+        <swiper :options="swiperOpt">
+          <swiper-slide
+            v-for="i in instructors"
+            :key="i.name + i.imgSrc"
+          >
+            <MemberCard
               :name="i.name"
               :rank="i.rank"
               :imgSrc="i.imgSrc"
               :desc="i.desc"
+              :danGrade="true"
             />
-          </div>
-        </div>
+          </swiper-slide>
+          <div
+            class="swiper-pagination"
+            slot="pagination"
+          ></div>
+        </swiper>
       </div>
     </div>
+
+    <!-- <div class="exec-sect">
+      <h2>Meet the Exec</h2>
+      <swiper :options="swiperOpt">
+        <swiper-slide
+          v-for="i in exec"
+          :key="i.name + i.desc"
+        >
+          <MemberCard
+            :name="i.name"
+            :rank="i.rank"
+            :imgSrc="i.imgSrc"
+            :desc="i.desc"
+            :danGrade="i.danGrade"
+          />
+        </swiper-slide>
+        <div
+          class="swiper-pagination"
+          slot="pagination"
+        ></div>
+      </swiper>
+    </div> -->
   </div>
 </template>
 
 <script>
-import Person from "@/components/Person.vue";
-import ClubMembers from "@/assets/club-members.json";
-import InstructorCard from "@/components/instructor-card.vue";
+import MemberCard from "@/components/member-card.vue";
 
 export default {
   components: {
-    Person,
-    InstructorCard
+    MemberCard
   },
   data() {
     return {
-      ClubMembers: ClubMembers,
+      swiperOpt: {
+        loop: true,
+        slidesPerView: "auto",
+        pagination: {
+          clickable: true,
+          el: ".swiper-pagination"
+        }
+      },
+      imgSwiperOpt: {
+        autoplay: {
+          delay: 5000
+        },
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+        }
+      },
+      exec: [
+        {
+          name: "Wendy",
+          rank: 5,
+          desc: "Club President",
+          imgSrc: ""
+        },
+        {
+          name: "Melinda",
+          rank: 9,
+          desc: "Club Secretary",
+          imgSrc: ""
+        },
+        {
+          name: "Jane",
+          rank: 4,
+          desc: "Club Financial Officer",
+          imgSrc: ""
+        },
+        {
+          name: "Sarah",
+          rank: 3,
+          desc: "Club Financial Officer",
+          imgSrc: ""
+        },
+        {
+          name: "Olivia",
+          rank: 9,
+          desc: "Club Health and Safety Officer",
+          imgSrc: ""
+        },
+        {
+          name: "Mathew",
+          rank: 1,
+          danGrade: true,
+          desc: "Club Social Director",
+          imgSrc: ""
+        },
+        {
+          name: "Hafriz",
+          rank: 6,
+          desc: "Club Social Director",
+          imgSrc: ""
+        },
+        {
+          name: "Kieran",
+          rank: 4,
+          desc: "General Club Exec",
+          imgSrc: ""
+        },
+        {
+          name: "Jane",
+          rank: 8,
+          desc: "General Club Exec",
+          imgSrc: ""
+        }
+      ],
       instructors: [
         {
           name: "Sensei Ewan Tempero",
@@ -180,19 +294,38 @@ export default {
   }
 };
 </script>
+<style>
+.swiper-pagination {
+  position: initial;
+  margin-top: 10px;
+}
 
+.swiper-pagination-bullet {
+  background: #fff;
+  opacity: 0.5;
+}
+.swiper-pagination-bullet-active {
+  background: var(--persian-red-light);
+}
+</style>
 <style scoped>
+.swiper-wrapper {
+  width: 100%;
+}
+.swiper-slide {
+  width: auto;
+}
+
 .hero {
   grid-area: hero;
 }
-.imageOne {
-  grid-area: imageOne;
+.image-one {
+  grid-area: image-one;
+  display: flex;
 }
-.imageTwo {
-  grid-area: imageTwo;
-}
-.imageThree {
-  grid-area: imageThree;
+
+.image-two {
+  grid-area: image-two;
 }
 .paraOne {
   grid-area: paraOne;
@@ -204,42 +337,25 @@ export default {
   grid-area: paraThree;
 }
 
-.imageThree {
-  grid-area: imageThree;
+.image-two {
+  display: flex;
+  grid-area: image-two;
 }
 
 .instructors-sect {
   width: 100%;
+  max-width: 1300px;
   grid-area: instructors;
+}
+
+.exec-sect {
+  width: 100%;
+  grid-area: exec;
 }
 
 .club-event-sect {
   grid-area: events;
   overflow: hidden;
-}
-
-.swipe-container {
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
-  width: 100%;
-}
-
-.swipe-container > * {
-  display: inline-block;
-}
-
-.event-image {
-  margin: 0 10px;
-  white-space: normal;
-}
-
-.event-image:first-of-type {
-  margin-left: 0;
-}
-
-.event-image:last-of-type {
-  margin-right: 0;
 }
 
 .about-container {
@@ -248,10 +364,11 @@ export default {
   display: grid;
   grid-template-areas:
     "hero hero"
-    "imageOne paraOne"
+    "image-one paraOne"
     "paraTwo events"
-    "imageThree paraThree"
-    "instructors instructors";
+    "image-two paraThree"
+    "instructors instructors"
+    "exec exec";
   grid-column-gap: 30px;
   grid-row-gap: 40px;
   grid-gap: 15px;
@@ -264,13 +381,14 @@ export default {
   .about-container {
     grid-template-areas:
       "hero hero"
-      "imageOne imageOne"
+      "image-one image-one"
       "paraOne paraOne"
       "paraTwo paraTwo"
       "events events"
-      "imageThree imageThree"
+      "image-two image-two"
       "paraThree paraThree"
-      "instructors instructors";
+      "instructors instructors"
+      "exec exec";
   }
 }
 

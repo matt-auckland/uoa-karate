@@ -1,15 +1,22 @@
-import Vue from 'vue';
-import Router from 'vue-router';
-import Meta from 'vue-meta';
+import Vue from "vue";
+import Router from "vue-router";
+import Meta from "vue-meta";
 
-import Home from './features/home-page/Home.vue';
-import AboutPage from './features/about-page/about-page.vue';
-import LinkDirectory from './features/link-page/LinkDirectory.vue';
-import EventsView from './features/events-page/EventsView.vue';
-import TestView from './features/test-page/TestView.vue';
-import SampleView from './features/sample-page/SamplePage.vue';
-import SingleEventView from './features/event-details/SingleEventView.vue';
-import GradingInfo from './features/grading-info-page/GradingInfo.vue';
+import VueAwesomeSwiper from "vue-awesome-swiper";
+
+// require styles
+import "swiper/dist/css/swiper.css";
+
+Vue.use(VueAwesomeSwiper /* { default global options } */);
+
+import Home from "./features/home-page/Home.vue";
+import AboutPage from "./features/about-page/about-page.vue";
+import LinkDirectory from "./features/link-page/LinkDirectory.vue";
+import EventsView from "./features/events-page/EventsView.vue";
+import TestView from "./features/test-page/TestView.vue";
+import SampleView from "./features/sample-page/SamplePage.vue";
+import SingleEventView from "./features/event-details/SingleEventView.vue";
+import GradingInfo from "./features/grading-info-page/GradingInfo.vue";
 
 Vue.use(Meta);
 Vue.use(Router);
@@ -17,44 +24,44 @@ Vue.use(Router);
 export default new Router({
   routes: [
     {
-      path: '/',
-      name: 'home',
-      component: Home,
+      path: "/",
+      name: "home",
+      component: Home
     },
     {
-      path: '/about',
-      name: 'about',
-      component: AboutPage,
+      path: "/about",
+      name: "about",
+      component: AboutPage
     },
     {
-      path: '/useful-links',
-      name: 'useful-links',
-      component: LinkDirectory,
+      path: "/useful-links",
+      name: "useful-links",
+      component: LinkDirectory
     },
     {
-      path: '/events',
-      name: 'events',
-      component: EventsView,
+      path: "/events",
+      name: "events",
+      component: EventsView
     },
     {
-      path: '/events/:id',
-      name: 'singleEvent',
-      component: SingleEventView,
+      path: "/events/:id",
+      name: "singleEvent",
+      component: SingleEventView
     },
     {
-      path: '/tester',
-      name: 'tester',
-      component: TestView,
+      path: "/tester",
+      name: "tester",
+      component: TestView
     },
     {
-      path: '/grading-info',
-      name: 'gradingInfo',
-      component: GradingInfo,
+      path: "/grading-info",
+      name: "gradingInfo",
+      component: GradingInfo
     },
     {
-      path: '/sample',
-      name: 'sampleView',
-      component: SampleView,
-    },
-  ],
+      path: "/sample",
+      name: "sampleView",
+      component: SampleView
+    }
+  ]
 });
