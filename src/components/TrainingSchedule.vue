@@ -35,9 +35,6 @@ export default {
 </script>
 
 <style scoped>
-.schedule-data-container {
-}
-
 h3 {
   color: var(--base-font-color);
   margin: 0;
@@ -80,18 +77,8 @@ hr {
   padding: 10px 12px;
   text-align: center;
   border-radius: 15px;
-  background-color: var(--tuatara);
   background-color: black;
-
   transition: transform 500ms;
-}
-
-.day:last-child {
-  margin-right: 0;
-}
-
-.day:first-child {
-  margin-left: 0;
 }
 
 .day:hover {

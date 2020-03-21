@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <SitewideBanner />
     <Header />
     <router-view />
     <Footer>
@@ -20,12 +21,14 @@
 <script>
 import Header from "@/components/Header.vue";
 import QuoteDisplay from "@/components/QuoteDisplay.vue";
+import SitewideBanner from "@/components/SitewideBanner.vue";
 
 export default {
   name: "App",
   components: {
     Header,
-    QuoteDisplay
+    QuoteDisplay,
+    SitewideBanner
   },
   metaInfo: {
     title: "UoA Karate Club",
@@ -73,14 +76,12 @@ body {
 
 a {
   color: var(--persian-red-light);
-    text-decoration: none;
-
+  text-decoration: none;
 }
 
 a:hover {
   color: var(--persian-red);
-    text-decoration: underline;
-
+  text-decoration: underline;
 }
 
 .quote-display {
