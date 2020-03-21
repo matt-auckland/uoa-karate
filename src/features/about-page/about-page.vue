@@ -243,7 +243,7 @@ export default {
       instructors: [
         {
           name: "Sensei Ewan Tempero",
-          rank: 4,
+          rank: 5,
           desc:
             "Sensei Ewan has over 30 years of Goju Ryu experience. He is the chief instructor of the club, which he co-founded with Sensei Tom in 2003.",
           imgSrc: "/img/sensei_ewan.jpg"
