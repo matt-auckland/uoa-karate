@@ -6,7 +6,7 @@
         class="tab"
         :class="{ active: showStudents }"
         @click="showStudents = true"
-      >Student Fees
+      >Uni Student Fees
         <div class="underline"></div>
       </a>
       <a
