@@ -5,7 +5,7 @@ import Meta from "vue-meta";
 import VueAwesomeSwiper from "vue-awesome-swiper";
 
 // require styles
-import "swiper/dist/css/swiper.css";
+import "swiper/css/swiper.css";
 
 Vue.use(VueAwesomeSwiper /* { default global options } */);
 
@@ -14,7 +14,6 @@ import AboutPage from "./features/about-page/about-page.vue";
 import LinkDirectory from "./features/link-page/LinkDirectory.vue";
 import EventsView from "./features/events-page/EventsView.vue";
 import TestView from "./features/test-page/TestView.vue";
-import SampleView from "./features/sample-page/SamplePage.vue";
 import SingleEventView from "./features/event-details/SingleEventView.vue";
 import GradingInfo from "./features/grading-info-page/GradingInfo.vue";
 
@@ -26,42 +25,37 @@ export default new Router({
     {
       path: "/",
       name: "home",
-      component: Home
+      component: Home,
     },
     {
       path: "/about",
       name: "about",
-      component: AboutPage
+      component: AboutPage,
     },
     {
       path: "/useful-links",
       name: "useful-links",
-      component: LinkDirectory
+      component: LinkDirectory,
     },
     {
       path: "/events",
       name: "events",
-      component: EventsView
+      component: EventsView,
     },
     {
       path: "/events/:id",
       name: "singleEvent",
-      component: SingleEventView
+      component: SingleEventView,
     },
     {
       path: "/tester",
       name: "tester",
-      component: TestView
+      component: TestView,
     },
     {
       path: "/grading-info",
       name: "gradingInfo",
-      component: GradingInfo
+      component: GradingInfo,
     },
-    {
-      path: "/sample",
-      name: "sampleView",
-      component: SampleView
-    }
-  ]
+  ],
 });

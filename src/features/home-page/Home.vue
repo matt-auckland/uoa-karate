@@ -20,29 +20,22 @@
     <ClubMap class="clubmap" />
     <ContactForm class="contact-form" />
 
-    <!-- <Gallery class="gallery" /> -->
-    <!-- <ToDo class="todo" /> -->
-
   </content>
 </template>
 
 <script>
-import ToDo from "@/components/ToDo.vue";
 import TrainingSchedule from "@/components/TrainingSchedule.vue";
 import FeesTable from "@/components/FeesTable.vue";
 import ClubMap from "@/components/ClubMap.vue";
-import Gallery from "@/components/Gallery.vue";
 import ContactForm from "@/components/ContactForm.vue";
 import UpcomingEvents from "@/components/UpcomingEvents.vue";
 
 export default {
   name: "home",
   components: {
-    ToDo,
     ClubMap,
     TrainingSchedule,
     FeesTable,
-    Gallery,
     ContactForm,
     UpcomingEvents,
   },
