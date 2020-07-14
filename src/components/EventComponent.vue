@@ -13,14 +13,16 @@
           v-if="event.location"
           :href="`https://www.google.com/maps/search/${event.location}`"
           target="_blank"
-          >{{ event.location }}</a
-        >
+        >{{ event.location }}</a>
         <span v-else>To Be Decided</span>
       </p>
       <p>
         <span title="Date">📆</span> {{ calculateDateString(event) || TBA }}
       </p>
-      <p class="event-text" :class="{ desc: !showingMore }">
+      <p
+        class="event-text"
+        :class="{ desc: !showingMore }"
+      >
         {{ description }}
       </p>
       <a
@@ -28,27 +30,30 @@
         href="javascript:;"
         @click="showingMore = !showingMore"
         class="show-more"
-        >{{ showingMore ? "Read Less" : "Read More" }}</a
-      >
+      >{{ showingMore ? "Read Less" : "Read More" }}</a>
 
       <p class="event-text"></p>
       <div v-if="event.signUpURL">
         To sign up, follow
-        <a :href="event.signUpURL" target="_blank" rel="noopener noreferrer"
-          >this link</a
-        >
+        <a
+          :href="event.signUpURL"
+          target="_blank"
+          rel="noopener noreferrer"
+        >this link</a>
       </div>
 
-      <div v-if="!event.offSitelink && event.extendedDescription">
+      <div v-if="!event.offsiteLink && event.extendedDescription">
         For more information follow
         <router-link :to="'/events/' + event.id">this link</router-link>
       </div>
 
-      <div v-if="event.offSitelink">
+      <div v-if="event.offsiteLink">
         For more information follow
-        <a :href="event.offSitelink" target="_blank" rel="noopener noreferrer"
-          >this link</a
-        >
+        <a
+          :href="event.offsiteLink"
+          target="_blank"
+          rel="noopener noreferrer"
+        >this link</a>
       </div>
     </div>
   </div>

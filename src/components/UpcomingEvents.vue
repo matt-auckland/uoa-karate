@@ -13,19 +13,19 @@
             <b>{{event.title}}</b>
           </div>
           <div class="event-text date">
-            {{event.date}}
+            When: {{event.startDate}}
           </div>
           <div class="event-text location">
-            Location: {{event.location}}.
+            Location: {{event.location}}
           </div>
 
           <div
             class="event-text link"
-            v-if="event.offSitelink"
+            v-if="event.offsiteLink"
           >
             For more information, follow
             <a
-              :href="event.offSitelink"
+              :href="event.offsiteLink"
               target="_blank"
               rel="noopener noreferrer"
             >this link</a>
