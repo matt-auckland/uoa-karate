@@ -26,10 +26,10 @@ import scheduleData from "../assets/schedule-data.json";
 
 export default {
   name: "TrainingSchedule",
-  data: function() {
-    return {
-      scheduleData: scheduleData
-    };
+  computed: {
+    scheduleData() {
+        return scheduleData.filter(training => training.canDisplay)
+      }
   }
 };
 </script>
