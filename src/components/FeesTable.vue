@@ -6,14 +6,14 @@
         class="tab"
         :class="{ active: showStudents }"
         @click="showStudents = true"
-      >Uni Student Fees
+      >Uni Student Membership Fees
         <div class="underline"></div>
       </a>
       <a
         class="tab"
         :class="{ active: !showStudents }"
         @click="showStudents = false"
-      >Non&nbsp;Student Fees
+      >Regular Membership Fees
         <div class="underline"></div>
       </a>
     </div>
@@ -28,7 +28,7 @@
       </thead>
       <tbody>
         <tr>
-          <td class="text">Membership Fee</td>
+          <td class="text">Membership&nbsp;Fee</td>
           <td class="number">$5 Annually</td>
           <td class="text">Paid once per year in addition to the training fees</td>
         </tr>
@@ -77,9 +77,8 @@ export default {
 <style scoped>
 .tab-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
-  max-width: 280px;
   margin: 0 auto 20px auto;
 }
 
@@ -88,6 +87,7 @@ export default {
   position: relative;
   display: flex;
   justify-content: center;
+  margin: 0 10px;
 }
 
 .underline {

@@ -7,12 +7,6 @@
         heading="Welcome to our Dojo"
         paragraph="People with any level of experience and from any martial arts background are welcome to train, both students and non-students alike. We have beginner specific training at the start of every semester but accept new members year round."
       ></hero-image>
-      <!-- <app-image
-          :source="'/group-photo.jpg'"
-          :caption="'The club performing at Courses and Careers Day'"
-          class="hero-image"
-        ></app-image> -->
-      <!-- </div> -->
       <TrainingSchedule class="schedule" />
       <FeesTable class="fees" />
       <UpcomingEvents class="events" />
