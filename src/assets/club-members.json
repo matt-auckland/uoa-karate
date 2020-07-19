@@ -1,6 +1,6 @@
 [
   {
-    "name": "Jane Yang",
+    "name": "Wendy Yao",
     "role": "exec",
     "pic": "",
     "position": "President",
@@ -13,14 +13,14 @@
     "bio": ""
   },
   {
-    "name": "Wendy Yao",
+    "name": "Melinda Ha",
     "role": "exec",
     "pic": "",
-    "position": "Vice President",
+    "position": "Secretary",
     "styles": [
       {
         "name": "Goju Ryu",
-        "grade": 5
+        "grade": 9
       }
     ],
     "bio": ""
@@ -40,10 +40,62 @@
   },
 
   {
-    "name": "Rimal Prasad",
+    "name": "Jane Yang",
     "role": "exec",
     "pic": "",
     "position": "Financial Officer",
+    "styles": [
+      {
+        "name": "Goju Ryu",
+        "grade": 5
+      }
+    ],
+    "bio": ""
+  },
+  {
+    "name": "Sarah",
+    "role": "exec",
+    "pic": "",
+    "position": "Financial Officer",
+    "styles": [
+      {
+        "name": "Goju Ryu",
+        "grade": 7
+      }
+    ],
+    "bio": ""
+  },
+  {
+    "name": "Olivia May",
+    "role": "exec",
+    "pic": "",
+    "position": "Health & Safety Officer",
+    "styles": [
+      {
+        "name": "Goju Ryu",
+        "grade": 9
+      }
+    ],
+    "bio": ""
+  },
+  {
+    "name": "Hafriz Abdul Ghaffar",
+    "role": "exec",
+    "pic": "",
+    "position": "Financial Officer",
+    "styles": [
+      {
+        "name": "Goju Ryu",
+        "grade": 6
+      }
+    ],
+    "bio": ""
+  },
+  {
+    "name": "Kieran Dangerfield",
+    "role": "exec",
+    "pic": "",
+    "position": "General Executive",
     "styles": [
       {
         "name": "Goju Ryu",
@@ -53,49 +105,10 @@
     "bio": ""
   },
   {
-    "name": "Jessica Chen",
-    "role": "exec",
-    "pic": "",
-    "position": "Health & Safety Officer",
-    "styles": [
-      {
-        "name": "Goju Ryu",
-        "grade": 7
-      }
-    ],
-    "bio": ""
-  },
-  {
-    "name": "Francois-Rene Du Toit",
-    "role": "exec",
-    "pic": "",
-    "position": "Health & Safety Officer",
-    "styles": [
-      {
-        "name": "Goju Ryu",
-        "grade": -2
-      }
-    ],
-    "bio": ""
-  },
-  {
-    "name": "Thong Nee Ang",
-    "role": "exec",
-    "pic": "",
-    "position": "Financial Officer",
-    "styles": [
-      {
-        "name": "Goju Ryu",
-        "grade": 7
-      }
-    ],
-    "bio": ""
-  },
-  {
     "name": "Jane Waterhouse",
     "role": "exec",
     "pic": "",
-    "position": "Social Director",
+    "position": "General Executive",
     "styles": [
       {
         "name": "Goju Ryu",
