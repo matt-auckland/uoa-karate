@@ -10,12 +10,12 @@ Currently hosted at [https://www.uoa-karate.club/](https://www.uoa-karate.club/)
 
 #### Install
 
- `npm i`
+ `yarn install`
  
 #### Serve
  
- `npm serve`
+ `yarn serve`
  
 #### Build 
  
- `npm build`
+ `yarn build`
