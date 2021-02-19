@@ -183,63 +183,6 @@ export default {
           clickable: true
         }
       },
-      exec: [
-        {
-          name: "Wendy",
-          rank: 5,
-          desc: "Club President",
-          imgSrc: ""
-        },
-        {
-          name: "Melinda",
-          rank: 9,
-          desc: "Club Secretary",
-          imgSrc: ""
-        },
-        {
-          name: "Jane",
-          rank: 4,
-          desc: "Club Financial Officer",
-          imgSrc: ""
-        },
-        {
-          name: "Sarah",
-          rank: 3,
-          desc: "Club Financial Officer",
-          imgSrc: ""
-        },
-        {
-          name: "Olivia",
-          rank: 9,
-          desc: "Club Health and Safety Officer",
-          imgSrc: ""
-        },
-        {
-          name: "Mathew",
-          rank: 1,
-          danGrade: true,
-          desc: "Club Social Director",
-          imgSrc: ""
-        },
-        {
-          name: "Hafriz",
-          rank: 6,
-          desc: "Club Social Director",
-          imgSrc: ""
-        },
-        {
-          name: "Kieran",
-          rank: 4,
-          desc: "General Club Exec",
-          imgSrc: ""
-        },
-        {
-          name: "Jane",
-          rank: 8,
-          desc: "General Club Exec",
-          imgSrc: ""
-        }
-      ],
       instructors: [
         {
           name: "Sensei Ewan Tempero",
@@ -247,19 +190,6 @@ export default {
           desc:
             "Sensei Ewan has over 30 years of Goju Ryu experience. He is the chief instructor of the club, which he co-founded with Sensei Tom in 2003.",
           imgSrc: "/img/sensei_ewan.jpg"
-        },
-        {
-          name: "Sensei Tom Davies",
-          rank: 4,
-          desc:
-            "Sensei Tom has over 20 years experience in the martial arts, with black belts in Goju Ryu and several other Karate styles. He co-founded the club with Sensei Ewan.",
-          imgSrc: "/img/sensei_tom.jpg"
-        },
-        {
-          name: "Sensei Greg Shanahan",
-          rank: 3,
-          desc: "Sensei Greg has over 25 years experience in Goju Ryu.",
-          imgSrc: "/img/sensei_greg.jpg"
         },
         {
           name: "Sensei Yin Tung Ho",
