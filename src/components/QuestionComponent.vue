@@ -14,6 +14,7 @@
       class="question-container"
     >
       <img
+        loading="lazy"
         :src="questionProp.image"
         v-if="questionProp.image"
         class="question-image"

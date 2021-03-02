@@ -1,17 +1,14 @@
 <template>
-  <div class="header">
+  <header class="header">
     <router-link to="/" id="logo-link"
-      ><img id="logo" src="/logo.png" alt="IOGKF Logo"
+      ><img id="logo" loading="lazy" width="80" src="/logo.png" alt="IOGKF Logo"
     /></router-link>
 
     <router-link to="/">Home</router-link>
     <router-link to="/about">About</router-link>
     <router-link to="/events">Events</router-link>
     <router-link to="/tester">Quiz</router-link>
-    <a
-      href="https://wiki.uoa-karate.club/"
-      target="_blank"
-      rel="noopener noreferrer"
+    <a href="https://wiki.uoa-karate.club/" target="_blank" rel="noopener noreferrer"
       >Wiki</a
     >
     <router-link to="/useful-links">Useful&nbsp;Links</router-link>
@@ -24,22 +21,22 @@
       href="https://www.facebook.com/UoAKarate/"
       target="_blank"
       rel="noopener noreferrer"
-      ><img src="/facebook.svg" alt="[FB]" class="social"
+      ><img loading="lazy" src="/facebook.svg" alt="[FB]" class="social" width="24"
     /></a>
 
     <a
       href="https://www.instagram.com/uoa_karate/"
       target="_blank"
       rel="noopener noreferrer"
-      ><img src="/instagram.svg" alt="[IG]" class="social"
+      ><img loading="lazy" src="/instagram.svg" alt="[IG]" class="social" width="24"
     /></a>
-  </div>
+  </header>
 </template>
 
 <script>
 export default {
   name: "Header",
-  props: {}
+  props: {},
 };
 </script>
 

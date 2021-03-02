@@ -4,6 +4,7 @@
       <img
         :src="imageUrl"
         alt=""
+        loading="lazy"
       >
     </div> -->
     <div class="text-container">

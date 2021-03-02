@@ -8,6 +8,7 @@
         alt="Event image"
         v-if="event.img"
         class="event-img"
+        loading="lazy"
       >
       <div class="event-text"><b>Date:</b> {{event.date}}</div>
       <div class="event-text"><b>Location:</b> {{event.location}}</div>

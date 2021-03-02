@@ -5,6 +5,7 @@
           id="logo"
           alt="UoA Karate logo"
           src="../../public/logo.png"
+          loading="lazy"
         ></router-link>
 
       <h1>👊 Karate Event Editor 📆</h1>
