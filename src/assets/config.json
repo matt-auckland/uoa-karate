@@ -1,5 +1,43 @@
 {
   "bannerText": {
     "text": ""
-  }
+  },
+  "schedule": [
+    {
+      "index": 1,
+      "day": "Tuesday",
+      "startTime": "6pm",
+      "finishTime": "7.30pm",
+      "location": "The Hawks' Nest, Floor 3, 492 Queen Street",
+      "notes": "",
+      "canDisplay": true
+    },
+    {
+      "index": 2,
+      "day": "Wednesday",
+      "startTime": "6pm",
+      "finishTime": "7.30pm",
+      "location": "The Hawks' Nest, Floor 3, 492 Queen Street",
+      "notes": "",
+      "canDisplay": true
+    },
+    {
+      "index": 3,
+      "day": "Friday",
+      "startTime": "6.30pm",
+      "finishTime": "8.00pm",
+      "location": "The Hawks' Nest, Floor 3, 492 Queen Street",
+      "notes": "Graded members only",
+      "canDisplay": true
+    },
+    {
+      "index": 4,
+      "day": "Sunday",
+      "startTime": "10am",
+      "finishTime": "12pm",
+      "location": "The Hawks' Nest, Floor 3, 492 Queen Street",
+      "notes": "",
+      "canDisplay": true
+    }
+  ]
 }

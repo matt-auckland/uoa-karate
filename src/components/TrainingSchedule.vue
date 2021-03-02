@@ -22,13 +22,13 @@
 </template>
 
 <script>
-import scheduleData from "../assets/schedule-data.json";
+import config from "../assets/config.json";
 
 export default {
   name: "TrainingSchedule",
   computed: {
     scheduleData() {
-        return scheduleData.filter(training => training.canDisplay)
+        return config.schedule.filter(training => training.canDisplay)
       }
   }
 };

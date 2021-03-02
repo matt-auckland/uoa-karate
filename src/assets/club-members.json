@@ -1,9 +1,9 @@
 [
   {
-    "name": "Wendy Yao",
+    "name": "Mattias Eden",
     "role": "exec",
     "pic": "",
-    "position": "President",
+    "position": "Secretary",
     "styles": [
       {
         "name": "Goju Ryu",
@@ -12,33 +12,6 @@
     ],
     "bio": ""
   },
-  {
-    "name": "Melinda Ha",
-    "role": "exec",
-    "pic": "",
-    "position": "Secretary",
-    "styles": [
-      {
-        "name": "Goju Ryu",
-        "grade": 9
-      }
-    ],
-    "bio": ""
-  },
-  {
-    "name": "Mathew Paul",
-    "role": "exec",
-    "pic": "",
-    "position": "Events Officer",
-    "styles": [
-      {
-        "name": "Goju Ryu",
-        "grade": -1
-      }
-    ],
-    "bio": ""
-  },
-
   {
     "name": "Jane Yang",
     "role": "exec",
@@ -53,20 +26,7 @@
     "bio": ""
   },
   {
-    "name": "Sarah Tan",
-    "role": "exec",
-    "pic": "",
-    "position": "Treasurer",
-    "styles": [
-      {
-        "name": "Goju Ryu",
-        "grade": 7
-      }
-    ],
-    "bio": ""
-  },
-  {
-    "name": "Olivia May",
+    "name": "Malaaha Hussain",
     "role": "exec",
     "pic": "",
     "position": "Health & Safety Officer",
@@ -82,7 +42,7 @@
     "name": "Hafriz Abdul Ghaffar",
     "role": "exec",
     "pic": "",
-    "position": "Events Officer",
+    "position": "President",
     "styles": [
       {
         "name": "Goju Ryu",
@@ -92,23 +52,10 @@
     "bio": ""
   },
   {
-    "name": "Kieran Dangerfield",
+    "name": "Prashniel Kumar",
     "role": "exec",
     "pic": "",
-    "position": "General Executive",
-    "styles": [
-      {
-        "name": "Goju Ryu",
-        "grade": 4
-      }
-    ],
-    "bio": ""
-  },
-  {
-    "name": "Jane Waterhouse",
-    "role": "exec",
-    "pic": "",
-    "position": "General Executive",
+    "position": "Social Director",
     "styles": [
       {
         "name": "Goju Ryu",
