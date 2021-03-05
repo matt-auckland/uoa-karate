@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <router-link to="/" id="logo-link"
-      ><img id="logo" loading="lazy" width="80" src="/logo.png" alt="IOGKF Logo"
+      ><img id="logo" loading="lazy" width="80px" height="78.8px" src="/logo.png" alt="IOGKF Logo"
     /></router-link>
 
     <router-link to="/">Home</router-link>
@@ -21,14 +21,14 @@
       href="https://www.facebook.com/UoAKarate/"
       target="_blank"
       rel="noopener noreferrer"
-      ><img loading="lazy" src="/facebook.svg" alt="[FB]" class="social" width="24"
+      ><img loading="lazy" src="/facebook.svg" alt="[FB]" class="social" width="24px" height="26px"
     /></a>
 
     <a
       href="https://www.instagram.com/uoa_karate/"
       target="_blank"
       rel="noopener noreferrer"
-      ><img loading="lazy" src="/instagram.svg" alt="[IG]" class="social" width="24"
+      ><img loading="lazy" src="/instagram.svg" alt="[IG]" class="social" width="24px" height="26px"
     /></a>
   </header>
 </template>

@@ -1,13 +1,7 @@
-import Vue from "vue";
+import Vue from 'vue'
 import Router from "vue-router";
 import Meta from "vue-meta";
 
-import VueAwesomeSwiper from "vue-awesome-swiper";
-
-// require styles
-import "swiper/css/swiper.css";
-
-Vue.use(VueAwesomeSwiper /* { default global options } */);
 
 import Home from "./features/home-page/Home.vue";
 import AboutPage from "./features/about-page/about-page.vue";
