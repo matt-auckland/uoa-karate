@@ -2,18 +2,12 @@
   <div class="fee-data-container">
     <h2>Training Fees:</h2>
     <div class="tab-container">
-      <a
-        class="tab"
-        :class="{ active: showStudents }"
-        @click="showStudents = true"
-      >Uni Student Membership Fees
+      <a class="tab" :class="{ active: showStudents }" @click="showStudents = true"
+        >Uni Student Membership Fees
         <div class="underline"></div>
       </a>
-      <a
-        class="tab"
-        :class="{ active: !showStudents }"
-        @click="showStudents = false"
-      >Regular Membership Fees
+      <a class="tab" :class="{ active: !showStudents }" @click="showStudents = false"
+        >Regular Membership Fees
         <div class="underline"></div>
       </a>
     </div>
@@ -32,26 +26,17 @@
           <td class="number">$5 Annually</td>
           <td class="text">Paid once per year in addition to the training fees</td>
         </tr>
-        <tr v-if="showStudents">
-        </tr>
+        <tr v-if="showStudents"></tr>
         <tr>
           <td class="text">Training Fee</td>
-          <td
-            class="number"
-            v-if="showStudents"
-          >$70 Per Semester, $35 for your first sem</td>
-          <td
-            class="number"
-            v-if="!showStudents"
-          >$36 Per Month</td>
-          <td
-            v-if="showStudents"
-            class="text"
-          >Students pay per semester, your first sem is half-price</td>
-          <td
-            v-if="!showStudents"
-            class="text"
-          >Non-students pay per month</td>
+          <td class="number" v-if="showStudents">
+            $70 Per Semester, $35 for your first sem
+          </td>
+          <td class="number" v-if="!showStudents">$36 Per Month</td>
+          <td v-if="showStudents" class="text">
+            Students pay per semester, your first sem is half-price
+          </td>
+          <td v-if="!showStudents" class="text">Non-students pay per month</td>
         </tr>
         <tr>
           <td class="text">Grading Fee</td>
@@ -68,9 +53,9 @@ export default {
   name: "FeesTable",
   data() {
     return {
-      showStudents: true
+      showStudents: true,
     };
-  }
+  },
 };
 </script>
 
@@ -88,6 +73,10 @@ export default {
   display: flex;
   justify-content: center;
   margin: 0 10px;
+}
+
+.tab:hover {
+  text-decoration: none;
 }
 
 .underline {
