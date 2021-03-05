@@ -1,7 +1,6 @@
 <template>
   <div class="tester-container">
     <div class="header">
-
       <h1>Karate Knowledge Tester</h1>
       <h3>Click the categories below to select topics to answer</h3>
       <fieldset class="category-fieldset">
@@ -11,7 +10,7 @@
             class="checkbox-div"
             v-for="category in questionCategories"
             v-bind:key="category"
-            :class="{active: selectedCategories.includes(category)}"
+            :class="{ active: selectedCategories.includes(category) }"
           >
             <input
               type="checkbox"
@@ -19,7 +18,7 @@
               :value="category"
               v-model="selectedCategories"
               v-on:change="filterQuestions()"
-            >
+            />
             <label :for="category">{{ category }}</label>
           </div>
         </div>
@@ -33,36 +32,35 @@
           v-on:click="randomQuestion()"
           v-if="unansweredQuestions.length > 1"
           class="new-question-button"
-        >New question</button>
+        >
+          New question
+        </button>
       </div>
 
       <QuestionComponent
         :randomQuestion="randomQuestion"
         :recordAnswer="recordAnswer"
         :questionProp="currentQuestion"
-        :allQuestionsAnswered="unansweredQuestions.length === 0 && answeredQuestions.length !== 0"
+        :allQuestionsAnswered="
+          unansweredQuestions.length === 0 && answeredQuestions.length !== 0
+        "
       >
       </QuestionComponent>
-
     </div>
     <div class="answer-tracker">
       <h2>Score</h2>
-      <hr>
-      <span class="">Correct: {{ scoreObj.correctAnswers }}/{{ scoreObj.total()}}</span>
-      <span>Incorrect: {{ scoreObj.incorrectAnswers }}/{{ scoreObj.total()}}</span>
+      <hr />
+      <span class="">Correct: {{ scoreObj.correctAnswers }}/{{ scoreObj.total() }}</span>
+      <span>Incorrect: {{ scoreObj.incorrectAnswers }}/{{ scoreObj.total() }}</span>
     </div>
 
     <footer>
-      <a
-        class="footer-link"
-        href="https://forms.gle/GQsceE4whb8X58866"
-        target="_blank"
-      > Click here to suggest a new question</a>
-      <a
-        class="footer-link"
-        href="https://forms.gle/GzmqkTZHEtGhGYu96"
-        target="_blank"
-      >Click here to report an issue with a question</a>
+      <a class="footer-link" href="https://forms.gle/GQsceE4whb8X58866" target="_blank">
+        Click here to suggest a new question</a
+      >
+      <a class="footer-link" href="https://forms.gle/GzmqkTZHEtGhGYu96" target="_blank"
+        >Click here to report an issue with a question</a
+      >
     </footer>
   </div>
 </template>
@@ -74,65 +72,64 @@ import Utils from "@/libs/utils.js";
 
 export default {
   name: "TestView",
-  metaInfo: {
-    title: "Karate Knowledge Tester",
-    meta: [
-      {
-        name: "description",
-        content: "Test your Karate Knowledge."
-      }
-    ]
-  },
+  // metaInfo: {
+  //   title: "Karate Knowledge Tester",
+  //   meta: [
+  //     {
+  //       name: "description",
+  //       content: "Test your Karate Knowledge."
+  //     }
+  //   ]
+  // },
   components: {
-    QuestionComponent
+    QuestionComponent,
   },
   computed: {
-    questionCategories: function() {
+    questionCategories: function () {
       let categories = this.questions
-        .map(question => {
+        .map((question) => {
           return question.tags.join(); // flatten array of tags into a string
         })
         .join() //flatten our array of flattened arrays into a string
         .split(",") // split our super string back into an array
-        .filter(function(tag, index, tagArr) {
+        .filter(function (tag, index, tagArr) {
           // filter out any duplicates
           return index === tagArr.indexOf(tag);
         })
         .sort();
       return categories;
-    }
+    },
   },
-  data: function() {
+  data: function () {
     return {
       scoreObj: {
         correctAnswers: 0,
         incorrectAnswers: 0,
-        total: () =>
-          this.scoreObj.correctAnswers + this.scoreObj.incorrectAnswers
+        total: () => this.scoreObj.correctAnswers + this.scoreObj.incorrectAnswers,
       },
       selectedCategories: [],
       questions: questions,
       unansweredQuestions: [],
       answeredQuestions: [],
-      currentQuestion: undefined
+      currentQuestion: undefined,
     };
   },
   methods: {
-    filterQuestions: function() {
+    filterQuestions: function () {
       const answeredQuestions = this.answeredQuestions;
 
       const questions = this.questions;
       const filteredQuestions = [];
-      this.selectedCategories.forEach(function(category) {
+      this.selectedCategories.forEach(function (category) {
         filteredQuestions.push(
           ...questions
-            .filter(q => (q.tags.includes(category) ? true : false))
-            .filter(q => !answeredQuestions.includes(q))
-            .filter(q => !filteredQuestions.includes(q))
+            .filter((q) => (q.tags.includes(category) ? true : false))
+            .filter((q) => !answeredQuestions.includes(q))
+            .filter((q) => !filteredQuestions.includes(q))
         );
       });
       this.unansweredQuestions = filteredQuestions.filter(
-        q => !answeredQuestions.includes(q)
+        (q) => !answeredQuestions.includes(q)
       );
 
       if (
@@ -143,13 +140,13 @@ export default {
         this.randomQuestion();
       }
     },
-    randomQuestion: function() {
+    randomQuestion: function () {
       if (this.unansweredQuestions.length === 0) {
         this.currentQuestion = undefined;
       }
 
       const newQuestionPool = this.unansweredQuestions.filter(
-        q => q !== this.currentQuestion
+        (q) => q !== this.currentQuestion
       );
 
       if (newQuestionPool.length === 1) {
@@ -160,12 +157,10 @@ export default {
       }
 
       if (this.currentQuestion && !this.currentQuestion.keepAnswerOrder) {
-        this.currentQuestion.answers = Utils.randomiseArr(
-          this.currentQuestion.answers
-        );
+        this.currentQuestion.answers = Utils.randomiseArr(this.currentQuestion.answers);
       }
     },
-    recordAnswer: function(isAnswerCorrect) {
+    recordAnswer: function (isAnswerCorrect) {
       if (isAnswerCorrect) {
         this.scoreObj.correctAnswers++;
         this.answeredQuestions.push(this.currentQuestion);
@@ -173,11 +168,10 @@ export default {
       } else {
         this.scoreObj.incorrectAnswers++;
       }
-    }
-  }
+    },
+  },
 };
 </script>
-
 
 <style scoped>
 .warn {

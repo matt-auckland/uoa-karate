@@ -1,19 +1,11 @@
 <template>
-
   <div id="main">
     <h1>What do I need to know for grading again??</h1>
     <label for="grade-select">
       Select the grade you want to grade to:
-      <select
-        name="grade-select"
-        id="grade-select"
-        v-model="selectedGrade"
-      >
-        <option
-          :key="grade.name"
-          :value="grade"
-          v-for="grade in grades"
-        >{{ grade.name }}
+      <select name="grade-select" id="grade-select" v-model="selectedGrade">
+        <option :key="grade.name" :value="grade" v-for="grade in grades">
+          {{ grade.name }}
         </option>
       </select>
     </label>
@@ -22,10 +14,7 @@
     <div class="flex">
       <ul class="list">
         <transition-group name="fade">
-          <li
-            v-for="skill in needToKnow"
-            :key="skill.name"
-          >{{ skill.name }}</li>
+          <li v-for="skill in needToKnow" :key="skill.name">{{ skill.name }}</li>
         </transition-group>
       </ul>
       <div>
@@ -46,15 +35,15 @@
 <script>
 export default {
   name: "GradingInfo",
-  metaInfo: {
-    title: "What do I need to know for grading again??",
-    meta: [
-      {
-        name: "description",
-        content: "Figure out what the heck you need to know to grade."
-      }
-    ]
-  },
+  // metaInfo: {
+  //   title: "What do I need to know for grading again??",
+  //   meta: [
+  //     {
+  //       name: "description",
+  //       content: "Figure out what the heck you need to know to grade."
+  //     }
+  //   ]
+  // },
 
   data() {
     return {
@@ -68,7 +57,7 @@ export default {
         { name: "Green belt with one tab - 4th Kyu", value: 6 },
         { name: "Brown belt - 3rd Kyu", value: 7 },
         { name: "Brown belt with one tab - 2nd Kyu", value: 8 },
-        { name: "Brown belt with two tabs - 1st Kyu", value: 9 }
+        { name: "Brown belt with two tabs - 1st Kyu", value: 9 },
       ],
       syllabus: [
         { name: "Gekisai Dai Ichi", value: 1 },
@@ -80,17 +69,15 @@ export default {
         { name: "Seiyunchin", value: 6 },
         { name: "Seiyunchin Bunkai", value: 7 },
         { name: "Shisochin", value: 8 },
-        { name: "Shisochin Bunkai", value: 9 }
-      ]
+        { name: "Shisochin Bunkai", value: 9 },
+      ],
     };
   },
   computed: {
     needToKnow() {
-      return this.syllabus.filter(
-        skill => skill.value <= this.selectedGrade.value
-      );
-    }
-  }
+      return this.syllabus.filter((skill) => skill.value <= this.selectedGrade.value);
+    },
+  },
 };
 </script>
 
@@ -129,4 +116,3 @@ footer nav a {
   height: 220px;
 }
 </style>
-

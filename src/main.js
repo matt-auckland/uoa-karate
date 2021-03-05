@@ -1,13 +1,14 @@
-import Vue, { createApp } from 'vue';
-import App from './App.vue';
-import router from './router';
-
+import { createApp } from 'vue';
+import App from './App.vue'
+import router from './router'
 
 import AppImage from './components/Image.vue';
 import HeroImage from './components/HeroImage.vue';
 
-Vue.component('app-image', AppImage);
-Vue.component('hero-image', HeroImage);
+const app = createApp(App);
 
 
-createApp(App).use(router).mount('#app');
+app.component('hero-image', HeroImage);
+app.component('app-image', AppImage);
+
+app.use(router).mount('#app')
