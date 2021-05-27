@@ -6,17 +6,12 @@
     <Footer>
       <QuoteDisplay class="quote-display" />
       <div class="github">
-
-        This site's sourcecode is hosted on <a
-          href="https://github.com/matt-auckland/uoa-karate"
-          target="_blank"
-        >Github</a>
+        This site's sourcecode is hosted on
+        <a href="https://github.com/matt-auckland/uoa-karate" target="_blank">Github</a>
       </div>
     </Footer>
   </div>
-
 </template>
-
 
 <script>
 import Header from "@/components/Header.vue";
@@ -28,7 +23,7 @@ export default {
   components: {
     Header,
     QuoteDisplay,
-    SitewideBanner
+    SitewideBanner,
   },
   metaInfo: {
     title: "UoA Karate Club",
@@ -36,10 +31,10 @@ export default {
       {
         name: "description",
         content:
-          "University of Auckland Karate Club. Find info on training times, locations and more."
-      }
-    ]
-  }
+          "University of Auckland Karate Club. Find info on training times, locations and more.",
+      },
+    ],
+  },
 };
 </script>
 
@@ -111,6 +106,13 @@ button.active {
 
 .github {
   margin: 0 auto 20px auto;
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+.center-txt {
   text-align: center;
 }
 </style>

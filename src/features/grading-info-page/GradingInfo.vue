@@ -1,36 +1,28 @@
 <template>
-
   <div id="main">
     <h1>What do I need to know for grading again??</h1>
-    <label for="grade-select">
+    <h2 class="subheading">(Sourced from the IOGKFNZ Instructors Manual)</h2>
+    <hr />
+    <label class="dropdown-label" for="grade-select">
       Select the grade you want to grade to:
-      <select
-        name="grade-select"
-        id="grade-select"
-        v-model="selectedGrade"
-      >
-        <option
-          :key="grade.name"
-          :value="grade"
-          v-for="grade in grades"
-        >{{ grade.name }}
-        </option>
-      </select>
     </label>
-    <h3>What you need to know:</h3>
+    <select name="grade-select" id="grade-select" v-model="selectedGrade">
+      <option :key="grade.name" :value="grade" v-for="grade in grades">
+        {{ grade.name }}
+      </option>
+    </select>
+
+    <h2>What you need to know:</h2>
 
     <div class="flex">
       <ul class="list">
         <transition-group name="fade">
-          <li
-            v-for="skill in needToKnow"
-            :key="skill.name"
-          >{{ skill.name }}</li>
+          <li v-for="skill in needToKnow" :key="skill.name">{{ skill.name }}</li>
         </transition-group>
       </ul>
-      <div>
-        <h4>Remember to check with Sensei to see if you can grade 🥋</h4>
-        <h4>Now go train 👊</h4>
+      <div class="bold center-txt">
+        <p>Remember to check with Sensei to see if you can grade 🥋</p>
+        <p>Now go train 👊</p>
       </div>
     </div>
 
@@ -51,9 +43,9 @@ export default {
     meta: [
       {
         name: "description",
-        content: "Figure out what the heck you need to know to grade."
-      }
-    ]
+        content: "Figure out what the heck you need to know to grade.",
+      },
+    ],
   },
 
   data() {
@@ -68,40 +60,45 @@ export default {
         { name: "Green belt with one tab - 4th Kyu", value: 6 },
         { name: "Brown belt - 3rd Kyu", value: 7 },
         { name: "Brown belt with one tab - 2nd Kyu", value: 8 },
-        { name: "Brown belt with two tabs - 1st Kyu", value: 9 }
+        { name: "Brown belt with two tabs - 1st Kyu", value: 9 },
       ],
       syllabus: [
         { name: "Gekisai Dai Ichi", value: 1 },
         { name: "Gekisai Dai Ichi Bunkai", value: 2 },
         { name: "Gekisai Dai Ni", value: 2 },
         { name: "Gekisai Dai Ni Bunkai", value: 3 },
-        { name: "Saifa", value: 4 },
-        { name: "Saifa Bunkai", value: 5 },
-        { name: "Seiyunchin", value: 6 },
-        { name: "Seiyunchin Bunkai", value: 7 },
-        { name: "Shisochin", value: 8 },
-        { name: "Shisochin Bunkai", value: 9 }
-      ]
+        { name: "Saifa", value: 3 },
+        { name: "Saifa Bunkai", value: 4 },
+        { name: "Seiyunchin", value: 5 },
+        { name: "Seiyunchin Bunkai", value: 6 },
+        { name: "Shisochin", value: 7 },
+        { name: "Shisochin Bunkai", value: 8 },
+      ],
     };
   },
   computed: {
     needToKnow() {
-      return this.syllabus.filter(
-        skill => skill.value <= this.selectedGrade.value
-      );
-    }
-  }
+      return this.syllabus.filter((skill) => skill.value <= this.selectedGrade.value);
+    },
+  },
 };
 </script>
 
 <style scoped>
+.subheading {
+  font-size: 1em;
+}
 #main {
   margin: 0 auto;
   max-width: 500px;
 }
+
+h2,
+h3,
 h4 {
-  text-align: center;
+  margin: 10px 0;
 }
+
 footer nav {
   display: flex;
   justify-content: center;
@@ -109,6 +106,12 @@ footer nav {
 }
 footer nav a {
   margin: 10px;
+}
+
+.dropdown-label {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: 10px;
 }
 
 .fade-enter-active,
@@ -129,4 +132,3 @@ footer nav a {
   height: 220px;
 }
 </style>
-
