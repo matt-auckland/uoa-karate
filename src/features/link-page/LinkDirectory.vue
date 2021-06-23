@@ -13,15 +13,15 @@
         </li>
         <li>
           <a
-            href="https://goo.gl/forms/YMUAxBg9q3fgG0VB3"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeFJrKYmEa4csLlZLW6eQjp7dF2qHBfP8AeM3WquzoTz_12Jw/viewform"
             target="_blank"
-          >Club Reimbursement Form</a>
+          >Club Reimbursement Form (2021)</a>
         </li>
         <li>
           <a
-            href="https://forms.gle/w2XPZWTuuhKuYysz8"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeoEuBAy0158-cabKHn7G3QcJX1WGM7Z4gymoO2250vmxgpUg/viewform"
             target="_blank"
-          >Injury Record Submission Form</a>
+          >Injury Record Submission Form (2021)</a>
         </li>
       </ul>
       <ul>
