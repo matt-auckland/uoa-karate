@@ -8,7 +8,7 @@
       "day": "Tuesday",
       "startTime": "6pm",
       "finishTime": "7.30pm",
-      "location": "The Hawks' Nest, Floor 3, 492 Queen Street",
+      "location": "The Hawks' Nest, Floor 2, 492 Queen Street",
       "notes": "",
       "canDisplay": true
     },
@@ -17,7 +17,7 @@
       "day": "Wednesday",
       "startTime": "6pm",
       "finishTime": "7.30pm",
-      "location": "The Hawks' Nest, Floor 3, 492 Queen Street",
+      "location": "The Hawks' Nest, Floor 2, 492 Queen Street",
       "notes": "",
       "canDisplay": true
     },
@@ -26,7 +26,7 @@
       "day": "Friday",
       "startTime": "6.30pm",
       "finishTime": "8.00pm",
-      "location": "The Hawks' Nest, Floor 3, 492 Queen Street",
+      "location": "Room 303-153, Science Building, University of Auckland",
       "notes": "Graded members only",
       "canDisplay": true
     },
@@ -35,7 +35,7 @@
       "day": "Sunday",
       "startTime": "10am",
       "finishTime": "12pm",
-      "location": "The Hawks' Nest, Floor 3, 492 Queen Street",
+      "location": "The Hawks' Nest, Floor 2, 492 Queen Street",
       "notes": "",
       "canDisplay": true
     }
