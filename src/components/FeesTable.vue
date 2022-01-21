@@ -43,7 +43,7 @@
           <td
             class="number"
             v-if="!showStudents"
-          >$36 Per Month</td>
+          >$40 Per Month</td>
           <td
             v-if="showStudents"
             class="text"

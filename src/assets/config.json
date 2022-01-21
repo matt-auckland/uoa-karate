@@ -10,7 +10,7 @@
       "finishTime": "7.30pm",
       "location": "The Hawks' Nest, Floor 2, 492 Queen Street",
       "notes": "",
-      "canDisplay": true
+      "canDisplay": false
     },
     {
       "index": 2,
@@ -28,7 +28,7 @@
       "finishTime": "8.00pm",
       "location": "Room 303-153, Science Building, University of Auckland",
       "notes": "Graded members only",
-      "canDisplay": true
+      "canDisplay": false
     },
     {
       "index": 4,
