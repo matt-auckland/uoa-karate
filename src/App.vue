@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <SitewideBanner />
-    <Header />
+    <Site-Header />
     <router-view />
     <Footer>
       <QuoteDisplay class="quote-display" />
@@ -14,14 +14,14 @@
 </template>
 
 <script>
-import Header from "@/components/Header.vue";
+import SiteHeader from "@/components/Site-Header.vue";
 import QuoteDisplay from "@/components/QuoteDisplay.vue";
 import SitewideBanner from "@/components/SitewideBanner.vue";
 
 export default {
   name: "App",
   components: {
-    Header,
+    SiteHeader,
     QuoteDisplay,
     SitewideBanner,
   },

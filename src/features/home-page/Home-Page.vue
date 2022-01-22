@@ -25,7 +25,7 @@ import ContactForm from "@/components/ContactForm.vue";
 import UpcomingEvents from "@/components/UpcomingEvents.vue";
 
 export default {
-  name: "home",
+  name: "home-page",
   components: {
     ClubMap,
     TrainingSchedule,

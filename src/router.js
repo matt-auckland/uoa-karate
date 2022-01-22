@@ -9,7 +9,7 @@ import 'swiper/css/swiper.css';
 
 Vue.use(VueAwesomeSwiper /* { default global options } */);
 
-import Home from './features/home-page/Home.vue';
+import HomePage from './features/home-page/Home-Page.vue';
 import AboutPage from './features/about-page/about-page.vue';
 import LinkDirectory from './features/link-page/LinkDirectory.vue';
 import EventsView from './features/events-page/EventsView.vue';
@@ -25,7 +25,7 @@ const router = new Router({
     {
       path: '/',
       name: 'home',
-      component: Home,
+      component: HomePage,
     },
     {
       path: '/about',

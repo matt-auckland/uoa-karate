@@ -35,7 +35,7 @@
 
 <script>
 export default {
-  name: "Header",
+  name: "Site-Header",
   props: {},
 };
 </script>
