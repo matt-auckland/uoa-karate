@@ -1,6 +1,6 @@
 {
   "bannerText": {
-    "text": "Vaccine Passes are required for training. Tuesday and Friday trainings will resume at the end of February when University begins."
+    "text": "Vaccine Passes are required for training."
   },
   "schedule": [
     {
@@ -10,7 +10,7 @@
       "finishTime": "7.30pm",
       "location": "The Hawks' Nest, Floor 2, 492 Queen Street",
       "notes": "",
-      "canDisplay": false
+      "canDisplay": true
     },
     {
       "index": 2,
@@ -28,7 +28,7 @@
       "finishTime": "8.00pm",
       "location": "Room 303-153, Science Building, University of Auckland",
       "notes": "Graded members only",
-      "canDisplay": false
+      "canDisplay": true
     },
     {
       "index": 4,
