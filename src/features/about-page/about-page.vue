@@ -4,9 +4,7 @@
       class="hero"
       source="img/group_saifa.JPG"
       heading="About the Club"
-      :paragraph="
-        `The Auckland University Goju Ryu Karate Club welcomes both university students and non-students, with any level of experience, and with any martial arts background.`
-      "
+      :paragraph="heroText"
     ></hero-image>
     <div class="image-one">
       <app-image
@@ -165,6 +163,7 @@ export default {
   },
   data() {
     return {
+      heroText: "The Auckland University Goju Ryu Karate Club welcomes both university students and non-students, with any level of experience, and with any martial arts background.",
       swiperOpt: {
         loop: true,
         slidesPerView: "auto",
@@ -191,12 +190,12 @@ export default {
             "Sensei Ewan has over 30 years of Goju Ryu experience. He is the chief instructor of the club, which he co-founded with Sensei Tom in 2003.",
           imgSrc: "/img/sensei_ewan.jpg"
         },
-        {
-          name: "Sensei Yin Tung Ho",
-          rank: 3,
-          desc: "Sensei Yin has over 15 years experience in Goju Ryu.",
-          imgSrc: "/img/sensei_yin_2.png"
-        },
+        // {
+        //   name: "Sensei Yin Tung Ho",
+        //   rank: 3,
+        //   desc: "Sensei Yin has over 15 years experience in Goju Ryu.",
+        //   imgSrc: "/img/sensei_yin_2.png"
+        // },
         {
           name: "Sensei Richard Ly",
           rank: 3,
@@ -224,6 +223,7 @@ export default {
   }
 };
 </script>
+<!-- Swiper -->
 <style>
 .swiper-pagination {
   position: initial;
@@ -238,6 +238,7 @@ export default {
   background: var(--persian-red-light);
 }
 </style>
+
 <style scoped>
 .swiper-wrapper {
   width: 100%;
