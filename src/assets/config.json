@@ -1,5 +1,7 @@
 {
-  "bannerText" : "Beginner's training kicks off for the new semester this week! Join us on July 19th, 26th, and August 2nd from 6pm to 7:30pm at The Hawk's Nest",
+  "bannerText" : {
+    "text": "Beginner's training kicks off for the new semester this week! Join us on July 19th, 26th, and August 2nd from 6pm to 7:30pm at The Hawk's Nest"
+  },
   "schedule": [
     {
       "index": 1,
