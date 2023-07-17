@@ -7,21 +7,26 @@
 
         <li>
           <a
+            href="https://docs.google.com/forms/d/1bPMtgUDXCPMpEReijFP0tMrvCISVmKgATd3AHZP2PDY/viewform?edit_requested=true"
+            target="_blank"
+          >Beginner's Training Sign Up Sheet (Semester 2 2023)</a>
+
+          <a
             href="https://goo.gl/forms/sTq5WHgxXTOSmMx42"
             target="_blank"
           >Club Sign Up Sheet</a>
         </li>
         <li>
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSeFJrKYmEa4csLlZLW6eQjp7dF2qHBfP8AeM3WquzoTz_12Jw/viewform"
+            href="https://docs.google.com/forms/d/1DgZ-10ExX6ZXGagtK34vMOSmHut1G8t4-RwNVmbkffE/viewform?edit_requested=true"
             target="_blank"
-          >Club Reimbursement Form (2021)</a>
+          >Club Reimbursement Form (2023)</a>
         </li>
         <li>
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSeoEuBAy0158-cabKHn7G3QcJX1WGM7Z4gymoO2250vmxgpUg/viewform"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdHBeXrR8Q2QspvBtOa-f1KHbievYbtwaunhlxusSXC5lGpVg/viewform"
             target="_blank"
-          >Injury Record Submission Form (2021)</a>
+          >Injury Record Submission Form (2023)</a>
         </li>
       </ul>
       <ul>
