@@ -10,7 +10,8 @@
             href="https://docs.google.com/forms/d/1bPMtgUDXCPMpEReijFP0tMrvCISVmKgATd3AHZP2PDY/viewform?edit_requested=true"
             target="_blank"
           >Beginner's Training Sign Up Sheet (Semester 2 2023)</a>
-
+      </li>
+      <li>
           <a
             href="https://goo.gl/forms/sTq5WHgxXTOSmMx42"
             target="_blank"
