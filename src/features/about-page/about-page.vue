@@ -190,18 +190,18 @@ export default {
             "Sensei Ewan has over 30 years of Goju Ryu experience. He is the chief instructor of the club, which he co-founded with Sensei Tom in 2003.",
           imgSrc: "/img/sensei_ewan.jpg"
         },
-        // {
-        //   name: "Sensei Yin Tung Ho",
-        //   rank: 3,
-        //   desc: "Sensei Yin has over 15 years experience in Goju Ryu.",
-        //   imgSrc: "/img/sensei_yin_2.png"
-        // },
         {
           name: "Sensei Richard Ly",
-          rank: 3,
+          rank: 4,
           desc: "Sensei Richard has over 10 years of Goju Ryu experience.",
           imgSrc: "/img/sensei_richard.png"
-        }
+        },
+        // {
+        //   name: "Senpai Mathew Paul",
+        //   rank: 2,
+        //   desc: "Senpai Mat has over 9 years experience in Goju Ryu.",
+        //   imgSrc: "/img/sensei_yin_2.png"
+        // },
       ],
       eventImages: [
         {
