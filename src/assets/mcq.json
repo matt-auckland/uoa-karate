@@ -1,7 +1,9 @@
 [
   {
     "question": "Who is this man?",
-    "tags": ["History"],
+    "tags": [
+      "History"
+    ],
     "answers": [
       {
         "text": "Miyagi Chojun",
@@ -25,7 +27,10 @@
   },
   {
     "question": "What is the name of our first kata?",
-    "tags": ["Kata", "9th Kyu"],
+    "tags": [
+      "Kata",
+      "9th Kyu"
+    ],
     "answers": [
       {
         "text": "Gekisai Dai Ichi",
@@ -49,7 +54,11 @@
   },
   {
     "question": "In Gekisai Dai Ichi, after kicking Hidari Gedan Maegeri, what are the next four techniques?",
-    "tags": ["Kata", "9th Kyu", "Gekisai Dai Ichi"],
+    "tags": [
+      "Kata",
+      "9th Kyu",
+      "Gekisai Dai Ichi"
+    ],
     "answers": [
       {
         "text": "Chudan Hiji Ate, Jodan Uraken, Gedan Barai, Chudan Gyakuzuki",
@@ -73,7 +82,11 @@
   },
   {
     "question": "In Gekisai Dai Ichi, after the first gedan barai, where should you be looking?",
-    "tags": ["Kata", "9th Kyu", "Gekisai Dai Ichi"],
+    "tags": [
+      "Kata",
+      "9th Kyu",
+      "Gekisai Dai Ichi"
+    ],
     "answers": [
       {
         "text": "Over your shoulder, to the left",
@@ -97,7 +110,11 @@
   },
   {
     "question": "How many stomps are there in Gekisai Dai Ichi?",
-    "tags": ["Kata", "9th Kyu", "Gekisai Dai Ichi"],
+    "tags": [
+      "Kata",
+      "9th Kyu",
+      "Gekisai Dai Ichi"
+    ],
     "answers": [
       {
         "text": "Four",
@@ -121,7 +138,11 @@
   },
   {
     "question": "How many Kiai are there in Gekisai Dai Ichi?",
-    "tags": ["Kata", "9th Kyu", "Gekisai Dai Ichi"],
+    "tags": [
+      "Kata",
+      "9th Kyu",
+      "Gekisai Dai Ichi"
+    ],
     "answers": [
       {
         "text": "Two",
@@ -145,7 +166,11 @@
   },
   {
     "question": "After the second Morote Tsuki in Gekisai Dai Ichi what stance should you be in?",
-    "tags": ["Kata", "9th Kyu", "Gekisai Dai Ichi"],
+    "tags": [
+      "Kata",
+      "9th Kyu",
+      "Gekisai Dai Ichi"
+    ],
     "answers": [
       {
         "text": "Hidari Zenkutsu Dachi",
@@ -169,7 +194,11 @@
   },
   {
     "question": "When performing either of the Shutou Uchi in Gekisai Dai Ichi, what stance should you be in?",
-    "tags": ["Kata", "9th Kyu", "Gekisai Dai Ichi"],
+    "tags": [
+      "Kata",
+      "9th Kyu",
+      "Gekisai Dai Ichi"
+    ],
     "answers": [
       {
         "text": "Hachi Dachi",
@@ -193,7 +222,11 @@
   },
   {
     "question": "In Gekisai Dai Ni, after performing the second Shutou Uchi, what stance do you move into?",
-    "tags": ["Kata", "8th Kyu", "Gekisai Dai Ni"],
+    "tags": [
+      "Kata",
+      "8th Kyu",
+      "Gekisai Dai Ni"
+    ],
     "answers": [
       {
         "text": "Migi Neko Ashi Dachi",
@@ -217,7 +250,11 @@
   },
   {
     "question": "In Gekisai Dai Ni, after performing the second Hiki Uke, which direction do you move?",
-    "tags": ["Kata", "8th Kyu", "Gekisai Dai Ni"],
+    "tags": [
+      "Kata",
+      "8th Kyu",
+      "Gekisai Dai Ni"
+    ],
     "answers": [
       {
         "text": "Backwards",
@@ -241,7 +278,11 @@
   },
   {
     "question": "In Gekisai Dai Ni, how many Hiki Uke are there?",
-    "tags": ["Kata", "8th Kyu", "Gekisai Dai Ni"],
+    "tags": [
+      "Kata",
+      "8th Kyu",
+      "Gekisai Dai Ni"
+    ],
     "answers": [
       {
         "text": "Three",
@@ -265,7 +306,11 @@
   },
   {
     "question": "In Gekisai Dai Ni, when moving back into Neko Ashi Dachi, how far should you move?",
-    "tags": ["Kata", "8th Kyu", "Gekisai Dai Ni"],
+    "tags": [
+      "Kata",
+      "8th Kyu",
+      "Gekisai Dai Ni"
+    ],
     "answers": [
       {
         "text": "As far as you can",
@@ -289,7 +334,11 @@
   },
   {
     "question": "In Gekisai Dai Ni, after performing the first Toraguchi, how do you move?",
-    "tags": ["Kata", "8th Kyu", "Gekisai Dai Ni"],
+    "tags": [
+      "Kata",
+      "8th Kyu",
+      "Gekisai Dai Ni"
+    ],
     "answers": [
       {
         "text": "Suriashi directly to the right",
@@ -313,7 +362,11 @@
   },
   {
     "question": "In Gekisai Dai Ni, in Neko Ashi Dachi, what should weight distribution be?",
-    "tags": ["Kata", "8th Kyu", "Gekisai Dai Ni"],
+    "tags": [
+      "Kata",
+      "8th Kyu",
+      "Gekisai Dai Ni"
+    ],
     "answers": [
       {
         "text": "90% on the back leg, 10% on the front leg.",
@@ -337,7 +390,11 @@
   },
   {
     "question": "In Gekisai Dai Ni, how many kiai do you perform?",
-    "tags": ["Kata", "8th Kyu", "Gekisai Dai Ni"],
+    "tags": [
+      "Kata",
+      "8th Kyu",
+      "Gekisai Dai Ni"
+    ],
     "answers": [
       {
         "text": "Two",
@@ -361,7 +418,11 @@
   },
   {
     "question": "What does Gekisai Dai Ichi mean?",
-    "tags": ["Kata", "9th Kyu", "Gekisai Dai Ichi"],
+    "tags": [
+      "Kata",
+      "9th Kyu",
+      "Gekisai Dai Ichi"
+    ],
     "answers": [
       {
         "text": "Attack & destory number one",
@@ -385,7 +446,11 @@
   },
   {
     "question": "What is the name of our first kata?",
-    "tags": ["Kata", "9th Kyu", "Gekisai Dai Ichi"],
+    "tags": [
+      "Kata",
+      "9th Kyu",
+      "Gekisai Dai Ichi"
+    ],
     "answers": [
       {
         "text": "Gekisai Dai Ichi",
@@ -409,7 +474,11 @@
   },
   {
     "question": "In Saifa what stance are you in when you perform the first hizageri?",
-    "tags": ["Kata", "7th Kyu", "Saifa"],
+    "tags": [
+      "Kata",
+      "7th Kyu",
+      "Saifa"
+    ],
     "answers": [
       {
         "text": "Migi Sagi Ashi Dachi",
@@ -433,7 +502,11 @@
   },
   {
     "question": "Which sentence best describes the stance Hachi Dachi?",
-    "tags": ["Kata", "7th Kyu", "Saifa"],
+    "tags": [
+      "Kata",
+      "7th Kyu",
+      "Saifa"
+    ],
     "answers": [
       {
         "text": "Feet shoulder width apart, pointed out 45 degrees",
@@ -457,7 +530,11 @@
   },
   {
     "question": "In the kata Saifa, what stance are you in when you perform uraken?",
-    "tags": ["Kata", "7th Kyu", "Saifa"],
+    "tags": [
+      "Kata",
+      "7th Kyu",
+      "Saifa"
+    ],
     "answers": [
       {
         "text": "Shikodachi",
@@ -481,7 +558,11 @@
   },
   {
     "question": "In the kata Saifa, what stance are you in when you perform Tetsui?",
-    "tags": ["Kata", "7th Kyu", "Saifa"],
+    "tags": [
+      "Kata",
+      "7th Kyu",
+      "Saifa"
+    ],
     "answers": [
       {
         "text": "Hachi Dachi",
@@ -505,7 +586,10 @@
   },
   {
     "question": "Who was Miyagi Chojun's first teacher",
-    "tags": ["Miyagi Chojun", "History"],
+    "tags": [
+      "Miyagi Chojun",
+      "History"
+    ],
     "answers": [
       {
         "correct": true,
@@ -529,7 +613,9 @@
   },
   {
     "question": "What year was the name Goju Ryu given?",
-    "tags": ["History"],
+    "tags": [
+      "History"
+    ],
     "answers": [
       {
         "correct": true,
@@ -553,7 +639,10 @@
   },
   {
     "question": "Which kata are referred to as \"Kaishugata\"?",
-    "tags": ["Kata", "Vocabulary"],
+    "tags": [
+      "Kata",
+      "Vocabulary"
+    ],
     "answers": [
       {
         "correct": true,
@@ -577,7 +666,11 @@
   },
   {
     "question": "The first stance you step into in Gekisai Dai Ichi is:",
-    "tags": ["Kata", "Gekisai Dai Ichi", "9th Kyu"],
+    "tags": [
+      "Kata",
+      "Gekisai Dai Ichi",
+      "9th Kyu"
+    ],
     "answers": [
       {
         "correct": true,
@@ -601,7 +694,11 @@
   },
   {
     "question": "The elbow strikes in the kata Shisochin are aimed at:",
-    "tags": ["Kata", "Shisochin", "3rd Kyu"],
+    "tags": [
+      "Kata",
+      "Shisochin",
+      "3rd Kyu"
+    ],
     "answers": [
       {
         "correct": true,
@@ -625,7 +722,10 @@
   },
   {
     "question": "What year was Miyagi Chojun born?",
-    "tags": ["Miyagi Chojun", "History"],
+    "tags": [
+      "Miyagi Chojun",
+      "History"
+    ],
     "answers": [
       {
         "correct": true,
@@ -649,19 +749,37 @@
   },
   {
     "question": "When did Miyagi Chojun Sensei Live?",
-    "tags": ["Miyagi Chojun", "History"],
+    "tags": [
+      "Miyagi Chojun",
+      "History"
+    ],
     "answers": [
-      { "text": "1888-1953", "correct": true },
-      { "text": "1850-1925", "correct": false },
-      { "text": "1853-1916", "correct": false },
-      { "text": "1900-1955", "correct": false }
+      {
+        "text": "1888-1953",
+        "correct": true
+      },
+      {
+        "text": "1850-1925",
+        "correct": false
+      },
+      {
+        "text": "1853-1916",
+        "correct": false
+      },
+      {
+        "text": "1900-1955",
+        "correct": false
+      }
     ],
     "image": "",
     "referenceLink": ""
   },
   {
     "question": "What year did Miyigi Chojun die?",
-    "tags": ["History", "Miyagi Chojun"],
+    "tags": [
+      "History",
+      "Miyagi Chojun"
+    ],
     "answers": [
       {
         "correct": true,
@@ -681,7 +799,11 @@
   },
   {
     "question": "In Saifa after performing Haito Uchi, what technique follows",
-    "tags": ["Kata", "Saifa", "7th Kyu"],
+    "tags": [
+      "Kata",
+      "Saifa",
+      "7th Kyu"
+    ],
     "answers": [
       {
         "correct": true,
@@ -705,7 +827,11 @@
   },
   {
     "question": "Shisochin kata places emphasis on:",
-    "tags": ["Kata", "Shisochin", "3rd Kyu"],
+    "tags": [
+      "Kata",
+      "Shisochin",
+      "3rd Kyu"
+    ],
     "answers": [
       {
         "correct": true,
@@ -729,7 +855,9 @@
   },
   {
     "question": "Muchimi means:",
-    "tags": ["Vocabulary"],
+    "tags": [
+      "Vocabulary"
+    ],
     "answers": [
       {
         "correct": true,
@@ -753,7 +881,11 @@
   },
   {
     "question": "What training implement did Chojun Miyagi bring back from his visit to Hawaii?",
-    "tags": ["History", "Miyagi Chojun", "Hojo Undo"],
+    "tags": [
+      "History",
+      "Miyagi Chojun",
+      "Hojo Undo"
+    ],
     "answers": [
       {
         "correct": true,
@@ -777,7 +909,11 @@
   },
   {
     "question": "What City of China did Higaonna Kanryo and Miyagi Chojun travel to to study Matial arts?",
-    "tags": ["History", "Higaonna Kanryo", "Miyagi Chojun"],
+    "tags": [
+      "History",
+      "Higaonna Kanryo",
+      "Miyagi Chojun"
+    ],
     "answers": [
       {
         "correct": true,
@@ -801,7 +937,11 @@
   },
   {
     "question": "How many kicks are there in Seiyunchin?",
-    "tags": ["Kata", "Seiyunchin", "5th Kyu"],
+    "tags": [
+      "Kata",
+      "Seiyunchin",
+      "5th Kyu"
+    ],
     "answers": [
       {
         "correct": true,
@@ -825,7 +965,11 @@
   },
   {
     "question": "How old is the kata Gekisai Dai Ichi?",
-    "tags": ["Kata", "Gekisai Dai Ichi", "9th Kyu"],
+    "tags": [
+      "Kata",
+      "Gekisai Dai Ichi",
+      "9th Kyu"
+    ],
     "answers": [
       {
         "correct": true,
@@ -849,7 +993,11 @@
   },
   {
     "question": "Who created the kata Tensho?",
-    "tags": ["Kata", "History", "Tensho"],
+    "tags": [
+      "Kata",
+      "History",
+      "Tensho"
+    ],
     "answers": [
       {
         "correct": true,
@@ -873,7 +1021,9 @@
   },
   {
     "question": "Karate means:",
-    "tags": ["Vocabulary"],
+    "tags": [
+      "Vocabulary"
+    ],
     "answers": [
       {
         "correct": true,
@@ -897,7 +1047,9 @@
   },
   {
     "question": "What does Uchi Deshi mean",
-    "tags": ["Vocabulary"],
+    "tags": [
+      "Vocabulary"
+    ],
     "answers": [
       {
         "correct": true,
@@ -921,7 +1073,10 @@
   },
   {
     "question": "Who was Higaonna Kanryo's teacher?",
-    "tags": ["Higaonna Kanryo", "History"],
+    "tags": [
+      "Higaonna Kanryo",
+      "History"
+    ],
     "answers": [
       {
         "correct": true,
@@ -945,7 +1100,10 @@
   },
   {
     "question": "What was the martial art form that Higaonna Kanryo Sensei taught called?",
-    "tags": ["Higaonna Kanryo", "History"],
+    "tags": [
+      "Higaonna Kanryo",
+      "History"
+    ],
     "answers": [
       {
         "correct": true,
@@ -963,14 +1121,21 @@
         "correct": false,
         "text": "Karate"
       },
-      { "text": "Okinawan-Te", "correct": false }
+      {
+        "text": "Okinawan-Te",
+        "correct": false
+      }
     ],
     "image": "",
     "referenceLink": ""
   },
   {
     "question": "When executing the technique Kuri Uke in the kata Seiyunchin you must focus your concentration on:",
-    "tags": ["Kata", "Seiyunchin", "5th Kyu"],
+    "tags": [
+      "Kata",
+      "Seiyunchin",
+      "5th Kyu"
+    ],
     "answers": [
       {
         "correct": true,
@@ -998,7 +1163,11 @@
   },
   {
     "question": "In the kata Shisochin the first Nukite strikes are aimed at:",
-    "tags": ["Kata", "Shisochin", "3rd Kyu"],
+    "tags": [
+      "Kata",
+      "Shisochin",
+      "3rd Kyu"
+    ],
     "answers": [
       {
         "correct": true,
@@ -1022,7 +1191,9 @@
   },
   {
     "question": "All Goju-Ryu kata end by stepping back:",
-    "tags": ["Kata"],
+    "tags": [
+      "Kata"
+    ],
     "answers": [
       {
         "correct": true,
@@ -1038,7 +1209,9 @@
   },
   {
     "question": "All Goju-Ryu kata end by stepping forward.",
-    "tags": ["Kata"],
+    "tags": [
+      "Kata"
+    ],
     "answers": [
       {
         "correct": true,
@@ -1054,7 +1227,9 @@
   },
   {
     "question": "All Goju-Ryu kata end by stepping back except for one:",
-    "tags": ["Kata"],
+    "tags": [
+      "Kata"
+    ],
     "answers": [
       {
         "correct": true,
@@ -1070,19 +1245,37 @@
   },
   {
     "question": "Who was Ryu Ryuko Sensei?",
-    "tags": ["History", "Ryu Ryuko"],
+    "tags": [
+      "History",
+      "Ryu Ryuko"
+    ],
     "answers": [
-      { "text": "The teacher of Kanryo Higaonna", "correct": true },
-      { "text": "The founder of Goju-Ryu", "correct": false },
-      { "text": "The teacher of Chojun Miyagi", "correct": false },
-      { "text": "The teacher of An'ichi Miagi", "correct": false }
+      {
+        "text": "The teacher of Kanryo Higaonna",
+        "correct": true
+      },
+      {
+        "text": "The founder of Goju-Ryu",
+        "correct": false
+      },
+      {
+        "text": "The teacher of Chojun Miyagi",
+        "correct": false
+      },
+      {
+        "text": "The teacher of An'ichi Miagi",
+        "correct": false
+      }
     ],
     "image": "",
     "referenceLink": ""
   },
   {
     "question": "Why was Higaonna Kanryo Sensei called “Ashi No Higaonna”?",
-    "tags": ["History", "Higaonna Kanryo"],
+    "tags": [
+      "History",
+      "Higaonna Kanryo"
+    ],
     "answers": [
       {
         "text": "He was well known for his exceptionally strong legs.",
@@ -1092,23 +1285,41 @@
         "text": "He was well known for his exceptionally strong grip",
         "correct": false
       },
-      { "text": "He was very tall.", "correct": false },
-      { "text": "He was very short.", "correct": false }
+      {
+        "text": "He was very tall.",
+        "correct": false
+      },
+      {
+        "text": "He was very short.",
+        "correct": false
+      }
     ],
     "image": "",
     "referenceLink": ""
   },
   {
     "question": "Which of the following forms of training did Miyagi Chojun Sensei create?",
-    "tags": ["Miyagi Chojun", "History"],
+    "tags": [
+      "Miyagi Chojun",
+      "History"
+    ],
     "answers": [
       {
         "text": "Junbi Undo (Goju Ryu preliminary exercises), a revised Sanchin kata",
         "correct": true
       },
-      { "text": "Hojo Undo, Junbi Undo", "correct": false },
-      { "text": "A revised Sanchin kata and Hojo Undo", "correct": false },
-      { "text": "Tensho and Hojo Undo", "correct": false }
+      {
+        "text": "Hojo Undo, Junbi Undo",
+        "correct": false
+      },
+      {
+        "text": "A revised Sanchin kata and Hojo Undo",
+        "correct": false
+      },
+      {
+        "text": "Tensho and Hojo Undo",
+        "correct": false
+      }
     ],
     "image": "",
     "referenceLink": ""
@@ -1123,56 +1334,114 @@
       "History"
     ],
     "answers": [
-      { "text": "1940", "correct": true },
-      { "text": "1950", "correct": false },
-      { "text": "1925", "correct": false },
-      { "text": "1916", "correct": false }
+      {
+        "text": "1940",
+        "correct": true
+      },
+      {
+        "text": "1950",
+        "correct": false
+      },
+      {
+        "text": "1925",
+        "correct": false
+      },
+      {
+        "text": "1916",
+        "correct": false
+      }
     ],
     "image": "",
     "referenceLink": ""
   },
   {
     "question": "What are the \"Hojo-Undo\"?",
-    "tags": ["Vocabulary"],
+    "tags": [
+      "Vocabulary"
+    ],
     "answers": [
       {
         "text": "The traditional supplemental training apparatus of Goju-Ryu",
         "correct": true
       },
-      { "text": "The basic techniques.", "correct": false },
-      { "text": "The katas of Goju-Ryu", "correct": false },
-      { "text": "Preliminary warming up exercises", "correct": false }
+      {
+        "text": "The basic techniques.",
+        "correct": false
+      },
+      {
+        "text": "The katas of Goju-Ryu",
+        "correct": false
+      },
+      {
+        "text": "Preliminary warming up exercises",
+        "correct": false
+      }
     ],
     "image": "",
     "referenceLink": ""
   },
   {
     "question": "Which katas are referred to as \"Heishugata\"?",
-    "tags": ["Kata", "Vocabulary"],
+    "tags": [
+      "Kata",
+      "Vocabulary"
+    ],
     "answers": [
-      { "text": "Sanchin and Tensho", "correct": true },
-      { "text": "All the Goju-Ryu katas", "correct": false },
-      { "text": "All the katas except Sanchin and Tensho", "correct": false },
-      { "text": "Gekisai Dai Ichi and Dai Ni.", "correct": false }
+      {
+        "text": "Sanchin and Tensho",
+        "correct": true
+      },
+      {
+        "text": "All the Goju-Ryu katas",
+        "correct": false
+      },
+      {
+        "text": "All the katas except Sanchin and Tensho",
+        "correct": false
+      },
+      {
+        "text": "Gekisai Dai Ichi and Dai Ni.",
+        "correct": false
+      }
     ],
     "image": "",
     "referenceLink": ""
   },
   {
     "question": "When executing Shuto Uchi in the Kata Gekisai Dai Ichi you assume the stance:",
-    "tags": ["Gekisai Dai Ichi", "9th Kyu", "Kata"],
+    "tags": [
+      "Gekisai Dai Ichi",
+      "9th Kyu",
+      "Kata"
+    ],
     "answers": [
-      { "text": "Hachiji Dachi", "correct": true },
-      { "text": "Sanchin Dachi", "correct": false },
-      { "text": "Heiko Dachi", "correct": false },
-      { "text": "Musubi Dachi", "correct": false }
+      {
+        "text": "Hachiji Dachi",
+        "correct": true
+      },
+      {
+        "text": "Sanchin Dachi",
+        "correct": false
+      },
+      {
+        "text": "Heiko Dachi",
+        "correct": false
+      },
+      {
+        "text": "Musubi Dachi",
+        "correct": false
+      }
     ],
     "image": "",
     "referenceLink": ""
   },
   {
     "question": "When stepping into Shiko Dachi in the kata Gekisai Dai Ichi you should:",
-    "tags": ["Gekisai Dai Ichi", "9th Kyu", "Kata"],
+    "tags": [
+      "Gekisai Dai Ichi",
+      "9th Kyu",
+      "Kata"
+    ],
     "answers": [
       {
         "text": "Keep your eyes fixed on the same point as they were during the previous technique.",
@@ -1182,7 +1451,10 @@
         "text": "Look to the front and then look to side again",
         "correct": false
       },
-      { "text": "Look straight forward", "correct": false },
+      {
+        "text": "Look straight forward",
+        "correct": false
+      },
       {
         "text": "Turn your head slowly to look to the front as you execute the technique.",
         "correct": false
@@ -1193,25 +1465,49 @@
   },
   {
     "question": "When executing Mae Geri in the kata Gekisai Dai Ichi and Gekisai Dai Ni you aim at:",
-    "tags": ["Kata", "Gekisai Dai Ichi", "Gekisai Dai Ni", "8th Kyu"],
+    "tags": [
+      "Kata",
+      "Gekisai Dai Ichi",
+      "Gekisai Dai Ni",
+      "8th Kyu"
+    ],
     "answers": [
-      { "text": "Gedan level", "correct": true },
-      { "text": "Jodan level", "correct": false },
-      { "text": "Chudan level", "correct": false },
-      { "text": "Shuto level", "correct": false }
+      {
+        "text": "Gedan level",
+        "correct": true
+      },
+      {
+        "text": "Jodan level",
+        "correct": false
+      },
+      {
+        "text": "Chudan level",
+        "correct": false
+      },
+      {
+        "text": "Shuto level",
+        "correct": false
+      }
     ],
     "image": "",
     "referenceLink": ""
   },
   {
     "question": "In the kata Gekisai Dai Ni when stepping forward and back while executing Hiki Uke you should",
-    "tags": ["Kata", "Gekisai Dai Ni", "8th Kyu"],
+    "tags": [
+      "Kata",
+      "Gekisai Dai Ni",
+      "8th Kyu"
+    ],
     "answers": [
       {
         "text": "Step forward and back while sliding your foot in a semi circle",
         "correct": true
       },
-      { "text": "Step straight forward and straight back", "correct": false },
+      {
+        "text": "Step straight forward and straight back",
+        "correct": false
+      },
       {
         "text": "Step straight forward and back in a semi circle",
         "correct": false
@@ -1226,74 +1522,163 @@
   },
   {
     "question": "In the kata Saifa, when taking the first step and assuming Musubi Dachi you should be looking:",
-    "tags": ["Kata", "Saifa", "7th Kyu"],
+    "tags": [
+      "Kata",
+      "Saifa",
+      "7th Kyu"
+    ],
     "answers": [
       {
         "text": "Straight ahead (from where you are standing)",
         "correct": true
       },
-      { "text": "Over your right shoulder", "correct": false },
-      { "text": "Over your left shoulder", "correct": false },
-      { "text": "Towards Shomen", "correct": false }
+      {
+        "text": "Over your right shoulder",
+        "correct": false
+      },
+      {
+        "text": "Over your left shoulder",
+        "correct": false
+      },
+      {
+        "text": "Towards Shomen",
+        "correct": false
+      }
     ],
     "image": "",
     "referenceLink": ""
   },
   {
     "question": "In the kata Saifa, when executing the technique Morote Heiko Zuki your fists should be:",
-    "tags": ["Kata", "Saifa", "7th Kyu"],
+    "tags": [
+      "Kata",
+      "Saifa",
+      "7th Kyu"
+    ],
     "answers": [
-      { "text": "At shoulder level", "correct": true },
-      { "text": "Higher than your shoulders", "correct": false },
-      { "text": "At Godan height.", "correct": false },
-      { "text": "Lower than your shoulders", "correct": false }
+      {
+        "text": "At shoulder level",
+        "correct": true
+      },
+      {
+        "text": "Higher than your shoulders",
+        "correct": false
+      },
+      {
+        "text": "At Godan height.",
+        "correct": false
+      },
+      {
+        "text": "Lower than your shoulders",
+        "correct": false
+      }
     ],
     "image": "",
     "referenceLink": ""
   },
   {
     "question": "In Shisochin, after assuming Morote Chudan Nukite no Kamae you then do:",
-    "tags": ["Kata", "Shisochin", "3rd Kyu"],
+    "tags": [
+      "Kata",
+      "Shisochin",
+      "3rd Kyu"
+    ],
     "answers": [
-      { "text": "Chudan Nukite", "correct": true },
-      { "text": "Gedan Barai", "correct": false },
-      { "text": "Morote Chudan Nukite", "correct": false },
-      { "text": "Gedan Shotei Barai", "correct": false }
+      {
+        "text": "Chudan Nukite",
+        "correct": true
+      },
+      {
+        "text": "Gedan Barai",
+        "correct": false
+      },
+      {
+        "text": "Morote Chudan Nukite",
+        "correct": false
+      },
+      {
+        "text": "Gedan Shotei Barai",
+        "correct": false
+      }
     ],
     "image": "",
     "referenceLink": ""
   },
   {
     "question": "The strikes in the kata Saifa are mainly:",
-    "tags": ["Kata", "Saifa", "7th Kyu"],
+    "tags": [
+      "Kata",
+      "Saifa",
+      "7th Kyu"
+    ],
     "answers": [
-      { "text": "Circular", "correct": true },
-      { "text": "Straight", "correct": false },
-      { "text": "Heavy and Sticky", "correct": false },
-      { "text": "Not seen", "correct": false }
+      {
+        "text": "Circular",
+        "correct": true
+      },
+      {
+        "text": "Straight",
+        "correct": false
+      },
+      {
+        "text": "Heavy and Sticky",
+        "correct": false
+      },
+      {
+        "text": "Not seen",
+        "correct": false
+      }
     ],
     "image": "",
     "referenceLink": ""
   },
   {
     "question": "Seiyunchin can possibly be interpreted as:",
-    "tags": ["Kata", "Seiyunchin", "5th Kyu"],
+    "tags": [
+      "Kata",
+      "Seiyunchin",
+      "5th Kyu"
+    ],
     "answers": [
-      { "text": "Pulling", "correct": true },
-      { "text": "Pushing", "correct": false },
-      { "text": "Ancient", "correct": false },
-      { "text": "36 hands", "correct": false }
+      {
+        "text": "Pulling",
+        "correct": true
+      },
+      {
+        "text": "Pushing",
+        "correct": false
+      },
+      {
+        "text": "Ancient",
+        "correct": false
+      },
+      {
+        "text": "36 hands",
+        "correct": false
+      }
     ],
     "image": "",
     "referenceLink": ""
   },
   {
     "question": "How old is the kata Tensho?",
-    "tags": ["Kata", "Tensho"],
+    "tags": [
+      "Kata",
+      "Tensho"
+    ],
     "answers": [
-      { "text": "Around 70 years", "correct": true },
-      { "text": "Two hundred years", "correct": false },
-      { "text": "Three hundred years", "correct": false },
+      {
+        "text": "Around 70 years",
+        "correct": true
+      },
+      {
+        "text": "Two hundred years",
+        "correct": false
+      },
+      {
+        "text": "Three hundred years",
+        "correct": false
+      },
       {
         "text": "Not known for sure, but many hundreds of years.",
         "correct": false
@@ -1304,11 +1689,23 @@
   },
   {
     "question": "What did the name \"Karate\" mean before it was made to mean \"empty hand\"?",
-    "tags": ["Vocabulary", "History"],
+    "tags": [
+      "Vocabulary",
+      "History"
+    ],
     "answers": [
-      { "text": "Chinese hand", "correct": true },
-      { "text": "Okinawan hand", "correct": false },
-      { "text": "Strong fist", "correct": false },
+      {
+        "text": "Chinese hand",
+        "correct": true
+      },
+      {
+        "text": "Okinawan hand",
+        "correct": false
+      },
+      {
+        "text": "Strong fist",
+        "correct": false
+      },
       {
         "text": "Watch out these hands are registered weapons.",
         "correct": false
@@ -1319,48 +1716,100 @@
   },
   {
     "question": "In Saifa after performing Morote Heiko Zuki, what technique is performed next?",
-    "tags": ["Kata", "Saifa", "7th Kyu"],
+    "tags": [
+      "Kata",
+      "Saifa",
+      "7th Kyu"
+    ],
     "answers": [
-      { "text": "Morote Gedan Uchi", "correct": true },
-      { "text": "A Second Morote Heiko Zuki", "correct": false },
-      { "text": "Step into Hiza Uchi", "correct": false },
-      { "text": "Gedan Shotei Barai", "correct": false }
+      {
+        "text": "Morote Gedan Uchi",
+        "correct": true
+      },
+      {
+        "text": "A Second Morote Heiko Zuki",
+        "correct": false
+      },
+      {
+        "text": "Step into Hiza Uchi",
+        "correct": false
+      },
+      {
+        "text": "Gedan Shotei Barai",
+        "correct": false
+      }
     ],
     "image": "",
     "referenceLink": ""
   },
   {
     "question": "In Seiyunchin from Shiko Dachi to Shiko Dachi, the hips should:",
-    "tags": ["Kata", "Seiyunchin", "5th Kyu"],
+    "tags": [
+      "Kata",
+      "Seiyunchin",
+      "5th Kyu"
+    ],
     "answers": [
-      { "text": "Remain at the same level", "correct": true },
-      { "text": "Move up slightly as you move forward", "correct": false },
+      {
+        "text": "Remain at the same level",
+        "correct": true
+      },
+      {
+        "text": "Move up slightly as you move forward",
+        "correct": false
+      },
       {
         "text": "Move down slightly and then be set as you reach the stance",
         "correct": false
       },
-      { "text": "Be loose and relaxed", "correct": false }
+      {
+        "text": "Be loose and relaxed",
+        "correct": false
+      }
     ],
     "image": "",
     "referenceLink": ""
   },
   {
     "question": "Miyagi Chojun considered which kata the most essential kata of Goju Ryu",
-    "tags": ["History", "Kata", "Miyagi Chojun"],
+    "tags": [
+      "History",
+      "Kata",
+      "Miyagi Chojun"
+    ],
     "answers": [
-      { "text": "Sanchin", "correct": true },
-      { "text": "Seiyunchin", "correct": false },
-      { "text": "Shisochin", "correct": false },
-      { "text": "Gekisai Dai Ni", "correct": false }
+      {
+        "text": "Sanchin",
+        "correct": true
+      },
+      {
+        "text": "Seiyunchin",
+        "correct": false
+      },
+      {
+        "text": "Shisochin",
+        "correct": false
+      },
+      {
+        "text": "Gekisai Dai Ni",
+        "correct": false
+      }
     ],
     "image": "",
     "referenceLink": ""
   },
   {
     "question": "In the kata Seiyunchin, when stepping in Shiko Dachi you must:",
-    "tags": ["Kata", "Seiyunchin", "5th Kyu"],
+    "tags": [
+      "Kata",
+      "Seiyunchin",
+      "5th Kyu"
+    ],
     "answers": [
-      { "text": "Keep looking straight ahead at eye level", "correct": true },
+      {
+        "text": "Keep looking straight ahead at eye level",
+        "correct": true
+      },
       {
         "text": "Keep your eyes down so that you will see the position of your feet",
         "correct": false
@@ -1369,14 +1818,21 @@
         "text": "Look down when you step and then look forward",
         "correct": false
       },
-      { "text": "Any of these are acceptable.", "correct": false }
+      {
+        "text": "Any of these are acceptable.",
+        "correct": false
+      }
     ],
     "image": "",
     "referenceLink": ""
   },
   {
     "question": "In the kata Seiyunchin, when stepping in to perform the technique Hojo Oshi the hands should:",
-    "tags": ["Kata", "Seiyunchin", "5th Kyu"],
+    "tags": [
+      "Kata",
+      "Seiyunchin",
+      "5th Kyu"
+    ],
     "answers": [
       {
         "text": "Move from the solar plexus and be aimed at the solar plexus level",
@@ -1390,26 +1846,49 @@
         "text": "Move in a circular motion similar to a block.",
         "correct": false
       },
-      { "text": "None of the above.", "correct": false }
+      {
+        "text": "None of the above.",
+        "correct": false
+      }
     ],
     "image": "",
     "referenceLink": ""
   },
   {
     "question": "When executing Nukite strike in the kata Seiyunchin the fingers must be pointed:",
-    "tags": ["Kata", "Seiyunchin", "5th Kyu"],
+    "tags": [
+      "Kata",
+      "Seiyunchin",
+      "5th Kyu"
+    ],
     "answers": [
-      { "text": "Slightly down", "correct": true },
-      { "text": "Slightly up", "correct": false },
-      { "text": "Straight", "correct": false },
-      { "text": "Any of these are acceptable.", "correct": false }
+      {
+        "text": "Slightly down",
+        "correct": true
+      },
+      {
+        "text": "Slightly up",
+        "correct": false
+      },
+      {
+        "text": "Straight",
+        "correct": false
+      },
+      {
+        "text": "Any of these are acceptable.",
+        "correct": false
+      }
     ],
     "image": "",
     "referenceLink": ""
   },
   {
     "question": "In the kata Seiyunchin when stepping in Shiko Dachi you must:",
-    "tags": ["Seiyunchin", "Kata", "5th Kyu"],
+    "tags": [
+      "Seiyunchin",
+      "Kata",
+      "5th Kyu"
+    ],
     "answers": [
       {
         "text": "Slide the back leg forward in a straight line",
@@ -1419,8 +1898,14 @@
         "text": "Pull the back leg towards the front leg and then proceed to step forward",
         "correct": false
       },
-      { "text": "Lift your leg and stamp down as you step.", "correct": false },
-      { "text": "None of the above.", "correct": false }
+      {
+        "text": "Lift your leg and stamp down as you step.",
+        "correct": false
+      },
+      {
+        "text": "None of the above.",
+        "correct": false
+      }
     ],
     "keepAnswerOrder": true,
     "image": "",
@@ -1428,15 +1913,27 @@
   },
   {
     "question": "When stepping into the second technique in the kata Gekisai Dai Ichi you should:",
-    "tags": ["Gekisai Dai Ichi", "Kata"],
+    "tags": [
+      "Gekisai Dai Ichi",
+      "Kata"
+    ],
     "answers": [
-      { "text": "Step straight into Han Zenkutsu Dachi", "correct": true },
+      {
+        "text": "Step straight into Han Zenkutsu Dachi",
+        "correct": true
+      },
       {
         "text": "Step into Han Zenkutsu Dachi by sliding your foot in a semi circle",
         "correct": false
       },
-      { "text": "Lift your foot in a high stepping motion.", "correct": false },
-      { "text": "None of the above.", "correct": false }
+      {
+        "text": "Lift your foot in a high stepping motion.",
+        "correct": false
+      },
+      {
+        "text": "None of the above.",
+        "correct": false
+      }
     ],
     "keepAnswerOrder": true,
     "image": "",
@@ -1444,15 +1941,26 @@
   },
   {
     "question": "Who was Boddhiharma?",
-    "tags": ["History"],
+    "tags": [
+      "History"
+    ],
     "answers": [
-      { "text": "Higaonna Kanryo's teacher", "correct": false },
+      {
+        "text": "Higaonna Kanryo's teacher",
+        "correct": false
+      },
       {
         "text": "A Buddhist monk who lived in the 6th century and is regarded as the patriarch of the martial arts",
         "correct": true
       },
-      { "text": "Ryu Ryuko's teacher", "correct": false },
-      { "text": "None of the above", "correct": false }
+      {
+        "text": "Ryu Ryuko's teacher",
+        "correct": false
+      },
+      {
+        "text": "None of the above",
+        "correct": false
+      }
     ],
     "keepAnswerOrder": true,
     "image": "",
@@ -1460,12 +1968,27 @@
   },
   {
     "question": "The name \"Bushi\" by which people would call Higaonna Kanryo Sensei means:",
-    "tags": ["Vocabulary", "Higaonna Kanryo"],
+    "tags": [
+      "Vocabulary",
+      "Higaonna Kanryo"
+    ],
     "answers": [
-      { "text": "A distinguished master of karate", "correct": true },
-      { "text": "A Daimyo", "correct": false },
-      { "text": "A founder of karate", "correct": false },
-      { "text": "None of the above", "correct": false }
+      {
+        "text": "A distinguished master of karate",
+        "correct": true
+      },
+      {
+        "text": "A Daimyo",
+        "correct": false
+      },
+      {
+        "text": "A founder of karate",
+        "correct": false
+      },
+      {
+        "text": "None of the above",
+        "correct": false
+      }
     ],
     "keepAnswerOrder": true,
     "image": "",
@@ -1473,7 +1996,9 @@
   },
   {
     "question": "What was the name Goju-Ryu taken from?",
-    "tags": ["History"],
+    "tags": [
+      "History"
+    ],
     "answers": [
       {
         "text": "From the eight precepts of Chinese kenpo as found in the Chinese classic the Bubushi",
@@ -1483,8 +2008,14 @@
         "text": "The name was passed on by Higaonna Kanryo Sensei",
         "correct": false
       },
-      { "text": "Miyagi Chojun Sensei's family motto.", "correct": false },
-      { "text": "None of the above", "correct": false }
+      {
+        "text": "Miyagi Chojun Sensei's family motto.",
+        "correct": false
+      },
+      {
+        "text": "None of the above",
+        "correct": false
+      }
     ],
     "keepAnswerOrder": true,
     "image": "",
@@ -1492,12 +2023,27 @@
   },
   {
     "question": "Which of the katas were created by Miyagi Chojun Sensei?",
-    "tags": ["Miyagi Chojun", "History"],
+    "tags": [
+      "Miyagi Chojun",
+      "History"
+    ],
     "answers": [
-      { "text": "Gekisai Dai Ichi, Gekisai Dai Ni", "correct": false },
-      { "text": "Tensho", "correct": false },
-      { "text": "A modified version of Sanchin", "correct": false },
-      { "text": "All of the above", "correct": true }
+      {
+        "text": "Gekisai Dai Ichi, Gekisai Dai Ni",
+        "correct": false
+      },
+      {
+        "text": "Tensho",
+        "correct": false
+      },
+      {
+        "text": "A modified version of Sanchin",
+        "correct": false
+      },
+      {
+        "text": "All of the above",
+        "correct": true
+      }
     ],
     "keepAnswerOrder": true,
     "image": "",
@@ -1505,7 +2051,10 @@
   },
   {
     "question": "What did Miyagi Chojun Sensei find on his visit to Fuzhou, China?",
-    "tags": ["Miyagi Chojun", "History"],
+    "tags": [
+      "Miyagi Chojun",
+      "History"
+    ],
     "answers": [
       {
         "text": "a) The site where Ryu-Ryuko Sensei’s dojo had once been",
@@ -1515,8 +2064,14 @@
         "text": "b) An old man who was a student of Ryu-Ryuko",
         "correct": false
       },
-      { "text": "Both a & b", "correct": true },
-      { "text": "None of the above.", "correct": false }
+      {
+        "text": "Both a & b",
+        "correct": true
+      },
+      {
+        "text": "None of the above.",
+        "correct": false
+      }
     ],
     "keepAnswerOrder": true,
     "image": "",
@@ -1524,7 +2079,11 @@
   },
   {
     "question": "When executing Shuto Uchi in Gekisai Dai Ichi you should:",
-    "tags": ["Kata", "Gekisai Dai Ichi", "9th Kyu"],
+    "tags": [
+      "Kata",
+      "Gekisai Dai Ichi",
+      "9th Kyu"
+    ],
     "answers": [
       {
         "text": "a) Pull the opposite hand back firmly and look straight in the direction of the strike",
@@ -1534,8 +2093,14 @@
         "text": "b) Assume Hachji Dachi and swing the striking arm aiming at your eye level pulling the opposite hand back firmly into the chamber",
         "correct": false
       },
-      { "text": "Both a and b", "correct": true },
-      { "text": "None of the above.", "correct": false }
+      {
+        "text": "Both a and b",
+        "correct": true
+      },
+      {
+        "text": "None of the above.",
+        "correct": false
+      }
     ],
     "keepAnswerOrder": true,
     "image": "",
@@ -1543,31 +2108,63 @@
   },
   {
     "question": "At the end of all Goju Ryu katas, you must always be in the same place that you started.",
-    "tags": ["Kata"],
+    "tags": [
+      "Kata"
+    ],
     "answers": [
-      { "text": "False", "correct": true },
-      { "text": "True", "correct": false },
-      { "text": "Maybe", "correct": false },
-      { "text": "Only for Heishugata kata", "correct": false }
+      {
+        "text": "False",
+        "correct": true
+      },
+      {
+        "text": "True",
+        "correct": false
+      },
+      {
+        "text": "Maybe",
+        "correct": false
+      },
+      {
+        "text": "Only for Heishugata kata",
+        "correct": false
+      }
     ],
     "image": "",
     "referenceLink": ""
   },
   {
     "question": "Which of the following is the literal translation of Heishugata?",
-    "tags": ["Kata", "Vocabulary"],
+    "tags": [
+      "Kata",
+      "Vocabulary"
+    ],
     "answers": [
-      { "text": "Closed hand kata", "correct": true },
-      { "text": "Open hand kata", "correct": false },
-      { "text": "Empty hand kata", "correct": false },
-      { "text": "Relaxed hand kata", "correct": false }
+      {
+        "text": "Closed hand kata",
+        "correct": true
+      },
+      {
+        "text": "Open hand kata",
+        "correct": false
+      },
+      {
+        "text": "Empty hand kata",
+        "correct": false
+      },
+      {
+        "text": "Relaxed hand kata",
+        "correct": false
+      }
     ],
     "image": "",
     "referenceLink": ""
   },
   {
     "question": "When did Miyagi Chojun Sensei first go to China?",
-    "tags": ["Miyagi Chojun", "History"],
+    "tags": [
+      "Miyagi Chojun",
+      "History"
+    ],
     "answers": [
       {
         "text": "In 1916 after Higaonna Kanryo Sensei passed away",
@@ -1581,7 +2178,10 @@
         "text": "In 1912 after Higaonna Kanryo Sensei passed away",
         "correct": false
       },
-      { "text": "None of the above", "correct": false }
+      {
+        "text": "None of the above",
+        "correct": false
+      }
     ],
     "keepAnswerOrder": true,
     "image": "",
@@ -1589,14 +2189,36 @@
   },
   {
     "question": "In Seiyunchin the Morote Gedan Barai is performed:",
-    "tags": ["Seiyunchin", "Kata", "5th Kyu"],
+    "tags": [
+      "Seiyunchin",
+      "Kata",
+      "5th Kyu"
+    ],
     "answers": [
-      { "text": "a) With Muchimi", "correct": false },
-      { "text": "b) Speed", "correct": false },
-      { "text": "c) Both hands", "correct": false },
-      { "text": "All of the above", "correct": false },
-      { "text": "a & c", "correct": true },
-      { "text": "b & c", "correct": false }
+      {
+        "text": "a) With Muchimi",
+        "correct": false
+      },
+      {
+        "text": "b) Speed",
+        "correct": false
+      },
+      {
+        "text": "c) Both hands",
+        "correct": false
+      },
+      {
+        "text": "All of the above",
+        "correct": false
+      },
+      {
+        "text": "a & c",
+        "correct": true
+      },
+      {
+        "text": "b & c",
+        "correct": false
+      }
     ],
     "image": "",
     "referenceLink": "",
@@ -1604,7 +2226,10 @@
   },
   {
     "question": "What year was Higaonna Kanryo born?",
-    "tags": ["History", "Higaonna Kanryo"],
+    "tags": [
+      "History",
+      "Higaonna Kanryo"
+    ],
     "answers": [
       {
         "correct": true,
@@ -1624,7 +2249,10 @@
   },
   {
     "question": "What year did Higaonna Kanryo die?",
-    "tags": ["History", "Higaonna Kanryo"],
+    "tags": [
+      "History",
+      "Higaonna Kanryo"
+    ],
     "answers": [
       {
         "correct": false,
@@ -1648,9 +2276,15 @@
   },
   {
     "question": "When assuming Yoi position at the beginning of a kata, you should:",
-    "tags": ["Kata", "9th Kyu"],
+    "tags": [
+      "Kata",
+      "9th Kyu"
+    ],
     "answers": [
-      { "text": "a) Keep your palms tight", "correct": false },
+      {
+        "text": "a) Keep your palms tight",
+        "correct": false
+      },
       {
         "text": "b) Focus on your tanden and keep your eyes looking straight ahead",
         "correct": false
@@ -1659,7 +2293,10 @@
         "text": "c) Focus on a point ahead and concentrate on it.",
         "correct": false
       },
-      { "text": "Both a and b", "correct": true }
+      {
+        "text": "Both a and b",
+        "correct": true
+      }
     ],
     "keepAnswerOrder": true,
     "image": "",
@@ -1667,46 +2304,93 @@
   },
   {
     "question": "In the kata Shisochin, after Chudan Ura Kake Uke / Gedan Barai, you then perform:",
-    "tags": ["Kata", "Shisochin", "3rd Kyu"],
+    "tags": [
+      "Kata",
+      "Shisochin",
+      "3rd Kyu"
+    ],
     "answers": [
-      { "text": "Chudan Uchi Kake Uke with Yoko Hiki Uke", "correct": true },
-      { "text": "Morote chudan nukite no kamae", "correct": false },
-      { "text": "Morote chudan nukite", "correct": false },
-      { "text": "Ude Osae", "correct": false }
+      {
+        "text": "Chudan Uchi Kake Uke with Yoko Hiki Uke",
+        "correct": true
+      },
+      {
+        "text": "Morote chudan nukite no kamae",
+        "correct": false
+      },
+      {
+        "text": "Morote chudan nukite",
+        "correct": false
+      },
+      {
+        "text": "Ude Osae",
+        "correct": false
+      }
     ],
     "image": "",
     "referenceLink": ""
   },
   {
     "question": "In the kata Shisochin, after Morote Chudan Ura Kake Uke, you then perform:",
-    "tags": ["Kata", "Shisochin", "3rd Kyu"],
+    "tags": [
+      "Kata",
+      "Shisochin",
+      "3rd Kyu"
+    ],
     "answers": [
-      { "text": "Morote Hiji Ate", "correct": true },
-      { "text": "Morote Chudan Nukite no Kamae", "correct": false },
-      { "text": "Ude Osae", "correct": false },
-      { "text": "Shotei Osae", "correct": false }
+      {
+        "text": "Morote Hiji Ate",
+        "correct": true
+      },
+      {
+        "text": "Morote Chudan Nukite no Kamae",
+        "correct": false
+      },
+      {
+        "text": "Ude Osae",
+        "correct": false
+      },
+      {
+        "text": "Shotei Osae",
+        "correct": false
+      }
     ],
     "image": "",
     "referenceLink": ""
   },
   {
     "question": "Shiko dachi in Seiyunchin is mainly used:",
-    "tags": ["Seiyunchin", "Kata"],
+    "tags": [
+      "Seiyunchin",
+      "Kata"
+    ],
     "answers": [
-      { "text": "To develop a strong and stable stance", "correct": true },
+      {
+        "text": "To develop a strong and stable stance",
+        "correct": true
+      },
       {
         "text": "To assist with proper application of striking techniques",
         "correct": false
       },
-      { "text": "To tire students out", "correct": false },
-      { "text": "To please the instructor", "correct": false }
+      {
+        "text": "To tire students out",
+        "correct": false
+      },
+      {
+        "text": "To please the instructor",
+        "correct": false
+      }
     ],
     "image": "",
     "referenceLink": ""
   },
   {
     "question": "Miyagi Chojun's favorite kata in later years was:",
-    "tags": ["Miyagi Chojun", "History"],
+    "tags": [
+      "Miyagi Chojun",
+      "History"
+    ],
     "answers": [
       {
         "correct": true,
@@ -1730,19 +2414,39 @@
   },
   {
     "question": "Seiyunchin techniques are well suited to:",
-    "tags": ["Seiyunchin", "Kata", "5th Kyu"],
+    "tags": [
+      "Seiyunchin",
+      "Kata",
+      "5th Kyu"
+    ],
     "answers": [
-      { "text": "Someone of large stature", "correct": true },
-      { "text": "A small person", "correct": false },
-      { "text": "Size doesn't matter", "correct": false },
-      { "text": "Okinawan people", "correct": false }
+      {
+        "text": "Someone of large stature",
+        "correct": true
+      },
+      {
+        "text": "A small person",
+        "correct": false
+      },
+      {
+        "text": "Size doesn't matter",
+        "correct": false
+      },
+      {
+        "text": "Okinawan people",
+        "correct": false
+      }
     ],
     "image": "",
     "referenceLink": ""
   },
   {
     "question": "In the Kata Saifa when blocking Hiki Uke as you turn from executing Gedan Tetsui Uchi you block:",
-    "tags": ["Saifa", "Kata", "7th Kyu"],
+    "tags": [
+      "Saifa",
+      "Kata",
+      "7th Kyu"
+    ],
     "answers": [
       {
         "correct": true,
@@ -1762,7 +2466,10 @@
   },
   {
     "question": "What year was Miyagi Anichi born?",
-    "tags": ["History", "Miyagi Anichi"],
+    "tags": [
+      "History",
+      "Miyagi Anichi"
+    ],
     "answers": [
       {
         "correct": true,
@@ -1786,7 +2493,10 @@
   },
   {
     "question": "What year did Miyagi Anichi pass away?",
-    "tags": ["History", "Miyagi Anichi"],
+    "tags": [
+      "History",
+      "Miyagi Anichi"
+    ],
     "answers": [
       {
         "correct": true,
@@ -1810,79 +2520,171 @@
   },
   {
     "question": "What was Higaonna Kanryo called when he was a boy?",
-    "tags": ["Higaonna Kanryo", "History"],
+    "tags": [
+      "Higaonna Kanryo",
+      "History"
+    ],
     "answers": [
-      { "text": "Machu", "correct": true },
-      { "text": "Kensei", "correct": false },
-      { "text": "Ashi", "correct": false },
-      { "text": "Kime", "correct": false }
+      {
+        "text": "Machu",
+        "correct": true
+      },
+      {
+        "text": "Kensei",
+        "correct": false
+      },
+      {
+        "text": "Ashi",
+        "correct": false
+      },
+      {
+        "text": "Kime",
+        "correct": false
+      }
     ],
     "image": "",
     "referenceLink": ""
   },
   {
     "question": "How many years did Higaonna Kanryo Sensei spend in China?",
-    "tags": ["Higaonna Kanryo", "History"],
+    "tags": [
+      "Higaonna Kanryo",
+      "History"
+    ],
     "answers": [
-      { "text": "Between 13-14 years", "correct": true },
-      { "text": "25 years", "correct": false },
-      { "text": "10 years", "correct": false },
-      { "text": "Most of his life", "correct": false }
+      {
+        "text": "Between 13-14 years",
+        "correct": true
+      },
+      {
+        "text": "25 years",
+        "correct": false
+      },
+      {
+        "text": "10 years",
+        "correct": false
+      },
+      {
+        "text": "Most of his life",
+        "correct": false
+      }
     ],
     "image": "",
     "referenceLink": ""
   },
   {
     "question": "At what age did Miyagi Chojun Sensei start training with Higaonna Kanryo Sensei.",
-    "tags": ["Miyagi Chojun", "History"],
+    "tags": [
+      "Miyagi Chojun",
+      "History"
+    ],
     "answers": [
-      { "text": "Fourteen", "correct": true },
-      { "text": "Twelve", "correct": false },
-      { "text": "Sixteen", "correct": false },
-      { "text": "Twenty", "correct": false }
+      {
+        "text": "Fourteen",
+        "correct": true
+      },
+      {
+        "text": "Twelve",
+        "correct": false
+      },
+      {
+        "text": "Sixteen",
+        "correct": false
+      },
+      {
+        "text": "Twenty",
+        "correct": false
+      }
     ],
     "image": "",
     "referenceLink": ""
   },
   {
     "question": "When did Higaonna Kanryo Sensei start to teach karate at a public high school?",
-    "tags": ["Higaonna Kanryo", "History"],
+    "tags": [
+      "Higaonna Kanryo",
+      "History"
+    ],
     "answers": [
-      { "text": "1905", "correct": true },
-      { "text": "1910", "correct": false },
-      { "text": "1912", "correct": false },
-      { "text": "1916", "correct": false }
+      {
+        "text": "1905",
+        "correct": true
+      },
+      {
+        "text": "1910",
+        "correct": false
+      },
+      {
+        "text": "1912",
+        "correct": false
+      },
+      {
+        "text": "1916",
+        "correct": false
+      }
     ],
     "image": "",
     "referenceLink": ""
   },
   {
     "question": "Sensei Miyagi Chojun included the forward step from Gekisai Dai Ichi at the end of the Kata to represent:",
-    "tags": ["Miyagi Chojun", "Gekisai Dai Ichi", "History"],
+    "tags": [
+      "Miyagi Chojun",
+      "Gekisai Dai Ichi",
+      "History"
+    ],
     "answers": [
-      { "text": "The country moving forward", "correct": true },
-      { "text": "Japan at war", "correct": false },
-      { "text": "Goju Ryu getting bigger", "correct": false },
-      { "text": "His birthday", "correct": false }
+      {
+        "text": "The country moving forward",
+        "correct": true
+      },
+      {
+        "text": "Japan at war",
+        "correct": false
+      },
+      {
+        "text": "Goju Ryu getting bigger",
+        "correct": false
+      },
+      {
+        "text": "His birthday",
+        "correct": false
+      }
     ],
     "image": "",
     "referenceLink": ""
   },
   {
     "question": "Which of the following is the meaning of \"Chiru no Chan Chan\"? ",
-    "tags": ["Vocabulary"],
+    "tags": [
+      "Vocabulary"
+    ],
     "answers": [
-      { "text": "Muscle tension with flexibility", "correct": true },
-      { "text": "Heavy and Sticky", "correct": false },
-      { "text": "Awareness", "correct": false },
-      { "text": "Throwing-off techniques", "correct": false }
+      {
+        "text": "Muscle tension with flexibility",
+        "correct": true
+      },
+      {
+        "text": "Heavy and Sticky",
+        "correct": false
+      },
+      {
+        "text": "Awareness",
+        "correct": false
+      },
+      {
+        "text": "Throwing-off techniques",
+        "correct": false
+      }
     ],
     "image": "",
     "referenceLink": ""
   },
   {
     "question": "In what year did the Dai Nippon Butoku Kai recognise Goju-ryu Karatedo as a Koryū?",
-    "tags": ["History"],
+    "tags": [
+      "History"
+    ],
     "answers": [
       {
         "correct": true,
@@ -1906,24 +2708,56 @@
   },
   {
     "question": "In the kata Seiyunchin, after moving from Shiko Dachi in Suri Ashi to Heiko Dachi, you perform:",
-    "tags": ["Seiyunchin", "Kata", "5th Kyu"],
+    "tags": [
+      "Seiyunchin",
+      "Kata",
+      "5th Kyu"
+    ],
     "answers": [
-      { "text": "Hojo Oshi", "correct": true },
-      { "text": "Hira Nukite Zuki", "correct": false },
-      { "text": "Morote Gedan Barai", "correct": false },
-      { "text": "Hojo Uke", "correct": false }
+      {
+        "text": "Hojo Oshi",
+        "correct": true
+      },
+      {
+        "text": "Hira Nukite Zuki",
+        "correct": false
+      },
+      {
+        "text": "Morote Gedan Barai",
+        "correct": false
+      },
+      {
+        "text": "Hojo Uke",
+        "correct": false
+      }
     ],
     "image": "",
     "referenceLink": ""
   },
   {
     "question": "In the kata Saifa, after the second Tetsui Uchi, you step into Migi Hanzen Kutsu Dachi and punch:",
-    "tags": ["Saifa", "Kata", "7th Kyu"],
+    "tags": [
+      "Saifa",
+      "Kata",
+      "7th Kyu"
+    ],
     "answers": [
-      { "text": "Hidari Gyaku Zuki at throat height", "correct": true },
-      { "text": "Migi Gyaku Zuki at Jodan height", "correct": false },
-      { "text": "Hidari Gyaku Zuki at Gedan height", "correct": false },
-      { "text": "Hidari Gyaku Zuki at solar plexis height", "correct": false }
+      {
+        "text": "Hidari Gyaku Zuki at throat height",
+        "correct": true
+      },
+      {
+        "text": "Migi Gyaku Zuki at Jodan height",
+        "correct": false
+      },
+      {
+        "text": "Hidari Gyaku Zuki at Gedan height",
+        "correct": false
+      },
+      {
+        "text": "Hidari Gyaku Zuki at solar plexis height",
+        "correct": false
+      }
     ],
     "image": "",
     "referenceLink": ""

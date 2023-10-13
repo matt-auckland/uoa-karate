@@ -1,7 +1,5 @@
 {
-  "bannerText": {
-    "text": "Vaccine Passes are required for training."
-  },
+  "bannerText": {},
   "schedule": [
     {
       "index": 1,

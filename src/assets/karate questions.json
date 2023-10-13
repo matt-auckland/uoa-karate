@@ -1,0 +1,905 @@
+[
+  {
+    "Question": "Who was Ryu Ryu Ko Sensei?",
+    " answerA": "a. Founder of Goju-ryu.",
+    " answerB": "b. Teacher of Kanryo Higaonna.",
+    " answerC": "c. Teacher of Chojun Miyagi.",
+    " answerD": "",
+    " correctAnswer": "b",
+    " tags": "#history"
+  },
+  {
+    "Question": "Who was Kanryo Higaonna Sensei?",
+    " answerA": "a. Teacher of Chojun Miyagi Sensei",
+    " answerB": "b. Founder of Naha-te.",
+    " answerC": "c. Both a & b.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#history"
+  },
+  {
+    "Question": "Who was Chojun Miyagi Sensei?",
+    " answerA": "a. Teacher of Ryu Ryu Ko.",
+    " answerB": "b. Founder of Goju-ryu karate.",
+    " answerC": "c. Teacher of Kanryo Higaonna Sensei.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#history"
+  },
+  {
+    "Question": "Who is An'ichi Miyagi Sensei?",
+    " answerA": "a. Student of Kanryo Higaonna Sensei.",
+    " answerB": "b. Teacher of Chojun Miyagi Sensei.",
+    " answerC": "c. Successor of Chojun Miyagi Sensei.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#history"
+  },
+  {
+    "Question": "When did Kanryo Higaonna Sensei live?",
+    " answerA": "a. 1850-1925.",
+    " answerB": "b. 1853-1915.",
+    " answerC": "c. 1859-1917",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#history"
+  },
+  {
+    "Question": "When did Chojun Miyagi Sensei live?",
+    " answerA": "a. 1853-1916.",
+    " answerB": "b. 1888-1953.",
+    " answerC": "c. 1900-1955",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#history"
+  },
+  {
+    "Question": "How many years did Kanryo Higaonna Sensei spend in China?",
+    " answerA": "a. 25 years.",
+    " answerB": "b. Between 13 and 14 years.",
+    " answerC": "c. Between 5 and 10 years.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#history"
+  },
+  {
+    "Question": "When did Kanryo Higaonna Sensei start to teach karate at a public high school?",
+    " answerA": "a. 1905.",
+    " answerB": "b. 1910.",
+    " answerC": "c. 1912.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#history"
+  },
+  {
+    "Question": "Why was Kanryo Higaonna Sensei called 'Ashi no Higaonna'?",
+    " answerA": "a. He was well known for his exceptionally strong legs.",
+    " answerB": "b. He was very tall.",
+    " answerC": "c. Both a & b.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#history"
+  },
+  {
+    "Question": "Who was Kanryo Higaonna Sensei's successor?",
+    " answerA": "a. Chojun Miyagi Sensei.",
+    " answerB": "b. Ryu Ryu Ko Sensei.",
+    " answerC": "c. An'ichi Miyagi Sensei.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#history"
+  },
+  {
+    "Question": "11) At what age did Chojun Miyagi start training with Kanryo Higaonna Sensei?",
+    " answerA": "a. Fourteen.",
+    " answerB": "b. Sixteen.",
+    " answerC": "c. Twenty.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#history"
+  },
+  {
+    "Question": "12) At what age did Chojun Miyagi start training with Kanryo Higaonna Sensei?",
+    " answerA": "a. Fourteen.",
+    " answerB": "b. Sixteen.",
+    " answerC": "c. Twenty.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#history"
+  },
+  {
+    "Question": "Who was Chojun Miyagi's first karate instructor?",
+    " answerA": "a. Kanryo Higaonna.",
+    " answerB": "b. Ryu Ryu Ko.",
+    " answerC": "c. Ryuko Aragaki.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#history"
+  },
+  {
+    "Question": "Who introduced Chojun Miyagi to Kanryo Higaonna Sensei?",
+    " answerA": "a. Chojun Miyagi's mother.",
+    " answerB": "b. Chojun Miyagi's father.",
+    " answerC": "c. Ryuko Aragaki Sensei.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#history"
+  },
+  {
+    "Question": "Who was Ryuko Aragaki Sensei?",
+    " answerA": "a. First teacher of Kanryo Higaonna.",
+    " answerB": "b. First teacher of Chojun Miyagi.",
+    " answerC": "c. Both a and b",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#history"
+  },
+  {
+    "Question": "When did Chojun Miyagi Sensei first go to China?",
+    " answerA": "a. In 1915 after Higaonna Kanryo Sensei passed away.",
+    " answerB": "b. In 1914 before Higaonna Kanryo Sensei passed away.",
+    " answerC": "c. None of the above.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#history"
+  },
+  {
+    "Question": "What did Chojun Miyagi Sensei find on his visit to Fuzhou, China?",
+    " answerA": "a. The site where Ryu-Ryu Ko Sensei's dojo had once been.",
+    " answerB": "b. An old man who was a student of Ryu Ryu Ko.",
+    " answerC": "c. Both a & b.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#history"
+  },
+  {
+    "Question": "Which of the katas were created by Chojun Miyagi Sensei?",
+    " answerA": "a. Gekisai Dai Ichi, Gekisai Dai Ni.",
+    " answerB": "b. Gekisai Dai Ichi, Gekisai Dai Ni, Tensho and a modified version of Sanchin.",
+    " answerC": "c. None of the above.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#history"
+  },
+  {
+    "Question": "What forms of training did Chojun Miyagi Sensei create?",
+    " answerA": "a. Junbi Undo, a revised Sanchin kata.",
+    " answerB": "b. Hojo Undo, Junbi Undo.",
+    " answerC": "c. A revised Sanchin kata and Hojo Undo.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#history"
+  },
+  {
+    "Question": "When was the name Goju-ryu given?",
+    " answerA": "a. 1930.",
+    " answerB": "b. 1953.",
+    " answerC": "c. 1945.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#history"
+  },
+  {
+    "Question": "What does the name Goju-ryu mean?",
+    " answerA": "a. Hard & Soft Style.",
+    " answerB": "b. Hard Style.",
+    " answerC": "c. Chinese Martial Arts.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#history"
+  },
+  {
+    "Question": "What was the name Goju-ryu taken from?",
+    " answerA": "a. From one of the eight precepts of Chinese kenpo as found in the Chinese classic the Bubushi.",
+    " answerB": "b. The name was passed on by Kanryo Higaonna Sensei.",
+    " answerC": "c. None of the above.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#history"
+  },
+  {
+    "Question": "When were the katas Gekisai Dai Ichi ",
+    " answerA": " Gekisai Dai Ni created?",
+    " answerB": "a. 1940.",
+    " answerC": "b. 1950.",
+    " answerD": "c. 1925.",
+    " correctAnswer": "",
+    " tags": "#history"
+  },
+  {
+    "Question": "Who created the kata Gekisai Dai Ichi",
+    " answerA": " Gekisai Dai Ni?",
+    " answerB": "a. Kanryo Higaonna Sensei.",
+    " answerC": "b. Chojun Miyagi Sensei.",
+    " answerD": "c. Ryu Ryu Ko Sensei.",
+    " correctAnswer": "",
+    " tags": "#history"
+  },
+  {
+    "Question": "Which of the Goju-ryu kata did not originate in China?",
+    " answerA": "a. Gekisai Dai Ichi, Gekisai Dai Ni",
+    " answerB": "b. Sanseru, Sepai, Sesan",
+    " answerC": "c. Suparinpei, Saifa, Shisochin",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#history"
+  },
+  {
+    "Question": "The founder of Goju-ryu karate was:",
+    " answerA": "a. Kanryo Higaonna Sensei.",
+    " answerB": "b. Chojun Miyagi Sensei.",
+    " answerC": "c. Ryuko Aragaki Sensei.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#history"
+  },
+  {
+    "Question": "The name 'Bushi' by which people would call Kanryo Higaonna Sensei means:",
+    " answerA": "a. A distinguished master of karate.",
+    " answerB": "b. A Daimyo.",
+    " answerC": "c. None of the above.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#history"
+  },
+  {
+    "Question": "Kanryo Higaonna Sensei taught and spread the martial art called:",
+    " answerA": "a. Naha-te.",
+    " answerB": "b. Shuri-te.",
+    " answerC": "c. Goju-ryu.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#history"
+  },
+  {
+    "Question": "Chojun Miyagi Sensei is considered the founder of Goju-ryu because:",
+    " answerA": "a. He invented the katas of Goju-ryu.",
+    " answerB": "b. He brought Goju-ryu karate to Okinawa from China.",
+    " answerC": "c. He systemized the style, named it, and through his efforts it was recognized as a martial art by the Japanese Butokukai.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#history"
+  },
+  {
+    "Question": "Who was Bodhidharma?",
+    " answerA": "a. A Buddhist monk who lived in the 6th century and is regarded as the patriarch of the martial arts.",
+    " answerB": "b. Kanryo Higaonna's teacher.",
+    " answerC": "c. Both a and b.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#history"
+  },
+  {
+    "Question": "What is the lineage of Okinawan Goju-ryu karate?",
+    " answerA": "a. Ryu Ryuko Sensei/Kanryo Higaonna Sensei/Chojun Miyagi Sensei/An'ichi Miyagi Sensei/Morio Higaonna Sensei.",
+    " answerB": "b. Kanryo Higaonna Sensei/Ryu Ryuko Sensei/An'ichi Miyagi Sensei/Morio Higaonna Sensei.",
+    " answerC": "c. Ryu Ryuko Sensei/Morio Higaonna Sensei/Chojun Miyagi Sensei/An'ichi Miyagi Sensei.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#history"
+  },
+  {
+    "Question": "What were the names of the original main karate styles in Okinawa.",
+    " answerA": "a. Naha-te",
+    " answerB": " Shuri-te",
+    " answerC": " Tomari-te.",
+    " answerD": "b. Naha-te",
+    " correctAnswer": " Tomari-te",
+    " tags": " Uechi-ryu."
+  },
+  {
+    "Question": "Which kata did Kanryo Higaonna Sensei bring to Okinawa after studying in China?",
+    " answerA": "a. Gekisai Dai Ichi, Gekisai dai Ni",
+    " answerB": "b. Only the kata whose names have numbers",
+    " answerC": "c. Saifa, Seiyunchin, Shisochin, Sanseru. Sepai, Kururunfa, Sesan, Suparinpei, Sanchin",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#history"
+  },
+  {
+    "Question": "What did Kanryo Higaonna study in China in addition to empty handed fighting arts?",
+    " answerA": "a. Weapons.",
+    " answerB": "b. Chinese medicine.",
+    " answerC": "c. Both a and b.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#history"
+  },
+  {
+    "Question": "When was the \"Karate Kenkyu Club\" (Karate Research Club) founded?",
+    " answerA": "a. 1925.",
+    " answerB": "b. 1926.",
+    " answerC": "c. 1936.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#history"
+  },
+  {
+    "Question": "Who were the instructors at the \"Karate Kenkyu Club\" (Karate Research Club)?",
+    " answerA": "a. Chojun Miyagi, Choyu Motobu, Kenwa Mabuni, Chomo Hanashiro.",
+    " answerB": "b. Chojun Miyagi, Jin'an Shinzato, Seiko Kina, Ryuko Aragaki.",
+    " answerC": "c. Chojun Miyagi, Jin'an Shinzato, An'ichi Miyagi, Morio Higaonna.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#history"
+  },
+  {
+    "Question": "What was Chojun Miyagi Sensei’s nickname and why?",
+    " answerA": "a. Chikudan Peichin, because he was a nobleman",
+    " answerB": "b. Nikutui Magushiku because he could tear raw meat with his bare hands",
+    " answerC": "c. Both a and b.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#history"
+  },
+  {
+    "Question": "When speaking of Chojun Miyagi Sensei",
+    " answerA": " what term of resepct is added to his name?",
+    " answerB": "a. Shihan",
+    " answerC": "b. Taika",
+    " answerD": "c. Bushi",
+    " correctAnswer": "",
+    " tags": "#history"
+  },
+  {
+    "Question": "Who was Chojun Miyagi Sensei’s top student before World war II?",
+    " answerA": "a. Shinzato Jin’an",
+    " answerB": "b. Miyagi An’ichi",
+    " answerC": "c. Both a and b",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#history"
+  },
+  {
+    "Question": "Who was Chojun Miyagi Sensei’s top student after World War II?",
+    " answerA": "a. Shinzato Jin’an",
+    " answerB": "b. Miyagi An’ichi",
+    " answerC": "c. Both a and b",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#history"
+  },
+  {
+    "Question": "Who was the last person ever to be taught by Chojun Miyagi Sensei?",
+    " answerA": "a. Miyagi An’ichi",
+    " answerB": "b. Kanryo Higaonna",
+    " answerC": "c. None of the above",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#history"
+  },
+  {
+    "Question": "Explain why Chojun Miyagi Sensei created the kata Gekisai Dai Ichi and Gekisai dai Ni?",
+    " answerA": "",
+    " answerB": "",
+    " answerC": "",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#history"
+  },
+  {
+    "Question": ""
+  },
+  {
+    "Question": "What are the 'Hojo Undo'?",
+    " answerA": "a. The katas of Goju-Ryu.",
+    " answerB": "b. Preliminary warming up exercises.",
+    " answerC": "d. The traditional supplemental training apparatus of Goju-Ryu.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#technical"
+  },
+  {
+    "Question": "Which kata are referred to as 'Kaishugata'?",
+    " answerA": "a. All the kata except for Sanchin and Tensho.",
+    " answerB": "b. Sanchin and Tensho.",
+    " answerC": "c. All the Goju-ryu kata.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#technical"
+  },
+  {
+    "Question": "Which kata are referred to as 'Heishugata'?",
+    " answerA": "a. Sanchin and Tensho.",
+    " answerB": "b. All the Goju-ryu kata.",
+    " answerC": "c. All the kata except Sanchin and Tensho.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#technical"
+  },
+  {
+    "Question": "The first stance that you step into in the kata Gekisai Dai Ichi is:",
+    " answerA": "a. Sanchin dachi.",
+    " answerB": "b. Zenkutsu dachi.",
+    " answerC": "c. Han-zenkutsu dachi.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#technical"
+  },
+  {
+    "Question": "When executing shuto uchi in the kata Gekisai Dai Ichi, you assume the stance:",
+    " answerA": "a. Heiko dachi.",
+    " answerB": "b. Hachiji dachi.",
+    " answerC": "c. Musubi dachi.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#technical"
+  },
+  {
+    "Question": "When stepping into the second techniques in the kata Gekisai Dai Ichi, you should:",
+    " answerA": "a. Step straight into Han zenkutsu dachi",
+    " answerB": "b. Step into Han zenkutsu dachi by sliding your foot in a semi circle",
+    " answerC": "c. Neither one is correct",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#technical"
+  },
+  {
+    "Question": "When stepping into shiko dachi in the kata Gekisai Dai Ichi, you should:",
+    " answerA": "a. Keep your eyes fixed on the same point as they were during the previous technique.",
+    " answerB": "b. Look to the front and then look to side again.",
+    " answerC": "c. Look straight forward.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#technical"
+  },
+  {
+    "Question": "When executing shuto uchi in Gekisai Dai Ichi, you should:",
+    " answerA": "a. Pull the opposite hand back firmly and look straight in the direction of the strike.",
+    " answerB": "b. Assume hachiji dachi and swing the striking arm aimed at your eye level, pulling the opposite hand back firmly into the chamber.",
+    " answerC": "c. Both a and b.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#technical"
+  },
+  {
+    "Question": "When executing mae geri in the katas Gekisai, you aim at:",
+    " answerA": "a. Jodan level.",
+    " answerB": "b. Chudan level.",
+    " answerC": "c. Gedan level.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#technical"
+  },
+  {
+    "Question": "In the kata Gekisai Dai Ichi, when you step into musubi dachi at the end of the kata, you must:",
+    " answerA": "a. Step forward.",
+    " answerB": "b. Step back.",
+    " answerC": "d. Either way is correct.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#technical"
+  },
+  {
+    "Question": "In the kata Gekisai Dai Ni, when stepping forward and back while executing hiki uke, you should:",
+    " answerA": "a. Step straight forward and straight back.",
+    " answerB": "b. Step forward and back while sliding your foot in a semi circle.",
+    " answerC": "c. Step 45o forward and back.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#technical"
+  },
+  {
+    "Question": "When stepping into neko ashi dachi in the kata Gekisai Dai Ni, you should:",
+    " answerA": "a. Step back in a 45o angle for the first one, and then step straight to the side for the second one.",
+    " answerB": "b. Step back in a 45o angle for the first one, and then step back in 45 degree angle again for the second one.",
+    " answerC": "c. Either way is correct.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#technical"
+  },
+  {
+    "Question": "When executing gyaku zuki in the kata Gekisai Dai Ichi and Dai Ni, you should:",
+    " answerA": "a. Turn your hips in, push the back knee so that it is tight, and keep your back straight.",
+    " answerB": "b. Pull the opposite hand back with full force",
+    " answerC": " push your ankle down as if into the floor",
+    " answerD": " and focus your concentration on your tanden and on your seiken.",
+    " correctAnswer": "c. Both a and b.",
+    " tags": "#technical"
+  },
+  {
+    "Question": "When taking the first step and assuming musubi dachi in the kata Saifa, you should be looking:",
+    " answerA": "a. Straight ahead (from where you are standing).",
+    " answerB": "b. Over your right shoulder.",
+    " answerC": "c. Over your left shoulder.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#technical"
+  },
+  {
+    "Question": "After the third shiko dachi in the kata Saifa, as you step to the left to execute the chudan,gedan open handed blocks, your eyes should:",
+    " answerA": " a. Remain looking over your right shoulder.",
+    " answerB": "b. Look to front and then look to the left.",
+    " answerC": "c. Look to the front and then look to the right.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#technical"
+  },
+  {
+    "Question": "When executing the technique heiko zuki in the kata Saifa, your fists should be:",
+    " answerA": "a. Higher than your shoulders.",
+    " answerB": "b. At shoulder level.",
+    " answerC": "d. Lower than your shoulders.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#technical"
+  },
+  {
+    "Question": "When executing gedan tetsui uchi in the kata Saifa:",
+    " answerA": "a. You must lean forward and look down.",
+    " answerB": "b. Keep your back straight and keep your eyes looking at eye level.",
+    " answerC": "c. Keep your back straight and look down.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#technical"
+  },
+  {
+    "Question": "After executing jodan tetsui uchi in the kata Saifa, as you pull one hand down and strike yoko ura zuki with the other:",
+    " answerA": "a. You must turn your hips and shoulders into the technique to achieve maximum power.",
+    " answerB": "b. You must keep your hips and shoulders straight and look to the side.",
+    " answerC": "c. You must keep your hips and shoulders straight and look straight ahead at eye level.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#technical"
+  },
+  {
+    "Question": "On the last step of the kata Saifa, when executing haito uchi:",
+    " answerA": "a. You must pull the left hand in straight and swing the right hand like a whip.",
+    " answerB": "b. Pull the left hand in straight and pull the right hand around in a short snappy motion.",
+    " answerC": "c. None of the above.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#technical"
+  },
+  {
+    "Question": "When kicking mae geri in the kata Saifa, you must aim at:",
+    " answerA": "a. Jodan level.",
+    " answerB": "b. Chudan level.",
+    " answerC": "c. Gedan level.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#technical"
+  },
+  {
+    "Question": "When executing mae geri in the kata Saifa, you must:",
+    " answerA": "a. Use your hips to execute a strong kick.",
+    " answerB": "b. Snap strong and fast while keeping your hips in place.",
+    " answerC": "c. Either way is correct.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#technical"
+  },
+  {
+    "Question": "In the kata Seiyunchin, when stepping in shiko dachi you must:",
+    " answerA": "a. Slide the back leg forward in a straight line.",
+    " answerB": "b. Pull the back leg towards the front leg and then proceed to step forward.",
+    " answerC": "e. Either way is correct. ",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#technical"
+  },
+  {
+    "Question": "In the kata Seiyunchin, when stepping in shiko dachi you must:",
+    " answerA": "a. Keep your eyes down so that you will see the position of your feet.",
+    " answerB": "b. Keep looking straight ahead at eye level.",
+    " answerC": "c. Look down when you step and then look forward.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#technical"
+  },
+  {
+    "Question": "In the kata Seiyunchin, when stepping in to perform the technique hojo oshi, the hands should:",
+    " answerA": "a. Move from the solar plexus and be aimed at your solar plexus level.",
+    " answerB": "b. Start from the side of the body and be aimed at the vital point ganka.",
+    " answerC": "c. None of the above.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#technical"
+  },
+  {
+    "Question": "In the kata Seiyunchin, the reason for stepping in shiko dachi is:",
+    " answerA": "a. To develop strong legs.",
+    " answerB": "b. To assist in the application of the technique.",
+    " answerC": "c. Both a and b.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#technical"
+  },
+  {
+    "Question": "The most powerful technique in the kata Seiyunchin is:",
+    " answerA": "a. Age zuki.",
+    " answerB": "b. Sukui uke.",
+    " answerC": "c. The gedan barai that is executed while stepping forward and back in shiko dachi",
+    " answerD": " after the hojo uke.",
+    " correctAnswer": "",
+    " tags": "#technical"
+  },
+  {
+    "Question": "When executing the nukite strikes in the kata Seiyunchin, the fingers must be pointed:",
+    " answerA": "a. Slightly up.",
+    " answerB": "b. Slightly down.",
+    " answerC": "c. Straight.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#technical"
+  },
+  {
+    "Question": "When executing the nukite strikes in the kata Seiyunchin, the fingers must be:",
+    " answerA": "a. Spread apart.",
+    " answerB": "b. Tightly pushed against each other.",
+    " answerC": "c. Either way is correct.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#technical"
+  },
+  {
+    "Question": "When executing the technique hari uke in the kata Seiyunchin, the palms of the hands must be:",
+    " answerA": "a. Relaxed.",
+    " answerB": "b. Tight.",
+    " answerC": "d. Either way is correct.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#technical"
+  },
+  {
+    "Question": "When executing the technique kuri uke in the kata Seiyunchin, you must focus your concentration on:",
+    " answerA": "a. Your elbows.",
+    " answerB": "b. Your finger tips.",
+    " answerC": "c. First a then b.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#technical"
+  },
+  {
+    "Question": "When stepping in shiko dachi in the kata Seiyunchin, you must:",
+    " answerA": "a. Keep your hips low and not raise them as you step.",
+    " answerB": "b. Keep your hips low but raise them when you step.",
+    " answerC": "c. Either way is correct.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#technical"
+  },
+  {
+    "Question": "In the kata Shisochin, the first nukite strikes are aimed at:",
+    " answerA": "a. Kinteki.",
+    " answerB": "b. Tanden.",
+    " answerC": "c. Ganka.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#technical"
+  },
+  {
+    "Question": "In the kata Shisochin, when striking shotei zuki:",
+    " answerA": "a. You must keep your hips and shoulders square and facing the front.",
+    " answerB": "b. Turn your shoulders into the technique to generate more power.",
+    " answerC": "c. Either way is correct.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#technical"
+  },
+  {
+    "Question": "The elbow strikes in the kata Shisochin are aimed at:",
+    " answerA": "a. Jodan level.",
+    " answerB": "b. Chudan level.",
+    " answerC": "c. They can be aimed at either Jodan or Chudan.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#technical"
+  },
+  {
+    "Question": "When kicking mae geri in the kata Shisochin, you aim at:",
+    " answerA": "a. Jodan level.",
+    " answerB": "b. Chudan level.",
+    " answerC": "c. Gedan level.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#technical"
+  },
+  {
+    "Question": "When blocking hiki uke in the kata Shisochin, you block:",
+    " answerA": "a. Jodan level.",
+    " answerB": "b. Chudan level.",
+    " answerC": "c. Either way is correct.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#technical"
+  },
+  {
+    "Question": "When executing the nukite strikes in the kata Shisochin you must:",
+    " answerA": "a. Keep your fingers tight together.",
+    " answerB": "b. Keep your fingers wide apart.",
+    " answerC": "c. Either way is correct.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#technical"
+  },
+  {
+    "Question": "In the kata Sanseru:",
+    " answerA": "a. The the first three punches are pulled back to chudan uke position.",
+    " answerB": "b. The first two punches are pulled back to chudan uke position",
+    " answerC": " and the third punch is left out.",
+    " answerD": "c. The first three punches are pulled back to chudan uke position",
+    " correctAnswer": " and the fourth punch is left out.",
+    " tags": "#technical"
+  },
+  {
+    "Question": "In the kata Sanseru, after the last punch in the beginning sequence:",
+    " answerA": "a. Turn the left fist up while slowly pulling the fist back to chamber; the right fist opens and turns, focusing tension in the wrist.",
+    " answerB": "b. Pull the left fist back, as is, to chamber; the right fist opens and performs hiki uke.",
+    " answerC": "c. None of the above.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#technical"
+  },
+  {
+    "Question": "In the kata Sanseru, the first two mae geri are to be executed:",
+    " answerA": "a. Slow, waiting a full second between each kick, pulling your hands back to chamber.",
+    " answerB": "b. Lightning fast, leaving your hands in the position of the last movement.",
+    " answerC": "c. Lightning fast, pulling your hands back to chamber.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#technical"
+  },
+  {
+    "Question": "In the kata Sanseru, the kansetsu geri are aimed at:",
+    " answerA": "a. Gedan level.",
+    " answerB": "b. Chudan level.",
+    " answerC": "c. Jodan level.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#technical"
+  },
+  {
+    "Question": "In the kata Sanseru, the kansetsu geri are executed:",
+    " answerA": "a. Straight out to the side.",
+    " answerB": "b. At a 45o angle down.",
+    " answerC": "c. Either way is correct.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#technical"
+  },
+  {
+    "Question": "In the kata Sanseru, when executing kansetsu geri:",
+    " answerA": "a. Keep the hips and body straight, kicking at a 45o angle.",
+    " answerB": "b. Turn the hips into the kick, kicking at a 45o angle.",
+    " answerC": "c. Turn the hips into the kick, kicking to the side.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#technical"
+  },
+  {
+    "Question": "In the kata Sanseru, the elbow strikes are aimed at:",
+    " answerA": "a. Gedan level.",
+    " answerB": "b. Chudan level.",
+    " answerC": "c. Jodan level.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#technical"
+  },
+  {
+    "Question": "When performing kosa uke in the kata Sanseru, the shiko dachi is:",
+    " answerA": "a. Normal.",
+    " answerB": "b. Lower than normal.",
+    " answerC": "c. Higher than normal.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#technical"
+  },
+  {
+    "Question": "When executing the last morote ko uke technique in the kata Sanseru:",
+    " answerA": "a. The right hand executes age uke, while the left hand executes yoko uke.",
+    " answerB": "b. The right hand executes yoko uke, while the left hand executes age uke.",
+    " answerC": "c. None of the above.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#technical"
+  },
+  {
+    "Question": "In the kata Sepai, the first nukite strike is aimed at:",
+    " answerA": "a. Eye level.",
+    " answerB": "b. Throat level.",
+    " answerC": "c. Solar plexus level:\"",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#technical"
+  },
+  {
+    "Question": "When performing kokutsu dachi in the kata Sepai:",
+    " answerA": "a. The feet are lined up in a straight line from each other.",
+    " answerB": "b. The feet are in zenkutsu dachi stance.",
+    " answerC": "c. Neither one is correct.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#technical"
+  },
+  {
+    "Question": "When performing shuto uchi in the kata Sepai:",
+    " answerA": "a. Snap the hips forward, keeping the feet in a straight line.",
+    " answerB": "b. Snap the hips forward, stepping into zenkutsu dachi.",
+    " answerC": "c. a. is correct, but b. is acceptable.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#technical"
+  },
+  {
+    "Question": "When performing morote naka daka ippon ken gedan zuki in the kata Sepai, the shiko dachi should be:",
+    " answerA": "a. Normal.",
+    " answerB": "b. Higher than normal.",
+    " answerC": "c. Lower than normal.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#technical"
+  },
+  {
+    "Question": "In the kata Sepai, after performing gedan barai, use suri ashi to slide back into hidari neko ashi dachi facing shomen and perform:",
+    " answerA": "a. Left chudan yoko uke and a right jodan furi zuki.",
+    " answerB": "b. Left jodan yoko uke and right jodan furi zuki.",
+    " answerC": "c. Right chudan yoko uke and a left jodan furi zuki.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#technical"
+  },
+  {
+    "Question": "While executing bensoku dachi in the kata Sepai:",
+    " answerA": "a. Both feet should be flat on the ground.",
+    " answerB": "b. The right foot is flat on the ground, but the left heel is raised.",
+    " answerC": "c. a. is correct but b. is acceptable.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#technical"
+  },
+  {
+    "Question": "From left chudan hiki uke in the kata Sepai:",
+    " answerA": "a. Snap the hips 90° to the right, executing a left heiken gedan uchi.",
+    " answerB": "b. Snap the hips 90° to the right, executing a left gedan barai.",
+    " answerC": "c. Keep the hips rigid while pivoting your body to the right, executing a left heiken gedan uchi.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#technical"
+  },
+  {
+    "Question": "In the kata Sepai, after executing the mae geri:",
+    " answerA": "a. Pull the leg back into shiko dachi, executing ura zuki and pulling the opposite fist back to chamber.",
+    " answerB": "b. Pull the leg back into heiko dachi, executing ura zuki and pulling the opposite palm heel to the solar plexus.",
+    " answerC": "c. Pull the leg back into shiko dachi, executing ura zuki and pulling the opposite palm heel to the solar plexus.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#technical"
+  },
+  {
+    "Question": "In the kata Sepai the morote mawashi uchi is executed at:",
+    " answerA": "a. Solar plexus level.",
+    " answerB": "b. Tanden level.",
+    " answerC": "c. Knee level.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#technical"
+  },
+  {
+    "Question": "Sanchin kata is a:",
+    " answerA": "a. Kaishugata.",
+    " answerB": "b. Heishugata.",
+    " answerC": "c. Both a and b.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#technical"
+  },
+  {
+    "Question": "Sanchin kata is considered a heishugata because:",
+    " answerA": "a. Tension is maintained throughout your body during the entire kata.",
+    " answerB": "b. Tension is used only when you are at the point of impact (kime).",
+    " answerC": "c. Your hands are kept closed during the whole kata.",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#technical"
+  },
+  {
+    "Question": "When practicing Sanchin kata you must:",
+    " answerA": "a. Roll up your lower abdomen and keep your tanden tight the entire time.",
+    " answerB": "b. Keep your tanden tight when you stand and relax it when you step.",
+    " answerC": "",
+    " answerD": "",
+    " correctAnswer": "",
+    " tags": "#technical"
+  }
+]
