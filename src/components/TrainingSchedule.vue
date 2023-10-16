@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import config from "../assets/config.json";
+import config from "@/assets/config.json";
 
 export default {
   name: "TrainingSchedule",

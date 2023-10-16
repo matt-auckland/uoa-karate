@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <SitewideBanner />
-    <Site-Header />
-    <router-view />
+    <SiteHeader />
+    <RouterView />
     <Footer>
       <QuoteDisplay class="quote-display" />
       <div class="github">
@@ -62,7 +62,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
   text-align: left;
-  color: var(--base-font-color);
   background-color: #070707;
   color: var(--base-font-color);
   padding: 0 5vw;
@@ -112,6 +111,7 @@ button.active {
 .bold {
   font-weight: bold;
 }
+
 .center-txt {
   text-align: center;
 }

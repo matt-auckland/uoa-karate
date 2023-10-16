@@ -1,17 +1,8 @@
-import Vue from 'vue';
+import { createApp } from 'vue';
 import App from './App.vue';
 import router from './router';
 
 
-import AppImage from './components/Image.vue';
-import HeroImage from './components/HeroImage.vue';
-
-Vue.config.productionTip = false;
-Vue.component('app-image', AppImage);
-Vue.component('HeroImage', HeroImage);
-
-
-new Vue({
-  router,
-  render: h => h(App),
-}).$mount('#app');
+const app = createApp(App)
+app.use(router)
+app.mount('#app');

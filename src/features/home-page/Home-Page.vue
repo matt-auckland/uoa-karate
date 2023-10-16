@@ -1,12 +1,8 @@
 <template>
   <content>
     <div class="container">
-      <HeroImage
-        class="hero-image"
-        source="/group-photo.jpg"
-        heading="Welcome to our Dojo"
-        paragraph="People with any level of experience and from any martial arts background are welcome to train, both students and non-students alike. We have beginner specific training at the start of every semester but accept new members year round."
-      />
+      <HeroImage class="hero-image" source="/group-photo.jpg" heading="Welcome to our Dojo"
+                 paragraph="People with any level of experience and from any martial arts background are welcome to train, both students and non-students alike. We have beginner specific training at the start of every semester but accept new members year round." />
       <TrainingSchedule class="schedule" />
       <FeesTable class="fees" />
       <UpcomingEvents class="events" />
@@ -23,6 +19,7 @@ import FeesTable from "@/components/fees-table/FeesTable.vue";
 import ClubMap from "@/components/ClubMap.vue";
 import ContactForm from "@/components/ContactForm.vue";
 import UpcomingEvents from "@/components/UpcomingEvents.vue";
+import HeroImage from "@/components/HeroImage.vue";
 
 export default {
   name: "home-page",
@@ -32,8 +29,9 @@ export default {
     FeesTable,
     ContactForm,
     UpcomingEvents,
+    HeroImage
   },
-  data: function() {
+  data: function () {
     return {};
   }
 };
@@ -70,12 +68,14 @@ content {
       "map map"
       "contact contact";
   }
+
   .container {
     grid-template-areas:
       "hero hero"
       "schedule schedule"
       "fees fees";
   }
+
   .events {
     display: none;
   }
@@ -121,6 +121,7 @@ content {
 .second-image {
   grid-area: second-image;
 }
+
 .contact-form {
   grid-area: contact;
 }

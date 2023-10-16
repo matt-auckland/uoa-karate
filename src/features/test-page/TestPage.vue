@@ -7,20 +7,11 @@
       <fieldset class="category-fieldset">
         <legend>Categories</legend>
         <div class="category-container">
-          <div
-            class="checkbox-div"
-            v-for="category in questionCategories"
-            v-bind:key="category"
-            :style="'grid-column: span ' + (3 + Math.round(category.length/2)) + ';'"
-            :class="{active: selectedCategories.includes(category), large: category.length >= 8, 'ex-large': category.length >= 13}"
-          >
-            <input
-              type="checkbox"
-              :id="category"
-              :value="category"
-              v-model="selectedCategories"
-              v-on:change="filterQuestions()"
-            >
+          <div class="checkbox-div" v-for="category in questionCategories" v-bind:key="category"
+               :style="'grid-column: span ' + (3 + Math.round(category.length / 2)) + ';'"
+               :class="{ active: selectedCategories.includes(category), large: category.length >= 8, 'ex-large': category.length >= 13 }">
+            <input type="checkbox" :id="category" :value="category" v-model="selectedCategories"
+                   v-on:change="filterQuestions()">
             <label :for="category">{{ category }}</label>
           </div>
         </div>
@@ -30,40 +21,27 @@
         <span>
           Available questions for this current selection: {{ unansweredQuestions.length }}
         </span>
-        <button
-          v-on:click="randomQuestion()"
-          v-if="unansweredQuestions.length > 1"
-          class="new-question-button"
-        >New question</button>
+        <button v-on:click="randomQuestion()" v-if="unansweredQuestions.length > 1" class="new-question-button">New
+          question</button>
       </div>
 
-      <QuestionComponent
-        :randomQuestion="randomQuestion"
-        :recordAnswer="recordAnswer"
-        :questionProp="currentQuestion"
-        :allQuestionsAnswered="unansweredQuestions.length === 0 && answeredQuestions.length !== 0"
-      >
+      <QuestionComponent :randomQuestion="randomQuestion" :recordAnswer="recordAnswer" :questionProp="currentQuestion"
+                         :allQuestionsAnswered="unansweredQuestions.length === 0 && answeredQuestions.length !== 0">
       </QuestionComponent>
 
     </div>
     <div class="answer-tracker">
       <h2>Score</h2>
       <hr>
-      <span class="">Correct: {{ scoreObj.correctAnswers }}/{{ scoreObj.total()}}</span>
-      <span>Incorrect: {{ scoreObj.incorrectAnswers }}/{{ scoreObj.total()}}</span>
+      <span class="">Correct: {{ scoreObj.correctAnswers }}/{{ scoreObj.total() }}</span>
+      <span>Incorrect: {{ scoreObj.incorrectAnswers }}/{{ scoreObj.total() }}</span>
     </div>
 
     <footer>
-      <a
-        class="footer-link"
-        href="https://forms.gle/GQsceE4whb8X58866"
-        target="_blank"
-      > Click here to suggest a new question</a>
-      <a
-        class="footer-link"
-        href="https://forms.gle/GzmqkTZHEtGhGYu96"
-        target="_blank"
-      >Click here to report an issue with a question</a>
+      <a class="footer-link" href="https://forms.gle/GQsceE4whb8X58866" target="_blank"> Click here to suggest a new
+        question</a>
+      <a class="footer-link" href="https://forms.gle/GzmqkTZHEtGhGYu96" target="_blank">Click here to report an issue with
+        a question</a>
     </footer>
   </div>
 </template>
@@ -88,14 +66,14 @@ export default {
     QuestionComponent
   },
   computed: {
-    questionCategories: function() {
+    questionCategories: function () {
       let categories = this.questions
         .map(question => {
           return question.tags.join(); // flatten array of tags into a string
         })
         .join() //flatten our array of flattened arrays into a string
         .split(",") // split our super string back into an array
-        .filter(function(tag, index, tagArr) {
+        .filter(function (tag, index, tagArr) {
           // filter out any duplicates
           return index === tagArr.indexOf(tag);
         })
@@ -103,7 +81,7 @@ export default {
       return categories;
     }
   },
-  data: function() {
+  data: function () {
     return {
       scoreObj: {
         correctAnswers: 0,
@@ -119,12 +97,12 @@ export default {
     };
   },
   methods: {
-    filterQuestions: function() {
+    filterQuestions: function () {
       const answeredQuestions = this.answeredQuestions;
 
       const questions = this.questions;
       const filteredQuestions = [];
-      this.selectedCategories.forEach(function(category) {
+      this.selectedCategories.forEach(function (category) {
         filteredQuestions.push(
           ...questions
             .filter(q => (q.tags.includes(category) ? true : false))
@@ -144,7 +122,7 @@ export default {
         this.randomQuestion();
       }
     },
-    randomQuestion: function() {
+    randomQuestion: function () {
       if (this.unansweredQuestions.length === 0) {
         this.currentQuestion = undefined;
       }
@@ -166,7 +144,7 @@ export default {
         );
       }
     },
-    recordAnswer: function(isAnswerCorrect) {
+    recordAnswer: function (isAnswerCorrect) {
       if (isAnswerCorrect) {
         this.scoreObj.correctAnswers++;
         this.answeredQuestions.push(this.currentQuestion);
@@ -287,6 +265,7 @@ export default {
   margin: 5px 0;
   text-align: center;
 }
+
 footer {
   padding: 15px 0 30px 0;
 }

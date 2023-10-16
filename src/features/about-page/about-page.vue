@@ -1,16 +1,8 @@
 <template>
   <div class="about-container">
-    <HeroImage
-      class="hero"
-      source="img/group_saifa.JPG"
-      heading="About the Club"
-      :paragraph="heroText"
-    />
+    <HeroImage class="hero" source="img/group_saifa.JPG" heading="About the Club" :paragraph="heroText" />
     <div class="image-one">
-      <app-image
-        source="img/two_sensei.jpg"
-        caption="Sensei Ewan Tempero and Sensei Tom Davies"
-      >
+      <app-image source="img/two_sensei.jpg" caption="Sensei Ewan Tempero and Sensei Tom Davies">
       </app-image>
     </div>
 
@@ -24,18 +16,12 @@
       </p>
       <p>
         The club is affiliated with the
-        <a
-          href="https://iogkf.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          International Okinawan Goju Ryu Federation (IOGKF)</a>, an international body dedicated to preserving the art of the Okinawan
+        <a href="https://iogkf.com" target="_blank" rel="noopener noreferrer">
+          International Okinawan Goju Ryu Federation (IOGKF)</a>, an international body dedicated to preserving the art of
+        the Okinawan
         Goju-Ryu Karate, as well as the New Zealand branch organization,
-        <a
-          href="https://karate.org.nz"
-          target="_blank"
-          rel="noopener noreferrer"
-        >IOGKFNZ</a>. This gives club members access to expert intructors and the ability
+        <a href="https://karate.org.nz" target="_blank" rel="noopener noreferrer">IOGKFNZ</a>. This gives club members
+        access to expert intructors and the ability
         to attend training camps/seminars around the country and the world.
       </p>
     </div>
@@ -59,37 +45,22 @@
     <div class="club-event-sect">
       <div class="swipe-container">
         <swiper :options="imgSwiperOpt">
-          <swiper-slide
-            v-for="i in eventImages"
-            :key="i.source"
-          >
-            <app-image
-              class="event-image"
-              :source="i.source"
-              :caption="i.caption"
-            />
+          <swiper-slide v-for="i in eventImages" :key="i.source">
+            <app-image class="event-image" :source="i.source" :caption="i.caption" />
           </swiper-slide>
-          <div
-            class="swiper-pagination"
-            slot="pagination"
-          ></div>
+          <div class="swiper-pagination" slot="pagination"></div>
         </swiper>
       </div>
     </div>
     <div class="image-two">
-      <app-image
-        :source="'img/hawks_nest_sensei.jpg'"
-        :caption="'Sensei Ewan explaining an exercise at the Hawks Nest'"
-      />
+      <app-image :source="'img/hawks_nest_sensei.jpg'"
+                 :caption="'Sensei Ewan explaining an exercise at the Hawks Nest'" />
     </div>
     <div class="paraThree">
       <h2>Training Location & Facilities</h2>
       <p>
         Most club trainings are run out of the awesome
-        <a
-          href="https://hawksnestgym.co.nz/"
-          target="_blank"
-        >Hawks Nest Gym</a>
+        <a href="https://hawksnestgym.co.nz/" target="_blank">Hawks Nest Gym</a>
         which is a fully furbished Mauy Thai Gym located at Level 3/492 Queen
         Street, Auckland; near the intersection of Queen Street and City Road.
       </p>
@@ -98,10 +69,8 @@
         punching bags, skipping ropes, Muay Thai style focus mitts and more.
         We've also stocked the with some equipment of our own, including kick
         shields and
-        <a
-          href="https://zoehinis.com/2014/09/04/hojo-undo-101-chishi/"
-          target="_blank"
-        >chiishi</a>, a traditional Karate training implement from Okinawa (the birthplace
+        <a href="https://zoehinis.com/2014/09/04/hojo-undo-101-chishi/" target="_blank">chiishi</a>, a traditional Karate
+        training implement from Okinawa (the birthplace
         of Karate).
       </p>
     </div>
@@ -110,22 +79,10 @@
       <h2>Meet the Instructors</h2>
       <div class="swipe-containersss">
         <swiper :options="swiperOpt">
-          <swiper-slide
-            v-for="i in instructors"
-            :key="i.name + i.imgSrc"
-          >
-            <MemberCard
-              :name="i.name"
-              :rank="i.rank"
-              :imgSrc="i.imgSrc"
-              :desc="i.desc"
-              :danGrade="true"
-            />
+          <swiper-slide v-for="i in instructors" :key="i.name + i.imgSrc">
+            <MemberCard :name="i.name" :rank="i.rank" :imgSrc="i.imgSrc" :desc="i.desc" :danGrade="true" />
           </swiper-slide>
-          <div
-            class="swiper-pagination"
-            slot="pagination"
-          ></div>
+          <div class="swiper-pagination" slot="pagination"></div>
         </swiper>
       </div>
     </div>
@@ -156,10 +113,12 @@
 
 <script>
 import MemberCard from "@/components/member-card.vue";
+import HeroImage from "../../components/HeroImage.vue";
 
 export default {
   components: {
-    MemberCard
+    MemberCard,
+    HeroImage
   },
   data() {
     return {
@@ -234,6 +193,7 @@ export default {
   background: #fff;
   opacity: 0.5;
 }
+
 .swiper-pagination-bullet-active {
   background: var(--persian-red-light);
 }
@@ -243,6 +203,7 @@ export default {
 .swiper-wrapper {
   width: 100%;
 }
+
 .swiper-slide {
   width: auto;
 }
@@ -250,6 +211,7 @@ export default {
 .hero {
   grid-area: hero;
 }
+
 .image-one {
   grid-area: image-one;
   display: flex;
@@ -258,12 +220,15 @@ export default {
 .image-two {
   grid-area: image-two;
 }
+
 .paraOne {
   grid-area: paraOne;
 }
+
 .paraTwo {
   grid-area: paraTwo;
 }
+
 .paraThree {
   grid-area: paraThree;
 }

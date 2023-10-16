@@ -1,12 +1,8 @@
 <template>
   <content>
     <div class="container">
-      <HeroImage
-        class="hero-image"
-        source="/group-photo.jpg"
-        heading="Auckland North Karate Club"
-        paragraph="Goju Ryu is a traditional martial art which focuses on mental and physical improvement. Beginners and experienced martial artists are welcome."
-      />
+      <HeroImage class="hero-image" source="/group-photo.jpg" heading="Auckland North Karate Club"
+                 paragraph="Goju Ryu is a traditional martial art which focuses on mental and physical improvement. Beginners and experienced martial artists are welcome." />
       <TrainingSchedule :schedule="schedule" class="schedule" />
       <FeesTable :feesTableData="feeData" class="fees" />
     </div>
@@ -16,9 +12,10 @@
       <p style="font-size: 18px">
         Email us at <a href="mailto:an.gojuryu.karate@gmail.com">an.gojuryu.karate@gmail.com</a>
         <br>
-        Follow us on Facebook <a href="https://www.facebook.com/AucklandNorthKarate/" target="_blank" rel="noopener noreferrer">https://www.facebook.com/AucklandNorthKarate/</a>
+        Follow us on Facebook <a href="https://www.facebook.com/AucklandNorthKarate/" target="_blank"
+           rel="noopener noreferrer">https://www.facebook.com/AucklandNorthKarate/</a>
         <br>
-        Or contact us on  <a href="tel:0210650994">0210 650 994</a>
+        Or contact us on <a href="tel:0210650994">0210 650 994</a>
 
       </p>
     </div>
@@ -29,6 +26,7 @@
 import TrainingSchedule from "@/components/TrainingSchedule.vue";
 import FeesTable from "@/components/fees-table/FeesTable.vue";
 import ClubMap from "@/components/ClubMap.vue";
+import HeroImage from "../../components/HeroImage.vue";
 // import ContactForm from "@/components/ContactForm.vue";
 
 export default {
@@ -37,9 +35,9 @@ export default {
     ClubMap,
     TrainingSchedule,
     FeesTable,
-    // ContactForm,
+    HeroImage
   },
-  data: function() {
+  data: function () {
     return {
       mapUrl: "https://www.google.com/maps/d/embed?mid=1lSeGuFy53GDmQIbpM2aS5jWlWWawurI",
       schedule: [
@@ -54,22 +52,22 @@ export default {
         },
       ],
       feeData: [
-          {
-            type: 'Training&nbsp;Fees',
-            cost: '$8 per class or $30 monthly',
-            notes: '',
-          },
-          {
-            type: 'Family Discount',
-            cost: 'Children pay $6 per class or $20 monthly',
-            notes: 'Children must be training with an accompanying adult, and 12+ years old',
-          },
-          {
-            type: 'Grading Fee',
-            cost: '$35',
-            notes: 'Gradings occur twice a year',
-          },
-        ]
+        {
+          type: 'Training&nbsp;Fees',
+          cost: '$8 per class or $30 monthly',
+          notes: '',
+        },
+        {
+          type: 'Family Discount',
+          cost: 'Children pay $6 per class or $20 monthly',
+          notes: 'Children must be training with an accompanying adult, and 12+ years old',
+        },
+        {
+          type: 'Grading Fee',
+          cost: '$35',
+          notes: 'Gradings occur twice a year',
+        },
+      ]
     };
   }
 };
@@ -102,12 +100,13 @@ content {
 @media (max-width: 981px) {
   content {
     text-align: center;
-    
+
     grid-template-areas:
       "content content"
       "map map"
       "contact contact";
   }
+
   .container {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
@@ -115,6 +114,7 @@ content {
       "schedule schedule"
       "fees fees";
   }
+
   .events {
     display: none;
   }
@@ -160,6 +160,7 @@ content {
 .second-image {
   grid-area: second-image;
 }
+
 .contact-form {
   grid-area: contact;
 }
