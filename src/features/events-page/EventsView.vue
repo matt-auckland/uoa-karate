@@ -1,12 +1,11 @@
 <template>
   <div class="events-container">
     <div class="description">
-      <hero-image
+      <HeroImage
         heading="Upcoming Events"
         :paragraph="heroPara"
         source="img/rangitoto.jpg"
-      >
-      </hero-image>
+      />
     </div>
     <div v-for="event in eventList" :key="event.name" class="event">
       <EventComponent :event="event" />
@@ -36,7 +35,7 @@ export default {
         }),
       heroPara: `This page lists upcoming club events. 
         Events range from casual social gatherings to training camps in other cities or even other countries. 
-        <p>This page was last updated on 08/02/2020.</p>`
+        <p>This page was last updated on 08/07/2023.</p>`
     };
   }
 };

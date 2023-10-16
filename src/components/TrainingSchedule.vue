@@ -3,19 +3,12 @@
     <h2>Training Schedule:</h2>
 
     <div class="grid-container">
-      <div
-        class="day"
-        v-for="session in scheduleData"
-        :key="session.index"
-      >
-        <h3>{{session.day}}</h3>
-        <p class="date">{{session.startTime}} - {{session.finishTime}} </p>
-        <p class="location">{{session.location}} </p>
+      <div class="day" v-for="session in scheduleData" :key="session.index">
+        <h3>{{ session.day }}</h3>
+        <p class="date">{{ session.startTime }} - {{ session.finishTime }} </p>
+        <p class="location">{{ session.location }} </p>
         <hr v-if="session.notes" />
-        <p
-          class="notes"
-          v-if="session.notes"
-        >{{session.notes}} </p>
+        <p class="notes" v-if="session.notes">{{ session.notes }} </p>
       </div>
     </div>
   </div>
@@ -26,10 +19,17 @@ import config from "../assets/config.json";
 
 export default {
   name: "TrainingSchedule",
+  props: {
+    schedule: {
+      default: null
+    }
+  },
   computed: {
     scheduleData() {
-        return config.schedule.filter(training => training.canDisplay)
-      }
+      if (!this.schedule) return config.schedule.filter(training => training.canDisplay)
+
+      return this.schedule.filter(training => training.canDisplay)
+    }
   }
 };
 </script>
@@ -38,11 +38,12 @@ export default {
 h3 {
   color: var(--base-font-color);
   margin: 0;
+  font-size: 22px;
 }
 
 p {
   color: var(--base-font-color);
-  font-size: 14px;
+  font-size: 18px;
   margin: 5px 0;
 }
 

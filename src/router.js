@@ -10,6 +10,7 @@ import 'swiper/css/swiper.css';
 Vue.use(VueAwesomeSwiper /* { default global options } */);
 
 import HomePage from './features/home-page/Home-Page.vue';
+import AucklandNorth from './features/auckland-north/Auckland-North.vue';
 import AboutPage from './features/about-page/about-page.vue';
 import LinkDirectory from './features/link-page/LinkDirectory.vue';
 import EventsView from './features/events-page/EventsView.vue';
@@ -56,6 +57,11 @@ const router = new Router({
       path: '/grading-info',
       name: 'gradingInfo',
       component: GradingInfo,
+    },
+    {
+      path: '/auckland-north',
+      name: 'aucklandNorth',
+      component: AucklandNorth,
     },
   ],
 });

@@ -2,7 +2,7 @@
   <div class="hello">
     <form
       method="POST"
-      action="https://formspree.io/au.gojuryu.karate@gmail.com"
+      :action="formUrl"
     >
       <h1>Contact Us</h1>
       <input
@@ -36,7 +36,10 @@
 export default {
   name: "ContactForm",
   props: {
-    msg: String
+    formUrl: {
+      type: String,
+      default: 'https://formspree.io/au.gojuryu.karate@gmail.com'
+    }
   }
 };
 </script>

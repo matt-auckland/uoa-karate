@@ -1,11 +1,11 @@
 <template>
   <div class="about-container">
-    <hero-image
+    <HeroImage
       class="hero"
       source="img/group_saifa.JPG"
       heading="About the Club"
       :paragraph="heroText"
-    ></hero-image>
+    />
     <div class="image-one">
       <app-image
         source="img/two_sensei.jpg"

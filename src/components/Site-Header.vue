@@ -5,6 +5,7 @@
     /></router-link>
 
     <router-link to="/">Home</router-link>
+    <router-link to="/auckland-north">Auckland North</router-link>
     <router-link to="/about">About</router-link>
     <router-link to="/events">Events</router-link>
     <router-link to="/tester">Quiz</router-link>

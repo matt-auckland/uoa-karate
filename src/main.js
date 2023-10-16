@@ -8,7 +8,7 @@ import HeroImage from './components/HeroImage.vue';
 
 Vue.config.productionTip = false;
 Vue.component('app-image', AppImage);
-Vue.component('hero-image', HeroImage);
+Vue.component('HeroImage', HeroImage);
 
 
 new Vue({
