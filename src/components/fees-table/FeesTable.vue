@@ -1,23 +1,6 @@
 <template>
   <div class="fee-data-container">
-    <h2>Training Fees:</h2>
-    <div class="tab-container">
-      <a
-        class="tab"
-        :class="{ active: showStudents }"
-        @click="showStudents = true"
-      >Uni Student Membership Fees
-        <div class="underline"></div>
-      </a>
-      <a
-        class="tab"
-        :class="{ active: !showStudents }"
-        @click="showStudents = false"
-      >Regular Membership Fees
-        <div class="underline"></div>
-      </a>
-    </div>
-
+    <h2 v-if="showTitle">Training Fees:</h2>
     <table>
       <thead>
         <tr>
@@ -27,36 +10,10 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td class="text">Membership&nbsp;Fee</td>
-          <td class="number">$5 Annually</td>
-          <td class="text">Paid once per year in addition to the training fees</td>
-        </tr>
-        <tr v-if="showStudents">
-        </tr>
-        <tr>
-          <td class="text">Training Fee</td>
-          <td
-            class="number"
-            v-if="showStudents"
-          >$70 Per Semester, $35 for your first sem</td>
-          <td
-            class="number"
-            v-if="!showStudents"
-          >$40 Per Month</td>
-          <td
-            v-if="showStudents"
-            class="text"
-          >Students pay per semester, your first sem is half-price</td>
-          <td
-            v-if="!showStudents"
-            class="text"
-          >Non-students pay per month</td>
-        </tr>
-        <tr>
-          <td class="text">Grading Fee</td>
-          <td class="number">$35</td>
-          <td class="text">Gradings occur near the end of each semester</td>
+        <tr v-for="row in feeTableData" :key="row.type">
+          <td class="text">{{ row.type }}</td>
+          <td class="number">{{ row.cost }}</td>
+          <td class="text">{{ row.notes }}</td>
         </tr>
       </tbody>
     </table>
@@ -66,10 +23,13 @@
 <script>
 export default {
   name: "FeesTable",
-  data() {
-    return {
-      showStudents: true
-    };
+  props: {
+    showTitle: {
+      default() { return true }
+    },
+    feeTableData: {
+      required: true
+    }
   }
 };
 </script>
