@@ -2,8 +2,7 @@
   <div class="about-container">
     <HeroImage class="hero" source="img/group_saifa.JPG" heading="About the Club" :paragraph="heroText" />
     <div class="image-one">
-      <app-image source="img/two_sensei.jpg" caption="Sensei Ewan Tempero and Sensei Tom Davies">
-      </app-image>
+      <Image source="img/two_sensei.jpg" caption="Sensei Ewan Tempero and Sensei Tom Davies" />
     </div>
 
     <div class="paraOne">
@@ -44,17 +43,16 @@
 
     <div class="club-event-sect">
       <div class="swipe-container">
-        <swiper :options="imgSwiperOpt">
+        <swiper-container :loop="true" :delay="1000" :options="imgSwiperOpt">
           <swiper-slide v-for="i in eventImages" :key="i.source">
-            <app-image class="event-image" :source="i.source" :caption="i.caption" />
+            <Image class="event-image" :source="i.source" :caption="i.caption" />
           </swiper-slide>
           <div class="swiper-pagination" slot="pagination"></div>
-        </swiper>
+        </swiper-container>
       </div>
     </div>
     <div class="image-two">
-      <app-image :source="'img/hawks_nest_sensei.jpg'"
-                 :caption="'Sensei Ewan explaining an exercise at the Hawks Nest'" />
+      <Image :source="'img/hawks_nest_sensei.jpg'" :caption="'Sensei Ewan explaining an exercise at the Hawks Nest'" />
     </div>
     <div class="paraThree">
       <h2>Training Location & Facilities</h2>
@@ -77,19 +75,19 @@
 
     <div class="instructors-sect">
       <h2>Meet the Instructors</h2>
-      <div class="swipe-containersss">
-        <swiper :options="swiperOpt">
+      <div class="swiper-containers">
+        <swiper-container :loop="true" :slidesPerView="auto">
           <swiper-slide v-for="i in instructors" :key="i.name + i.imgSrc">
             <MemberCard :name="i.name" :rank="i.rank" :imgSrc="i.imgSrc" :desc="i.desc" :danGrade="true" />
           </swiper-slide>
           <div class="swiper-pagination" slot="pagination"></div>
-        </swiper>
+        </swiper-container>
       </div>
     </div>
 
     <!-- <div class="exec-sect">
       <h2>Meet the Exec</h2>
-      <swiper :options="swiperOpt">
+      <swiper-container :options="swiperOpt">
         <swiper-slide
           v-for="i in exec"
           :key="i.name + i.desc"
@@ -106,81 +104,75 @@
           class="swiper-pagination"
           slot="pagination"
         ></div>
-      </swiper>
+      </swiper-container>
     </div> -->
   </div>
 </template>
 
-<script>
+<script setup>
 import MemberCard from "@/components/member-card.vue";
+import Image from "../../components/Image.vue";
 import HeroImage from "../../components/HeroImage.vue";
+import { register } from 'swiper/element/bundle';
 
-export default {
-  components: {
-    MemberCard,
-    HeroImage
-  },
-  data() {
-    return {
-      heroText: "The Auckland University Goju Ryu Karate Club welcomes both university students and non-students, with any level of experience, and with any martial arts background.",
-      swiperOpt: {
-        loop: true,
-        slidesPerView: "auto",
-        pagination: {
-          clickable: true,
-          el: ".swiper-pagination"
-        }
-      },
-      imgSwiperOpt: {
-        autoplay: {
-          delay: 5000
-        },
-        loop: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true
-        }
-      },
-      instructors: [
-        {
-          name: "Sensei Ewan Tempero",
-          rank: 5,
-          desc:
-            "Sensei Ewan has over 30 years of Goju Ryu experience. He is the chief instructor of the club, which he co-founded with Sensei Tom in 2003.",
-          imgSrc: "/img/sensei_ewan.jpg"
-        },
-        {
-          name: "Sensei Richard Ly",
-          rank: 4,
-          desc: "Sensei Richard has over 10 years of Goju Ryu experience.",
-          imgSrc: "/img/sensei_richard.png"
-        },
-        // {
-        //   name: "Senpai Mathew Paul",
-        //   rank: 2,
-        //   desc: "Senpai Mat has over 9 years experience in Goju Ryu.",
-        //   imgSrc: "/img/sensei_yin_2.png"
-        // },
-      ],
-      eventImages: [
-        {
-          source: "img/gishiki_group.jpg",
-          caption:
-            "Club members with their fellow New Zealanders at an international training camp."
-        },
-        {
-          source: "img/camp_2019.png",
-          caption: "Fun at the Club's 2019 Karate Camp"
-        },
-        {
-          source: "img/tournament.jpg",
-          caption:
-            "Smiles after placing at the Bi-Annual Pukekohe Karate Tournament"
-        }
-      ]
-    };
+register();
+
+const heroText = "The Auckland University Goju Ryu Karate Club welcomes both university students and non-students, with any level of experience, and with any martial arts background."
+const swiperOpt = {
+  loop: true,
+  slidesPerView: "auto",
+  pagination: {
+    clickable: true,
+    el: ".swiper-pagination"
   }
-};
+}
+const imgSwiperOpt = {
+  autoplay: {
+    delay: 5000
+  },
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true
+  }
+}
+const instructors = [
+  {
+    name: "Sensei Ewan Tempero",
+    rank: 5,
+    desc:
+      "Sensei Ewan has over 30 years of Goju Ryu experience. He is the chief instructor of the club, which he co-founded with Sensei Tom in 2003.",
+    imgSrc: "/img/sensei_ewan.jpg"
+  },
+  {
+    name: "Sensei Richard Ly",
+    rank: 4,
+    desc: "Sensei Richard has over 10 years of Goju Ryu experience.",
+    imgSrc: "/img/sensei_richard.png"
+  },
+  // {
+  //   name: "Senpai Mathew Paul",
+  //   rank: 2,
+  //   desc: "Senpai Mat has over 9 years experience in Goju Ryu.",
+  //   imgSrc: "/img/sensei_yin_2.png"
+  // },
+]
+const eventImages = [
+  {
+    source: "img/gishiki_group.jpg",
+    caption:
+      "Club members with their fellow New Zealanders at an international training camp."
+  },
+  {
+    source: "img/camp_2019.png",
+    caption: "Fun at the Club's 2019 Karate Camp"
+  },
+  {
+    source: "img/tournament.jpg",
+    caption:
+      "Smiles after placing at the Bi-Annual Pukekohe Karate Tournament"
+  }
+]
 </script>
 <!-- Swiper -->
 <style>
