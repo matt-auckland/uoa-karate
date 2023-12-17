@@ -2,9 +2,9 @@
   <content>
     <div class="container">
       <HeroImage class="hero-image" source="/group-photo.jpg" heading="Auckland North Karate Club"
-                 paragraph="Goju Ryu is a traditional martial art which focuses on mental and physical improvement. Beginners and experienced martial artists are welcome." />
+                 :paragraph="paragraphText" />
       <TrainingSchedule :schedule="schedule" class="schedule" />
-      <FeesTable :feesTableData="feeData" class="fees" />
+      <FeesTable :feeTableData="feeData" class="fees" />
     </div>
     <ClubMap :mapUrl="mapUrl" class="clubmap" />
     <div class="contact-form">
@@ -53,7 +53,7 @@ export default {
       ],
       feeData: [
         {
-          type: 'Training&nbsp;Fees',
+          type: 'Training Fees',
           cost: '$8 per class or $30 monthly',
           notes: '',
         },
@@ -67,7 +67,8 @@ export default {
           cost: '$35',
           notes: 'Gradings occur twice a year',
         },
-      ]
+      ],
+      paragraphText: "Goju Ryu is a traditional martial art which focuses on mental and physical improvement.Beginners and experienced martial artists are welcome."
     };
   }
 };

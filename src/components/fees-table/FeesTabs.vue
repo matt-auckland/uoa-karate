@@ -10,8 +10,8 @@
       </a>
     </div>
 
-    <FeesTable v-if="showStudents" :feeTableData="" />
-    <FeesTable v-else :feeTableData="" />
+    <FeesTable v-if="showStudents" :feeTableData="studentFeeData" :showTitle="false" />
+    <FeesTable v-else :feeTableData="regularFeeData" :showTitle="false" />
   </div>
 </template>
 
@@ -19,7 +19,7 @@
 import FeesTable from '@/FeesTable.vue';
 
 export default {
-  name: 'FeesTable',
+  name: 'FeesTabs',
   data() {
     return {
       showStudents: true,
@@ -30,7 +30,6 @@ export default {
           notes: 'Paid once per year in addition to the training fees',
         },
         {
-
           type: 'Training Fee',
           cost: '$40 Per Month',
           notes:

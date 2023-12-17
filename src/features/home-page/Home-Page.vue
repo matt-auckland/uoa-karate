@@ -1,10 +1,9 @@
 <template>
   <content>
     <div class="container">
-      <HeroImage class="hero-image" source="/group-photo.jpg" heading="Welcome to our Dojo"
-                 paragraph="People with any level of experience and from any martial arts background are welcome to train, both students and non-students alike. We have beginner specific training at the start of every semester but accept new members year round." />
+      <HeroImage class="hero-image" source="/group-photo.jpg" heading="Welcome to our Dojo" :paragraph="heroText" />
       <TrainingSchedule class="schedule" />
-      <FeesTable class="fees" />
+      <FeesTabs class="fees" />
       <UpcomingEvents class="events" />
     </div>
     <ClubMap class="clubmap" />
@@ -15,7 +14,7 @@
 
 <script>
 import TrainingSchedule from "@/components/TrainingSchedule.vue";
-import FeesTable from "@/components/fees-table/FeesTable.vue";
+import FeesTabs from "@/components/fees-table/FeesTabs.vue";
 import ClubMap from "@/components/ClubMap.vue";
 import ContactForm from "@/components/ContactForm.vue";
 import UpcomingEvents from "@/components/UpcomingEvents.vue";
@@ -26,13 +25,15 @@ export default {
   components: {
     ClubMap,
     TrainingSchedule,
-    FeesTable,
+    FeesTabs,
     ContactForm,
     UpcomingEvents,
     HeroImage
   },
   data: function () {
-    return {};
+    return {
+      heroText: "People with any level of experience and from any martial arts background are welcome to train, both students and non-students alike. We have beginner specific training at the start of every semester but accept new members year round."
+    };
   }
 };
 </script>
