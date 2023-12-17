@@ -18,6 +18,7 @@ import FeesTabs from "@/components/fees-table/FeesTabs.vue";
 import ClubMap from "@/components/ClubMap.vue";
 import ContactForm from "@/components/ContactForm.vue";
 import UpcomingEvents from "@/components/UpcomingEvents.vue";
+import HeroImage from "@/components/HeroImage.vue";
 
 export default {
   name: "home-page",
@@ -27,6 +28,7 @@ export default {
     FeesTabs,
     ContactForm,
     UpcomingEvents,
+    HeroImage
   },
   data: function () {
     return {

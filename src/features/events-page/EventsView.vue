@@ -1,11 +1,7 @@
 <template>
   <div class="events-container">
     <div class="description">
-      <HeroImage
-        heading="Upcoming Events"
-        :paragraph="heroPara"
-        source="img/rangitoto.jpg"
-      />
+      <HeroImage heading="Upcoming Events" :paragraph="heroPara" source="img/rangitoto.jpg" />
     </div>
     <div v-for="event in eventList" :key="event.name" class="event">
       <EventComponent :event="event" />
@@ -15,14 +11,16 @@
 
 <script>
 import eventList from "@/assets/events.json";
-import EventComponent from "@/components/EventComponent";
+import EventComponent from "@/components/EventComponent.vue";
+import HeroImage from "@/components/HeroImage.vue";
 
 export default {
   name: "EventsView",
   components: {
-    EventComponent
+    EventComponent,
+    HeroImage
   },
-  data: function() {
+  data: function () {
     return {
       eventList: eventList
         .filter(event => {
@@ -51,7 +49,7 @@ export default {
   margin: 0 auto;
 }
 
-.events-container > * {
+.events-container>* {
   margin-bottom: 32px;
 }
 </style>

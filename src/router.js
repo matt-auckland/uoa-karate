@@ -1,69 +1,55 @@
-import Vue from 'vue';
-import Router from 'vue-router';
-import Meta from 'vue-meta';
+import { createRouter, createWebHistory } from 'vue-router';
 
-import VueAwesomeSwiper from 'vue-awesome-swiper';
+// import Meta from 'vue-meta';
+// Vue.use(Meta);
 
-// require styles
-import 'swiper/css/swiper.css';
+const routes = [
+  {
+    path: '/',
+    name: 'home',
+    component: import('./features/home-page/Home-Page.vue'),
+  },
+  {
+    path: '/about',
+    name: 'about',
+    component: import('./features/about-page/about-page.vue'),
+  },
+  {
+    path: '/useful-links',
+    name: 'useful-links',
+    component: import('./features/link-page/LinkDirectory.vue'),
+  },
+  {
+    path: '/events',
+    name: 'events',
+    component: import('./features/events-page/EventsView.vue'),
+  },
+  {
+    path: '/events/:id',
+    name: 'singleEvent',
+    component: import('./features/event-details/SingleEventView.vue'
+    ),
+  },
+  {
+    path: '/tester',
+    name: 'tester',
+    component: import('./features/test-page/TestView.vue'),
+  },
+  {
+    path: '/grading-info',
+    name: 'gradingInfo',
+    component: import('./features/grading-info-page/GradingInfo.vue'),
+  },
+  {
+    path: '/auckland-north',
+    name: 'aucklandNorth',
+    component: import('./features/auckland-north/Auckland-North.vue'),
+  },
+]
 
-Vue.use(VueAwesomeSwiper /* { default global options } */);
-
-import HomePage from './features/home-page/Home-Page.vue';
-import AucklandNorth from './features/auckland-north/Auckland-North.vue';
-import AboutPage from './features/about-page/about-page.vue';
-import LinkDirectory from './features/link-page/LinkDirectory.vue';
-import EventsView from './features/events-page/EventsView.vue';
-import TestView from './features/test-page/TestView.vue';
-import SingleEventView from './features/event-details/SingleEventView.vue';
-import GradingInfo from './features/grading-info-page/GradingInfo.vue';
-
-Vue.use(Meta);
-Vue.use(Router);
-
-const router = new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'home',
-      component: HomePage,
-    },
-    {
-      path: '/about',
-      name: 'about',
-      component: AboutPage,
-    },
-    {
-      path: '/useful-links',
-      name: 'useful-links',
-      component: LinkDirectory,
-    },
-    {
-      path: '/events',
-      name: 'events',
-      component: EventsView,
-    },
-    {
-      path: '/events/:id',
-      name: 'singleEvent',
-      component: SingleEventView,
-    },
-    {
-      path: '/tester',
-      name: 'tester',
-      component: TestView,
-    },
-    {
-      path: '/grading-info',
-      name: 'gradingInfo',
-      component: GradingInfo,
-    },
-    {
-      path: '/auckland-north',
-      name: 'aucklandNorth',
-      component: AucklandNorth,
-    },
-  ],
+const router = createRouter({
+  history: createWebHistory(),
+  routes,
 });
 
 router.afterEach(() => {

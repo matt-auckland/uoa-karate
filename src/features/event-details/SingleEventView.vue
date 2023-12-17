@@ -2,25 +2,13 @@
 <template>
   <div class="event-container">
     <div class="event">
-      <h1 class="event-title">{{event.name}}</h1>
-      <img
-        :src="event.img"
-        alt="Event image"
-        v-if="event.img"
-        class="event-img"
-        loading="lazy"
-      >
-      <div class="event-text"><b>Date:</b> {{event.date}}</div>
-      <div class="event-text"><b>Location:</b> {{event.location}}</div>
-      <div class="event-text">{{event.extendedDescription ? event.extendedDescription : event.description}}</div>
-      <div
-        class="event-text"
-        v-if="event.signUpURL"
-      >To sign up, follow <a
-          :href="event.signUpURL"
-          target="_blank"
-          rel="noopener noreferrer"
-        >this link</a></div>
+      <h1 class="event-title">{{ event.name }}</h1>
+      <img :src="event.img" alt="Event image" v-if="event.img" class="event-img" loading="lazy">
+      <div class="event-text"><b>Date:</b> {{ event.date }}</div>
+      <div class="event-text"><b>Location:</b> {{ event.location }}</div>
+      <div class="event-text">{{ event.extendedDescription ? event.extendedDescription : event.description }}</div>
+      <div class="event-text" v-if="event.signUpURL">To sign up, follow <a :href="event.signUpURL" target="_blank"
+           rel="noopener noreferrer">this link</a></div>
     </div>
 
   </div>
@@ -32,14 +20,14 @@ import eventList from "@/assets/events.json";
 export default {
   name: "SingleEventView",
   components: {},
-  data: function() {
+  data: function () {
     return {};
   },
   computed: {
-    eventId: function() {
+    eventId: function () {
       return this.$route.params.id;
     },
-    event: function() {
+    event: function () {
       return eventList.find(ev => ev.id === this.eventId);
     }
   }
@@ -94,6 +82,5 @@ export default {
   padding-left: 20px;
 }
 
-.page-desc {
-}
+.page-desc {}
 </style>

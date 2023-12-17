@@ -1,10 +1,7 @@
 <template>
-  <div
-    v-if="bannerText"
-    id="sitewide-banner"
-  >
+  <div v-if="bannerText" id="sitewide-banner">
     <div id="banner-text">
-      {{bannerText}}
+      {{ bannerText }}
     </div>
   </div>
 </template>
@@ -35,6 +32,7 @@ export default {
   top: 0;
   left: 0;
 }
+
 #banner-text {
   padding: 10px 5vw;
 }

@@ -26,6 +26,7 @@
 import TrainingSchedule from "@/components/TrainingSchedule.vue";
 import FeesTable from "@/components/fees-table/FeesTable.vue";
 import ClubMap from "@/components/ClubMap.vue";
+import HeroImage from "../../components/HeroImage.vue";
 // import ContactForm from "@/components/ContactForm.vue";
 
 export default {
@@ -34,7 +35,7 @@ export default {
     ClubMap,
     TrainingSchedule,
     FeesTable,
-    // ContactForm,
+    HeroImage
   },
   data: function () {
     return {

@@ -2,46 +2,28 @@
 <template>
   <div class="">
     <h2 class="component-title">Upcoming Events:</h2>
-    <div class="events-container">
-      <div
-        v-for="event in upcomingEventList"
-        :key="event.title"
-        class="event"
-      >
+    <div v-if="!upcomingEventList.length">No events currently scheduled.</div>
+    <div v-else class="events-container">
+      <div v-for="event in upcomingEventList" :key="event.title" class="event">
         <div class="event-inner">
           <div class="event-text title">
-            <b>{{event.title}}</b>
+            <b>{{ event.title }}</b>
           </div>
           <div class="event-text date">
-            When: {{event.startDate}}
+            When: {{ event.startDate }}
           </div>
           <div class="event-text location">
-            Location: {{event.location}}
+            Location: {{ event.location }}
           </div>
 
-          <div
-            class="event-text link"
-            v-if="event.offsiteLink"
-          >
+          <div class="event-text link" v-if="event.offsiteLink">
             For more information, follow
-            <a
-              :href="event.offsiteLink"
-              target="_blank"
-              rel="noopener noreferrer"
-            >this link</a>
-            <router-link
-              v-if="!event.offSitelink && event.extendedDescription"
-              :to="'/events/' + event.title.replace(/\ /gi, '-')"
-            >this link</router-link>
+            <a :href="event.offsiteLink" target="_blank" rel="noopener noreferrer">this link</a>
+            <router-link v-if="!event.offSitelink && event.extendedDescription"
+                         :to="'/events/' + event.title.replace(/\ /gi, '-')">this link</router-link>
           </div>
-          <div
-            class="event-text"
-            v-if="event.signUpURL"
-          >To sign up, follow <a
-              :href="event.signUpURL"
-              target="_blank"
-              rel="noopener noreferrer"
-            >this link</a>
+          <div class="event-text" v-if="event.signUpURL">To sign up, follow <a :href="event.signUpURL" target="_blank"
+               rel="noopener noreferrer">this link</a>
           </div>
         </div>
       </div>
@@ -53,12 +35,12 @@
 </template>
 
 <script>
-import eventList from "../assets/events.json";
+import eventList from "@/assets/events.json";
 
 export default {
   name: "UpcomingEvents",
   components: {},
-  data: function() {
+  data: function () {
     return {
       upcomingEventList: eventList
         .filter(event => {
@@ -69,15 +51,11 @@ export default {
         .sort((a, b) => {
           return new Date(a.startDate) - new Date(b.startDate);
         })
-        .filter((event, index) => {
-          if (index < 4) {
-            return true;
-          }
-        })
+        .slice(0, 4)
     };
   },
   methods: {
-    computeDate: function(event) {
+    computeDate: function (event) {
       return event.date;
     }
   }
@@ -103,6 +81,7 @@ export default {
   text-align: center;
   /* grid-column: 2/2; */
 }
+
 .event {
   width: 100%;
   border-radius: 15px;
@@ -114,8 +93,7 @@ export default {
   padding: 15px 10px;
 }
 
-.event-text {
-}
+.event-text {}
 
 .title {
   margin-bottom: 6px;
@@ -129,9 +107,7 @@ export default {
   margin-bottom: 8px;
 }
 
-.link {
-}
+.link {}
 
-.page-desc {
-}
+.page-desc {}
 </style>

@@ -1,15 +1,11 @@
 <template>
   <div class="member">
-    <div
-      class="picture top"
-      :style="style"
-      alt=""
-    ></div>
+    <div class="picture top" :style="style" alt=""></div>
     <div class="details">
-      <h2 class="name">{{ name }}</h2>
+      <h2 class="name">{{ member.name }}</h2>
       <h3 class="title">{{ grade }}</h3>
       <p class="desc">
-        {{ desc }}
+        {{ member.desc }}
       </p>
     </div>
   </div>
@@ -17,29 +13,15 @@
 
 <script>
 export default {
-  props: {
-    danGrade: {
-      default: false
-    },
-    rank: {
-      default: 1
-    },
-    name: {
-      default: 1
-    },
-    imgSrc: { default: "" },
-    desc: {
-      default: 1
-    }
-  },
+  props: ['member'],
   computed: {
     grade() {
-      return this.danGrade
-        ? `${this.numToStr(this.rank)} Degree Blackbelt`
-        : `${this.numToStr(this.rank)} Kyu`;
+      return this.member.danGrade
+        ? `${this.numToStr(this.member.rank)} Degree Blackbelt`
+        : `${this.numToStr(this.member.rank)} Kyu`;
     },
     style() {
-      return `background-image: url(${this.imgSrc});`;
+      return `background-image: url(${this.member.imgSrc});`;
     }
   },
   methods: {
@@ -76,7 +58,6 @@ export default {
   border: 1px var(--tuatara-dark) solid;
   border-radius: 10px;
   overflow: hidden;
-  margin: 0 20px;
   width: 350px;
   height: 386px;
   white-space: normal;
@@ -105,6 +86,7 @@ export default {
   background-position-y: top;
   background-repeat: no-repeat;
 }
+
 .member .picture.top {
   background-position-y: top;
 }

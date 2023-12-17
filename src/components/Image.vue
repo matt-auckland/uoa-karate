@@ -30,6 +30,7 @@ figure {
 
   max-height: 100%;
   max-width: 100%;
+  width: 100%;
   margin: 0;
 }
 
