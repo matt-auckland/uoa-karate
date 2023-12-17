@@ -1,4 +1,12 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
+import HomePage from './features/home-page/Home-Page.vue';
+import AboutPage from './features/about-page/about-page.vue'
+import LinkDirectory from './features/link-page/LinkDirectory.vue'
+import EventsView from './features/events-page/EventsView.vue'
+import SingleEventView from './features/event-details/SingleEventView.vu
+// import TestView from './features/test-page/TestView.vue'
+import GradingInfo from './features/grading-info-page/GradingInfo.vue'
+import AucklandNorth from './features/auckland-north/Auckland-North.vue'
 
 // () => import Meta from 'vue-meta';
 // Vue.use(Meta);
@@ -7,43 +15,42 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: () => import('./features/home-page/Home-Page.vue'),
+    component: HomePage,
   },
   {
     path: '/about',
     name: 'about',
-    component: () => import('./features/about-page/about-page.vue'),
+    component: AboutPage,
   },
   {
     path: '/useful-links',
     name: 'useful-links',
-    component: () => import('./features/link-page/LinkDirectory.vue'),
+    component: LinkDirectory,
   },
   {
     path: '/events',
     name: 'events',
-    component: () => import('./features/events-page/EventsView.vue'),
+    component: EventsView,
   },
   {
     path: '/events/:id',
     name: 'singleEvent',
-    component: () => import('./features/event-details/SingleEventView.vue'
-    ),
+    component: SingleEventView
   },
-  {
-    path: '/tester',
-    name: 'tester',
-    component: () => import('./features/test-page/TestView.vue'),
-  },
+  // {
+  //   path: '/tester',
+  //     name: 'tester',
+  //       component: TestView,
+  //   },
   {
     path: '/grading-info',
     name: 'gradingInfo',
-    component: () => import('./features/grading-info-page/GradingInfo.vue'),
+    component: GradingInfo,
   },
   {
     path: '/auckland-north',
     name: 'aucklandNorth',
-    component: () => import('./features/auckland-north/Auckland-North.vue'),
+    component: AucklandNorth,
   },
 ]
 
