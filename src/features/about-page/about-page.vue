@@ -8,10 +8,8 @@
     <div class="paraOne">
       <h2>About the Club</h2>
       <p>
-        {{
-          `Founded in 2003 by Sensei Ewan Tempero (5th degree Black Belt) and Sensei Tom Davies (4th degree Black Belt), The University of Auckland Goju Ryu Karate Club has been running for over ${new Date().getFullYear() -
-            2003} years.`
-        }}
+        Founded in 2003 by Sensei Ewan Tempero (5th degree Black Belt) and Sensei Tom Davies (4th degree Black Belt), The
+        University of Auckland Goju Ryu Karate Club has been running for {{ clubAge }} years and counting.
       </p>
       <p>
         The club is affiliated with the
@@ -42,13 +40,8 @@
     </div>
 
     <div class="club-event-sect">
-      <div class="swipe-container">
-        <swiper-container :loop="true" :delay="1000" :options="imgSwiperOpt">
-          <swiper-slide v-for="i in eventImages" :key="i.source">
-            <Image class="event-image" :source="i.source" :caption="i.caption" />
-          </swiper-slide>
-          <div class="swiper-pagination" slot="pagination"></div>
-        </swiper-container>
+      <div class="swipe-container" ref="swiperRef">
+        <Image v-for="i in eventImages" :key="i.source" class="event-image" :source="i.source" :caption="i.caption" />
       </div>
     </div>
     <div class="image-two">
@@ -68,44 +61,16 @@
         We've also stocked the with some equipment of our own, including kick
         shields and
         <a href="https://zoehinis.com/2014/09/04/hojo-undo-101-chishi/" target="_blank">chiishi</a>, a traditional Karate
-        training implement from Okinawa (the birthplace
-        of Karate).
+        training implement from Okinawa (the birthplace of Karate).
       </p>
     </div>
 
     <div class="instructors-sect">
       <h2>Meet the Instructors</h2>
-      <div class="swiper-containers">
-        <swiper-container :loop="true" :slidesPerView="auto">
-          <swiper-slide v-for="i in instructors" :key="i.name + i.imgSrc">
-            <MemberCard :name="i.name" :rank="i.rank" :imgSrc="i.imgSrc" :desc="i.desc" :danGrade="true" />
-          </swiper-slide>
-          <div class="swiper-pagination" slot="pagination"></div>
-        </swiper-container>
+      <div>
+        <MemberCard v-for="instructor in instructors" :member="instructor" />
       </div>
     </div>
-
-    <!-- <div class="exec-sect">
-      <h2>Meet the Exec</h2>
-      <swiper-container :options="swiperOpt">
-        <swiper-slide
-          v-for="i in exec"
-          :key="i.name + i.desc"
-        >
-          <MemberCard
-            :name="i.name"
-            :rank="i.rank"
-            :imgSrc="i.imgSrc"
-            :desc="i.desc"
-            :danGrade="i.danGrade"
-          />
-        </swiper-slide>
-        <div
-          class="swiper-pagination"
-          slot="pagination"
-        ></div>
-      </swiper-container>
-    </div> -->
   </div>
 </template>
 
@@ -113,32 +78,14 @@
 import MemberCard from "@/components/member-card.vue";
 import Image from "../../components/Image.vue";
 import HeroImage from "../../components/HeroImage.vue";
-import { register } from 'swiper/element/bundle';
-
-register();
+import { onMounted, ref } from "vue";
 
 const heroText = "The Auckland University Goju Ryu Karate Club welcomes both university students and non-students, with any level of experience, and with any martial arts background."
-const swiperOpt = {
-  loop: true,
-  slidesPerView: "auto",
-  pagination: {
-    clickable: true,
-    el: ".swiper-pagination"
-  }
-}
-const imgSwiperOpt = {
-  autoplay: {
-    delay: 5000
-  },
-  loop: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true
-  }
-}
+
 const instructors = [
   {
     name: "Sensei Ewan Tempero",
+    danGrade: true,
     rank: 5,
     desc:
       "Sensei Ewan has over 30 years of Goju Ryu experience. He is the chief instructor of the club, which he co-founded with Sensei Tom in 2003.",
@@ -146,12 +93,13 @@ const instructors = [
   },
   {
     name: "Sensei Richard Ly",
+    danGrade: true,
     rank: 4,
     desc: "Sensei Richard has over 10 years of Goju Ryu experience.",
     imgSrc: "/img/sensei_richard.png"
   },
   // {
-  //   name: "Senpai Mathew Paul",
+  //   name: "Senpai Mat Paul",
   //   rank: 2,
   //   desc: "Senpai Mat has over 9 years experience in Goju Ryu.",
   //   imgSrc: "/img/sensei_yin_2.png"
@@ -173,6 +121,29 @@ const eventImages = [
       "Smiles after placing at the Bi-Annual Pukekohe Karate Tournament"
   }
 ]
+
+const clubAge = new Date().getFullYear() - 2003
+
+const swiperRef = ref(null)
+
+onMounted(() => {
+  setInterval(() => {
+    const elm = swiperRef.value
+    if (elm.scrollLeft === elm.scrollLeftMax) {
+      elm.scroll(-1 * elm.scrollLeftMax, 0)
+    } else {
+      console.log(elm.scrollLeft, elm.getBoundingClientRect().width)
+      elm.scroll(
+        {
+          top: 0,
+          left: elm.scrollLeft + elm.getBoundingClientRect().width,
+          behavior: "smooth",
+        }
+      )
+    }
+  }, 5000)
+})
+
 </script>
 <!-- Swiper -->
 <style>
@@ -198,6 +169,18 @@ const eventImages = [
 
 .swiper-slide {
   width: auto;
+}
+
+.swipe-container {
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+  display: flex;
+  gap: 50px;
+}
+
+.swipe-container>* {
+  flex-shrink: 0;
+  scroll-snap-align: center;
 }
 
 .hero {
@@ -235,6 +218,26 @@ const eventImages = [
   max-width: 1300px;
   grid-area: instructors;
 }
+
+
+
+.instructors-sect {
+  container: instructors-sect / inline-size;
+}
+
+.instructors-sect>div {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+@container instructors-sect (max-width: 714px) {
+  .instructors-sect>div {
+    justify-content: center;
+  }
+}
+
 
 .exec-sect {
   width: 100%;

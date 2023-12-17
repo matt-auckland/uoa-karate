@@ -2,14 +2,16 @@
   "name": "uoa-karate",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
+    "dev": "npm run serve",
     "serve": "vite",
     "serve-built": "vite build && vite preview",
-    "build": "vite build"
+    "build": "vite build",
+    "lint": "eslint"
   },
   "dependencies": {
     "@unhead/vue": "^1.7.4",
-    "swiper": "^10.3.1",
     "vue": "^3.3.4",
     "vue-router": "^4.2.5"
   },
@@ -17,25 +19,7 @@
     "@vitejs/plugin-vue": "^4.4.0",
     "eslint": "^8.51.0",
     "eslint-plugin-vue": "^9.17.0",
-    "vite": "^4.4.11"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
-    "parserOptions": {
-      "parser": "@babel/eslint-parser"
-    },
-    "rules": {}
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ]
+    "vite": "^4.4.11",
+    "vite-plugin-eslint": "^1.8.1"
+  }
 }
