@@ -17,6 +17,7 @@
 import SiteHeader from "@/components/Site-Header.vue";
 import QuoteDisplay from "@/components/QuoteDisplay.vue";
 import SitewideBanner from "@/components/SitewideBanner.vue";
+import { RouterView } from "vue-router";
 
 export default {
   name: "App",
@@ -24,6 +25,7 @@ export default {
     SiteHeader,
     QuoteDisplay,
     SitewideBanner,
+    RouterView
   },
   metaInfo: {
     title: "UoA Karate Club",
