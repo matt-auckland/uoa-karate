@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import FeesTable from '@/FeesTable.vue';
+import FeesTable from '@/components/fees-table/FeesTable.vue';
 
 export default {
   name: 'FeesTabs',
