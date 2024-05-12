@@ -15,54 +15,44 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import FeesTable from '@/components/fees-table/FeesTable.vue';
+import { ref } from 'vue';
 
-export default {
-  name: 'FeesTabs',
-  data() {
-    return {
-      showStudents: true,
-      regularFeeData: [
-        {
-          type: 'Club Membership Fee',
-          cost: '$5 Annually',
-          notes: 'Paid once per year in addition to the training fees',
-        },
-        {
-          type: 'Training Fee',
-          cost: '$40 Per Month',
-          notes:
-            'Non-students pay per month',
-        },
-        {
-          type: 'Grading Fee',
-          cost: '$35',
-          notes: 'Gradings occur near the end of each university semester',
-        },
-      ],
-      studentFeeData: [
-        {
-          type: 'Club Membership Fee',
-          cost: '$5 Annually',
-          notes: 'Paid once per year in addition to the training fees',
-        },
-        {
-          type: 'Training Fee',
-          cost: '$70 Per Semester, $35 for your first sem',
-          notes:
-            'Students pay per semester, your first sem is half-price',
-        },
-        {
-          type: 'Grading Fee',
-          cost: '$35',
-          notes: 'Gradings occur near the end of each university semester',
-        },
-      ],
-    };
+const baseFeeData = [
+  {
+    type: 'Club Membership Fee',
+    cost: '$5 Annually',
+    notes: 'Paid once per year in addition to the training fees',
   },
-  components: { FeesTable },
-};
+  {
+    type: 'Grading Fee',
+    cost: '$35',
+    notes: 'Gradings occur near the end of each university semester',
+  },
+]
+
+const regularFeeData = [
+  {
+    type: 'Training Fee',
+    cost: '$40 Per Month',
+    notes:
+      'Non-students pay per month',
+  },
+  ...baseFeeData
+]
+
+const studentFeeData = [
+  {
+    type: 'Training Fee',
+    cost: '$70 Per Semester, $35 for your first sem',
+    notes:
+      'Students pay per semester, your first sem is half-price',
+  },
+  ...baseFeeData
+]
+
+const showStudents = ref(true)
 </script>
 
 <style scoped>
