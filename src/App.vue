@@ -3,13 +3,13 @@
     <SitewideBanner />
     <SiteHeader />
     <RouterView />
-    <Footer>
+    <footer>
       <QuoteDisplay class="quote-display" />
       <div class="github">
         This site's sourcecode is hosted on
         <a href="https://github.com/matt-auckland/uoa-karate" target="_blank">Github</a>
       </div>
-    </Footer>
+    </footer>
   </div>
 </template>
 
