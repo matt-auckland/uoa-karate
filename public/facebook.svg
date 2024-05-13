@@ -1,4 +1,40 @@
-<?xml version="1.0"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px">
-    <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M37,19h-2c-2.14,0-3,0.5-3,2 v3h5l-1,5h-4v15h-5V29h-4v-5h4v-3c0-4,2-7,6-7c2.9,0,4,1,4,1V19z" fill="#DB3536"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 50 50"
+   width="50px"
+   height="50px"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="facebook.svg"
+   inkscape:version="1.2.2 (b0a84865, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     id="namedview6"
+     pagecolor="#ffffff"
+     bordercolor="#cccccc"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="1"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="88.895987"
+     inkscape:cx="51.481514"
+     inkscape:cy="36.852057"
+     inkscape:window-width="1309"
+     inkscape:window-height="456"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg4" />
+  <path
+     d="M 44.047916,-3.8885697e-4 H 5.9520847 c -3.2857654,0 -5.95247355697,2.66670815697 -5.95247355697,5.95247355697 V 44.047916 c 0,3.285764 2.66670815697,5.952473 5.95247355697,5.952473 H 44.047916 c 3.285764,0 5.952473,-2.666709 5.952473,-5.952473 V 5.9520847 c 0,-3.2857654 -2.666709,-5.95247355697 -5.952473,-5.95247355697 z M 39.285936,17.857032 h -2.380988 c -2.54766,0 -3.571486,0.595247 -3.571486,2.380989 v 3.571485 h 5.952474 l -1.190494,5.952473 h -4.76198 v 17.85742 h -5.952473 v -17.85742 h -4.761978 v -5.952473 h 4.761978 v -3.571485 c 0,-4.761978 2.38099,-8.333463 7.142968,-8.333463 3.452434,0 4.761979,1.190494 4.761979,1.190494 z"
+     fill="#db3536"
+     id="path2"
+     style="stroke-width:1.19049" />
 </svg>

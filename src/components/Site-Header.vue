@@ -1,36 +1,25 @@
 <template>
   <header class="header">
-    <router-link to="/" id="logo-link"
-      ><img id="logo" loading="lazy" width="80" src="/logo.png" alt="IOGKF Logo"
-    /></router-link>
+    <router-link to="/" id="logo-link">
+      <img id="logo" loading="lazy" width="80" src="/logo.png" alt="IOGKF Logo" />
+    </router-link>
+    <nav>
+      <router-link to="/">Home</router-link>
+      <router-link to="/about">About</router-link>
+      <!-- <router-link to="/training">Training Schedule</router-link> -->
+      <router-link to="/events">Events</router-link>
+      <router-link to="/auckland-north">Auckland North</router-link>
+      <!-- <router-link to="/tester">Quiz</router-link> -->
+      <a href="https://wiki.uoa-karate.club/" target="_blank" rel="noopener noreferrer">Wiki</a>
+      <router-link to="/useful-links">Useful&nbsp;Links</router-link>
+      <a class="social-media" href="https://www.facebook.com/UoAKarate/" target="_blank" rel="noopener noreferrer">
+        <img loading="lazy" src="/facebook.svg" alt="[FB]" class="icon" width="24" />
+      </a>
 
-    <router-link to="/">Home</router-link>
-    <router-link to="/auckland-north">Auckland North</router-link>
-    <router-link to="/about">About</router-link>
-    <router-link to="/events">Events</router-link>
-    <router-link to="/tester">Quiz</router-link>
-    <a href="https://wiki.uoa-karate.club/" target="_blank" rel="noopener noreferrer"
-      >Wiki</a
-    >
-    <router-link to="/useful-links">Useful&nbsp;Links</router-link>
-    <!-- <a
-        href="https://en.wikipedia.org/wiki/G%C5%8Dj%C5%AB-ry%C5%AB"
-        target="_blank"
-        class="external-link col-5"
-      >About&nbsp;Goju&nbsp;Ryu</a> -->
-    <a
-      href="https://www.facebook.com/UoAKarate/"
-      target="_blank"
-      rel="noopener noreferrer"
-      ><img loading="lazy" src="/facebook.svg" alt="[FB]" class="social" width="24"
-    /></a>
-
-    <a
-      href="https://www.instagram.com/uoa_karate/"
-      target="_blank"
-      rel="noopener noreferrer"
-      ><img loading="lazy" src="/instagram.svg" alt="[IG]" class="social" width="24"
-    /></a>
+      <a class="social-media" href="https://www.instagram.com/uoa_karate/" target="_blank" rel="noopener noreferrer">
+        <img loading="lazy" src="/instagram.svg" alt="[IG]" class="icon" width="24" />
+      </a>
+    </nav>
   </header>
 </template>
 
@@ -49,26 +38,40 @@ export default {
 }
 
 .header {
-  text-align: left;
-  align-items: flex-end;
   margin: 20px 0 40px;
+  text-align: left;
   display: flex;
+  flex-wrap: wrap;
   justify-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem 2rem;
 }
 
-.header > * {
-  margin: 0 5px;
+header nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.5rem 1rem;
+  flex: 1;
+}
+
+.header nav> :not(.social-media) {
+  border: 1px solid var(--persian-red);
+  border-radius: 0 0 24px 0;
+  padding: 0 8px 8px;
 }
 
 h3 {
   margin: 40px 0 0;
 }
+
 ul {
   list-style-type: none;
   padding: 0;
 }
+
 li {
   display: inline-block;
   margin: 0 10px;
@@ -91,16 +94,16 @@ a {
   filter: saturate(90%);
 }
 
-.social {
-  width: 24px;
+.icon {
+  padding-inline: 2px;
+  height: 32px;
   vertical-align: middle;
-  margin-bottom: 4px;
   filter: saturate(70%);
   border: 1px solid transparent;
   border-radius: 5px;
 }
 
-.social:hover {
+.icon:hover {
   border: 1px solid var(--persian-red);
 }
 
