@@ -8,13 +8,15 @@
     <div class="paraOne">
       <h2>About the Club</h2>
       <p>
-        Founded in 2003 by Sensei Ewan Tempero (5th degree Black Belt) and Sensei Tom Davies (4th degree Black Belt), The
+        Founded in 2003 by Sensei Ewan Tempero (5th degree Black Belt) and Sensei Tom Davies (4th degree Black Belt),
+        The
         University of Auckland Goju Ryu Karate Club has been running for {{ clubAge }} years and counting.
       </p>
       <p>
         The club is affiliated with the
         <a href="https://iogkf.com" target="_blank" rel="noopener noreferrer">
-          International Okinawan Goju Ryu Federation (IOGKF)</a>, an international body dedicated to preserving the art of
+          International Okinawan Goju Ryu Federation (IOGKF)</a>, an international body dedicated to preserving the art
+        of
         the Okinawan
         Goju-Ryu Karate, as well as the New Zealand branch organization,
         <a href="https://karate.org.nz" target="_blank" rel="noopener noreferrer">IOGKFNZ</a>. This gives club members
@@ -60,7 +62,8 @@
         punching bags, skipping ropes, Muay Thai style focus mitts and more.
         We've also stocked the with some equipment of our own, including kick
         shields and
-        <a href="https://zoehinis.com/2014/09/04/hojo-undo-101-chishi/" target="_blank">chiishi</a>, a traditional Karate
+        <a href="https://zoehinis.com/2014/09/04/hojo-undo-101-chishi/" target="_blank">chiishi</a>, a traditional
+        Karate
         training implement from Okinawa (the birthplace of Karate).
       </p>
     </div>
@@ -82,6 +85,16 @@ import { onMounted, ref } from "vue";
 
 const heroText = "The Auckland University Goju Ryu Karate Club welcomes both university students and non-students, with any level of experience, and with any martial arts background."
 
+function calculateYears(dateString) {
+  const parsedDate = new Date(dateString)
+  const now = new Date()
+  return now.getFullYear() - parsedDate.getFullYear()
+}
+
+const ewanStartDate = '03/01/2008'
+const richardStartDate = '03/01/2008'
+const matStartDate = '08/01/2014'
+
 const instructors = [
   {
     name: "Sensei Ewan Tempero",
@@ -95,14 +108,15 @@ const instructors = [
     name: "Sensei Richard Ly",
     danGrade: true,
     rank: 4,
-    desc: "Sensei Richard has over 10 years of Goju Ryu experience.",
+    desc: `Sensei Richard has over ${calculateYears(richardStartDate)} years of Goju Ryu experience, and also runs the "Auckland North" dojo on the North Shore.`,
     imgSrc: "/img/sensei_richard.png"
   },
   // {
   //   name: "Senpai Mat Paul",
+  //   danGrade: true,
   //   rank: 2,
-  //   desc: "Senpai Mat has over 9 years experience in Goju Ryu.",
-  //   imgSrc: "/img/sensei_yin_2.png"
+  //   desc: `Senpai Mat has over ${calculateYears(matStartDate)} years experience in Goju Ryu. He also has graded in Okinawan Kobudo (weapons) and Judo.`,
+  //   // imgSrc: "/img/sensei_yin_2.png"
   // },
 ]
 const eventImages = [
