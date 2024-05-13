@@ -4,7 +4,7 @@ import AboutPage from './features/about-page/about-page.vue'
 import LinkDirectory from './features/link-page/LinkDirectory.vue'
 import EventsView from './features/events-page/EventsView.vue'
 import SingleEventView from './features/event-details/SingleEventView.vue'
-// import TestView from './features/test-page/TestView.vue'
+import TestView from './features/test-page/TestView.vue'
 import GradingInfo from './features/grading-info-page/GradingInfo.vue'
 import AucklandNorth from './features/auckland-north/Auckland-North.vue'
 
@@ -37,11 +37,11 @@ const routes = [
     name: 'singleEvent',
     component: SingleEventView
   },
-  // {
-  //   path: '/tester',
-  //     name: 'tester',
-  //       component: TestView,
-  //   },
+  {
+    path: '/tester',
+    name: 'tester',
+    component: TestView,
+  },
   {
     path: '/grading-info',
     name: 'gradingInfo',
