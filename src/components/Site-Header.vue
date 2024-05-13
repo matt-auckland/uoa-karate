@@ -54,7 +54,6 @@ header nav {
   justify-items: flex-start;
   justify-content: flex-start;
   gap: 0.5rem 1rem;
-  flex: 1;
 }
 
 .header nav> :not(.social-media) {
