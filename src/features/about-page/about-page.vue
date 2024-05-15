@@ -111,13 +111,13 @@ const instructors = [
     desc: `Sensei Richard has over ${calculateYears(richardStartDate)} years of Goju Ryu experience, and also runs the "Auckland North" dojo on the North Shore.`,
     imgSrc: "/img/sensei_richard.png"
   },
-  // {
-  //   name: "Senpai Mat Paul",
-  //   danGrade: true,
-  //   rank: 2,
-  //   desc: `Senpai Mat has over ${calculateYears(matStartDate)} years experience in Goju Ryu. He also has graded in Okinawan Kobudo (weapons) and Judo.`,
-  //   // imgSrc: "/img/sensei_yin_2.png"
-  // },
+  {
+    name: "Senpai Mat Paul",
+    danGrade: true,
+    rank: 2,
+    desc: `Senpai Mat has over ${calculateYears(matStartDate)} years experience in Goju Ryu. He also has graded in Okinawan Kobudo (weapons) and Judo.`,
+    imgSrc: "/img/mat_saifa.jpg"
+  },
 ]
 const eventImages = [
   {
