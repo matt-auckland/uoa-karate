@@ -2,7 +2,6 @@
   <main>
     <div class="container">
       <HeroImage class="hero-image" source="/img/hawks_nest.jpg" :heading="heroHeading" :paragraph="heroText" />
-      <HeroImage class="hero-image" source="/group-photo.jpg" heading="Welcome to our Dojo" :paragraph="heroText" />
       <TrainingSchedule class="schedule" />
       <FeesTabs class="fees" />
       <UpcomingEvents class="events" />
