@@ -1,6 +1,7 @@
 <template>
-  <content>
+  <main>
     <div class="container">
+      <HeroImage class="hero-image" source="/img/hawks_nest.jpg" :heading="heroHeading" :paragraph="heroText" />
       <HeroImage class="hero-image" source="/group-photo.jpg" heading="Welcome to our Dojo" :paragraph="heroText" />
       <TrainingSchedule class="schedule" />
       <FeesTabs class="fees" />
@@ -8,8 +9,7 @@
     </div>
     <ClubMap class="clubmap" />
     <ContactForm class="contact-form" />
-
-  </content>
+  </main>
 </template>
 
 <script>
@@ -32,7 +32,8 @@ export default {
   },
   data: function () {
     return {
-      heroText: "People with any level of experience and from any martial arts background are welcome to train, both students and non-students alike. We have beginner specific training at the start of every semester but accept new members year round."
+      heroHeading: "Welcome to our Club!",
+      heroText: "Our club welcomes people with any level of experience, both students and non-students alike. We accept new members all year round, but we host beginner specific trainings at the start of every semester."
     };
   }
 };
@@ -87,7 +88,6 @@ content {
   width: 100%;
   margin: 0 auto;
 
-  /* background-image: url("/group-photo.jpg"); */
   background-position-x: 0px;
   background-size: cover;
   height: 435px;
@@ -136,4 +136,3 @@ content {
   grid-area: events;
 }
 </style>
-
