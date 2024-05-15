@@ -54,7 +54,7 @@
       <p>
         Most club trainings are run out of the awesome
         <a href="https://hawksnestgym.co.nz/" target="_blank">Hawks Nest Gym</a>
-        which is a fully furbished Mauy Thai Gym located at Level 3/492 Queen
+        which is a fully furbished Mauy Thai Gym located at Level 2/492 Queen
         Street, Auckland; near the intersection of Queen Street and City Road.
       </p>
       <p>
