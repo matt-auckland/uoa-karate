@@ -1,5 +1,7 @@
 {
-  "bannerText": {},
+  "bannerText": {
+    
+  },
   "schedule": [
     {
       "index": 1,
@@ -15,7 +17,7 @@
       "day": "Wednesday",
       "startTime": "6pm",
       "finishTime": "7.30pm",
-      "location": "The Hawks' Nest, Floor 2, 492 Queen Street",
+      "location": "Room 341, Building 201, University of Auckland, 10 Symonds Street",
       "notes": "",
       "canDisplay": true
     },
