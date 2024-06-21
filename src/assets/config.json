@@ -18,7 +18,7 @@
       "startTime": "6pm",
       "finishTime": "7.30pm",
       "location": "Room 341, Building 201, University of Auckland, 10 Symonds Street",
-      "notes": "",
+      "notes": "Please note this room may change after July 10th",
       "canDisplay": true
     },
     {
@@ -26,8 +26,8 @@
       "day": "Friday",
       "startTime": "6.00pm",
       "finishTime": "8.00pm",
-      "location": "University of Auckland, contact us for room location details",
-      "notes": "Graded members only",
+      "location": "Room 148, Building 303, University of Auckland, 38 Princes Street",
+      "notes": "Graded members only. Please note this room may change after August 9th",
       "canDisplay": true
     },
     {
@@ -35,8 +35,8 @@
       "day": "Sunday",
       "startTime": "10am",
       "finishTime": "12pm",
-      "location": "The Hawks' Nest, Floor 2, 492 Queen Street",
-      "notes": "",
+      "location": "The Hawks' Nest, Floor 2, 18 Scene Lane",
+      "notes": "Near to Woolworths.",
       "canDisplay": true
     }
   ]
