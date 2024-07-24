@@ -1,5 +1,4 @@
 <template>
-  <div id="app">
     <SitewideBanner />
     <SiteHeader />
     <RouterView />
@@ -10,7 +9,6 @@
         <a href="https://github.com/matt-auckland/uoa-karate" target="_blank">Github</a>
       </div>
     </footer>
-  </div>
 </template>
 
 <script>
