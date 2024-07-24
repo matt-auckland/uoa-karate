@@ -81,16 +81,10 @@
 import MemberCard from "@/components/member-card.vue";
 import Image from "../../components/Image.vue";
 import HeroImage from "../../components/HeroImage.vue";
+import Utils from "@/libs/utils.js";
 import { onMounted, ref } from "vue";
 
 const heroText = "The Auckland University Goju Ryu Karate Club welcomes both university students and non-students, with any level of experience, and with any martial arts background."
-
-function calculateYears(dateString) {
-  const parsedDate = new Date(dateString)
-  const now = new Date()
-  return now.getFullYear() - parsedDate.getFullYear()
-}
-
 const ewanStartDate = '03/01/2008'
 const richardStartDate = '03/01/2008'
 const matStartDate = '08/01/2014'
@@ -108,14 +102,14 @@ const instructors = [
     name: "Sensei Richard Ly",
     danGrade: true,
     rank: 4,
-    desc: `Sensei Richard has over ${calculateYears(richardStartDate)} years of Goju Ryu experience, and also runs the "Auckland North" dojo on the North Shore.`,
+    desc: `Sensei Richard has over ${Utils.calculateYears(richardStartDate)} years of Goju Ryu experience, and also runs the "Auckland North" dojo on the North Shore.`,
     imgSrc: "/img/sensei_richard.png"
   },
   {
     name: "Senpai Mat Paul",
     danGrade: true,
     rank: 2,
-    desc: `Senpai Mat has over ${calculateYears(matStartDate)} years experience in Goju Ryu. He also has graded in Okinawan Kobudo (weapons) and Judo.`,
+    desc: `Senpai Mat has over ${Utils.calculateYears(matStartDate)} years experience in Goju Ryu. He also has graded in Okinawan Kobudo (weapons) and Judo.`,
     imgSrc: "/img/mat_saifa.jpg"
   },
 ]
