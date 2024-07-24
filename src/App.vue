@@ -25,7 +25,7 @@ export default {
     SitewideBanner,
     RouterView
   },
-  metaInfo: {
+  head: {
     title: "UoA Karate Club",
     meta: [
       {

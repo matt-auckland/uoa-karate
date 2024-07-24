@@ -53,7 +53,7 @@ import Utils from "@/libs/utils.js";
 
 export default {
   name: "TestPage",
-  metaInfo: {
+  head: {
     title: "Karate Knowledge Tester",
     meta: [
       {

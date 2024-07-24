@@ -49,7 +49,16 @@ import Utils from "@/libs/utils.js";
 
 
 export default {
-  name: "home-page",
+  name: "auckland-north",
+  head: {
+    title: "Auckland North Karate Club",
+    meta: [
+      {
+        name: "description",
+        content: "We're a Goju Ryu Karate dojo based in Sunnynook on the North Shore. We are open to beginners and experienced martial artists alike. Families and children (12+) are also welcome."
+      }
+    ]
+  },
   components: {
     ClubMap,
     TrainingSchedule,

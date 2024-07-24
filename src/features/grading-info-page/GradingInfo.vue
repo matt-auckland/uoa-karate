@@ -38,7 +38,7 @@
 <script>
 export default {
   name: "GradingInfo",
-  metaInfo: {
+  head: {
     title: "What do I need to know for grading again??",
     meta: [
       {

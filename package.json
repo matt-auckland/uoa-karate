@@ -11,7 +11,7 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@unhead/vue": "^1.7.4",
+    "@unhead/vue": "^1.9.16",
     "vue": "^3.4.27",
     "vue-router": "^4.3.2"
   },

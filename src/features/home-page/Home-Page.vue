@@ -2,6 +2,13 @@
   <main>
     <div class="container">
       <HeroImage class="hero-image" source="/img/hawks_nest.jpg" :heading="heroHeading" :paragraph="heroText" />
+      <!-- <section class="about-section">
+        <p class="text-container">
+          We strive to be a fun and inclusive martial arts club, specialising in traditional Okinawan Goju Ryu Karate.
+          Our club has a diverse mix of
+
+        </p>
+      </section> -->
       <TrainingSchedule class="schedule" />
       <FeesTabs class="fees" />
       <UpcomingEvents class="events" />
@@ -96,18 +103,15 @@ content {
   align-items: center;
 }
 
-.home-intro .text-container {
-  max-width: 450px;
-  width: 80%;
-  margin-left: 30px;
-  padding: 30px 20px;
-  background: rgba(79, 79, 79, 0.577);
-  border-radius: 5px;
-  color: white;
-}
+.about-section {
+  grid-area: about;
 
-.double-col {
-  grid-area: double;
+  .text-container {
+    padding: 30px 20px;
+    background: rgba(79, 79, 79, 0.577);
+    border-radius: 5px;
+    color: white;
+  }
 }
 
 .schedule {
