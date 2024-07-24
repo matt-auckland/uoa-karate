@@ -1,6 +1,6 @@
 {
   "bannerText": {
-    "text": "As of the 20th of June our training locations have changed, please double check the location below or contact us to be sure."
+    "text": "As of the 24th of July our training locations have changed again! Please double check the location below or contact us to be sure."
   },
   "schedule": [
     {
@@ -17,8 +17,8 @@
       "day": "Wednesday",
       "startTime": "6pm",
       "finishTime": "7.30pm",
-      "location": "Room 341, Building 201, University of Auckland, 10 Symonds Street",
-      "notes": "Please note this room may change after July 10th",
+      "location": "Room G15, Building 303, University of Auckland, 38 Princes Street",
+      "notes": "Please note this room may change after October 23rd",
       "canDisplay": true
     },
     {
