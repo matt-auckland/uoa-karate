@@ -1,5 +1,5 @@
 <template>
-  <div class="member">
+  <div class="member" :class="wide ? 'wide' :''">
     <div class="picture top" :style="style" alt=""></div>
     <div class="details">
       <h2 class="name">{{ member.name }}</h2>
@@ -13,7 +13,7 @@
 
 <script>
 export default {
-  props: ['member'],
+  props: ['member', 'wide'],
   computed: {
     grade() {
       return this.member.danGrade
@@ -61,6 +61,12 @@ export default {
   width: 350px;
   height: 386px;
   white-space: normal;
+
+  &.wide {
+    width: unset;
+    height: unset;
+    max-height: 386px;
+  }
 }
 
 .member .name {

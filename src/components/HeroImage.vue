@@ -1,6 +1,6 @@
 <template>
   <div class="hero-image" :style="`background-image: url('${source}')`">
-    <div class="text-container">
+    <div class="text-container" :class="{'span': spanText}">
       <h1>{{ heading }}</h1>
       <p v-html="paragraph"></p>
     </div>
@@ -11,6 +11,7 @@
 export default {
   name: "HeroImage",
   props: {
+    spanText: {type: Boolean, default: false},
     source: { type: String, required: true },
     heading: { type: String, required: true },
     paragraph: { type: String, required: true }
@@ -40,5 +41,9 @@ export default {
   background: rgba(79, 79, 79, 0.85);
   border-radius: 5px;
   color: white;
+
+  &.span {
+    max-width: 80%;
+  }
 }
 </style>
