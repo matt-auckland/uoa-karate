@@ -1,12 +1,13 @@
 
 <template>
   <div class="event-container">
+    <router-link to="/events/">< Back to event list</router-link>
     <div class="event">
       <h1 class="event-title">{{ event.name }}</h1>
       <img :src="event.img" alt="Event image" v-if="event.img" class="event-img" loading="lazy">
-      <div class="event-text"><b>Date:</b> {{ event.date }}</div>
+      <div class="event-text"><b>Date:</b> {{ dateString }}</div>
       <div class="event-text"><b>Location:</b> {{ event.location }}</div>
-      <div class="event-text">{{ event.extendedDescription ? event.extendedDescription : event.description }}</div>
+      <div class="event-text" v-html="event.extendedDescription || event.description"></div>
       <div class="event-text" v-if="event.signUpURL">To sign up, follow <a :href="event.signUpURL" target="_blank"
            rel="noopener noreferrer">this link</a></div>
     </div>
@@ -16,14 +17,15 @@
 
 <script>
 import eventList from "@/assets/events.json";
+import utils from '../../libs/utils';
+
 
 export default {
-  name: "SingleEventView",
-  components: {},
-  data: function () {
-    return {};
-  },
+  name: "EventDetailView",
   computed: {
+    dateString() {
+      return utils.calculateDateString(this.event.startDate, this.event.endDate)
+    },
     eventId: function () {
       return this.$route.params.id;
     },

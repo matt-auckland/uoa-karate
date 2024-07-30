@@ -103,7 +103,7 @@
     "extendedDescription": ""
   },
   {
-    "title": "Semester 2 Grading",
+    "title": "Sem 2 Grading",
     "id": "8",
     "startDate": "2020-10",
     "endDate": "",
@@ -160,44 +160,52 @@
     "signUpURL": "",
     "extendedDescription": ""
   },
-  
   {
-  "id": "112",
-  "startDate":"2021-11-05",
-  "endDate":"2021-11-08",
-  "dtstamp":"20210219T032952",
-  "created":"20201118T073342Z",
-  "lastModified":"20201118T073342Z",
-  "location": "Rissington Girl Guide Camp, Hawke’s Bay",
-  "title":"Combined East Coast Goju Ryu November Spring Camp",
-  "description":"It’s time to save the dates of Friday 5th November to Sunday 7th November 2021. Great People, Great Food & Great Training! More details to follow.",
-  "offsiteLink":"https://karate.org.nz/event/combined-east-coast-goju-ryu-november-spring-camp/"
+    "id": "112",
+    "startDate": "2021-11-05",
+    "endDate": "2021-11-08",
+    "dtstamp": "20210219T032952",
+    "created": "20201118T073342Z",
+    "lastModified": "20201118T073342Z",
+    "location": "Rissington Girl Guide Camp, Hawke’s Bay",
+    "title": "Combined East Coast Goju Ryu November Spring Camp",
+    "description": "It’s time to save the dates of Friday 5th November to Sunday 7th November 2021. Great People, Great Food & Great Training! More details to follow.",
+    "offsiteLink": "https://karate.org.nz/event/combined-east-coast-goju-ryu-november-spring-camp/"
   },
   {
     "id": "1000",
-    "startDate":"2023-07-19",
-     "endDate":"2023-07-19",
-    "location": "The Hawks' Nest, Floor 2, 492 Queen Street",
-    "title":"Semester 2 Beginner's Training - Class 1",
-    "description":"Come and try our beginner's karate training for the new semester! It will be held on July 19th, 26th, and August 2nd from 6pm to 7:30pm. Your first class is free, and it's only $5 total to join the other beginner's trainings. Fill out the form to let us know if you'll be joining us on any of these days. Get ready to learn the basics of karate in a friendly and supportive setting!",
-    "offsiteLink":"https://docs.google.com/forms/d/1bPMtgUDXCPMpEReijFP0tMrvCISVmKgATd3AHZP2PDY/viewform?edit_requested=true"
+    "startDate": "2024-07-31T18:00:00",
+    "endDate": "2024-07-31T19:30:00",
+    "location": "UoA campus, Building 303, Room G15 (303-G15), in the courtyard between Science Buildings 303 and 302.",
+    "title": "Sem 2 Beginner's Training - Class 1",
+    "description": "Our free beginner training sessions aim to provide a taste of what Goju-Ryu Karate is all about in an approachable and welcoming environment for all levels of experience. During four sessions we will walk you through some self-defence applications and core techniques of our style of Karate. You may attend any or all of our sessions you are available for; there is no obligation to train every week.",
+    "extendedDescription": "Our free beginner training sessions aim to provide a taste of what Goju-Ryu Karate is all about in an approachable and welcoming environment for all levels of experience. During four sessions we will walk you through some self-defence applications and core techniques of our style of Karate. You may attend any or all of our sessions you are available for; there is no obligation to train every week. \n\nFor beginner training, all you need to bring is a drink bottle and wear something that is comfortable to move around/kick/punch in (basically anything but tight jeans). There are bathrooms nearby if you wish to change before/after training. You do not need a uniform/Gi, but if you already have one, feel free to wear it. And don't worry about shoes, we train in bare feet."
   },
-   {
+  {
     "id": "1001",
-    "startDate":"2023-07-26",
-     "endDate":"2023-07-26",
-    "location": "The Hawks' Nest, Floor 2, 492 Queen Street",
-    "title":"Semester 2 Beginner's Training - Class 2",
-    "description":"Come and try our beginner's karate training for the new semester! It will be held on July 19th, 26th, and August 2nd from 6pm to 7:30pm. Your first class is free, and it's only $5 total to join the other beginner's trainings. Fill out the form to let us know if you'll be joining us on any of these days. Get ready to learn the basics of karate in a friendly and supportive setting!",
-    "offsiteLink":"https://docs.google.com/forms/d/1bPMtgUDXCPMpEReijFP0tMrvCISVmKgATd3AHZP2PDY/viewform?edit_requested=true"
+    "startDate": "2024-08-07T18:00:00",
+    "endDate": "2024-08-07T19:30:00",
+    "location": "UoA campus, Building 303, Room G15 (303-G15), in the courtyard between Science Buildings 303 and 302.",
+    "title": "Sem 2 Beginner's Training - Class 2",
+    "description": "Our free beginner training sessions aim to provide a taste of what Goju-Ryu Karate is all about in an approachable and welcoming environment for all levels of experience. During four sessions we will walk you through some self-defence applications and core techniques of our style of Karate. You may attend any or all of our sessions you are available for; there is no obligation to train every week.",
+    "extendedDescription": "Our free beginner training sessions aim to provide a taste of what Goju-Ryu Karate is all about in an approachable and welcoming environment for all levels of experience. During four sessions we will walk you through some self-defence applications and core techniques of our style of Karate. You may attend any or all of our sessions you are available for; there is no obligation to train every week. \n\nFor beginner training, all you need to bring is a drink bottle and wear something that is comfortable to move around/kick/punch in (basically anything but tight jeans). There are bathrooms nearby if you wish to change before/after training. You do not need a uniform/Gi, but if you already have one, feel free to wear it. And don't worry about shoes, we train in bare feet."
   },
   {
     "id": "1002",
-    "startDate":"2023-08-02",
-     "endDate":"2023-08-02",
-    "location": "The Hawks' Nest, Floor 2, 492 Queen Street",
-    "title":"Semester 2 Beginner's Training - Class 3",
-    "description":"Come and try our beginner's karate training for the new semester! It will be held on July 19th, 26th, and August 2nd from 6pm to 7:30pm. Your first class is free, and it's only $5 total to join the other beginner's trainings. Fill out the form to let us know if you'll be joining us on any of these days. Get ready to learn the basics of karate in a friendly and supportive setting!",
-    "offsiteLink":"https://docs.google.com/forms/d/1bPMtgUDXCPMpEReijFP0tMrvCISVmKgATd3AHZP2PDY/viewform?edit_requested=true"
+    "startDate": "2024-08-14T18:00:00",
+    "endDate": "2024-08-14T19:30:00",
+    "location": "UoA campus, Building 303, Room G15 (303-G15), in the courtyard between Science Buildings 303 and 302.",
+    "title": "Sem 2 Beginner's Training - Class 3",
+    "description": "Our free beginner training sessions aim to provide a taste of what Goju-Ryu Karate is all about in an approachable and welcoming environment for all levels of experience. During four sessions we will walk you through some self-defence applications and core techniques of our style of Karate. You may attend any or all of our sessions you are available for; there is no obligation to train every week.",
+    "extendedDescription": "Our free beginner training sessions aim to provide a taste of what Goju-Ryu Karate is all about in an approachable and welcoming environment for all levels of experience. During four sessions we will walk you through some self-defence applications and core techniques of our style of Karate. You may attend any or all of our sessions you are available for; there is no obligation to train every week. \n\nFor beginner training, all you need to bring is a drink bottle and wear something that is comfortable to move around/kick/punch in (basically anything but tight jeans). There are bathrooms nearby if you wish to change before/after training. You do not need a uniform/Gi, but if you already have one, feel free to wear it. And don't worry about shoes, we train in bare feet."
+  },
+  {
+    "id": "1002",
+    "startDate": "2024-08-21T18:00:00",
+    "endDate": "2024-08-21T19:30:00",
+    "location": "UoA campus, Building 303, Room G15 (303-G15), in the courtyard between Science Buildings 303 and 302.",
+    "title": "Sem 2 Beginner's Training + Pizza Night 🍕 - Class 4",
+    "description": "Pizza Night details coming soon.. Our free beginner training sessions aim to provide a taste of what Goju-Ryu Karate is all about in an approachable and welcoming environment for all levels of experience. During four sessions we will walk you through some self-defence applications and core techniques of our style of Karate. You may attend any or all of our sessions you are available for; there is no obligation to train every week.",
+    "extendedDescription": "Pizza Night details coming soon.. Our free beginner training sessions aim to provide a taste of what Goju-Ryu Karate is all about in an approachable and welcoming environment for all levels of experience. During four sessions we will walk you through some self-defence applications and core techniques of our style of Karate. You may attend any or all of our sessions you are available for; there is no obligation to train every week. \n\nFor beginner training, all you need to bring is a drink bottle and wear something that is comfortable to move around/kick/punch in (basically anything but tight jeans). There are bathrooms nearby if you wish to change before/after training. You do not need a uniform/Gi, but if you already have one, feel free to wear it. And don't worry about shoes, we train in bare feet."
   }
 ]

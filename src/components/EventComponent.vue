@@ -18,7 +18,7 @@
         <span v-else>To Be Decided</span>
       </p>
       <p>
-        <span title="Date">📆</span> {{ calculateDateString(event) || TBA }}
+        <span title="Date">📆</span> {{ dateString || "TBA" }}
       </p>
       <p
         class="event-text"
@@ -31,7 +31,7 @@
         href="javascript:;"
         @click="showingMore = !showingMore"
         class="show-more"
-      >{{ showingMore ? "Read Less" : "Read More" }}</a>
+      >{{ showingMore ? "Unexpand" : "Expand" }}</a>
 
       <p class="event-text"></p>
       <div v-if="event.signUpURL">
@@ -61,6 +61,7 @@
 </template>
 
 <script>
+import utils from '../libs/utils';
 export default {
   name: "EventComponent",
   components: {},
@@ -100,47 +101,9 @@ export default {
         return this.event.customImage;
 
       return `img/${this.event.customImage}`;
-    }
-  },
-  methods: {
-    calculateDateString(event) {
-      if (!event.startDate) return "";
-      let startDate = new Intl.DateTimeFormat(
-        "default",
-        this.calculateFormatterOptions(event.startDate)
-      ).format(new Date(event.startDate));
-
-      if (!event.endDate) return startDate;
-
-      let endDate = new Intl.DateTimeFormat(
-        "default",
-        this.calculateFormatterOptions(event.endDate)
-      ).format(new Date(event.endDate));
-
-      return `${startDate} - ${endDate}`;
     },
-    calculateFormatterOptions(dateStr) {
-      const fullStrOptions = {
-        weekday: "long",
-        month: "long",
-        day: "numeric",
-        year: "numeric"
-      };
-
-      const monthYearOptions = {
-        month: "long",
-        year: "numeric"
-      };
-
-      switch (dateStr.split("-").length) {
-        case 1:
-          return { year: "numeric" };
-        case 2:
-          return monthYearOptions;
-        case 3:
-        default:
-          return fullStrOptions;
-      }
+    dateString() {
+      return utils.calculateDateString(this.event.startDate, this.event.endDate)
     }
   }
 };

@@ -7,7 +7,9 @@
       <div v-for="event in upcomingEventList" :key="event.title" class="event">
         <div class="event-inner">
           <div class="event-text title">
-            <b>{{ event.title }}</b>
+            <router-link :to="`events/${event.id}`">
+              <b>{{ event.title }}</b>
+            </router-link>
           </div>
           <div class="event-text date">
             When: {{ event.startDate }}

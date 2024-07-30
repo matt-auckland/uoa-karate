@@ -3,7 +3,7 @@ import HomePage from './features/home-page/Home-Page.vue';
 import AboutPage from './features/about-page/about-page.vue'
 import LinkDirectory from './features/link-page/LinkDirectory.vue'
 import EventsView from './features/events-page/EventsView.vue'
-import SingleEventView from './features/event-details/SingleEventView.vue'
+import EventDetailView from './features/event-details/EventDetailView.vue'
 import QuizPage from './features/quiz-page/QuizPage.vue'
 import GradingInfo from './features/grading-info-page/GradingInfo.vue'
 import AucklandNorth from './features/auckland-north/Auckland-North.vue'
@@ -32,7 +32,7 @@ const routes = [
   {
     path: '/events/:id',
     name: 'singleEvent',
-    component: SingleEventView
+    component: EventDetailView
   },
   {
     path: '/tester',
