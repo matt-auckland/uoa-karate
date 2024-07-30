@@ -27,7 +27,7 @@ import UpcomingEvents from "@/components/UpcomingEvents.vue";
 import HeroImage from "@/components/HeroImage.vue";
 
 export default {
-  name: "home-page",
+  name: "HomePage",
   components: {
     ClubMap,
     TrainingSchedule,

@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import SiteHeader from "@/components/Site-Header.vue";
+import SiteHeader from "@/components/SiteHeader.vue";
 import QuoteDisplay from "@/components/QuoteDisplay.vue";
 import SitewideBanner from "@/components/SitewideBanner.vue";
 import { RouterView } from "vue-router";

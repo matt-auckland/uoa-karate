@@ -23,13 +23,6 @@
   </header>
 </template>
 
-<script>
-export default {
-  name: "Site-Header",
-  props: {},
-};
-</script>
-
 <style scoped>
 .external-link:after {
   content: "";

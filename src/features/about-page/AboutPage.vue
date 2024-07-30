@@ -78,7 +78,7 @@
 </template>
 
 <script setup>
-import MemberCard from "@/components/member-card.vue";
+import MemberCard from "@/components/MemberCard.vue";
 import Image from "../../components/Image.vue";
 import HeroImage from "../../components/HeroImage.vue";
 import Utils from "@/libs/utils.js";
