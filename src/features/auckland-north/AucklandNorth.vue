@@ -39,7 +39,7 @@
 </template>
 
 <script>
-import MemberCard from "@/components/.vue";
+import MemberCard from "@/components/MemberCard.vue";
 import TrainingSchedule from "@/components/TrainingSchedule.vue";
 import FeesTable from "@/components/fees-table/FeesTable.vue";
 import ClubMap from "@/components/ClubMap.vue";
