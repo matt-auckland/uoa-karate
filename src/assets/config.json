@@ -1,6 +1,6 @@
 {
   "bannerText": {
-    "text": "As of the 24th of July our training locations have changed again! Please double check the location below or contact us to be sure."
+    "text": "Our Friday training has changed to room 303-153 as of the 29th of August! Please double check the location below or contact us to be sure."
   },
   "schedule": [
     {
@@ -26,8 +26,8 @@
       "day": "Friday",
       "startTime": "6.00pm",
       "finishTime": "8.00pm",
-      "location": "Room 148, Building 303, University of Auckland, 38 Princes Street",
-      "notes": "Graded members only. Please note this room may change after August 9th",
+      "location": "Room 153, Building 303, University of Auckland, 38 Princes Street",
+      "notes": "Graded members only. Please note this room may change after November 8th",
       "canDisplay": true
     },
     {
