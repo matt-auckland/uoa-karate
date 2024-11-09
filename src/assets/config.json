@@ -17,8 +17,8 @@
       "day": "Wednesday",
       "startTime": "6pm",
       "finishTime": "7.30pm",
-      "location": "Room G15, Building 303, University of Auckland, 38 Princes Street",
-      "notes": "Please note this room may change after October 23rd",
+      "location": "Room 115, Building 303, University of Auckland, 38 Princes Street",
+      "notes": "Last Wed training for the year is Dec 11",
       "canDisplay": true
     },
     {
@@ -26,8 +26,8 @@
       "day": "Friday",
       "startTime": "6.00pm",
       "finishTime": "8.00pm",
-      "location": "Room 153, Building 303, University of Auckland, 38 Princes Street",
-      "notes": "Graded members only. Please note this room may change after November 8th",
+      "location": "Room G10, Building 119, University of Auckland, 5 Princes Street",
+      "notes": "Graded members only. Last Fri training for the year is 13th Dec",
       "canDisplay": true
     },
     {
@@ -36,7 +36,7 @@
       "startTime": "10am",
       "finishTime": "12pm",
       "location": "Hawks Nest, 18 Scene Lane",
-      "notes": "Near to Woolworths",
+      "notes": "Near to Woolworths. Last Sun training for the year 15th Dec",
       "canDisplay": true
     }
   ]
