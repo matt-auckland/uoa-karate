@@ -1,6 +1,6 @@
 {
   "bannerText": {
-    "text": "Our Friday training has changed to room 303-153 as of the 29th of August! Please double check the location below or contact us to be sure."
+    "text": "Our training locations have all changed from the 5th of March 2025! Please double check the location below or contact us to be sure."
   },
   "schedule": [
     {
@@ -17,8 +17,8 @@
       "day": "Wednesday",
       "startTime": "6pm",
       "finishTime": "7.30pm",
-      "location": "Room 115, Building 303, University of Auckland, 38 Princes Street",
-      "notes": "Last Wed training for the year is Dec 11",
+      "location": "Rec Centre (Hiwa) Mind and Body Studio. 2nd floor, University of Auckland",
+      "notes": "",
       "canDisplay": true
     },
     {
@@ -26,8 +26,8 @@
       "day": "Friday",
       "startTime": "6.00pm",
       "finishTime": "8.00pm",
-      "location": "Room G10, Building 119, University of Auckland, 5 Princes Street",
-      "notes": "Graded members only. Last Fri training for the year is 13th Dec",
+      "location": "Room G14, Building 303, University of Auckland,  38 Princes Street",
+      "notes": "Graded members only. From 7th March - 18th April. Room may change after that. ",
       "canDisplay": true
     },
     {
@@ -35,8 +35,8 @@
       "day": "Sunday",
       "startTime": "10am",
       "finishTime": "12pm",
-      "location": "Hawks Nest, 18 Scene Lane",
-      "notes": "Near to Woolworths. Last Sun training for the year 15th Dec",
+      "location": "Rec Centre (Hiwa) Combat Sports Student. 1st floor, University of Auckland",
+      "notes": "",
       "canDisplay": true
     }
   ]
