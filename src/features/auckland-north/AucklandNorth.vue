@@ -69,10 +69,10 @@ export default {
   data: function () {
     return {
       mapUrl: "https://www.google.com/maps/d/embed?mid=1lSeGuFy53GDmQIbpM2aS5jWlWWawurI",
-      schedule: [
+        schedule: [
         {
           "index": 1,
-          "day": "Thurdays",
+          "day": "Thursdays",
           "startTime": "6pm",
           "finishTime": "7.30pm",
           "location": "Acacia room, Sunnynook Community Centre, Sunnynook",
