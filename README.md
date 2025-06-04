@@ -19,3 +19,7 @@ Currently hosted at [https://www.uoa-karate.club/](https://www.uoa-karate.club/)
 #### Build 
  
  `yarn build`
+
+#### Test
+
+ `npm test`
