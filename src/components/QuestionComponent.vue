@@ -14,40 +14,44 @@
       class="question-container"
     >
       <img
+        v-if="questionProp.image"
         loading="lazy"
         :src="questionProp.image"
-        v-if="questionProp.image"
         class="question-image"
         alt=""
       >
-      <h3 class="question-text">{{ questionProp.question }}</h3>
+      <h3 class="question-text">
+        {{ questionProp.question }}
+      </h3>
       <form class="question-form">
         <div
-          class="form-option"
           v-for="answer in questionProp.answers"
           :key="answer.text"
+          class="form-option"
           :class="{ correct: answerVisible && answer.correct, bold: selectedAnswer && answer.text == selectedAnswer.text }"
         >
           <label>
             <input
+              v-model="selectedAnswer"
               type="radio"
               name="answer"
-              v-model="selectedAnswer"
               :disabled="answerVisible"
               :value="answer"
             >
             <span>
-              {{answer.text}}
+              {{ answer.text }}
             </span>
           </label>
         </div>
         <button
-          v-on:click="markAnswer(selectedAnswer)"
           :disabled="selectedAnswer === undefined"
           :class="{ 'hidden': answerVisible}"
           type="button"
           class="question-button show-answer-button"
-        >Show answer</button>
+          @click="markAnswer(selectedAnswer)"
+        >
+          Show answer
+        </button>
       </form>
       <div
         v-if="answerVisible"
@@ -55,7 +59,7 @@
       >
         <div class="answer-text">
           <span
-            v-if="this.selectedAnswer.correct"
+            v-if="selectedAnswer.correct"
             class="correct"
           >
             Correct!
@@ -75,12 +79,14 @@
             :href="questionProp.referenceLink"
             target="_blank"
           >
-            {{questionProp.referenceLink}}
+            {{ questionProp.referenceLink }}
           </a>
         </div>
 
         <div class="answer-buttons-container">
-          <button v-on:click="nextQuestion()">Next Question</button>
+          <button @click="nextQuestion()">
+            Next Question
+          </button>
         </div>
       </div>
     </div>
@@ -92,10 +98,22 @@
 export default {
   components: {},
   props: {
-    questionProp: Object,
-    allQuestionsAnswered: Boolean,
-    randomQuestion: Function,
-    recordAnswer: Function
+    questionProp: {
+      type: Object,
+      default: () => ({}),
+    },
+    allQuestionsAnswered: {
+      type: Boolean,
+      default: false,
+    },
+    randomQuestion: {
+      type: Function,
+      default: () => {},
+    },
+    recordAnswer: {
+      type: Function,
+      default: () => {},
+    },
   },
 
   data() {
@@ -104,17 +122,17 @@ export default {
       answerVisible: false
     };
   },
+  computed: {
+    correctAnswer() {
+      return this.questionProp.answers.filter(a => a.correct)[0];
+    }
+  },
   watch: {
     questionProp: function(val, oldVal) {
       if (!val || (oldVal && val.question !== oldVal.question)) {
         this.answerVisible = false;
         this.selectedAnswer = undefined;
       }
-    }
-  },
-  computed: {
-    correctAnswer() {
-      return this.questionProp.answers.filter(a => a.correct)[0];
     }
   },
   methods: {

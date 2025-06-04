@@ -1,14 +1,17 @@
 <template>
-    <SitewideBanner />
-    <SiteHeader />
-    <RouterView />
-    <footer>
-      <QuoteDisplay class="quote-display" />
-      <div class="github">
-        This site's sourcecode is hosted on
-        <a href="https://github.com/matt-auckland/uoa-karate" target="_blank">Github</a>
-      </div>
-    </footer>
+  <SitewideBanner />
+  <SiteHeader />
+  <RouterView />
+  <footer>
+    <QuoteDisplay class="quote-display" />
+    <div class="github">
+      This site's sourcecode is hosted on
+      <a
+        href="https://github.com/matt-auckland/uoa-karate"
+        target="_blank"
+      >Github</a>
+    </div>
+  </footer>
 </template>
 
 <script>

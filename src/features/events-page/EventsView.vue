@@ -1,9 +1,17 @@
 <template>
   <div class="events-container">
     <div class="description">
-      <HeroImage heading="Upcoming Events" :paragraph="heroPara" source="img/rangitoto.jpg" />
+      <HeroImage
+        heading="Upcoming Events"
+        :paragraph="heroPara"
+        source="img/rangitoto.jpg"
+      />
     </div>
-    <div v-for="event in eventList" :key="event.name" class="event">
+    <div
+      v-for="event in eventList"
+      :key="event.name"
+      class="event"
+    >
       <EventComponent :event="event" />
     </div>
   </div>

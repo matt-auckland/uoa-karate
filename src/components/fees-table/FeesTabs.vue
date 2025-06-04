@@ -2,16 +2,32 @@
   <div class="fee-data-container">
     <h2>Training Fees:</h2>
     <div class="tab-container">
-      <a class="tab" :class="{ active: showStudents }" @click="showStudents = true">Uni Student Membership Fees
-        <div class="underline"></div>
+      <a
+        class="tab"
+        :class="{ active: showStudents }"
+        @click="showStudents = true"
+      >Uni Student Membership Fees
+        <div class="underline" />
       </a>
-      <a class="tab" :class="{ active: !showStudents }" @click="showStudents = false">Regular Membership Fees
-        <div class="underline"></div>
+      <a
+        class="tab"
+        :class="{ active: !showStudents }"
+        @click="showStudents = false"
+      >Regular Membership Fees
+        <div class="underline" />
       </a>
     </div>
 
-    <FeesTable v-if="showStudents" :feeTableData="studentFeeData" :showTitle="false" />
-    <FeesTable v-else :feeTableData="regularFeeData" :showTitle="false" />
+    <FeesTable
+      v-if="showStudents"
+      :fee-table-data="studentFeeData"
+      :show-title="false"
+    />
+    <FeesTable
+      v-else
+      :fee-table-data="regularFeeData"
+      :show-title="false"
+    />
   </div>
 </template>
 

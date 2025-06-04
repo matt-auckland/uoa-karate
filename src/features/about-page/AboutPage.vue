@@ -1,8 +1,16 @@
 <template>
   <div class="about-container">
-    <HeroImage class="hero" source="img/group_saifa.JPG" heading="About the Club" :paragraph="heroText" />
+    <HeroImage
+      class="hero"
+      source="img/group_saifa.JPG"
+      heading="About the Club"
+      :paragraph="heroText"
+    />
     <div class="image-one">
-      <Image source="img/two_sensei.jpg" caption="Sensei Ewan Tempero and Sensei Tom Davies" />
+      <Image
+        source="img/two_sensei.jpg"
+        caption="Sensei Ewan Tempero and Sensei Tom Davies"
+      />
     </div>
 
     <div class="paraOne">
@@ -14,12 +22,20 @@
       </p>
       <p>
         The club is affiliated with the
-        <a href="https://iogkf.com" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://iogkf.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           International Okinawan Goju Ryu Federation (IOGKF)</a>, an international body dedicated to preserving the art
         of
         the Okinawan
         Goju-Ryu Karate, as well as the New Zealand branch organization,
-        <a href="https://karate.org.nz" target="_blank" rel="noopener noreferrer">IOGKFNZ</a>. This gives club members
+        <a
+          href="https://karate.org.nz"
+          target="_blank"
+          rel="noopener noreferrer"
+        >IOGKFNZ</a>. This gives club members
         access to expert intructors and the ability
         to attend training camps/seminars around the country and the world.
       </p>
@@ -36,24 +52,41 @@
         occassionally overseas!).
       </p>
       <p>
-        See the <router-link :to="'/events'">events page</router-link> for
+        See the <router-link :to="'/events'">
+          events page
+        </router-link> for
         information on upcoming events.
       </p>
     </div>
 
     <div class="club-event-sect">
-      <div class="swipe-container" ref="swiperRef">
-        <Image v-for="i in eventImages" :key="i.source" class="event-image" :source="i.source" :caption="i.caption" />
+      <div
+        ref="swiperRef"
+        class="swipe-container"
+      >
+        <Image
+          v-for="i in eventImages"
+          :key="i.source"
+          class="event-image"
+          :source="i.source"
+          :caption="i.caption"
+        />
       </div>
     </div>
     <div class="image-two">
-      <Image :source="'img/hawks_nest_sensei.jpg'" :caption="'Sensei Ewan explaining an exercise at the Hawks Nest'" />
+      <Image
+        :source="'img/hawks_nest_sensei.jpg'"
+        :caption="'Sensei Ewan explaining an exercise at the Hawks Nest'"
+      />
     </div>
     <div class="paraThree">
       <h2>Training Location & Facilities</h2>
       <p>
         Most club trainings are run out of the awesome
-        <a href="https://hawksnestgym.co.nz/" target="_blank">Hawks Nest Gym</a>
+        <a
+          href="https://hawksnestgym.co.nz/"
+          target="_blank"
+        >Hawks Nest Gym</a>
         which is a fully furbished Mauy Thai Gym located at Level 2/492 Queen
         Street, Auckland; near the intersection of Queen Street and City Road.
       </p>
@@ -62,7 +95,10 @@
         punching bags, skipping ropes, Muay Thai style focus mitts and more.
         We've also stocked the with some equipment of our own, including kick
         shields and
-        <a href="https://zoehinis.com/2014/09/04/hojo-undo-101-chishi/" target="_blank">chiishi</a>, a traditional
+        <a
+          href="https://zoehinis.com/2014/09/04/hojo-undo-101-chishi/"
+          target="_blank"
+        >chiishi</a>, a traditional
         Karate
         training implement from Okinawa (the birthplace of Karate).
       </p>
@@ -71,7 +107,11 @@
     <div class="instructors-sect">
       <h2>Meet the Instructors</h2>
       <div>
-        <MemberCard v-for="instructor in instructors" :member="instructor" />
+        <MemberCard
+          v-for="instructor in instructors"
+          :key="instructor.name"
+          :member="instructor"
+        />
       </div>
     </div>
   </div>
@@ -85,7 +125,8 @@ import Utils from "@/libs/utils.js";
 import { onMounted, ref } from "vue";
 
 const heroText = "The Auckland University Goju Ryu Karate Club welcomes both university students and non-students, with any level of experience, and with any martial arts background."
-const ewanStartDate = '03/01/2008'
+// TODO: Get Ewan's proper start date
+// const ewanStartDate = '03/01/2008'
 const richardStartDate = '03/01/2008'
 const matStartDate = '08/01/2014'
 

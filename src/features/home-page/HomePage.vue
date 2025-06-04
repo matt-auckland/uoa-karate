@@ -1,7 +1,12 @@
 <template>
   <main>
     <div class="container">
-      <HeroImage class="hero-image" source="/img/hawks_nest.jpg" :heading="heroHeading" :paragraph="heroText" />
+      <HeroImage
+        class="hero-image"
+        source="/img/hawks_nest.jpg"
+        :heading="heroHeading"
+        :paragraph="heroText"
+      />
       <!-- <section class="about-section">
         <p class="text-container">
           We strive to be a fun and inclusive martial arts club, specialising in traditional Okinawan Goju Ryu Karate.

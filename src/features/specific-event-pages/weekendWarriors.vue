@@ -1,78 +1,92 @@
 <template>
   <div class="wrapper">
     <img
+      id="event-image"
       src=""
       alt=""
-      id="event-image"
 
       loading="lazy"
     >
     <h1>Weekend Warriors 2020</h1>
-    <p>A 2-day weekend training seminar on the Saturday the 18th and Sunday the 19th of April. Hosted at <a href="http://www.karateremuera.com/">Karate Remuera's</a> well equipped and generously sized dojo, this event promises to be a great one.
-      <p>
-        The idea is simple: to get you exposed to knowledge and experience that you wouldn't normally have access to during regular trainings.
-      </p>
-      <p>
-        For this purpose we will be have a variety of instructors, click for more info.
-        <ul>
-          <li
-            class="guest-instructor"
-            @click="viewInstructor($event, 'sennen')"
-          >Sensei Harry Sennen, 5th Dan Goju Ryu</li>
-          <li
-            class="guest-instructor"
-            @click="viewInstructor($event, 'murray')"
-          >Sensei Murray Simpson, 5th Dan Goju Ryu</li>
-          <li
-            class="guest-instructor"
-            @click="viewInstructor($event, 'victor')"
-          >Victor Ng, owner of The Hawk's Nest</li>
-          <li
-            class="guest-instructor"
-            @click="viewInstructor($event, 'tom')"
-          >Sensei Tom Davies, Fourth Dan Goju Ryu</li>
-        </ul>
-      </p>
-      <button>Register Now!&nbsp;
-        <span class="icon-wrap">
-          <span class="fist">👊</span><span class="hand">👋</span>
-        </span>
-      </button>
-      <h2>The boring stuff</h2>
-      <p>Fees are set at $30 per person</p>
-      <p>Dates: April 18th-19th, 10am-3pm</p>
-      <p>The event location is <a
-          href="https://g.page/karateremuera?share"
-          target="_blank"
-        >6 Papahia Street, Parnell</a> </p>
-      <p>Training starts at 10am and runs till 3pm. There will be regular water breaks and a break for lunch.</p>
-      <p>Registration closes on April __th at Midnight</p>
-      <p></p>
+    <p>
+      A 2-day weekend training seminar on the Saturday the 18th and Sunday the 19th of April. Hosted at <a href="http://www.karateremuera.com/">Karate Remuera's</a> well equipped and generously sized dojo, this event promises to be a great one.
+    </p><p>
+      The idea is simple: to get you exposed to knowledge and experience that you wouldn't normally have access to during regular trainings.
+    </p>
+    <p>
+      For this purpose we will be have a variety of instructors, click for more info.
+      <ul>
+        <li
+          class="guest-instructor"
+          @click="viewInstructor($event, 'sennen')"
+        >
+          Sensei Harry Sennen, 5th Dan Goju Ryu
+        </li>
+        <li
+          class="guest-instructor"
+          @click="viewInstructor($event, 'murray')"
+        >
+          Sensei Murray Simpson, 5th Dan Goju Ryu
+        </li>
+        <li
+          class="guest-instructor"
+          @click="viewInstructor($event, 'victor')"
+        >
+          Victor Ng, owner of The Hawk's Nest
+        </li>
+        <li
+          class="guest-instructor"
+          @click="viewInstructor($event, 'tom')"
+        >
+          Sensei Tom Davies, Fourth Dan Goju Ryu
+        </li>
+      </ul>
+    </p>
+    <button>
+      Register Now!&nbsp;
+      <span class="icon-wrap">
+        <span class="fist">👊</span><span class="hand">👋</span>
+      </span>
+    </button>
+    <h2>The boring stuff</h2>
+    <p>Fees are set at $30 per person</p>
+    <p>Dates: April 18th-19th, 10am-3pm</p>
+    <p>
+      The event location is <a
+        href="https://g.page/karateremuera?share"
+        target="_blank"
+      >6 Papahia Street, Parnell</a>
+    </p>
+    <p>Training starts at 10am and runs till 3pm. There will be regular water breaks and a break for lunch.</p>
+    <p>Registration closes on April __th at Midnight</p>
+    <p />
 
-      <div
-        id="modal"
-        :style="{
-          top: `${modalYPos}px`, 
-        }"
-        v-if="selectedInstructor"
-      >
-        <div class="modal-content">
-          <h2>
-            {{selectedInstructor.name}}
-          </h2>
-          <p>
-            {{selectedInstructor.desc}}
-          </p>
-          <p v-if="selectedInstructor.externalLink">Learn more about {{selectedInstructor.firstName}}
+    <div
+      v-if="selectedInstructor"
+      id="modal"
+      :style="{
+        top: `${modalYPos}px`, 
+      }"
+    >
+      <div class="modal-content">
+        <h2>
+          {{ selectedInstructor.name }}
+        </h2>
+        <p>
+          {{ selectedInstructor.desc }}
+        </p>
+        <p v-if="selectedInstructor.externalLink">
+          Learn more about {{ selectedInstructor.firstName }}
 
-            <a :href="selectedInstructor.externalLink">
-              here
-            </a>
-          </p>
-          <button @click="clearInstructor">Close</button>
-        </div>
-
+          <a :href="selectedInstructor.externalLink">
+            here
+          </a>
+        </p>
+        <button @click="clearInstructor">
+          Close
+        </button>
       </div>
+    </div>
   </div>
 </template>
 

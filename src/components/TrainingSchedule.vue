@@ -3,12 +3,25 @@
     <h2>Training Schedule:</h2>
 
     <div class="grid-container">
-      <div class="day" v-for="session in scheduleData" :key="session.index">
+      <div
+        v-for="session in scheduleData"
+        :key="session.index"
+        class="day"
+      >
         <h3>{{ session.day }}</h3>
-        <p class="date">{{ session.startTime }} - {{ session.finishTime }} </p>
-        <p class="location">{{ session.location }} </p>
-        <hr v-if="session.notes" />
-        <p class="notes" v-if="session.notes">{{ session.notes }} </p>
+        <p class="date">
+          {{ session.startTime }} - {{ session.finishTime }}
+        </p>
+        <p class="location">
+          {{ session.location }}
+        </p>
+        <hr v-if="session.notes">
+        <p
+          v-if="session.notes"
+          class="notes"
+        >
+          {{ session.notes }}
+        </p>
       </div>
     </div>
   </div>
@@ -21,8 +34,9 @@ export default {
   name: "TrainingSchedule",
   props: {
     schedule: {
-      default: null
-    }
+      type: Array,
+      default: null,
+    },
   },
   computed: {
     scheduleData() {

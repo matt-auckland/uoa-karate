@@ -1,8 +1,14 @@
 <template>
-  <div class="hero-image" :style="`background-image: url('${source}')`">
-    <div class="text-container" :class="{'span': spanText}">
+  <div
+    class="hero-image"
+    :style="`background-image: url('${source}')`"
+  >
+    <div
+      class="text-container"
+      :class="{'span': spanText}"
+    >
       <h1>{{ heading }}</h1>
-      <p v-html="paragraph"></p>
+      <p v-html="paragraph" />
     </div>
   </div>
 </template>

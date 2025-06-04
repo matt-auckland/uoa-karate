@@ -1,17 +1,41 @@
 
 <template>
   <div class="event-container">
-    <router-link to="/events/">< Back to event list</router-link>
+    <router-link to="/events/">
+      &lt; Back to event list
+    </router-link>
     <div class="event">
-      <h1 class="event-title">{{ event.name }}</h1>
-      <img :src="event.img" alt="Event image" v-if="event.img" class="event-img" loading="lazy">
-      <div class="event-text"><b>Date:</b> {{ dateString }}</div>
-      <div class="event-text"><b>Location:</b> {{ event.location }}</div>
-      <div class="event-text" v-html="event.extendedDescription || event.description"></div>
-      <div class="event-text" v-if="event.signUpURL">To sign up, follow <a :href="event.signUpURL" target="_blank"
-           rel="noopener noreferrer">this link</a></div>
+      <h1 class="event-title">
+        {{ event.name }}
+      </h1>
+      <img
+        v-if="event.img"
+        :src="event.img"
+        alt="Event image"
+        class="event-img"
+        loading="lazy"
+      >
+      <div class="event-text">
+        <b>Date:</b> {{ dateString }}
+      </div>
+      <div class="event-text">
+        <b>Location:</b> {{ event.location }}
+      </div>
+      <div
+        class="event-text"
+        v-html="event.extendedDescription || event.description"
+      />
+      <div
+        v-if="event.signUpURL"
+        class="event-text"
+      >
+        To sign up, follow <a
+          :href="event.signUpURL"
+          target="_blank"
+          rel="noopener noreferrer"
+        >this link</a>
+      </div>
     </div>
-
   </div>
 </template>
 

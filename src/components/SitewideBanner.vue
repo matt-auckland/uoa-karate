@@ -1,5 +1,8 @@
 <template>
-  <div v-if="bannerText" id="sitewide-banner">
+  <div
+    v-if="bannerText"
+    id="sitewide-banner"
+  >
     <div id="banner-text">
       {{ bannerText }}
     </div>

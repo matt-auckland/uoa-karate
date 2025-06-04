@@ -1,13 +1,26 @@
 <template>
   <div id="main">
     <h1>What do I need to know for grading again??</h1>
-    <h2 class="subheading">(Sourced from the IOGKFNZ Instructors Manual)</h2>
-    <hr />
-    <label class="dropdown-label" for="grade-select">
+    <h2 class="subheading">
+      (Sourced from the IOGKFNZ Instructors Manual)
+    </h2>
+    <hr>
+    <label
+      class="dropdown-label"
+      for="grade-select"
+    >
       Select the grade you want to grade to:
     </label>
-    <select name="grade-select" id="grade-select" v-model="selectedGrade">
-      <option :key="grade.name" :value="grade" v-for="grade in grades">
+    <select
+      id="grade-select"
+      v-model="selectedGrade"
+      name="grade-select"
+    >
+      <option
+        v-for="grade in grades"
+        :key="grade.name"
+        :value="grade"
+      >
         {{ grade.name }}
       </option>
     </select>
@@ -17,7 +30,12 @@
     <div class="flex">
       <ul class="list">
         <transition-group name="fade">
-          <li v-for="skill in needToKnow" :key="skill.name">{{ skill.name }}</li>
+          <li
+            v-for="skill in needToKnow"
+            :key="skill.name"
+          >
+            {{ skill.name }}
+          </li>
         </transition-group>
       </ul>
       <div class="bold center-txt">
@@ -38,15 +56,6 @@
 <script>
 export default {
   name: "GradingInfo",
-  head: {
-    title: "What do I need to know for grading again??",
-    meta: [
-      {
-        name: "description",
-        content: "Figure out what the heck you need to know to grade.",
-      },
-    ],
-  },
 
   data() {
     return {
@@ -75,6 +84,15 @@ export default {
         { name: "Shisochin Bunkai", value: 8 },
       ],
     };
+  },
+  head: {
+    title: "What do I need to know for grading again??",
+    meta: [
+      {
+        name: "description",
+        content: "Figure out what the heck you need to know to grade.",
+      },
+    ],
   },
   computed: {
     needToKnow() {

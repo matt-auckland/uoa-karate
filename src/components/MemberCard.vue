@@ -1,9 +1,20 @@
 <template>
-  <div class="member" :class="wide ? 'wide' :''">
-    <div class="picture top" :style="style" alt=""></div>
+  <div
+    class="member"
+    :class="wide ? 'wide' :''"
+  >
+    <div
+      class="picture top"
+      :style="style"
+      alt=""
+    />
     <div class="details">
-      <h2 class="name">{{ member.name }}</h2>
-      <h3 class="title">{{ grade }}</h3>
+      <h2 class="name">
+        {{ member.name }}
+      </h2>
+      <h3 class="title">
+        {{ grade }}
+      </h3>
       <p class="desc">
         {{ member.desc }}
       </p>
@@ -13,7 +24,16 @@
 
 <script>
 export default {
-  props: ['member', 'wide'],
+  props: {
+    member: {
+      type: Object,
+      default: () => ({}),
+    },
+    wide: {
+      type: Boolean,
+      default: false,
+    },
+  },
   computed: {
     grade() {
       return this.member.danGrade

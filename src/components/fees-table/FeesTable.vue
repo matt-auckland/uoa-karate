@@ -1,19 +1,36 @@
 <template>
   <div class="fee-data-container">
-    <h2 v-if="showTitle">Training Fees:</h2>
+    <h2 v-if="showTitle">
+      Training Fees:
+    </h2>
     <table>
       <thead>
         <tr>
-          <th class="text">Fee Type</th>
-          <th class="number">Cost</th>
-          <th class="text">Notes</th>
+          <th class="text">
+            Fee Type
+          </th>
+          <th class="number">
+            Cost
+          </th>
+          <th class="text">
+            Notes
+          </th>
         </tr>
       </thead>
       <tbody>
-        <tr v-for="row in feeTableData" :key="row.type">
-          <td class="text">{{ row.type }}</td>
-          <td class="number">{{ row.cost }}</td>
-          <td class="text">{{ row.notes }}</td>
+        <tr
+          v-for="row in feeTableData"
+          :key="row.type"
+        >
+          <td class="text">
+            {{ row.type }}
+          </td>
+          <td class="number">
+            {{ row.cost }}
+          </td>
+          <td class="text">
+            {{ row.notes }}
+          </td>
         </tr>
       </tbody>
     </table>
@@ -25,10 +42,12 @@ export default {
   name: "FeesTable",
   props: {
     showTitle: {
-      default() { return true }
+      type: Boolean,
+      default() { return true },
     },
     feeTableData: {
-      required: true
+      type: Array,
+      required: true,
     }
   }
 };

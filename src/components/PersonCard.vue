@@ -1,26 +1,44 @@
 <template>
   <div class="person">
-    <img loading="lazy" :src="person.pic || '/logo.png'" />
-    <div class="name">{{person.name}}</div>
-    <div class="position">{{person.position}}</div>
+    <img
+      loading="lazy"
+      :src="person.pic || '/logo.png'"
+    >
+    <div class="name">
+      {{ person.name }}
+    </div>
+    <div class="position">
+      {{ person.position }}
+    </div>
     <div class="bio">
-      {{person.bio}} {{person.name | firstName | sensei(person.role)}} holds 
-      <span v-for="style in person.styles" :key="style.name">
-        {{ style.grade | grade(style.name, true)}}{{(person.styles.indexOf(style) === person.styles.length - 1) ? '.' : (person.styles.indexOf(style) === person.styles.length - 2) ? ' and ' : ', '}}
+      {{ person.bio }} {{ sensei(firstName(person.name), person.role) }} holds
+      <span
+        v-for="style in person.styles"
+        :key="style.name"
+      >
+        {{ grade(style.grade, style.name, true) }}{{
+          person.styles.indexOf(style) === person.styles.length - 1
+            ? '.'
+            : person.styles.indexOf(style) === person.styles.length - 2
+              ? ' and '
+              : ', '
+        }}
       </span>
     </div>
-
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Person',
+  name: 'PersonCard',
   props: {
-    person: Object
+    person: {
+      type: Object,
+      default: () => ({}),
+    },
   },
-  filters: {
-    grade: function (grade, style = '', prefix) {
+  methods: {
+    grade(grade, style = '', prefix) {
       let determiner = 'a '
       let danGrade = false
       let suffix = 'th '
@@ -46,15 +64,15 @@ export default {
         determiner = ''
       return determiner + grade + suffix + (danGrade ? 'Dan ' : 'Kyu ') + style
     },
-    firstName: function (name) {
+    firstName(name) {
       return name.substr(0, name.indexOf(' ')) || name
     },
-    sensei: function (name, role = 'instructor') {
+    sensei(name, role = 'instructor') {
       if (role === 'instructor')
         return name + ' Sensei'
       return name
-    }
-  }
+    },
+  },
 }
 </script>
 

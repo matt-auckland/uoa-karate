@@ -1,16 +1,24 @@
 <template>
   <div class="tester-container">
     <div class="header">
-
       <h1>Karate Knowledge Tester</h1>
       <h3>Click the categories below to select topics to answer</h3>
       <fieldset class="category-fieldset">
         <legend>Categories</legend>
         <div class="category-container">
-          <div class="checkbox-div" v-for="category in questionCategories" v-bind:key="category"
-              :class="{ active: selectedCategories.includes(category) }">
-            <input type="checkbox" :id="category" :value="category" v-model="selectedCategories"
-                  v-on:change="filterQuestions()">
+          <div
+            v-for="category in questionCategories"
+            :key="category"
+            class="checkbox-div"
+            :class="{ active: selectedCategories.includes(category) }"
+          >
+            <input
+              :id="category"
+              v-model="selectedCategories"
+              type="checkbox"
+              :value="category"
+              @change="filterQuestions()"
+            >
             <label :for="category">{{ category }}</label>
           </div>
         </div>
@@ -20,16 +28,22 @@
         <span>
           Available questions for this current selection: {{ unansweredQuestions.length }}
         </span>
-        <button v-on:click="randomQuestion()" v-if="unansweredQuestions.length > 1" class="new-question-button">New
-          question</button>
+        <button
+          v-if="unansweredQuestions.length > 1"
+          class="new-question-button"
+          @click="randomQuestion()"
+        >
+          New
+          question
+        </button>
       </div>
 
       <QuestionComponent 
-        :randomQuestion="randomQuestion" 
-        :recordAnswer="recordAnswer" 
-        :questionProp="currentQuestion"
-        :allQuestionsAnswered="allQuestionsAnswered" />
-
+        :random-question="randomQuestion" 
+        :record-answer="recordAnswer" 
+        :question-prop="currentQuestion"
+        :all-questions-answered="allQuestionsAnswered"
+      />
     </div>
     <div class="answer-tracker">
       <h2>Score</h2>
@@ -39,9 +53,17 @@
     </div>
 
     <footer>
-      <a class="footer-link" href="https://forms.gle/GQsceE4whb8X58866" target="_blank"> Click here to suggest a new
+      <a
+        class="footer-link"
+        href="https://forms.gle/GQsceE4whb8X58866"
+        target="_blank"
+      > Click here to suggest a new
         question</a>
-      <a class="footer-link" href="https://forms.gle/GzmqkTZHEtGhGYu96" target="_blank">Click here to report an issue with
+      <a
+        class="footer-link"
+        href="https://forms.gle/GzmqkTZHEtGhGYu96"
+        target="_blank"
+      >Click here to report an issue with
         a question</a>
     </footer>
   </div>
@@ -54,36 +76,8 @@ import Utils from "@/libs/utils.js";
 
 export default {
   name: "QuizPage",
-  head: {
-    title: "Karate Knowledge Tester",
-    meta: [
-      {
-        name: "description",
-        content: "Test your Karate Knowledge."
-      }
-    ]
-  },
   components: {
     QuestionComponent
-  },
-  computed: {
-    allQuestionsAnswered() {
-      return unansweredQuestions.length === 0 && answeredQuestions.length !== 0
-    },
-    questionCategories: function () {
-      let categories = this.questions
-        .map(question => {
-          return question.tags.join(); // flatten array of tags into a string
-        })
-        .join() //flatten our array of flattened arrays into a string
-        .split(",") // split our super string back into an array
-        .filter(function (tag, index, tagArr) {
-          // filter out any duplicates
-          return index === tagArr.indexOf(tag);
-        })
-        .sort();
-      return categories;
-    }
   },
   data: function () {
     return {
@@ -99,6 +93,34 @@ export default {
       answeredQuestions: [],
       currentQuestion: undefined
     };
+  },
+  head: {
+    title: "Karate Knowledge Tester",
+    meta: [
+      {
+        name: "description",
+        content: "Test your Karate Knowledge."
+      }
+    ]
+  },
+  computed: {
+    allQuestionsAnswered() {
+      return this.unansweredQuestions.length === 0 && this.answeredQuestions.length !== 0
+    },
+    questionCategories: function () {
+      const categories = this.questions
+        .map(question => {
+          return question.tags.join(); // flatten array of tags into a string
+        })
+        .join() //flatten our array of flattened arrays into a string
+        .split(",") // split our super string back into an array
+        .filter(function (tag, index, tagArr) {
+          // filter out any duplicates
+          return index === tagArr.indexOf(tag);
+        })
+        .sort();
+      return categories;
+    }
   },
   methods: {
     filterQuestions: function () {

@@ -26,8 +26,10 @@
         maxlength="1500"
         required="true"
         class="message"
-      ></textarea>
-      <button type="submit">Send Email</button>
+      />
+      <button type="submit">
+        Send Email
+      </button>
     </form>
   </div>
 </template>

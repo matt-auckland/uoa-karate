@@ -1,10 +1,21 @@
 
 <template>
   <div class="">
-    <h2 class="component-title">Upcoming Events:</h2>
-    <div v-if="!upcomingEventList.length">No events currently scheduled.</div>
-    <div v-else class="events-container">
-      <div v-for="event in upcomingEventList" :key="event.title" class="event">
+    <h2 class="component-title">
+      Upcoming Events:
+    </h2>
+    <div v-if="!upcomingEventList.length">
+      No events currently scheduled.
+    </div>
+    <div
+      v-else
+      class="events-container"
+    >
+      <div
+        v-for="event in upcomingEventList"
+        :key="event.title"
+        class="event"
+      >
         <div class="event-inner">
           <div class="event-text title">
             <router-link :to="`events/${event.id}`">
@@ -18,19 +29,39 @@
             Location: {{ event.location }}
           </div>
 
-          <div class="event-text link" v-if="event.offsiteLink">
+          <div
+            v-if="event.offsiteLink"
+            class="event-text link"
+          >
             For more information, follow
-            <a :href="event.offsiteLink" target="_blank" rel="noopener noreferrer">this link</a>
-            <router-link v-if="!event.offSitelink && event.extendedDescription"
-                         :to="'/events/' + event.title.replace(/\ /gi, '-')">this link</router-link>
+            <a
+              :href="event.offsiteLink"
+              target="_blank"
+              rel="noopener noreferrer"
+            >this link</a>
+            <router-link
+              v-if="!event.offSitelink && event.extendedDescription"
+              :to="'/events/' + event.title.replace(/\ /gi, '-')"
+            >
+              this link
+            </router-link>
           </div>
-          <div class="event-text" v-if="event.signUpURL">To sign up, follow <a :href="event.signUpURL" target="_blank"
-               rel="noopener noreferrer">this link</a>
+          <div
+            v-if="event.signUpURL"
+            class="event-text"
+          >
+            To sign up, follow <a
+              :href="event.signUpURL"
+              target="_blank"
+              rel="noopener noreferrer"
+            >this link</a>
           </div>
         </div>
       </div>
       <div class="see-more">
-        <router-link to="/events">Click here to see more events</router-link>
+        <router-link to="/events">
+          Click here to see more events
+        </router-link>
       </div>
     </div>
   </div>

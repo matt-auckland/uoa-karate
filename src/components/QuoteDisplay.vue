@@ -4,7 +4,10 @@
     <div class="quote-text">
       "{{ quote.text }}" - {{ quote.authour }}
     </div>
-    <div v-if="quote.textUntranslated" class="quote-text">
+    <div
+      v-if="quote.textUntranslated"
+      class="quote-text"
+    >
       {{ quote.textUntranslated }} - {{ quote.authourUntranslated }}
     </div>
   </div>

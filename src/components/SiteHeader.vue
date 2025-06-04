@@ -1,23 +1,68 @@
 <template>
   <header class="header">
-    <router-link to="/" id="logo-link">
-      <img id="logo" loading="lazy" width="80" src="/logo.png" alt="IOGKF Logo" />
+    <router-link
+      id="logo-link"
+      to="/"
+    >
+      <img
+        id="logo"
+        loading="lazy"
+        width="80"
+        src="/logo.png"
+        alt="IOGKF Logo"
+      >
     </router-link>
     <nav>
-      <router-link to="/">Home</router-link>
-      <router-link to="/about">About</router-link>
+      <router-link to="/">
+        Home
+      </router-link>
+      <router-link to="/about">
+        About
+      </router-link>
       <!-- <router-link to="/training">Training Schedule</router-link> -->
-      <router-link to="/events">Events</router-link>
-      <router-link to="/auckland-north">Auckland North</router-link>
+      <router-link to="/events">
+        Events
+      </router-link>
+      <router-link to="/auckland-north">
+        Auckland North
+      </router-link>
       <!-- <router-link to="/tester">Quiz</router-link> -->
-      <a href="https://wiki.uoa-karate.club/" target="_blank" rel="noopener noreferrer">Wiki</a>
-      <router-link to="/useful-links">Useful&nbsp;Links</router-link>
-      <a class="social-media" href="https://www.facebook.com/UoAKarate/" target="_blank" rel="noopener noreferrer">
-        <img loading="lazy" src="/facebook.svg" alt="[FB]" class="icon" width="24" />
+      <a
+        href="https://wiki.uoa-karate.club/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >Wiki</a>
+      <router-link to="/useful-links">
+        Useful&nbsp;Links
+      </router-link>
+      <a
+        class="social-media"
+        href="https://www.facebook.com/UoAKarate/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          loading="lazy"
+          src="/facebook.svg"
+          alt="[FB]"
+          class="icon"
+          width="24"
+        >
       </a>
 
-      <a class="social-media" href="https://www.instagram.com/uoa_karate/" target="_blank" rel="noopener noreferrer">
-        <img loading="lazy" src="/instagram.svg" alt="[IG]" class="icon" width="24" />
+      <a
+        class="social-media"
+        href="https://www.instagram.com/uoa_karate/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          loading="lazy"
+          src="/instagram.svg"
+          alt="[IG]"
+          class="icon"
+          width="24"
+        >
       </a>
     </nav>
   </header>

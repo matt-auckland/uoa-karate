@@ -1,13 +1,17 @@
 <template>
   <figure>
-    <img loading="lazy" :src="source" :alt="caption" />
+    <img
+      loading="lazy"
+      :src="source"
+      :alt="caption"
+    >
     <figcaption>{{ caption }}</figcaption>
   </figure>
 </template>
 
 <script>
 export default {
-  name: "appImage",
+  name: "AppImage",
   props: {
     source: { type: String, required: true },
     caption: { type: String, required: true }

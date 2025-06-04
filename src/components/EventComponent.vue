@@ -8,7 +8,9 @@
       >
     </div> -->
     <div class="text-container">
-      <h2 class="event-title">{{ event.title }}</h2>
+      <h2 class="event-title">
+        {{ event.title }}
+      </h2>
       <p>
         <span title="Location">🗺️</span>&nbsp;<a
           v-if="event.location"
@@ -29,11 +31,11 @@
       <a
         v-if="showExpand"
         href="javascript:;"
-        @click="showingMore = !showingMore"
         class="show-more"
+        @click="showingMore = !showingMore"
       >{{ showingMore ? "Unexpand" : "Expand" }}</a>
 
-      <p class="event-text"></p>
+      <p class="event-text" />
       <div v-if="event.signUpURL">
         To sign up, follow
         <a
@@ -45,7 +47,9 @@
 
       <div v-if="!event.offsiteLink && event.extendedDescription">
         For more information follow
-        <router-link :to="'/events/' + event.id">this link</router-link>
+        <router-link :to="'/events/' + event.id">
+          this link
+        </router-link>
       </div>
 
       <div v-if="event.offsiteLink">
@@ -65,6 +69,12 @@ import utils from '../libs/utils';
 export default {
   name: "EventComponent",
   components: {},
+  props: {
+    event: {
+      type: Object,
+      default: () => ({}),
+    },
+  },
   data() {
     return {
       defaultImages: {
@@ -79,9 +89,6 @@ export default {
       showingMore: false,
       maxDesc: 300 //170
     };
-  },
-  props: {
-    event: Object
   },
   computed: {
     showExpand() {
