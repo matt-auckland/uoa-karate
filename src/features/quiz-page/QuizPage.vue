@@ -52,15 +52,20 @@ import questions from "@/assets/mcq.json";
 import QuestionComponent from "@/components/QuestionComponent.vue";
 import Utils from "@/libs/utils.js";
 
+const pageTitle = "Karate Knowledge Tester";
+const pageDescription = "Test your Karate Knowledge.";
+
 export default {
   name: "QuizPage",
   head: {
-    title: "Karate Knowledge Tester",
+    title: pageTitle,
     meta: [
-      {
-        name: "description",
-        content: "Test your Karate Knowledge."
-      }
+      { name: "description", content: pageDescription },
+      { property: "og:title", content: pageTitle },
+      { property: "og:description", content: pageDescription },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://uoa-karate.club/#/tester" },
+      { property: "og:image", content: "/logo-wide.png" }
     ]
   },
   components: {

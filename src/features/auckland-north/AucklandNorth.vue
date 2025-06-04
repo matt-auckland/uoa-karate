@@ -47,16 +47,21 @@ import HeroImage from "../../components/HeroImage.vue";
 // import ContactForm from "@/components/ContactForm.vue";
 import Utils from "@/libs/utils.js";
 
+const pageTitle = "Auckland North Karate Club";
+const pageDescription =
+  "We're a Goju Ryu Karate dojo based in Sunnynook on the North Shore. We are open to beginners and experienced martial artists alike. Families and children (12+) are also welcome.";
 
 export default {
   name: "auckland-north",
   head: {
-    title: "Auckland North Karate Club",
+    title: pageTitle,
     meta: [
-      {
-        name: "description",
-        content: "We're a Goju Ryu Karate dojo based in Sunnynook on the North Shore. We are open to beginners and experienced martial artists alike. Families and children (12+) are also welcome."
-      }
+      { name: "description", content: pageDescription },
+      { property: "og:title", content: pageTitle },
+      { property: "og:description", content: pageDescription },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://uoa-karate.club/#/auckland-north" },
+      { property: "og:image", content: "/group-photo.jpg" }
     ]
   },
   components: {
