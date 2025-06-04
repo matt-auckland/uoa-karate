@@ -18,7 +18,7 @@
       "startTime": "6pm",
       "finishTime": "7.30pm",
       "location": "Rec Centre (Hiwa) Mind and Body Studio. 2nd floor, University of Auckland",
-      "notes": "",
+      "notes": "Attendees should meet in the Rec Centre lobby before training starts",
       "canDisplay": true
     },
     {
@@ -36,7 +36,7 @@
       "startTime": "10am",
       "finishTime": "12pm",
       "location": "Rec Centre (Hiwa) Combat Sports Student. 1st floor, University of Auckland",
-      "notes": "",
+      "notes": "Attendees should meet in the Rec Centre lobby before training starts",
       "canDisplay": true
     }
   ]
