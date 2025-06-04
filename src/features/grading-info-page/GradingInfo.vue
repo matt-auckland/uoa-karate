@@ -36,15 +36,20 @@
 </template>
 
 <script>
+const pageTitle = "What do I need to know for grading again??";
+const pageDescription = "Figure out what the heck you need to know to grade.";
+
 export default {
   name: "GradingInfo",
   head: {
-    title: "What do I need to know for grading again??",
+    title: pageTitle,
     meta: [
-      {
-        name: "description",
-        content: "Figure out what the heck you need to know to grade.",
-      },
+      { name: "description", content: pageDescription },
+      { property: "og:title", content: pageTitle },
+      { property: "og:description", content: pageDescription },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://uoa-karate.club/#/grading-info" },
+      { property: "og:image", content: "/logo-wide.png" },
     ],
   },
 

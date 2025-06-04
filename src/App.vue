@@ -17,6 +17,10 @@ import QuoteDisplay from "@/components/QuoteDisplay.vue";
 import SitewideBanner from "@/components/SitewideBanner.vue";
 import { RouterView } from "vue-router";
 
+const pageTitle = "UoA Karate Club";
+const pageDescription =
+  "University of Auckland Karate Club. Find info on training times, locations and more.";
+
 export default {
   name: "App",
   components: {
@@ -26,13 +30,14 @@ export default {
     RouterView
   },
   head: {
-    title: "UoA Karate Club",
+    title: pageTitle,
     meta: [
-      {
-        name: "description",
-        content:
-          "University of Auckland Karate Club. Find info on training times, locations and more.",
-      },
+      { name: "description", content: pageDescription },
+      { property: "og:title", content: pageTitle },
+      { property: "og:description", content: pageDescription },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://uoa-karate.club" },
+      { property: "og:image", content: "/group-photo.jpg" },
     ],
   },
 };
