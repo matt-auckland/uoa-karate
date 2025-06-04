@@ -15,7 +15,7 @@
       <input
         name="name"
         placeholder="Your name"
-        type="name"
+        type="text"
         required="true"
         class="name"
       >
