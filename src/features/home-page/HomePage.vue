@@ -39,7 +39,7 @@ export default {
   data: function () {
     return {
       heroHeading: "Welcome to our Club!",
-      heroText: "Our club welcomes people with any level of experience, both students and non-students alike. We accept new members all year round, but we host beginner specific trainings at the start of every semester."
+      heroText: "Our club welcomes people with any level of experience, both students and non-students alike. We accept new members all year round, but we host beginner specific trainings at the start of every semester. Students get FREE training for their first semester!"
     };
   }
 };

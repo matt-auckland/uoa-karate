@@ -45,9 +45,9 @@ const regularFeeData = [
 const studentFeeData = [
   {
     type: 'Training Fee',
-    cost: '$70 Per Semester, $35 for your first sem',
+    cost: 'FREE your first sem, then $70 Per Semester',
     notes:
-      'Students pay per semester, your first sem is half-price',
+      'Students pay per semester, your first sem is free',
   },
   ...baseFeeData
 ]
