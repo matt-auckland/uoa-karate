@@ -1,6 +1,6 @@
 {
   "bannerText": {
-    "text": ""
+    "text": "Training times and locations have changed, please confirm with us to be sure"
   },
   "schedule": [
     {
@@ -15,7 +15,7 @@
     {
       "index": 2,
       "day": "Wednesday",
-      "startTime": "6pm",
+      "startTime": "6.30pm",
       "finishTime": "7.30pm",
       "location": "Rec Centre (Hiwa) Mind and Body Studio. 2nd floor, University of Auckland",
       "notes": "Attendees should meet in the Rec Centre lobby before training starts",
@@ -26,7 +26,7 @@
       "day": "Friday",
       "startTime": "6.00pm",
       "finishTime": "8.00pm",
-      "location": "Room G14, Building 303, University of Auckland, 38 Princes Street",
+      "location": "Room 155, Building 303, University of Auckland, 38 Princes Street",
       "notes": "For graded members, 9th kyu (Blue belt) and above only.",
       "canDisplay": true
     },
