@@ -16,7 +16,7 @@ export default {
       "finishTime": "7.30pm",
       "location": "Rec Centre (Hiwa) Mind and Body Studio. 2nd floor, University of Auckland",
       "notes": "",
-      "status": TRAINING_STATUS.POSTPONED,
+      "status": TRAINING_STATUS.HIDDEN,
     },
     {
       "index": 2,
