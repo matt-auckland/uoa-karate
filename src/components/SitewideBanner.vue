@@ -8,7 +8,7 @@
 
 
 <script>
-import config from "@/assets/config.json";
+import config from "@/assets/config.js";
 
 export default {
   name: "SitewideBanner",

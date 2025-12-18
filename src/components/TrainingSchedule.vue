@@ -5,7 +5,7 @@
     <div class="grid-container">
       <div class="day" v-for="session in scheduleData" :key="session.index">
         <h3>{{ session.day }}</h3>
-        <p class="date">{{ session.startTime }} - {{ session.finishTime }} </p>
+        <p class="date" v-if="session.timing">{{ session.timing }}</p>
         <p class="location">{{ session.location }} </p>
         <hr v-if="session.notes" />
         <p class="notes" v-if="session.notes">{{ session.notes }} </p>
@@ -15,7 +15,8 @@
 </template>
 
 <script>
-import config from "@/assets/config.json";
+import config from "@/assets/config.js";
+import { TRAINING_STATUS } from "../assets/config";
 
 export default {
   name: "TrainingSchedule",
@@ -26,9 +27,25 @@ export default {
   },
   computed: {
     scheduleData() {
-      if (!this.schedule) return config.schedule.filter(training => training.canDisplay)
+      if (!this.schedule) return this.getSessions(config.schedule)
 
-      return this.schedule.filter(training => training.canDisplay)
+      return this.getSessions(this.schedule)
+    },
+  },
+  methods: {
+    getSessions(sessions) {
+      return sessions
+        .filter(session => session.status !== TRAINING_STATUS.HIDDEN)
+        .map(session => {
+          session.timing = `${session.startTime} - ${session.finishTime}`
+
+          if (session.status === TRAINING_STATUS.POSTPONED) {
+            session.notes = session.tempNotes || "Postponed until further notice"
+            session.location = session.tempLocation || session.location
+          }
+
+          return session
+        })
     }
   }
 };
