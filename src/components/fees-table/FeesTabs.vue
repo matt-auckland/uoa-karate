@@ -20,11 +20,11 @@ import FeesTable from '@/components/fees-table/FeesTable.vue';
 import { ref } from 'vue';
 
 const baseFeeData = [
-  {
-    type: 'Club Membership Fee',
-    cost: '$5 Annually',
-    notes: 'Paid once per year in addition to the training fees',
-  },
+  // {
+  //   type: 'Club Membership Fee',
+  //   cost: '$5 Annually',
+  //   notes: 'Paid once per year in addition to the training fees',
+  // },
   {
     type: 'Grading Fee',
     cost: '$35',

@@ -6,7 +6,7 @@ export const TRAINING_STATUS = {
 
 export default {
   "bannerText": {
-    "text": "Training is finished for the year, we start back in the New Year on Sunday January 11th."
+    // "text": "Training is finished for the year, we start back in the New Year on Sunday January 11th."
   },
   "schedule": [
     {
@@ -25,7 +25,7 @@ export default {
       "finishTime": "7.30pm",
       "location": "Rec Centre (Hiwa) Mind and Body Studio. 2nd floor, University of Auckland",
       "notes": "Attendees should meet in the Rec Centre lobby before training starts",
-      "status": TRAINING_STATUS.POSTPONED,
+      "status": TRAINING_STATUS.ACTIVE,
       "tempNotes": "Wednesday training is currently postponed until January 14th."
     },
     {
@@ -46,7 +46,7 @@ export default {
       "finishTime": "12pm",
       "location": "Rec Centre (Hiwa) Combat Sports Student. 1st floor, University of Auckland",
       "notes": "Attendees should meet in the Rec Centre lobby before training starts",
-      "status": TRAINING_STATUS.POSTPONED,
+      "status": TRAINING_STATUS.ACTIVE,
       "tempNotes": "Sunday training is currently postponed until January 11th."
     }
   ]
