@@ -8,9 +8,9 @@
         <legend>Categories</legend>
         <div class="category-container">
           <div class="checkbox-div" v-for="category in questionCategories" v-bind:key="category"
-              :class="{ active: selectedCategories.includes(category) }">
+               :class="{ active: selectedCategories.includes(category) }">
             <input type="checkbox" :id="category" :value="category" v-model="selectedCategories"
-                  v-on:change="filterQuestions()">
+                   v-on:change="filterQuestions()">
             <label :for="category">{{ category }}</label>
           </div>
         </div>
@@ -24,11 +24,8 @@
           question</button>
       </div>
 
-      <QuestionComponent 
-        :randomQuestion="randomQuestion" 
-        :recordAnswer="recordAnswer" 
-        :questionProp="currentQuestion"
-        :allQuestionsAnswered="allQuestionsAnswered" />
+      <QuestionComponent :randomQuestion="randomQuestion" :recordAnswer="recordAnswer" :questionProp="currentQuestion"
+                         :allQuestionsAnswered="allQuestionsAnswered" />
 
     </div>
     <div class="answer-tracker">
@@ -41,7 +38,8 @@
     <footer>
       <a class="footer-link" href="https://forms.gle/GQsceE4whb8X58866" target="_blank"> Click here to suggest a new
         question</a>
-      <a class="footer-link" href="https://forms.gle/GzmqkTZHEtGhGYu96" target="_blank">Click here to report an issue with
+      <a class="footer-link" href="https://forms.gle/GzmqkTZHEtGhGYu96" target="_blank">Click here to report an issue
+        with
         a question</a>
     </footer>
   </div>
@@ -73,7 +71,7 @@ export default {
   },
   computed: {
     allQuestionsAnswered() {
-      return unansweredQuestions.length === 0 && answeredQuestions.length !== 0
+      return this.unansweredQuestions.length === 0 && this.answeredQuestions.length !== 0
     },
     questionCategories: function () {
       let categories = this.questions
