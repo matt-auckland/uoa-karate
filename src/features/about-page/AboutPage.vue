@@ -85,8 +85,8 @@ import Utils from "@/libs/utils.js";
 import { onMounted, ref } from "vue";
 
 const heroText = "The Auckland University Goju Ryu Karate Club welcomes both university students and non-students, with any level of experience, and with any martial arts background."
-// TODO: Get Ewan's proper start date
-// const ewanStartDate = '01/01/1990'
+// TODO: Get Ewan's proper start date, only the year is correct right now
+const ewanStartDate = '01/01/1989'
 const richardStartDate = '03/01/2008'
 const matStartDate = '08/01/2014'
 
@@ -95,8 +95,7 @@ const instructors = [
     name: "Sensei Ewan Tempero",
     danGrade: true,
     rank: 5,
-    desc:
-      "Sensei Ewan has over 30 years of Goju Ryu experience. He is the chief instructor of the club, which he co-founded with Sensei Tom in 2003.",
+    desc: `Sensei Ewan has over ${Utils.calculateYears(ewanStartDate)} years of Goju Ryu experience. He is the chief instructor of the club, which he co-founded with Sensei Tom in 2003.`,
     imgSrc: "/img/sensei_ewan.jpg"
   },
   {
