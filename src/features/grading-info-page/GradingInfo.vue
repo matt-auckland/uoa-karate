@@ -17,7 +17,8 @@
     <div class="flex">
       <ul class="list">
         <transition-group name="fade">
-          <li v-for="skill in needToKnow" :key="skill.name">{{ skill.name }}</li>
+          <li v-for="skill in needToKnow" :key="skill.name">{{ skill.name }}: <a :href="skill.wikiURL"
+               target="_blank">Wiki Reference</a></li>
         </transition-group>
       </ul>
       <div class="bold center-txt">
@@ -28,8 +29,8 @@
 
     <footer>
       <nav>
-        <a href="https://wiki.uoa-karate.club/wiki/Kata">Kata Reference Material</a>
-        <a href="https://wiki.uoa-karate.club/wiki/Bunkai">Bunkai Reference Material</a>
+        <a href="https://wiki.uoa-karate.club/kata">Kata Reference Material</a>
+        <a href="https://wiki.uoa-karate.club/bunkai">Bunkai Reference Material</a>
       </nav>
     </footer>
   </div>
@@ -55,35 +56,80 @@ export default {
 
   data() {
     return {
-      selectedGrade: { name: "Blue belt - 9th Kyu", value: 1 },
+      selectedGrade: { name: "Blue belt - 9th Kyu", value: 9 },
       grades: [
-        { name: "Blue belt - 9th Kyu", value: 1 },
-        { name: "Blue belt with one tab - 8th Kyu", value: 2 },
-        { name: "Yellow belt - 7th Kyu", value: 3 },
-        { name: "Yellow belt with one tab - 6th Kyu", value: 4 },
+        { name: "Blue belt - 9th Kyu", value: 9 },
+        { name: "Blue belt with one tab - 8th Kyu", value: 8 },
+        { name: "Yellow belt - 7th Kyu", value: 7 },
+        { name: "Yellow belt with one tab - 6th Kyu", value: 6 },
         { name: "Green belt - 5th Kyu", value: 5 },
-        { name: "Green belt with one tab - 4th Kyu", value: 6 },
-        { name: "Brown belt - 3rd Kyu", value: 7 },
-        { name: "Brown belt with one tab - 2nd Kyu", value: 8 },
-        { name: "Brown belt with two tabs - 1st Kyu", value: 9 },
+        { name: "Green belt with one tab - 4th Kyu", value: 4 },
+        { name: "Brown belt - 3rd Kyu", value: 3 },
+        { name: "Brown belt with one tab - 2nd Kyu", value: 2 },
+        { name: "Brown belt with two tabs - 1st Kyu", value: 1 },
+        { name: "Shodan - 1st Dan", value: -1 },
+        { name: "Nidan - 2nd Dan", value: -2 },
       ],
       syllabus: [
-        { name: "Gekisai Dai Ichi", value: 1 },
-        { name: "Gekisai Dai Ichi Bunkai", value: 2 },
-        { name: "Gekisai Dai Ni", value: 2 },
-        { name: "Gekisai Dai Ni Bunkai", value: 3 },
-        { name: "Saifa", value: 3 },
-        { name: "Saifa Bunkai", value: 4 },
-        { name: "Seiyunchin", value: 5 },
-        { name: "Seiyunchin Bunkai", value: 6 },
-        { name: "Shisochin", value: 7 },
-        { name: "Shisochin Bunkai", value: 8 },
+        {
+          name: "Gekisai Dai Ichi", value: 9,
+          wikiURL: "https://wiki.uoa-karate.club/kata/Gekisai-Dai-Ichi"
+        },
+        {
+          name: "Gekisai Dai Ichi Bunkai", value: 8,
+          wikiURL: "https://wiki.uoa-karate.club/bunkai/Gekisai-Dai-Ichi"
+        },
+        {
+          name: "Gekisai Dai Ni", value: 8,
+          wikiURL: "https://wiki.uoa-karate.club/kata/Gekisai-Dai-Ni"
+        },
+        {
+          name: "Gekisai Dai Ni Bunkai", value: 7,
+          wikiURL: "https://wiki.uoa-karate.club/bunkai/Gekisai-Dai-Ni"
+        },
+        {
+          name: "Saifa", value: 7,
+          wikiURL: "https://wiki.uoa-karate.club/kata/Saifa"
+        },
+        {
+          name: "Saifa Bunkai", value: 6,
+          wikiURL: "https://wiki.uoa-karate.club/bunkai/Saifa"
+        },
+        {
+          name: "Seiyunchin", value: 5,
+          wikiURL: "https://wiki.uoa-karate.club/kata/Seiyunchin"
+        },
+        {
+          name: "Seiyunchin Bunkai", value: 4,
+          wikiURL: "https://wiki.uoa-karate.club/bunkai/Seiyunchin"
+        },
+        {
+          name: "Shisochin", value: 3,
+          wikiURL: "https://wiki.uoa-karate.club/kata/Shisochin"
+        },
+        {
+          name: "Shisochin Bunkai", value: 2,
+          wikiURL: "https://wiki.uoa-karate.club/bunkai/Shisochin"
+        },
+        {
+          name: "Sanchin", value: -1,
+          wikiURL: "https://wiki.uoa-karate.club/kata/Sanchin"
+        },
+        {
+          name: "Sanseiru", value: -2,
+          wikiURL: "https://wiki.uoa-karate.club/kata/Sanseiru"
+        },
+        {
+          name: "Sanseiru Bunkai", value: -2,
+          wikiURL: "https://wiki.uoa-karate.club/bunkai/Sanseiru"
+        },
+
       ],
     };
   },
   computed: {
     needToKnow() {
-      return this.syllabus.filter((skill) => skill.value <= this.selectedGrade.value);
+      return this.syllabus.filter((skill) => skill.value >= this.selectedGrade.value);
     },
   },
 };
@@ -93,6 +139,7 @@ export default {
 .subheading {
   font-size: 1em;
 }
+
 #main {
   margin: 0 auto;
   max-width: 500px;
@@ -109,6 +156,7 @@ footer nav {
   justify-content: center;
   text-align: center;
 }
+
 footer nav a {
   margin: 10px;
 }
@@ -123,6 +171,7 @@ footer nav a {
 .fade-leave-active {
   transition: opacity 0.5s;
 }
+
 .fade-enter,
 .fade-leave-to {
   opacity: 0;
@@ -133,7 +182,8 @@ footer nav a {
   justify-content: space-between;
   flex-direction: column;
 }
+
 .list {
-  height: 220px;
+  min-height: 230px;
 }
 </style>
