@@ -85,7 +85,8 @@ import Utils from "@/libs/utils.js";
 import { onMounted, ref } from "vue";
 
 const heroText = "The Auckland University Goju Ryu Karate Club welcomes both university students and non-students, with any level of experience, and with any martial arts background."
-const ewanStartDate = '03/01/2008'
+// TODO: Get Ewan's proper start date
+// const ewanStartDate = '01/01/1990'
 const richardStartDate = '03/01/2008'
 const matStartDate = '08/01/2014'
 
