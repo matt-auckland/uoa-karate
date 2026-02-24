@@ -6,7 +6,7 @@ export const TRAINING_STATUS = {
 
 export default {
   "bannerText": {
-    // "text": "Training is finished for the year, we start back in the New Year on Sunday January 11th."
+    "text": "Our 'O-Week' social event is on Wednesday 4th March 6pm-8pm at the Combat Sports Studio in the Rec Center."
   },
   "schedule": [
     {
