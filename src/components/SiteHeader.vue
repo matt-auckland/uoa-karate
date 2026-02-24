@@ -7,7 +7,7 @@
       <router-link to="/">Home</router-link>
       <router-link to="/about">About</router-link>
       <!-- <router-link to="/training">Training Schedule</router-link> -->
-      <router-link to="/events">Events</router-link>
+      <!-- <router-link to="/events">Events</router-link> -->
       <router-link to="/auckland-north">Auckland North</router-link>
       <!-- <router-link to="/tester">Quiz</router-link> -->
       <a href="https://wiki.uoa-karate.club/" target="_blank" rel="noopener noreferrer">Wiki</a>
