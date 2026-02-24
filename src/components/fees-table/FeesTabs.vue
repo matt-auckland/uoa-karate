@@ -23,7 +23,7 @@ const membershipFee =
 {
   type: 'Club Membership Fee',
   cost: 'FREE',
-  notes: 'Club membership is free for everyone, and includes access to training and events',
+  notes: 'Club membership is free for everyone, and includes access to free trials and club events',
 
 }
 // const baseFeeData = [

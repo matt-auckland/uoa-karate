@@ -61,6 +61,8 @@ main {
 }
 
 .container {
+  --columns: 3;
+  grid-template-columns: repeat(var(--columns), 1fr);
   display: grid;
   grid-area: content;
   grid-column-gap: 50px;
@@ -81,6 +83,7 @@ main {
   }
 
   .container {
+    --columns: 2;
     grid-template-areas:
       "hero hero"
       "fees fees"
