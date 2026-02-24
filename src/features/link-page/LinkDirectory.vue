@@ -1,26 +1,7 @@
 <template>
   <div>
-    <h1>A collection of useful forms and websites</h1>
+    <h1>A collection of useful links</h1>
     <div class="container">
-      <ul>
-        <h2>Forms</h2>
-
-        <li>
-          <a href="https://docs.google.com/forms/d/1bPMtgUDXCPMpEReijFP0tMrvCISVmKgATd3AHZP2PDY/viewform?edit_requested=true"
-             target="_blank">Beginner's Training Sign Up Sheet (Semester 2 2023)</a>
-        </li>
-        <li>
-          <a href="https://goo.gl/forms/sTq5WHgxXTOSmMx42" target="_blank">Club Sign Up Sheet</a>
-        </li>
-        <li>
-          <a href="https://docs.google.com/forms/d/1DgZ-10ExX6ZXGagtK34vMOSmHut1G8t4-RwNVmbkffE/viewform?edit_requested=true"
-             target="_blank">Club Reimbursement Form (2023)</a>
-        </li>
-        <li>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdHBeXrR8Q2QspvBtOa-f1KHbievYbtwaunhlxusSXC5lGpVg/viewform"
-             target="_blank">Injury Record Submission Form (2023)</a>
-        </li>
-      </ul>
       <ul>
         <h2>Tools and Info</h2>
         <li>
