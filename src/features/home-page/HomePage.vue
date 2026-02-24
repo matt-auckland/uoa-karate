@@ -11,7 +11,8 @@
       </section> -->
       <TrainingSchedule class="schedule" />
       <FeesTabs class="fees" />
-      <UpcomingEvents class="events" />
+      <!-- <UpcomingEvents class="events" /> -->
+      <SignUpQRCode class="qr-code" />
     </div>
     <ClubMap class="clubmap" />
     <ContactForm class="contact-form" />
@@ -25,6 +26,7 @@ import ClubMap from "@/components/ClubMap.vue";
 import ContactForm from "@/components/ContactForm.vue";
 import UpcomingEvents from "@/components/UpcomingEvents.vue";
 import HeroImage from "@/components/HeroImage.vue";
+import SignUpQRCode from "../../components/SignUpQRCode.vue";
 
 export default {
   name: "HomePage",
@@ -34,7 +36,8 @@ export default {
     FeesTabs,
     ContactForm,
     UpcomingEvents,
-    HeroImage
+    HeroImage,
+    SignUpQRCode
   },
   data: function () {
     return {
@@ -64,11 +67,11 @@ main {
   grid-row-gap: 40px;
   grid-template-areas:
     "hero hero hero"
-    "schedule events events"
-    "fees events events";
+    "fees fees qr-code"
+    "schedule schedule schedule";
 }
 
-@media (max-width: 481px) {
+@media (max-width: 781px) {
   main {
     text-align: center;
     grid-template-areas:
@@ -80,8 +83,9 @@ main {
   .container {
     grid-template-areas:
       "hero hero"
+      "fees fees"
       "schedule schedule"
-      "fees fees";
+      "qr-code qr-code";
   }
 
   .events {
@@ -137,5 +141,10 @@ main {
 
 .events {
   grid-area: events;
+}
+
+.qr-code {
+  grid-area: qr-code;
+  justify-self: center;
 }
 </style>
