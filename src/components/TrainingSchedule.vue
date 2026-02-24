@@ -55,12 +55,12 @@ export default {
 h3 {
   color: var(--base-font-color);
   margin: 0;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 p {
   color: var(--base-font-color);
-  font-size: 18px;
+  font-size: 16px;
   margin: 5px 0;
 }
 
