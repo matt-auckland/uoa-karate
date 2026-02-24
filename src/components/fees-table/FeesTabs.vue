@@ -19,37 +19,39 @@
 import FeesTable from '@/components/fees-table/FeesTable.vue';
 import { ref } from 'vue';
 
-const baseFeeData = [
-  // {
-  //   type: 'Club Membership Fee',
-  //   cost: '$5 Annually',
-  //   notes: 'Paid once per year in addition to the training fees',
-  // },
-  {
-    type: 'Grading Fee',
-    cost: '$35',
-    notes: 'Gradings occur near the end of each university semester',
-  },
-]
+const membershipFee =
+{
+  type: 'Club Membership Fee',
+  cost: 'FREE',
+  notes: 'Club membership is free for everyone, and includes access to training and events',
+
+}
+// const baseFeeData = [
+//   {
+//     type: 'Grading Fee',
+//     cost: '$35',
+//     notes: 'Gradings occur near the end of each university semester',
+//   },
+// ]
 
 const regularFeeData = [
+  membershipFee,
   {
     type: 'Training Fee',
     cost: '$40 Per Month',
     notes:
       'Non-students pay per month',
   },
-  ...baseFeeData
 ]
 
 const studentFeeData = [
+  membershipFee,
   {
     type: 'Training Fee',
     cost: 'FREE your first sem, then $70 Per Semester',
     notes:
       'Students pay per semester, your first sem is free',
   },
-  ...baseFeeData
 ]
 
 const showStudents = ref(true)
