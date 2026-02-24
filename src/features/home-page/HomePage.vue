@@ -46,7 +46,7 @@ export default {
 </script>
 
 <style scoped>
-content {
+main {
   max-width: 1300px;
   margin: 0 auto;
   display: grid;
@@ -68,8 +68,8 @@ content {
     "fees events events";
 }
 
-@media (max-width: 981px) {
-  content {
+@media (max-width: 481px) {
+  main {
     text-align: center;
     grid-template-areas:
       "content content"
@@ -94,7 +94,7 @@ content {
   width: 100%;
   margin: 0 auto;
 
-  background-position-x: 0px;
+  background-position-x: 0;
   background-size: cover;
   height: 435px;
   border-radius: 10px;
