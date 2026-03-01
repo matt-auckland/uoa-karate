@@ -37,7 +37,7 @@ export default {
       "notes": "For graded members, 9th kyu (Blue belt) and above only.",
       "tempNotes": "Friday training is currently postponed until further notice.",
       "tempLocation": "Location to be confirmed",
-      "status": TRAINING_STATUS.POSTPONED
+      "status": TRAINING_STATUS.HIDDEN
     },
     {
       "index": 4,
