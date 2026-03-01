@@ -22,9 +22,9 @@ export default {
       "index": 2,
       "day": "Wednesday",
       "startTime": "6.00pm",
-      "finishTime": "7.30pm",
-      "location": "Rec Centre (Hiwa) Mind and Body Studio. 2nd floor, University of Auckland",
-      "notes": "Attendees should meet in the Rec Centre lobby before training starts",
+      "finishTime": "8.00pm",
+      "location": "Rec Centre (Hiwa) Combat Sports Studio. 2nd floor, University of Auckland",
+      "notes": "Training is 6-8pm March 4th and will be back to 6-7.30pm from March 11th. Attendees should meet in the Rec Centre lobby before training starts",
       "status": TRAINING_STATUS.ACTIVE,
       "tempNotes": "Wednesday training is currently postponed until January 14th."
     },
@@ -44,10 +44,10 @@ export default {
       "day": "Sunday",
       "startTime": "10am",
       "finishTime": "12pm",
-      "location": "Rec Centre (Hiwa) Combat Sports Student. 1st floor, University of Auckland",
+      "location": "Rec Centre (Hiwa) Combat Sports Studio. 1st floor, University of Auckland",
       "notes": "Attendees should meet in the Rec Centre lobby before training starts",
-      "status": TRAINING_STATUS.ACTIVE,
-      "tempNotes": "Sunday training is currently postponed until January 11th."
+      "status": TRAINING_STATUS.POSTPONED,
+      "tempNotes": "Sunday training is currently postponed until March 15th, there is no training on March 8th"
     }
   ]
 }
