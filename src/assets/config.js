@@ -6,7 +6,7 @@ export const TRAINING_STATUS = {
 
 export default {
   "bannerText": {
-    "text": "Our 'O-Week' social event is on Wednesday 4th March 6pm-8pm at the Combat Sports Studio in the Rec Center."
+    //"text": "Our 'O-Week' social event is on Wednesday 4th March 6pm-8pm at the Combat Sports Studio in the Rec Center."
   },
   "schedule": [
     {
@@ -22,9 +22,9 @@ export default {
       "index": 2,
       "day": "Wednesday",
       "startTime": "6.00pm",
-      "finishTime": "8.00pm",
+      "finishTime": "7.30pm",
       "location": "Rec Centre (Hiwa) Combat Sports Studio. 2nd floor, University of Auckland",
-      "notes": "Training is 6-8pm March 4th and will be back to 6-7.30pm from March 11th. Attendees should meet in the Rec Centre lobby before training starts",
+      "notes": "Attendees should meet in the Rec Centre lobby before training starts",
       "status": TRAINING_STATUS.ACTIVE,
       "tempNotes": "Wednesday training is currently postponed until January 14th."
     },
