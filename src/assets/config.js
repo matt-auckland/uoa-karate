@@ -11,7 +11,7 @@ export default {
   "schedule": [
     {
       "index": 1,
-      "day": "Tuesday",
+      "day": "Tuesdays",
       "startTime": "6pm",
       "finishTime": "7.30pm",
       "location": "Rec Centre (Hiwa) Mind and Body Studio. 2nd floor, University of Auckland",
@@ -20,7 +20,7 @@ export default {
     },
     {
       "index": 2,
-      "day": "Wednesday",
+      "day": "Wednesdays",
       "startTime": "6.00pm",
       "finishTime": "7.30pm",
       "location": "Rec Centre (Hiwa) Combat Sports Studio. 2nd floor, University of Auckland",
@@ -30,7 +30,7 @@ export default {
     },
     {
       "index": 3,
-      "day": "Friday",
+      "day": "Fridays",
       "startTime": "6.00pm",
       "finishTime": "7.30pm",
       "location": "Room 155, Building 303, University of Auckland, 38 Princes Street",
@@ -41,7 +41,7 @@ export default {
     },
     {
       "index": 4,
-      "day": "Sunday",
+      "day": "Sundays",
       "startTime": "10am",
       "finishTime": "12pm",
       "location": "Rec Centre (Hiwa) Combat Sports Studio. 1st floor, University of Auckland",
