@@ -1,11 +1,11 @@
 <template>
   <main>
     <div class="container">
-      <HeroImage
+      <HeroImageSwitcher
         class="hero-image"
-        source="/img/hawks_nest.jpg"
         :heading="heroHeading"
         :paragraph="heroText"
+        :images="heroImages"
       />
       <!-- <section class="about-section">
         <p class="text-container">
@@ -30,7 +30,7 @@ import FeesSection from "@/components/fees-table/FeesSection.vue";
 import ClubMap from "@/components/ClubMap.vue";
 import ContactForm from "@/components/ContactForm.vue";
 import UpcomingEvents from "@/components/UpcomingEvents.vue";
-import HeroImage from "@/components/HeroImage.vue";
+import HeroImageSwitcher from "@/components/HeroImageSwitcher.vue";
 import SignUpQRCode from "../../components/SignUpQRCode.vue";
 
 export default {
@@ -41,11 +41,16 @@ export default {
     FeesSection,
     ContactForm,
     UpcomingEvents,
-    HeroImage,
+    HeroImageSwitcher,
     SignUpQRCode,
   },
   data: function () {
     return {
+      heroImages: [
+        "/img/hawks_nest.jpg",
+        "/img/group_saifa.JPG",
+        "/img/training_pose.jpg",
+      ],
       heroHeading: "Welcome to our Club!",
       heroText:
         "Our club welcomes people with any level of experience, both students and non-students alike. We accept new members all year round, but we host beginner specific trainings at the start of every semester. Students get FREE training for their first semester!",
@@ -104,16 +109,6 @@ main {
 
 .hero-image {
   grid-area: hero;
-  width: 100%;
-  margin: 0 auto;
-
-  background-position-x: 0;
-  background-size: cover;
-  height: 435px;
-  border-radius: 10px;
-
-  display: flex;
-  align-items: center;
 }
 
 .about-section {
