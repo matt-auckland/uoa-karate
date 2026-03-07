@@ -2,13 +2,6 @@
   <div class="fee-data-container">
     <h2>Training Fees:</h2>
 
-    <!-- 
-    <FeesTable
-      :feeTableData="showStudents ? studentFeeData : regularFeeData"
-      :showTitle="false"
-    />
-      -->
-
     <div class="grid-container">
       <div class="fee" v-for="fee in selectedFees" :key="fee.type">
         <h3>{{ fee.type }}</h3>
@@ -37,13 +30,6 @@ const membershipFee = {
   notes:
     "Club membership is free for everyone, and includes access to free trial sessions and club events",
 };
-// const baseFeeData = [
-//   {
-//     type: 'Grading Fee',
-//     cost: '$35',
-//     notes: 'Gradings occur near the end of each university semester',
-//   },
-// ]
 
 const regularFeeData = [
   membershipFee,
