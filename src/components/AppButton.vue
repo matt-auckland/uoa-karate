@@ -50,7 +50,7 @@ export default {
 button {
   border-radius: 15px;
   border: 1px solid var(--persian-red-dark);
-  color: var(--persian-red);
+  color: var(--persian-red-light);
   font-size: 14px;
   background: none;
   transition: all 200ms ease-out;
@@ -59,8 +59,7 @@ button {
 }
 
 button:hover {
-  border: 1px solid var(--persian-red);
-  color: var(--persian-red-light);
+  border: 1px solid var(--persian-red-light);
 }
 
 button:disabled {
