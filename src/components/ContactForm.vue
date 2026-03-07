@@ -1,9 +1,6 @@
 <template>
   <div class="hello">
-    <form
-      method="POST"
-      :action="formUrl"
-    >
+    <form method="POST" :action="formUrl">
       <h1>Contact Us</h1>
       <input
         name="email"
@@ -11,14 +8,14 @@
         type="email"
         required="true"
         class="email"
-      >
+      />
       <input
         name="name"
         placeholder="Your name"
         type="text"
         required="true"
         class="name"
-      >
+      />
       <textarea
         name="message"
         placeholder="Your message"
@@ -27,20 +24,24 @@
         required="true"
         class="message"
       ></textarea>
-      <button type="submit">Send Email</button>
+      <AppButton type="submit">Send Email</AppButton>
     </form>
   </div>
 </template>
 
 <script>
+import AppButton from "@/components/AppButton.vue";
 export default {
   name: "ContactForm",
+  components: {
+    AppButton,
+  },
   props: {
     formUrl: {
       type: String,
-      default: 'https://formspree.io/au.gojuryu.karate@gmail.com'
-    }
-  }
+      default: "https://formspree.io/au.gojuryu.karate@gmail.com",
+    },
+  },
 };
 </script>
 
@@ -111,20 +112,8 @@ h1 {
 .message {
   grid-area: message;
 }
+
 button {
   grid-area: button;
-  border-radius: 15px;
-  border: 1px solid var(--persian-red-dark);
-  color: var(--persian-red);
-  font-size: 14px;
-  background: none;
-  transition: all 200ms ease-out;
-  width: 240px;
-  margin: 0 auto;
-}
-
-button:hover {
-  border: 1px solid var(--persian-red);
-  color: var(--persian-red-light);
 }
 </style>
