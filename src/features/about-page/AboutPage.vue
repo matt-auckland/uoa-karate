@@ -114,6 +114,7 @@ import MemberCard from "@/components/MemberCard.vue";
 import Image from "../../components/Image.vue";
 import HeroImage from "../../components/HeroImage.vue";
 import Utils from "@/libs/utils.js";
+import { preloadImages } from "@/libs/imagePreloader.js";
 import { onMounted, ref } from "vue";
 
 const heroText =
@@ -176,8 +177,11 @@ const eventImages = [
 const clubAge = new Date().getFullYear() - 2003;
 
 const swiperRef = ref(null);
+const preloadedSwiperImages = ref([]);
 
 onMounted(() => {
+  preloadedSwiperImages.value = preloadImages(eventImages);
+
   setInterval(() => {
     const elm = swiperRef.value;
     if (elm.scrollLeft === elm.scrollLeftMax) {

@@ -27,6 +27,7 @@ import ContactForm from "@/components/ContactForm.vue";
 import UpcomingEvents from "@/components/UpcomingEvents.vue";
 import HeroImageSwitcher from "@/components/HeroImageSwitcher.vue";
 import SignUpQRCode from "../../components/SignUpQRCode.vue";
+import { preloadImages } from "@/libs/imagePreloader.js";
 
 export default {
   name: "HomePage",
@@ -74,28 +75,7 @@ export default {
     };
   },
   mounted() {
-    this.preloadHeroImages();
-  },
-  methods: {
-    preloadHeroImages() {
-      if (typeof Image === "undefined") {
-        return;
-      }
-
-      const imageSources = [
-        ...new Set(
-          this.heroImages
-            .map((image) => (typeof image === "string" ? image : image.source))
-            .filter(Boolean),
-        ),
-      ];
-
-      this.preloadedHeroImages = imageSources.map((source) => {
-        const preloadedImage = new Image();
-        preloadedImage.src = source;
-        return preloadedImage;
-      });
-    },
+    this.preloadedHeroImages = preloadImages(this.heroImages);
   },
 };
 </script>
