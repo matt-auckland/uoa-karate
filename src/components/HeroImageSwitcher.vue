@@ -14,17 +14,26 @@
         {{ isTextHidden ? "Show text" : "Hide text" }}
       </button>
 
-      <div class="image-buttons" role="group" aria-label="Select hero image">
+      <div class="image-nav" role="group" aria-label="Select hero image">
         <button
-          v-for="(image, index) in images"
-          :key="image"
           type="button"
-          :class="{ active: currentImageIndex === index }"
-          @click="setImage(index)"
-          :aria-label="`Show image ${index + 1}`"
-          :aria-pressed="currentImageIndex === index"
+          @click="showPreviousImage"
+          aria-label="Show previous image"
         >
-          {{ index + 1 }}
+          Back
+        </button>
+
+        <!-- Caption intentionally hidden for now; keep data/computed support for easy re-enable -->
+        <!-- <span class="caption" aria-live="polite">{{
+          currentImage.caption
+        }}</span> -->
+
+        <button
+          type="button"
+          @click="showNextImage"
+          aria-label="Show next image"
+        >
+          Next
         </button>
       </div>
     </div>
@@ -51,18 +60,47 @@ export default {
     };
   },
   computed: {
+    normalizedImages() {
+      return this.images.map((image) => {
+        if (typeof image === "string") {
+          return { source: image, caption: "" };
+        }
+
+        return {
+          source: image.source,
+          caption: image.caption || "",
+        };
+      });
+    },
+    currentImage() {
+      return (
+        this.normalizedImages[this.currentImageIndex] || {
+          source: "",
+          caption: "",
+        }
+      );
+    },
     heroStyle() {
       return {
-        backgroundImage: `url('${this.images[this.currentImageIndex]}')`,
+        backgroundImage: `url('${this.currentImage.source}')`,
       };
     },
   },
   methods: {
-    setImage(index) {
-      this.currentImageIndex = index;
-    },
     toggleText() {
       this.isTextHidden = !this.isTextHidden;
+    },
+    showPreviousImage() {
+      if (this.currentImageIndex === 0) {
+        this.currentImageIndex = this.normalizedImages.length - 1;
+        return;
+      }
+
+      this.currentImageIndex -= 1;
+    },
+    showNextImage() {
+      this.currentImageIndex =
+        (this.currentImageIndex + 1) % this.normalizedImages.length;
     },
   },
 };
@@ -113,23 +151,24 @@ export default {
 
 .controls {
   display: flex;
-  gap: 12px;
+  flex-direction: row;
+  gap: 8px;
   position: absolute;
   left: 20px;
   right: 20px;
   bottom: 20px;
   flex-shrink: 0;
   box-sizing: border-box;
-  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
   background: rgba(79, 79, 79, 0.6);
   border-radius: 8px;
   padding: 10px;
 }
 
 .text-toggle,
-.image-buttons button {
+.image-nav button {
   border: 1px solid rgba(255, 255, 255, 0.7);
   background: rgba(255, 255, 255, 0.15);
   color: white;
@@ -140,15 +179,21 @@ export default {
 }
 
 .text-toggle:hover,
-.image-buttons button:hover,
-.image-buttons button.active {
+.image-nav button:hover {
   background: rgba(255, 255, 255, 0.35);
 }
 
-.image-buttons {
+.image-nav {
   display: flex;
   gap: 8px;
-  flex-wrap: wrap;
+  align-items: center;
+  margin-left: auto;
+}
+
+.caption {
+  color: white;
+  min-width: 120px;
+  text-align: center;
 }
 
 @media (max-width: 781px) {
@@ -168,7 +213,12 @@ export default {
     left: 16px;
     right: 16px;
     bottom: 16px;
-    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .caption {
+    min-width: 96px;
   }
 }
 </style>

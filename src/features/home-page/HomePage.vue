@@ -47,9 +47,18 @@ export default {
   data: function () {
     return {
       heroImages: [
-        "/img/hawks_nest.jpg",
-        "/img/group_saifa.JPG",
-        "/img/training_pose.jpg",
+        {
+          source: "/img/hawks_nest.jpg",
+          caption: "Hawks Nest training view",
+        },
+        {
+          source: "/img/group-photo.jpg",
+          caption: "Demonstrating at Open Day",
+        },
+        {
+          source: "/img/fun_karate_pose.jpg",
+          caption: "Fighting stances at training",
+        },
       ],
       heroHeading: "Welcome to our Club!",
       heroText:
