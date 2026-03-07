@@ -77,6 +77,17 @@ export default {
   mounted() {
     this.preloadedHeroImages = preloadImages(this.heroImages);
   },
+  head() {
+    return {
+      title: "UoA Karate Club",
+      meta: [
+        {
+          name: "description",
+          content: "The official Auckland University Karate website. Join today! " + this.heroText
+        }
+      ]
+    }
+  }
 };
 </script>
 

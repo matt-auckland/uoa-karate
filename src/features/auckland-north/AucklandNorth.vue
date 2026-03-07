@@ -74,7 +74,7 @@ export default {
   data: function () {
     return {
       mapUrl: "https://www.google.com/maps/d/embed?mid=1lSeGuFy53GDmQIbpM2aS5jWlWWawurI",
-        schedule: [
+      schedule: [
         {
           "index": 1,
           "day": "Thursdays",
@@ -102,7 +102,7 @@ export default {
           notes: 'Gradings occur twice a year',
         },
       ],
-      paragraphText: "Goju Ryu Karate is a martial art that originated from Okinawa, Japan. Goju Ryu Karate utilises fluid, circular movements and teaches effective close-distance fighting, fast strikes and takedowns. With an emphasises both strength and flexibility, Goju Ryu enhances physical fitness, builds mental discipline, as well as self-confidence.",
+      // paragraphText: "Goju Ryu Karate is a martial art that originated from Okinawa, Japan. Goju Ryu Karate utilises fluid, circular movements and teaches effective close-distance fighting, fast strikes and takedowns. With an emphasises both strength and flexibility, Goju Ryu enhances physical fitness, builds mental discipline, as well as self-confidence.",
       paragraphText: "We're a Goju Ryu Karate dojo based in Sunnynook on the North Shore. We are open to beginners and experienced martial artists alike. Families and children (12+) are also welcome.",
       // paragraphText: "Goju Ryu is a traditional martial art which focuses on mental and physical improvement. Beginners and experienced martial artists are welcome.",
       richard: {
@@ -113,6 +113,17 @@ export default {
         imgSrc: "/img/sensei_richard.png"
       },
     };
+  },
+  head() {
+    return {
+      title: "Auckland North Karate Club",
+      meta: [
+        {
+          name: "description",
+          content: this.paragraphText,
+        }
+      ]
+    }
   }
 };
 </script>
@@ -176,6 +187,7 @@ content {
   content {
     text-align: center;
   }
+
   .container {
     grid-template-columns: 1fr;
     grid-template-areas: "hero"
