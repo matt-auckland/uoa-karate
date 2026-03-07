@@ -6,21 +6,25 @@
 </template>
 
 <script>
-import QRCodeImg from '@/assets/AUGRK-registration-form-QR.png'
+import QRCodeImg from "@/assets/AUGRK-registration-form-QR.png";
 export default {
   data() {
     return {
-      formURL: 'https://docs.google.com/forms/d/e/1FAIpQLSffDWYs8lzM4vdZOVCKmiijebR2F5tjHnwwWRR9vbIXKeXobg/viewform',
-      img: QRCodeImg
-    }
-  }
-}
+      formURL:
+        "https://docs.google.com/forms/d/e/1FAIpQLSffDWYs8lzM4vdZOVCKmiijebR2F5tjHnwwWRR9vbIXKeXobg/viewform",
+      img: QRCodeImg,
+    };
+  },
+};
 </script>
 
 <style scoped>
 a {
   display: block;
   text-align: center;
+  h2 {
+    margin: 0 0 15px;
+  }
 }
 
 img {
