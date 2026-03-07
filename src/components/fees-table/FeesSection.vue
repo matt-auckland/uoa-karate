@@ -1,31 +1,39 @@
 <template>
   <div class="fee-data-container">
     <h2>Training Fees:</h2>
+
+    <!-- 
     <FeesTable
-      v-if="showStudents"
-      :feeTableData="studentFeeData"
+      :feeTableData="showStudents ? studentFeeData : regularFeeData"
       :showTitle="false"
     />
-    <FeesTable v-else :feeTableData="regularFeeData" :showTitle="false" />
+      -->
 
-    <div class="tab-container">
-      <AppButton v-if="showStudents" @click="showStudents = false">
-        I'm not a University Student
-      </AppButton>
-      <AppButton v-else @click="showStudents = true">
-        I'm a University Student
-      </AppButton>
+    <div class="grid-container">
+      <div class="fee" v-for="fee in selectedFees" :key="fee.type">
+        <h3>{{ fee.type }}</h3>
+        <p class="cost">{{ fee.cost }}</p>
+        <hr v-if="fee.notes" />
+        <p class="notes" v-if="fee.notes">{{ fee.notes }}</p>
+      </div>
     </div>
+
+    <AppButton v-if="showStudents" @click="showStudents = false">
+      I'm not a University Student
+    </AppButton>
+    <AppButton v-else @click="showStudents = true">
+      I'm a University Student
+    </AppButton>
   </div>
 </template>
 
 <script setup>
 import FeesTable from "@/components/fees-table/FeesTable.vue";
 import AppButton from "@/components/AppButton.vue";
-import { ref } from "vue";
+import { ref, computed } from "vue";
 
 const membershipFee = {
-  type: "Club Membership Fee",
+  type: "Club Membership",
   cost: "FREE",
   notes:
     "Club membership is free for everyone, and includes access to free trials and club events",
@@ -51,70 +59,83 @@ const studentFeeData = [
   membershipFee,
   {
     type: "Training Fee",
-    cost: "FREE your first sem, then $70 Per Semester",
+    cost: "FREE your first sem, then $70 per semester",
     notes: "Students pay per semester, your first sem is free",
   },
 ];
 
 const showStudents = ref(true);
+
+const selectedFees = computed(() =>
+  showStudents.value ? studentFeeData : regularFeeData,
+);
 </script>
 
 <style scoped>
-.tab-container {
+.fee-data-container {
   display: flex;
-  justify-content: center;
-  width: 100%;
-  margin: 0 auto 20px auto;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  h2 {
+    width: 100%;
+    margin: 0;
+  }
 }
 
-.tab {
-  cursor: pointer;
-  position: relative;
+.grid-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  margin: 0 10px;
-}
+  gap: 20px;
 
-.underline {
-  --animation-length: 350ms;
-  content: " ";
-  background: var(--persian-red);
-  height: 2px;
-  opacity: 1;
-  width: 0px;
-  transition: width var(--animation-length);
-  position: absolute;
-  bottom: -3px;
-}
+  h3 {
+    color: var(--base-font-color);
+    margin: 0;
+    font-size: 20px;
+  }
 
-.tab.active .underline {
-  width: 100%;
-}
+  p {
+    color: var(--base-font-color);
+    font-size: 16px;
+    margin: 5px 0;
+  }
 
-.tab.active {
-  cursor: default;
-  color: var(--persian-red);
-}
+  .date {
+    font-weight: bold;
+  }
 
-table {
-  text-align: left;
-  border-spacing: 0px;
-  width: 100%;
-  max-width: 880px;
-}
+  hr {
+    border: none;
+    margin: 8px 30%;
+    border-bottom: 2px solid var(--persian-red-light);
+  }
 
-table,
-td,
-th {
-  border: var(--tuatara-light) solid 1px;
-}
+  .cost {
+    font-weight: bold;
+  }
 
-td,
-th {
-  padding: 16px 10px;
-}
+  .fee {
+    display: flex;
+    flex-direction: column;
 
-.text {
-  text-align: left;
+    flex: 150px 1 1;
+
+    border: 2px solid var(--persian-red-darker);
+    padding: 10px 12px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: black;
+    transition: transform 500ms;
+  }
+
+  .fee:hover {
+    transform: translateY(-5px);
+  }
+
+  .fee .location {
+    flex: 1;
+  }
 }
 </style>
