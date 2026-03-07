@@ -1,26 +1,38 @@
 <template>
   <div class="about-container">
-    <HeroImage class="hero" source="img/group_saifa.JPG" heading="About the Club" :paragraph="heroText" />
+    <HeroImage
+      class="hero"
+      source="img/group_saifa.JPG"
+      heading="About the Club"
+      :paragraph="heroText"
+    />
     <div class="image-one">
-      <Image source="img/two_sensei.jpg" caption="Sensei Ewan Tempero and Sensei Tom Davies" />
+      <Image
+        source="img/two_sensei.jpg"
+        caption="Sensei Ewan Tempero and Sensei Tom Davies"
+      />
     </div>
 
     <div class="paraOne">
       <h2>About the Club</h2>
       <p>
-        Founded in 2003 by Sensei Ewan Tempero (5th degree Black Belt) and Sensei Tom Davies (4th degree Black Belt),
-        The
-        University of Auckland Goju Ryu Karate Club has been running for {{ clubAge }} years and counting.
+        Founded in 2003 by Sensei Ewan Tempero (5th degree Black Belt) and
+        Sensei Tom Davies (4th degree Black Belt), The University of Auckland
+        Goju Ryu Karate Club has been running for {{ clubAge }} years and
+        counting.
       </p>
       <p>
         The club is affiliated with the
         <a href="https://iogkf.com" target="_blank" rel="noopener noreferrer">
-          International Okinawan Goju Ryu Federation (IOGKF)</a>, an international body dedicated to preserving the art
-        of
-        the Okinawan
+          International Okinawan Goju Ryu Federation (IOGKF)</a
+        >, an international body dedicated to preserving the art of the Okinawan
         Goju-Ryu Karate, as well as the New Zealand branch organization,
-        <a href="https://karate.org.nz" target="_blank" rel="noopener noreferrer">IOGKFNZ</a>. This gives club members
-        access to expert intructors and the ability
+        <a
+          href="https://karate.org.nz"
+          target="_blank"
+          rel="noopener noreferrer"
+          >IOGKFNZ</a
+        >. This gives club members access to expert intructors and the ability
         to attend training camps/seminars around the country and the world.
       </p>
     </div>
@@ -43,28 +55,48 @@
 
     <div class="club-event-sect">
       <div class="swipe-container" ref="swiperRef">
-        <Image v-for="i in eventImages" :key="i.source" class="event-image" :source="i.source" :caption="i.caption" />
+        <Image
+          v-for="i in eventImages"
+          :key="i.source"
+          class="event-image"
+          :source="i.source"
+          :caption="i.caption"
+        />
       </div>
     </div>
     <div class="image-two">
-      <Image :source="'img/hawks_nest_sensei.jpg'" :caption="'Sensei Ewan explaining an exercise at the Hawks Nest'" />
+      <Image
+        :source="'img/hawks_nest_sensei.jpg'"
+        :caption="'Sensei Ewan explaining an exercise at the Hawks Nest'"
+      />
     </div>
     <div class="paraThree">
       <h2>Training Location & Facilities</h2>
       <p>
-        Most club trainings are run out of the awesome
-        <a href="https://hawksnestgym.co.nz/" target="_blank">Hawks Nest Gym</a>
-        which is a fully furbished Mauy Thai Gym located at Level 2/492 Queen
-        Street, Auckland; near the intersection of Queen Street and City Road.
+        Club trainings are run out of the awesome
+        <a href="https://hawksnestgym.co.nz/" target="_blank"
+          >Hiwa Recreation Center</a
+        >
+        located on campus at 17 Symonds Street, Auckland. Usually we are in
+        either the <b>Combat Studio</b> or <b>Mind and Body Studio</b>,
+        depending on the day.
       </p>
       <p>
-        The gym facilities include padded floors, a shower, bathroom, mirrors,
-        punching bags, skipping ropes, Muay Thai style focus mitts and more.
-        We've also stocked the with some equipment of our own, including kick
-        shields and
-        <a href="https://zoehinis.com/2014/09/04/hojo-undo-101-chishi/" target="_blank">chiishi</a>, a traditional
-        Karate
-        training implement from Okinawa (the birthplace of Karate).
+        Hiwa Recreation Center is a great training space with modern facilities
+        including a large changing area, showers, multiple floors of gym
+        equipment, a pool, and a variety of other facilities outside of what we
+        use.
+      </p>
+
+      <p>
+        The <b>Combat Studio</b> has a slightly padded floor, along with hanging
+        punching bags, ideal for pracising your techniques on. It also features
+        padded mats for safely practising throws and takedowns.
+      </p>
+      <p>
+        The <b>Mind and Body Studio</b> has a wooden floor, which is ideal for
+        practicing kata (pre-arranged forms) and large wall to wall mirrors,
+        which are great for self-correction and improving technique.
       </p>
     </div>
 
@@ -84,11 +116,12 @@ import HeroImage from "../../components/HeroImage.vue";
 import Utils from "@/libs/utils.js";
 import { onMounted, ref } from "vue";
 
-const heroText = "The Auckland University Goju Ryu Karate Club welcomes both university students and non-students, with any level of experience, and with any martial arts background."
+const heroText =
+  "The Auckland University Goju Ryu Karate Club welcomes both university students and non-students, with any level of experience, and with any martial arts background.";
 // TODO: Get Ewan's proper start date, only the year is correct right now
-const ewanStartDate = '01/01/1989'
-const richardStartDate = '03/01/2008'
-const matStartDate = '08/01/2014'
+const ewanStartDate = "01/01/1989";
+const richardStartDate = "03/01/2008";
+const matStartDate = "08/01/2014";
 
 const instructors = [
   {
@@ -96,62 +129,69 @@ const instructors = [
     danGrade: true,
     rank: 5,
     desc: `Sensei Ewan has over ${Utils.calculateYears(ewanStartDate)} years of Goju Ryu experience. He is the chief instructor of the club, which he co-founded with Sensei Tom in 2003.`,
-    imgSrc: "/img/sensei_ewan.jpg"
+    imgSrc: "/img/sensei_ewan.jpg",
   },
   {
     name: "Sensei Richard Ly",
     danGrade: true,
     rank: 4,
     desc: `Sensei Richard has over ${Utils.calculateYears(richardStartDate)} years of Goju Ryu experience, and also runs the "Auckland North" dojo on the North Shore.`,
-    imgSrc: "/img/sensei_richard.png"
+    imgSrc: "/img/sensei_richard.png",
   },
   {
     name: "Senpai Mat Paul",
     danGrade: true,
     rank: 2,
     desc: `Senpai Mat has over ${Utils.calculateYears(matStartDate)} years experience in Goju Ryu. He also has graded in Okinawan Kobudo (weapons) and Judo.`,
-    imgSrc: "/img/mat_saifa.jpg"
+    imgSrc: "/img/mat_saifa.jpg",
   },
-]
+];
 const eventImages = [
+  {
+    source: "img/group_saifa.JPG",
+    caption:
+      "Group kata at Mission Bay, during one of our annual beach trainings.",
+  },
+  {
+    source: "img/rangitoto.jpg",
+    caption:
+      "Club members after a hike at Rangitoto, Auckland's iconic volcanic island.",
+  },
   {
     source: "img/gishiki_group.jpg",
     caption:
-      "Club members with their fellow New Zealanders at an international training camp."
+      "Club members with their fellow New Zealanders at an international training camp.",
   },
   {
     source: "img/camp_2019.png",
-    caption: "Fun at the Club's 2019 Karate Camp"
+    caption: "Fun at the Club's 2019 Karate Camp",
   },
   {
     source: "img/tournament.jpg",
     caption:
-      "Smiles after placing at the Bi-Annual Pukekohe Karate Tournament"
-  }
-]
+      "Smiles after winning trophies at the Bi-Annual Pukekohe Karate Tournament",
+  },
+];
 
-const clubAge = new Date().getFullYear() - 2003
+const clubAge = new Date().getFullYear() - 2003;
 
-const swiperRef = ref(null)
+const swiperRef = ref(null);
 
 onMounted(() => {
   setInterval(() => {
-    const elm = swiperRef.value
+    const elm = swiperRef.value;
     if (elm.scrollLeft === elm.scrollLeftMax) {
-      elm.scroll(-1 * elm.scrollLeftMax, 0)
+      elm.scroll(-1 * elm.scrollLeftMax, 0);
     } else {
-      console.log(elm.scrollLeft, elm.getBoundingClientRect().width)
-      elm.scroll(
-        {
-          top: 0,
-          left: elm.scrollLeft + elm.getBoundingClientRect().width,
-          behavior: "smooth",
-        }
-      )
+      console.log(elm.scrollLeft, elm.getBoundingClientRect().width);
+      elm.scroll({
+        top: 0,
+        left: elm.scrollLeft + elm.getBoundingClientRect().width,
+        behavior: "smooth",
+      });
     }
-  }, 5000)
-})
-
+  }, 5000);
+});
 </script>
 <!-- Swiper -->
 <style>
@@ -186,7 +226,7 @@ onMounted(() => {
   gap: 50px;
 }
 
-.swipe-container>* {
+.swipe-container > * {
   flex-shrink: 0;
   scroll-snap-align: center;
 }
@@ -227,13 +267,11 @@ onMounted(() => {
   grid-area: instructors;
 }
 
-
-
 .instructors-sect {
   container: instructors-sect / inline-size;
 }
 
-.instructors-sect>div {
+.instructors-sect > div {
   display: flex;
   gap: 10px;
   justify-content: flex-start;
@@ -241,11 +279,10 @@ onMounted(() => {
 }
 
 @container instructors-sect (max-width: 714px) {
-  .instructors-sect>div {
+  .instructors-sect > div {
     justify-content: center;
   }
 }
-
 
 .exec-sect {
   width: 100%;
