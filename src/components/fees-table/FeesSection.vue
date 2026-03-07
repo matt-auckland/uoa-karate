@@ -28,7 +28,6 @@
 </template>
 
 <script setup>
-import FeesTable from "@/components/fees-table/FeesTable.vue";
 import AppButton from "@/components/AppButton.vue";
 import { ref, computed } from "vue";
 
