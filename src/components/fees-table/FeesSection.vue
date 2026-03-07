@@ -35,7 +35,7 @@ const membershipFee = {
   type: "Club Membership",
   cost: "FREE",
   notes:
-    "Club membership is free for everyone, and includes access to free trials and club events",
+    "Club membership is free for everyone, and includes access to free trial sessions and club events",
 };
 // const baseFeeData = [
 //   {
@@ -50,7 +50,7 @@ const regularFeeData = [
   {
     type: "Training Fee",
     cost: "$40 Per Month",
-    notes: "Non-students pay per month",
+    notes: "Non-university students pay once per month",
   },
 ];
 
@@ -59,7 +59,8 @@ const studentFeeData = [
   {
     type: "Training Fee",
     cost: "FREE your first sem, then $70 per semester",
-    notes: "Students pay per semester, your first sem is free",
+    notes:
+      "University students pay once per University semester, your first semester is free",
   },
 ];
 
