@@ -1,7 +1,12 @@
 <template>
   <main>
     <div class="container">
-      <HeroImage class="hero-image" source="/img/hawks_nest.jpg" :heading="heroHeading" :paragraph="heroText" />
+      <HeroImage
+        class="hero-image"
+        source="/img/hawks_nest.jpg"
+        :heading="heroHeading"
+        :paragraph="heroText"
+      />
       <!-- <section class="about-section">
         <p class="text-container">
           We strive to be a fun and inclusive martial arts club, specialising in traditional Okinawan Goju Ryu Karate.
@@ -10,7 +15,7 @@
         </p>
       </section> -->
       <TrainingSchedule class="schedule" />
-      <FeesTabs class="fees" />
+      <FeesSection class="fees" />
       <!-- <UpcomingEvents class="events" /> -->
       <SignUpQRCode class="qr-code" />
     </div>
@@ -21,7 +26,7 @@
 
 <script>
 import TrainingSchedule from "@/components/TrainingSchedule.vue";
-import FeesTabs from "@/components/fees-table/FeesTabs.vue";
+import FeesSection from "@/components/fees-table/FeesSection.vue";
 import ClubMap from "@/components/ClubMap.vue";
 import ContactForm from "@/components/ContactForm.vue";
 import UpcomingEvents from "@/components/UpcomingEvents.vue";
@@ -33,18 +38,19 @@ export default {
   components: {
     ClubMap,
     TrainingSchedule,
-    FeesTabs,
+    FeesSection,
     ContactForm,
     UpcomingEvents,
     HeroImage,
-    SignUpQRCode
+    SignUpQRCode,
   },
   data: function () {
     return {
       heroHeading: "Welcome to our Club!",
-      heroText: "Our club welcomes people with any level of experience, both students and non-students alike. We accept new members all year round, but we host beginner specific trainings at the start of every semester. Students get FREE training for their first semester!"
+      heroText:
+        "Our club welcomes people with any level of experience, both students and non-students alike. We accept new members all year round, but we host beginner specific trainings at the start of every semester. Students get FREE training for their first semester!",
     };
-  }
+  },
 };
 </script>
 
