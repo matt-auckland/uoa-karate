@@ -53,6 +53,9 @@ export default {
 </script>
 
 <style scoped>
+h2 {
+  margin: 0;
+}
 h3 {
   color: var(--base-font-color);
   margin: 0;
