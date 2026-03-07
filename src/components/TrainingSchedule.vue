@@ -97,12 +97,12 @@ hr {
 
   flex: 150px 1 1;
 
-  border: 2px solid var(--persian-red-darker);
+  border: 2px solid var(--card-border-color);
   padding: 10px 12px;
   text-align: center;
   border-radius: 15px;
-  background-color: var(--website-bg-color);
-  ;
+  background-color: var(--card-bg-color);
+
   transition: transform 500ms;
 }
 

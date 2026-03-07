@@ -63,6 +63,7 @@ const selectedFees = computed(() =>
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  color: var(--card-text-color);
 
   h2 {
     width: 100%;
@@ -77,13 +78,11 @@ const selectedFees = computed(() =>
   gap: 20px;
 
   h3 {
-    color: var(--base-font-color);
     margin: 0;
     font-size: 20px;
   }
 
   p {
-    color: var(--base-font-color);
     font-size: 16px;
     margin: 5px 0;
   }
@@ -95,7 +94,7 @@ const selectedFees = computed(() =>
   hr {
     border: none;
     margin: 8px 30%;
-    border-bottom: 2px solid var(--persian-red-light);
+    border-bottom: 2px solid var(--card-hr-color);
   }
 
   .cost {
@@ -108,12 +107,12 @@ const selectedFees = computed(() =>
 
     flex: 150px 1 1;
 
-    border: 2px solid var(--persian-red-darker);
+    border: 2px solid var(--card-border-color);
     padding: 10px 12px;
     text-align: center;
     border-radius: 15px;
-    background-color: var(--website-bg-color);
-    ;
+    background-color: var(--card-bg-color);
+
     transition: transform 500ms;
   }
 

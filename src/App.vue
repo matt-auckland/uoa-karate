@@ -53,9 +53,16 @@ export default {
   --persian-red-dark: #c41b1c;
   --persian-red-darker: #a90708;
   --persian-red-light: #f55354;
+
   --base-font-color: #aaa;
   --website-bg-color: #070707;
+
+  --card-bg-color: var(--website-bg-color);
+  --card-text-color: var(--base-font-color);
+  --card-border-color: var(--persian-red);
+  --card-hr-color: var(--persian-red-light);
 }
+
 
 ::selection {
   background-color: var(--persian-red);
