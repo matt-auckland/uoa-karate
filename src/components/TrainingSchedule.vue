@@ -56,6 +56,7 @@ export default {
 h2 {
   margin: 0;
 }
+
 h3 {
   color: var(--base-font-color);
   margin: 0;
@@ -100,7 +101,8 @@ hr {
   padding: 10px 12px;
   text-align: center;
   border-radius: 15px;
-  background-color: black;
+  background-color: var(--website-bg-color);
+  ;
   transition: transform 500ms;
 }
 

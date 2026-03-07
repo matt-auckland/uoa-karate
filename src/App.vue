@@ -6,9 +6,7 @@
     <QuoteDisplay class="quote-display" />
     <div class="github">
       This site's sourcecode is hosted on
-      <a href="https://github.com/matt-auckland/uoa-karate" target="_blank"
-        >Github</a
-      >
+      <a href="https://github.com/matt-auckland/uoa-karate" target="_blank">Github</a>
     </div>
   </footer>
 </template>
@@ -56,6 +54,7 @@ export default {
   --persian-red-darker: #a90708;
   --persian-red-light: #f55354;
   --base-font-color: #aaa;
+  --website-bg-color: #070707;
 }
 
 ::selection {
@@ -69,7 +68,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
   text-align: left;
-  background-color: #070707;
+  background-color: var(--website-bg-color);
   color: var(--base-font-color);
   padding: 0 5vw;
   margin: 0;

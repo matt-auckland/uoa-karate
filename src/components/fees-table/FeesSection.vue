@@ -112,7 +112,8 @@ const selectedFees = computed(() =>
     padding: 10px 12px;
     text-align: center;
     border-radius: 15px;
-    background-color: black;
+    background-color: var(--website-bg-color);
+    ;
     transition: transform 500ms;
   }
 

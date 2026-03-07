@@ -1,4 +1,3 @@
-
 <template>
   <div class="">
     <h2 class="component-title">Upcoming Events:</h2>
@@ -88,7 +87,8 @@ export default {
   width: 100%;
   border-radius: 15px;
   border: 2px solid var(--persian-red-darker);
-  background-color: black;
+  background-color: var(--website-bg-color);
+  ;
 }
 
 .event-inner {
