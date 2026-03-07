@@ -69,8 +69,7 @@ export default {
         },
       ],
       heroHeading: "Welcome to our Club!",
-      heroText:
-        "We strive to be a fun and inclusive Martial Arts club, specialising in traditional Okinawan Goju Ryu Karate. We accept new members all year round. Students get FREE training for their first semester!",
+      heroText: "We strive to be a fun and inclusive Martial Arts club, specialising in traditional Okinawan Goju Ryu Karate. We accept new members all year round. Students get FREE training for their first semester!",
       preloadedHeroImages: [],
     };
   },
@@ -83,8 +82,7 @@ export default {
       meta: [
         {
           name: "description",
-          content: "The official Auckland University Karate website. Students get FREE training for their first semester, join today! We strive to be a fun and inclusive Martial Arts club, specialising in traditional Okinawan Goju Ryu Karate.We accept new members all year round.";
-
+          content: "The official Auckland University Karate website. Students get FREE training for their first semester, join today! We strive to be a fun and inclusive Martial Arts club, specialising in traditional Okinawan Goju Ryu Karate.We accept new members all year round."
         }
       ]
     }
