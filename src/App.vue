@@ -18,8 +18,7 @@ import SitewideBanner from "@/components/SitewideBanner.vue";
 import { RouterView } from "vue-router";
 
 const pageTitle = "UoA Karate Club";
-const pageDescription =
-  "University of Auckland Karate Club. Find info on training times, locations and more.";
+const pageDescription = "The official Auckland University Karate website. Students get FREE training for their first semester, join today! We strive to be a fun and inclusive Martial Arts club, specialising in traditional Okinawan Goju Ryu Karate.We accept new members all year round.";
 
 export default {
   name: "App",
