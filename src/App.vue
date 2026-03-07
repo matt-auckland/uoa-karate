@@ -1,14 +1,16 @@
 <template>
-    <SitewideBanner />
-    <SiteHeader />
-    <RouterView />
-    <footer>
-      <QuoteDisplay class="quote-display" />
-      <div class="github">
-        This site's sourcecode is hosted on
-        <a href="https://github.com/matt-auckland/uoa-karate" target="_blank">Github</a>
-      </div>
-    </footer>
+  <SitewideBanner />
+  <SiteHeader />
+  <RouterView />
+  <footer>
+    <QuoteDisplay class="quote-display" />
+    <div class="github">
+      This site's sourcecode is hosted on
+      <a href="https://github.com/matt-auckland/uoa-karate" target="_blank"
+        >Github</a
+      >
+    </div>
+  </footer>
 </template>
 
 <script>
@@ -27,7 +29,7 @@ export default {
     SiteHeader,
     QuoteDisplay,
     SitewideBanner,
-    RouterView
+    RouterView,
   },
   head: {
     title: pageTitle,
@@ -92,7 +94,6 @@ button {
   border-radius: 30px;
   padding: 8px 12px;
   font-size: 16px;
-  text-transform: uppercase;
   background: #f0f0f0;
 }
 
