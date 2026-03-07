@@ -1,12 +1,7 @@
 <template>
   <main>
     <div class="container">
-      <HeroImageSwitcher
-        class="hero-image"
-        :heading="heroHeading"
-        :paragraph="heroText"
-        :images="heroImages"
-      />
+      <HeroImageSwitcher class="hero-image" :heading="heroHeading" :paragraph="heroText" :images="heroImages" />
       <!-- <section class="about-section">
         <p class="text-container">
           We strive to be a fun and inclusive martial arts club, specialising in traditional Okinawan Goju Ryu Karate.
@@ -48,22 +43,59 @@ export default {
     return {
       heroImages: [
         {
-          source: "/img/hawks_nest.jpg",
-          caption: "Hawks Nest training view",
-        },
-        {
-          source: "/img/group-photo.jpg",
-          caption: "Demonstrating at Open Day",
+          source: "/img/group-grading-2025.jpg",
+          caption: "Post-Grading in the Combat Studio",
         },
         {
           source: "/img/fun_karate_pose.jpg",
           caption: "Fighting stances at training",
         },
+        {
+          source: "/img/mid-grading-2025.jpg",
+          caption: "Club grading in the Combat Studio",
+        },
+        {
+          source: "/img/camp_2019.png",
+          caption: "Karate Camp 2019",
+        },
+        // {
+        //   source: "/img/hawks_nest.jpg",
+        //   caption: "Hawks Nest post grading",
+        // },
+        {
+          source: "/img/open-day.jpg",
+          caption: "Demonstrating at Open Day",
+        },
       ],
       heroHeading: "Welcome to our Club!",
       heroText:
-        "Our club welcomes people with any level of experience, both students and non-students alike. We accept new members all year round, but we host beginner specific trainings at the start of every semester. Students get FREE training for their first semester!",
+        "We strive to be a fun and inclusive Martial Arts club, specialising in traditional Okinawan Goju Ryu Karate. We accept new members all year round. Students get FREE training for their first semester!",
+      preloadedHeroImages: [],
     };
+  },
+  mounted() {
+    this.preloadHeroImages();
+  },
+  methods: {
+    preloadHeroImages() {
+      if (typeof Image === "undefined") {
+        return;
+      }
+
+      const imageSources = [
+        ...new Set(
+          this.heroImages
+            .map((image) => (typeof image === "string" ? image : image.source))
+            .filter(Boolean),
+        ),
+      ];
+
+      this.preloadedHeroImages = imageSources.map((source) => {
+        const preloadedImage = new Image();
+        preloadedImage.src = source;
+        return preloadedImage;
+      });
+    },
   },
 };
 </script>
