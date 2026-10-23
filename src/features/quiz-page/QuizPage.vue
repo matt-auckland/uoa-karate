@@ -14,6 +14,13 @@
             <label :for="category">{{ category }}</label>
           </div>
         </div>
+        <div class="category-buttons">
+          <button type="button" class="select-all-button" @click="selectAllQuestions">Select All</button>
+          <button type="button" 
+                  :disabled="selectedCategories.length === 0" 
+                  class="deselect-all-button" 
+                  @click="deselectAllQuestions">Deselect All</button>
+        </div>
       </fieldset>
 
       <div class="new-question-container">
@@ -86,7 +93,7 @@ export default {
         })
         .sort();
       return categories;
-    }
+    },
   },
   data: function () {
     return {
@@ -159,6 +166,14 @@ export default {
       } else {
         this.scoreObj.incorrectAnswers++;
       }
+    },
+    selectAllQuestions: function () {
+      this.selectedCategories = [...this.questionCategories];
+      this.filterQuestions();
+    },
+    deselectAllQuestions: function () {
+      this.selectedCategories = [];
+      this.filterQuestions();
     }
   }
 };
@@ -255,6 +270,43 @@ export default {
   border-bottom: 2px solid var(--persian-red);
   width: 100%;
   margin: 10px 30px;
+}
+
+.category-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 12px;
+}
+
+.select-all-button,
+.deselect-all-button {
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid var(--persian-red-darker, red);
+  color: white;
+  border-radius: 20px;
+  padding: 6px 16px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Red background on hover */
+.select-all-button:hover:not(:disabled),
+.deselect-all-button:hover:not(:disabled) {
+  background-color: var(--persian-red-darker, red);
+  color: #ffffff;
+}
+
+/* Disabled state */
+.select-all-button:disabled,
+.deselect-all-button:disabled {
+  background-color: #f9f9f9;
+  border-color: #ccc;
+  color: #ccc;
+  cursor: not-allowed;
+  opacity: 0.7;
 }
 
 .footer-link {
